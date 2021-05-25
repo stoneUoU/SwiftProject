@@ -92,7 +92,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E344A39265BCA63008AF1BA /* AppBase */ = {
+		8E344A39265BCA63008AF1BA /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				8E344A92265BD5B6008AF1BA /* Moya */,
@@ -102,7 +102,7 @@
 				8E344A58265BCD85008AF1BA /* ViewController */,
 				8E344A57265BCD7B008AF1BA /* Extend */,
 			);
-			path = AppBase;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8E344A45265BCC66008AF1BA /* Supporting Files */ = {
@@ -206,7 +206,7 @@
 		8EFB12D8265BB46C007D9FE1 /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
-				8E344A39265BCA63008AF1BA /* AppBase */,
+				8E344A39265BCA63008AF1BA /* Base */,
 				8E344A45265BCC66008AF1BA /* Supporting Files */,
 				8EFB12DD265BB46C007D9FE1 /* ViewController.swift */,
 			);
