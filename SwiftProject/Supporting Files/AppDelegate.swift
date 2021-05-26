@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         animate.duration = 1.0;
         self.window?.layer.add(animate, forKey: nil)
         self.window?.makeKeyAndVisible()
-        let navigationView = AppBaseNavigationController(rootViewController: ViewController())
-        self.window?.rootViewController = navigationView;
+        let tabbarView = AppTabbarViewController();
+        self.window?.rootViewController = tabbarView;
     }
     func applicationWillResignActive(_ application: UIApplication) {
     }

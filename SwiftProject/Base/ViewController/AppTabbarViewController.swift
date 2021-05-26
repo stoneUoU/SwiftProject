@@ -9,25 +9,28 @@ import UIKit
 
 enum TabIndex:Int {
     case home = 0
-    case announce = 1
-    case task = 2
-    case mine = 3
+    case mine = 1
 }
 
 class AppTabbarViewController: UITabBarController {
+    
+    @objc lazy var ylzTabBar: YLZMSTabBar = {
+        let ylzTabBar = YLZMSTabBar.init(frame: .zero, tabbarBtnNum: 3)
+        return ylzTabBar
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBar.isTranslucent = false
+        self.tabBar.barTintColor = UIColor.white;
         self.setUI()
         self.addObserver();
     }
     
     private func setUI() {
         
-//        addViewController(MGHomeTitleViewController(), "首页", "tabBar_home")
-//        addViewController(MovieTopicsViewController(), "专题", "tabBar_announce")
-//        addViewController(TaskViewController(), "任务", "tabBar_task")
-//        addViewController(MineViewController(), "我的", "tabBar_me")
+        addViewController(ViewController(), "首页", "tabbar_home")
+        addViewController(ViewController(), "我的", "tabbar_mine")
     }
     
     func addObserver() {
@@ -38,22 +41,20 @@ class AppTabbarViewController: UITabBarController {
         
         let navVC = AppBaseNavigationController(rootViewController: vc)
         vc.tabBarItem.image = UIImage(named: imageN)?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: imageN + "_s")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.selectedImage = UIImage(named: imageN + "_selected")?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.title = title
         //设置未选中字体颜色
-//        UITabBarItem.appearance().setTitleTextAttributes([
-//            .foregroundColor : UIColor.color_HexStr("#494949")
-//            ], for: .normal)
-//        //设置选中字体颜色
-//        UITabBarItem.appearance().setTitleTextAttributes([
-//            .foregroundColor : UIColor.color_HexStr("#8676d7")
-//            ], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([
+            .foregroundColor : UIColor.color_HexStr("#494949")
+            ], for: .normal)
+        //设置选中字体颜色
+        UITabBarItem.appearance().setTitleTextAttributes([
+            .foregroundColor : UIColor.color_HexStr("#8676d7")
+            ], for: .selected)
         addChild(navVC)
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if ("\(item.title!)" == "我的") {
-        } else if ("\(item.title!)" == "首页") {
-        }
+        
     }
 }

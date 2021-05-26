@@ -7,13 +7,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    @objc lazy var registerButton: UIButton = {
+        let registerButton = UIButton.init(type: UIButton.ButtonType.custom)
+        registerButton.setTitle("Swift Project", for: UIControl.State.normal)
+        registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        registerButton.setTitleColor(.black, for: .normal)
+        registerButton.layer.borderWidth = 0.5;
+        registerButton.layer.borderColor = UIColor.lightGray.cgColor;
+        registerButton.layer.cornerRadius = 20;
+        registerButton.layer.masksToBounds = true;
+        registerButton.addTarget(self, action: #selector(toExcute(_:)), for: .touchUpInside)
+        return registerButton
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .red;
-        // Do any additional setup after loading the view.
+        self.setUI();
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -21,6 +33,24 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
-
+    
+    func setUI() {
+        self.view.backgroundColor = .white;
+        self.view.addSubview(self.registerButton)
+        
+        self.setMas();
+    }
+    
+    func setMas() {
+        self.registerButton.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view)
+            make.size.equalTo(CGSize.init(width: 240, height: 40))
+        }
+    }
+    
+    @objc func toExcute(_ sender: UIButton) {
+    }
 }
+
+
 
