@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let urlString:String = "https://api.apiopen.top/getWangYiNews?page=1&count=20";
+    
     @objc lazy var registerButton: UIButton = {
         let registerButton = UIButton.init(type: UIButton.ButtonType.custom)
         registerButton.setTitle("Swift Project", for: UIControl.State.normal)
@@ -48,7 +50,23 @@ class ViewController: UIViewController {
         }
     }
     
+    func toShort() {
+        let alamofireExtend = AlamofireExtend();
+        alamofireExtend.requestData(urlString, .GET, parameters: nil) { (json:Any) in
+            STLog("________\(json)");
+//            if JSON(json)["code"] == 1 {
+//                let codeString = "\(JSON(json)["short"])";
+//                let pasteboard:UIPasteboard = UIPasteboard.general;
+//                pasteboard.string = codeString;
+//                StToast().showToast(text:"复制成功",isWhite: false,type:Pos)
+//            } else {
+//                StToast().showToast(text:"\(JSON(json)["msg"])",isWhite: false,type:Pos)
+//            }
+        }
+    }
+    
     @objc func toExcute(_ sender: UIButton) {
+        self.toShort();
     }
 }
 

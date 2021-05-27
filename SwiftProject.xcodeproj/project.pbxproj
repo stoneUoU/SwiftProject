@@ -30,7 +30,7 @@
 		8E344A8F265BD569008AF1BA /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A8C265BD568008AF1BA /* AppInfo.swift */; };
 		8E344A90265BD569008AF1BA /* ConvertJsonStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A8D265BD569008AF1BA /* ConvertJsonStr.swift */; };
 		8E344A98265BD5B6008AF1BA /* OLMovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A93265BD5B6008AF1BA /* OLMovieAPI.swift */; };
-		8E344A99265BD5B6008AF1BA /* AlamofireTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A94265BD5B6008AF1BA /* AlamofireTools.swift */; };
+		8E344A99265BD5B6008AF1BA /* AlamofireExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A94265BD5B6008AF1BA /* AlamofireExtend.swift */; };
 		8E344A9A265BD5B6008AF1BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A95265BD5B6008AF1BA /* API.swift */; };
 		8E344A9B265BD5B6008AF1BA /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */; };
 		8E344A9C265BD5B6008AF1BA /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A97265BD5B6008AF1BA /* HttpTool.swift */; };
@@ -68,7 +68,7 @@
 		8E344A8C265BD568008AF1BA /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		8E344A8D265BD569008AF1BA /* ConvertJsonStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertJsonStr.swift; sourceTree = "<group>"; };
 		8E344A93265BD5B6008AF1BA /* OLMovieAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OLMovieAPI.swift; sourceTree = "<group>"; };
-		8E344A94265BD5B6008AF1BA /* AlamofireTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireTools.swift; sourceTree = "<group>"; };
+		8E344A94265BD5B6008AF1BA /* AlamofireExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtend.swift; sourceTree = "<group>"; };
 		8E344A95265BD5B6008AF1BA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
 		8E344A97265BD5B6008AF1BA /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				8E344A93265BD5B6008AF1BA /* OLMovieAPI.swift */,
-				8E344A94265BD5B6008AF1BA /* AlamofireTools.swift */,
+				8E344A94265BD5B6008AF1BA /* AlamofireExtend.swift */,
 				8E344A95265BD5B6008AF1BA /* API.swift */,
 				8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */,
 				8E344A97265BD5B6008AF1BA /* HttpTool.swift */,
@@ -360,7 +360,7 @@
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
 				8E344A86265BD437008AF1BA /* String+Extension.swift in Sources */,
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
-				8E344A99265BD5B6008AF1BA /* AlamofireTools.swift in Sources */,
+				8E344A99265BD5B6008AF1BA /* AlamofireExtend.swift in Sources */,
 				8E344A90265BD569008AF1BA /* ConvertJsonStr.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */,
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
