@@ -69,16 +69,13 @@ extension AppBaseViewController {
     
     func setStatusAndNavigationMas(ifLine:Bool) {
         self.statusView.snp.makeConstraints { (make) in
-            make.top.equalTo(0)
-            make.left.equalTo(0)
-            make.width.equalTo(SCREENWIDTH)
-            make.height.equalTo(StatusBarH)
+            make.top.left.equalTo(self.view)
+            make.size.equalTo(CGSize.init(width: SCREENWIDTH, height: StatusBarH))
         }
         self.navigationView.snp.makeConstraints { (make) in
             make.top.equalTo(self.statusView.snp.bottom)
-            make.left.equalTo(0)
-            make.width.equalTo(SCREENWIDTH)
-            make.height.equalTo(NavigationBarH)
+            make.left.equalTo(self.view)
+            make.size.equalTo(CGSize.init(width: SCREENWIDTH, height: NavigationBarH))
         }
         self.leftButton.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.navigationView)

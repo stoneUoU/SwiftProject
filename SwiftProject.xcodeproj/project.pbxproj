@@ -34,7 +34,21 @@
 		8E344A9A265BD5B6008AF1BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A95265BD5B6008AF1BA /* API.swift */; };
 		8E344A9B265BD5B6008AF1BA /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */; };
 		8E344A9C265BD5B6008AF1BA /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A97265BD5B6008AF1BA /* HttpTool.swift */; };
+		8EA21E9D27002E2000A9039B /* YLZHealthCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */; };
+		8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */; };
+		8EA21EA127002E5100A9039B /* YLZHealthCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA027002E5100A9039B /* YLZHealthCodeTableFooterView.swift */; };
+		8EA21EA327002E6300A9039B /* YLZHealthCodeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA227002E6300A9039B /* YLZHealthCodeInfoTableViewCell.swift */; };
+		8EA21EA527002E7400A9039B /* YLZHealthCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA427002E7400A9039B /* YLZHealthCodeTableViewCell.swift */; };
+		8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA627002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift */; };
+		8EA21EA927002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA827002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift */; };
+		8EA21EAB27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAA27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift */; };
+		8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */; };
+		8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAF2700344F00A9039B /* YLZFont.swift */; };
+		8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */; };
 		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
+		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
+		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
+		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
 		8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */; };
 		8EFB12DE265BB46C007D9FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12DD265BB46C007D9FE1 /* ViewController.swift */; };
 		8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */; };
@@ -72,7 +86,21 @@
 		8E344A95265BD5B6008AF1BA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
 		8E344A97265BD5B6008AF1BA /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
+		8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeViewController.swift; sourceTree = "<group>"; };
+		8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeView.swift; sourceTree = "<group>"; };
+		8EA21EA027002E5100A9039B /* YLZHealthCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeTableFooterView.swift; sourceTree = "<group>"; };
+		8EA21EA227002E6300A9039B /* YLZHealthCodeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		8EA21EA427002E7400A9039B /* YLZHealthCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeTableViewCell.swift; sourceTree = "<group>"; };
+		8EA21EA627002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeCheckTableViewCell.swift; sourceTree = "<group>"; };
+		8EA21EA827002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeServiceTableViewCell.swift; sourceTree = "<group>"; };
+		8EA21EAA27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeSourceTableViewCell.swift; sourceTree = "<group>"; };
+		8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EA21EAF2700344F00A9039B /* YLZFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFont.swift; sourceTree = "<group>"; };
+		8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZPaddingLabel.swift; sourceTree = "<group>"; };
 		8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZMSTabBar.swift; sourceTree = "<group>"; };
+		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
+		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
 		8EFB12D6265BB46C007D9FE1 /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EFB12DD265BB46C007D9FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +125,8 @@
 		8E344A39265BCA63008AF1BA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8EE07B3B27016C87005B0B40 /* OC */,
+				8EA21EAE2700343900A9039B /* Kit */,
 				8E344A92265BD5B6008AF1BA /* Moya */,
 				8E344A72265BD437008AF1BA /* SwiftExtension */,
 				8E344A5A265BCD9E008AF1BA /* Const */,
@@ -147,6 +177,7 @@
 			children = (
 				8E344A68265BCF93008AF1BA /* PlaceholderView.swift */,
 				8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */,
+				8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +203,7 @@
 				8E344A7B265BD437008AF1BA /* String+Extension.swift */,
 				8E344A7C265BD437008AF1BA /* UIBarButtonItem+Extension.swift */,
 				8E344A7D265BD437008AF1BA /* CAGradientLayer+Extension.swift */,
+				8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */,
 			);
 			path = SwiftExtension;
 			sourceTree = "<group>";
@@ -186,6 +218,79 @@
 				8E344A97265BD5B6008AF1BA /* HttpTool.swift */,
 			);
 			path = Moya;
+			sourceTree = "<group>";
+		};
+		8EA21E9727002D9E00A9039B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8EA21E9827002DA700A9039B /* HealthCode */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		8EA21E9827002DA700A9039B /* HealthCode */ = {
+			isa = PBXGroup;
+			children = (
+				8EA21E9B27002DB900A9039B /* Controller */,
+				8EA21E9A27002DB400A9039B /* Model */,
+				8EA21E9927002DAF00A9039B /* View */,
+			);
+			path = HealthCode;
+			sourceTree = "<group>";
+		};
+		8EA21E9927002DAF00A9039B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */,
+				8EA21EA027002E5100A9039B /* YLZHealthCodeTableFooterView.swift */,
+				8EA21EA227002E6300A9039B /* YLZHealthCodeInfoTableViewCell.swift */,
+				8EA21EA427002E7400A9039B /* YLZHealthCodeTableViewCell.swift */,
+				8EA21EA627002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift */,
+				8EA21EA827002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift */,
+				8EA21EAA27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift */,
+				8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EA21E9A27002DB400A9039B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EA21E9B27002DB900A9039B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EA21EAE2700343900A9039B /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				8EA21EAF2700344F00A9039B /* YLZFont.swift */,
+				8EE07B3927016A66005B0B40 /* YLZView.swift */,
+				8EE07B3F27017D78005B0B40 /* YLZString.swift */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		8EE07B3B27016C87005B0B40 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				8EE07B3C27016C8E005B0B40 /* Kit */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		8EE07B3C27016C8E005B0B40 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kit;
 			sourceTree = "<group>";
 		};
 		8EFB12CD265BB46C007D9FE1 = {
@@ -209,6 +314,7 @@
 		8EFB12D8265BB46C007D9FE1 /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				8EA21E9727002D9E00A9039B /* Logic */,
 				8E344A39265BCA63008AF1BA /* Base */,
 				8E344A45265BCC66008AF1BA /* Supporting Files */,
 				8EFB12DD265BB46C007D9FE1 /* ViewController.swift */,
@@ -346,22 +452,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA21EA327002E6300A9039B /* YLZHealthCodeInfoTableViewCell.swift in Sources */,
 				8E344A9B265BD5B6008AF1BA /* AuthPlugin.swift in Sources */,
 				8E344A81265BD437008AF1BA /* Int+Extension.swift in Sources */,
 				8E344A70265BD115008AF1BA /* AppWebViewController.swift in Sources */,
 				8E344A98265BD5B6008AF1BA /* OLMovieAPI.swift in Sources */,
 				8E344A5C265BCDDB008AF1BA /* PageTool.swift in Sources */,
+				8EA21EA527002E7400A9039B /* YLZHealthCodeTableViewCell.swift in Sources */,
 				8E344A83265BD437008AF1BA /* UIButton+Extension.swift in Sources */,
+				8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */,
 				8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */,
+				8EA21EA927002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift in Sources */,
+				8EA21EA127002E5100A9039B /* YLZHealthCodeTableFooterView.swift in Sources */,
 				8E344A88265BD437008AF1BA /* CAGradientLayer+Extension.swift in Sources */,
 				8E344A9A265BD5B6008AF1BA /* API.swift in Sources */,
+				8EA21EAB27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift in Sources */,
 				8EFB12DE265BB46C007D9FE1 /* ViewController.swift in Sources */,
 				8E344A82265BD437008AF1BA /* Date+Extension.swift in Sources */,
+				8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */,
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
+				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
 				8E344A86265BD437008AF1BA /* String+Extension.swift in Sources */,
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
 				8E344A99265BD5B6008AF1BA /* AlamofireExtend.swift in Sources */,
 				8E344A90265BD569008AF1BA /* ConvertJsonStr.swift in Sources */,
+				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */,
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
 				8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */,
@@ -373,8 +488,13 @@
 				8E344A9C265BD5B6008AF1BA /* HttpTool.swift in Sources */,
 				8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */,
 				8E344A60265BCE45008AF1BA /* Toast.swift in Sources */,
+				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
+				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
 				8E344A6C265BD03D008AF1BA /* AppTabbarViewController.swift in Sources */,
+				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,
+				8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */,
+				8EA21E9D27002E2000A9039B /* YLZHealthCodeViewController.swift in Sources */,
 				8E344A69265BCF93008AF1BA /* PlaceholderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,7 +647,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -549,7 +669,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
