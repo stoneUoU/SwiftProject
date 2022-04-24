@@ -65,7 +65,7 @@ class YLZHealthCodeServiceTableViewCell: UITableViewCell {
         var titleLabel = UILabel()
         titleLabel.font = YLZFont.regular(size:24)
         titleLabel.textColor = YLZColorTitleOne
-        titleLabel.text = "信息说明";
+        titleLabel.text = "相关服务";
         return titleLabel
     }()
     

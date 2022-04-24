@@ -18,13 +18,13 @@ class YLZHealthCodeTableViewCell: UITableViewCell {
         didSet {
             if (clickNum == 0) {
                 self.format(textString:"健康状况核验 未见异常【绿码】", location: 7, fontColor: UIColor.color_HexStr("6ab069"))
-                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 18), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
+                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
             } else if (clickNum == 1) {
                 self.format(textString:"健康状况核验 建议隔离【橙码】", location: 7, fontColor: UIColor.color_HexStr("F7ce44"))
-                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 18), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#F7ce44"))
+                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#F7ce44"))
             } else {
                 self.format(textString:"健康状况核验 强制隔离【红码】", location: 7, fontColor: UIColor.color_HexStr("eb3223"))
-                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 18), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#eb3223"))
+                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#eb3223"))
             }
         }
     }
@@ -41,7 +41,7 @@ class YLZHealthCodeTableViewCell: UITableViewCell {
         attributeStr.addAttribute(.font, value: YLZFont.regular(size:18), range: NSRange(location: 0, length: location))
         attributeStr.addAttribute(.foregroundColor, value: fontColor, range: NSRange(location: location, length: textString.count - location))
         attributeStr.addAttribute(.font, value: YLZFont.bold(size:18), range: NSRange(location: location, length: textString.count - location))
-        stateLabel.attributedText = attributeStr
+        self.stateLabel.attributedText = attributeStr
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
