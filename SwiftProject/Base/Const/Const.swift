@@ -141,3 +141,8 @@ let YLZColorSeparator:UIColor = UIColor.color_HexStr("#f0f1f5");
 
 /// Cell的背景色
 let YLZColorCellBackGround:UIColor = UIColor.color_HexStr("#fafafc");
+
+/// 福建健康码背景
+let YLZColorRouteCode:UIColor = UIColor.color_HexStr("#e8eaf0");
+let YLZColorAllInsertCode:UIColor = UIColor.color_HexStr("#f3fcf5");
+let YLZColorCodeBlue:UIColor = UIColor.color_HexStr("#3a5ddd");
