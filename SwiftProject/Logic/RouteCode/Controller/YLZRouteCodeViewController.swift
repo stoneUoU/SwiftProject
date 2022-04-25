@@ -32,7 +32,7 @@ class YLZRouteCodeViewController:UIViewController {
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         //纯文本模式
         hud.mode = .indeterminate;
-        hud.bezelView.backgroundColor = YLZColorTitleTwo;
+//        hud.bezelView.backgroundColor = YLZColorTitleTwo;
         //设置提示标题
         hud.label.text = "加载中..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {

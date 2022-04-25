@@ -82,7 +82,7 @@ class YLZRouteCodeInfoCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.bold(size: 18)
+        titleLabel.font = YLZFont.bold(size: 22)
         titleLabel.textColor = YLZColorTitleOne
         titleLabel.text = "";
         return titleLabel
