@@ -138,6 +138,10 @@ class YLZRouteCodeCellView: UIView {
         avaterPicView.layer.masksToBounds = true;
         avaterPicView.image = UIImage.init(named: "ylz_mine_avater");
         avaterPicView.contentMode = .scaleAspectFill;
+        avaterPicView.layer.shadowColor = YLZColorCodeBlue.cgColor;
+        avaterPicView.layer.shadowOffset = CGSize.init(width: 0, height: 6);
+        avaterPicView.layer.shadowOpacity = 1;
+        avaterPicView.layer.shadowRadius = 12;
         return avaterPicView
     }()
     lazy var scanButton:UIButton = {[weak self] in
@@ -150,7 +154,6 @@ class YLZRouteCodeCellView: UIView {
         scanButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         scanButton.layer.cornerRadius = 22;
         scanButton.layer.shadowColor = YLZColorCodeBlue.cgColor;
-        //UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
         scanButton.layer.shadowOffset = CGSize.init(width: 0, height: 6);
         scanButton.layer.shadowOpacity = 1;
         scanButton.layer.shadowRadius = 12;
@@ -338,5 +341,3 @@ extension YLZRouteCodeCellView {
         self.stateLabel.attributedText = attributeStr
     }
 }
- 
- 

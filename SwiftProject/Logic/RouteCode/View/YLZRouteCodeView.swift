@@ -16,12 +16,7 @@ protocol YLZRouteCodeViewDelegate: AnyObject {
 class YLZRouteCodeView: UIView {
     var handle:YLZRouteCodeViewHandle?
     weak var routeCodeViewDelegate : YLZRouteCodeViewDelegate?
-    /**
-     * 0 : 绿码
-     * 1 : 橙码
-     * 2 : 红码
-     */
-    var clickNum:Int = 0;
+    var isLoading:Bool = true;
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setUI()
@@ -33,7 +28,7 @@ class YLZRouteCodeView: UIView {
     //MARK: Public Method
     //MARK: Private Method
     //MARK: lazy load
-    private lazy var tableView:UITableView = {
+    public lazy var tableView:UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
@@ -41,6 +36,7 @@ class YLZRouteCodeView: UIView {
         tableView.backgroundColor = YLZColorRouteCode;
         tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude));
         tableView.register(YLZRouteCodeCell.self, forCellReuseIdentifier: NSStringFromClass(YLZRouteCodeCell.self))
+        tableView.register(YLZRouteCodeLoadingCell.self, forCellReuseIdentifier: NSStringFromClass(YLZRouteCodeLoadingCell.self))
         tableView.register(YLZRouteCodeRecordCell.self, forCellReuseIdentifier: NSStringFromClass(YLZRouteCodeRecordCell.self))
         tableView.register(YLZRouteCodeInfoCell.self, forCellReuseIdentifier: NSStringFromClass(YLZRouteCodeInfoCell.self))
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
@@ -154,12 +150,21 @@ extension YLZRouteCodeView:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if (indexPath.section == 0) {
-            var viewCell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(YLZRouteCodeCell.self)) as? YLZRouteCodeCell
-            if viewCell == nil {
-                viewCell = YLZRouteCodeCell(style: .default, reuseIdentifier: NSStringFromClass(YLZRouteCodeCell.self))
+            if (self.isLoading) {
+                var viewCell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(YLZRouteCodeLoadingCell.self)) as? YLZRouteCodeLoadingCell
+                if viewCell == nil {
+                    viewCell = YLZRouteCodeLoadingCell(style: .default, reuseIdentifier: NSStringFromClass(YLZRouteCodeLoadingCell.self))
+                }
+                viewCell!.selectionStyle = .none
+                return viewCell!;
+            } else {
+                var viewCell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(YLZRouteCodeCell.self)) as? YLZRouteCodeCell
+                if viewCell == nil {
+                    viewCell = YLZRouteCodeCell(style: .default, reuseIdentifier: NSStringFromClass(YLZRouteCodeCell.self))
+                }
+                viewCell!.selectionStyle = .none
+                return viewCell!;
             }
-            viewCell!.selectionStyle = .none
-            return viewCell!;
         } else if (indexPath.section == 1) {
             var viewCell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(YLZRouteCodeRecordCell.self)) as? YLZRouteCodeRecordCell
             if viewCell == nil {
@@ -219,7 +224,11 @@ extension YLZRouteCodeView:UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) {
-            return 556;
+            if (self.isLoading) {
+                return 400;
+            } else {
+                return 556;
+            }
         } else if (indexPath.section == 1) {
             return 96;
         } else {

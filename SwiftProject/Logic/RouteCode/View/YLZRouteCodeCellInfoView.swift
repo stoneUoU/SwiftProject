@@ -7,6 +7,12 @@
 
 import UIKit
 
+typealias YLZRouteCodeCellInfoViewHandle = () -> Void
+
+protocol YLZRouteCodeCellInfoViewDelegate: AnyObject {
+    func toExcute(view:YLZRouteCodeCellInfoView)
+}
+
 class YLZRouteCodeCellInfoView: UIView {
     
     var eyeFlag:Bool = false;
@@ -14,6 +20,9 @@ class YLZRouteCodeCellInfoView: UIView {
     var certDesensitizationString:String = "362324********6010";
     var nameString:String = "林磊";
     var certString:String = "362324199610016010";
+    
+    var handle:YLZRouteCodeCellInfoViewHandle?
+    weak var routeCodeCellInfoViewDelegate : YLZRouteCodeCellInfoViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -83,6 +92,9 @@ class YLZRouteCodeCellInfoView: UIView {
         familyCodeLabel.font = YLZFont.bold(size: 16);
         familyCodeLabel.textColor = YLZColorCodeBlue
         familyCodeLabel.text = "亲友亮码";
+        familyCodeLabel.isUserInteractionEnabled = true;
+        let recognizer:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self?.toRecognizer(_:)));
+        familyCodeLabel.addGestureRecognizer(recognizer);
         return familyCodeLabel
     }()
     
@@ -100,6 +112,14 @@ class YLZRouteCodeCellInfoView: UIView {
 }
 
 extension YLZRouteCodeCellInfoView {
+    
+    @objc func toRecognizer(_ sender :UITapGestureRecognizer) {
+        if (self.handle != nil) {
+            self.handle!();
+        }
+//        self.routeCodeCellInfoViewDelegate?.toExcute(view:self);
+    }
+    
     @objc func toOperate(sender: UIButton) {
         self.eyeFlag = !self.eyeFlag;
         self.nameLabel.text = self.eyeFlag ? self.nameDesensitizationString : self.nameString;

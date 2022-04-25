@@ -56,7 +56,6 @@ class YLZRouteCodeRecordCell: UITableViewCell {
         self.iconLeftImageView.snp.makeConstraints{ (make) in
             make.bottom.equalTo(self.leftView.snp.bottom);
             make.right.equalTo(self.leftView.snp.right);
-//            make.size.equalTo(CGSize.init(width: 24, height: 96))
         }
         
         self.rightView.snp.makeConstraints{ (make) in
