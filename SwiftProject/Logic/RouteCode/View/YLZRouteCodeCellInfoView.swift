@@ -55,13 +55,6 @@ class YLZRouteCodeCellInfoView: UIView {
             make.bottom.equalTo(self.snp.bottom).offset(-8);
             make.left.equalTo(self.snp.left).offset(16);
         }
-        self.dashImageView.snp.makeConstraints{ (make) in
-            make.bottom.equalTo(self);
-            make.left.equalTo(self.snp.left).offset(16);
-            make.right.equalTo(self.snp.right).offset(-16);
-            make.height.equalTo(2);
-        }
-        self.dashImageView.layoutIfNeeded();
         YLZView.drawLine(imageView: self.dashImageView, withDashColor: YLZColorTitleThree);
     }
     lazy var eyeButton: UIButton = {[weak self] in
@@ -101,6 +94,7 @@ class YLZRouteCodeCellInfoView: UIView {
     
     lazy var dashImageView:UIImageView = {[weak self] in
         var dashImageView = UIImageView()
+        dashImageView.frame = CGRect.init(x: 16, y: 74, width: SCREENWIDTH - (48+32), height: 2)
         return dashImageView
     }()
 }

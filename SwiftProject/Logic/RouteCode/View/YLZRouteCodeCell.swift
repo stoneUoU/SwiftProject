@@ -24,6 +24,7 @@ class YLZRouteCodeCell: UITableViewCell {
         self.contentView.addSubview(self.bgView)
         self.bgView.addSubview(self.codeInfoView);
         self.bgView.addSubview(self.codeView);
+        self.bgView.addSubview(self.bottomView);
         
         self.setMas();
     }
@@ -33,7 +34,7 @@ class YLZRouteCodeCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.frame = CGRect.init(x: 24, y: 0, width: SCREENWIDTH - 48, height: 520)
+        bgView.frame = CGRect.init(x: 24, y: 0, width: SCREENWIDTH - 48, height: 556)
         bgView.backgroundColor = YLZColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 12.0;
@@ -54,6 +55,12 @@ class YLZRouteCodeCell: UITableViewCell {
         var codeView = YLZRouteCodeCellView()
         codeView.frame = CGRect.init(x: 16, y: 76, width: SCREENWIDTH - (48+32), height: 380);
         return codeView
+    }()
+    
+    lazy var bottomView:YLZRouteCodeCellBottomView = {[weak self] in
+        var bottomView = YLZRouteCodeCellBottomView()
+        bottomView.frame = CGRect.init(x: 0, y: 456, width: SCREENWIDTH - 48, height: 100);
+        return bottomView
     }()
     
     override func awakeFromNib() {

@@ -55,6 +55,13 @@ class YLZRouteCodeCellView: UIView {
         qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 18), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
         return qrCodeImageView
     }()
+    lazy var logoView:UIView = {[weak self] in
+        var logoView = UIView()
+        logoView.layer.cornerRadius = 3.0;
+        logoView.layer.masksToBounds = true;
+        logoView.backgroundColor = .white;
+        return logoView
+    }()
     lazy var logoImageView:UIImageView = {[weak self] in
         var logoImageView = UIImageView()
         logoImageView.layer.cornerRadius = 3.0;
@@ -105,6 +112,7 @@ class YLZRouteCodeCellView: UIView {
     lazy var avaterView:UIView = {[weak self] in
         var avaterView = UIView()
         avaterView.tag = 1;
+        avaterView.backgroundColor = YLZColorCodeButtonbgColor;
         avaterView.isUserInteractionEnabled = true;
         let recognizer:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self?.toRecognizer(_:)));
         avaterView.addGestureRecognizer(recognizer);
@@ -122,12 +130,14 @@ class YLZRouteCodeCellView: UIView {
         avaterLabel.text = "人像"
         return avaterLabel
     }()
-    lazy var avaterPicView:UIView = {[weak self] in
-        var avaterPicView = UIView()
-        avaterPicView.backgroundColor = .red;
+    lazy var avaterPicView:UIImageView = {[weak self] in
+        var avaterPicView = UIImageView()
+        avaterPicView.backgroundColor = YLZColorCodeButtonbgColor;
         avaterPicView.isHidden = true;
         avaterPicView.layer.cornerRadius = 8.0;
         avaterPicView.layer.masksToBounds = true;
+        avaterPicView.image = UIImage.init(named: "ylz_mine_avater");
+        avaterPicView.contentMode = .scaleAspectFill;
         return avaterPicView
     }()
     lazy var scanButton:UIButton = {[weak self] in
@@ -138,9 +148,9 @@ class YLZRouteCodeCellView: UIView {
         scanButton.tag = 1
         scanButton.setTitle("扫一扫", for: .normal)
         scanButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
-        scanButton.layer.masksToBounds = true;
         scanButton.layer.cornerRadius = 22;
-        scanButton.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
+        scanButton.layer.shadowColor = YLZColorCodeBlue.cgColor;
+        //UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
         scanButton.layer.shadowOffset = CGSize.init(width: 0, height: 6);
         scanButton.layer.shadowOpacity = 1;
         scanButton.layer.shadowRadius = 12;
@@ -164,7 +174,8 @@ extension YLZRouteCodeCellView {
         
         self.addSubview(self.codeGradientView)
         self.addSubview(self.qrCodeImageView)
-        self.addSubview(self.logoImageView)
+        self.addSubview(self.logoView)
+        self.logoView.addSubview(self.logoImageView)
         self.addSubview(self.stateLabel);
         self.addSubview(self.avaterPicView)
         
@@ -186,9 +197,13 @@ extension YLZRouteCodeCellView {
             make.center.equalTo(self.codeGradientView);
             make.size.equalTo(CGSize.init(width: 208, height: 208));
         }
-        self.logoImageView.snp.makeConstraints{ (make) in
+        self.logoView.snp.makeConstraints{ (make) in
             make.center.equalTo(self.qrCodeImageView);
-            make.size.equalTo(CGSize.init(width: 40, height: 40));
+            make.size.equalTo(CGSize.init(width: 32, height: 32));
+        }
+        self.logoImageView.snp.makeConstraints{ (make) in
+            make.center.equalTo(self.logoView);
+            make.size.equalTo(CGSize.init(width: 28, height: 28));
         }
         self.stateLabel.snp.makeConstraints{ (make) in
             make.top.equalTo(self.codeGradientView.snp.bottom).offset(12);
@@ -238,7 +253,7 @@ extension YLZRouteCodeCellView {
         self.scanButton.snp.makeConstraints{ (make) in
             make.centerX.equalTo(self);
             make.top.equalTo(self.stateLabel.snp.bottom).offset(13);
-            make.size.equalTo(CGSize.init(width: 240, height: 44))
+            make.size.equalTo(CGSize.init(width: SCREENWIDTH - 120, height: 44))
         }
         
         self.codeGradientView.layoutIfNeeded();
@@ -261,6 +276,9 @@ extension YLZRouteCodeCellView {
             self.avaterPicView.isHidden = true;
             self.codeGradientView.isHidden = false;
             
+            self.brightCodeView.backgroundColor = YLZColorWhite;
+            self.avaterView.backgroundColor = YLZColorCodeButtonbgColor;
+            
         } else {
             self.brightImageView.image = UIImage.init(named: "ylz_qrcode_bleak");
             self.brightLabel.textColor = YLZColorTitleTwo;
@@ -270,6 +288,9 @@ extension YLZRouteCodeCellView {
             
             self.avaterPicView.isHidden = false;
             self.codeGradientView.isHidden = true;
+            
+            self.brightCodeView.backgroundColor = YLZColorCodeButtonbgColor;
+            self.avaterView.backgroundColor = YLZColorWhite;
         }
     }
     

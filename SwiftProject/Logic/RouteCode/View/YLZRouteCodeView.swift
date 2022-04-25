@@ -219,7 +219,7 @@ extension YLZRouteCodeView:UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) {
-            return 520;
+            return 556;
         } else if (indexPath.section == 1) {
             return 96;
         } else {
