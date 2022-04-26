@@ -124,6 +124,7 @@ extension YLZRouteCodeCellInfoView {
         self.eyeFlag = !self.eyeFlag;
         self.nameLabel.text = self.eyeFlag ? self.nameDesensitizationString : self.nameString;
         self.certLabel.text = self.eyeFlag ? self.certDesensitizationString : self.certString;
+        self.eyeButton.setImage(UIImage(named: self.eyeFlag ? "ylz_route_eye_close" : "ylz_route_eye_open"), for: .normal)
     }
 }
 

@@ -267,17 +267,11 @@
 		8E78C80E2814F38A00D6C59F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8ECBC2D62817DED900071F21 /* CodeView */,
+				8ECBC2D52817DEBB00071F21 /* FooterView */,
+				8ECBC2D42817DEB200071F21 /* HeaderView */,
+				8ECBC2D32817DE9F00071F21 /* TableViewCell */,
 				8E6AD16D2816387D00BD50F6 /* YLZRouteCodeView.swift */,
-				8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */,
-				8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */,
-				8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */,
-				8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */,
-				8E6AD16B281548AB00BD50F6 /* YLZRouteCodeCell.swift */,
-				8E6AD16F28163D0000BD50F6 /* YLZRouteCodeCellView.swift */,
-				8E6AD17128164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift */,
-				8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */,
-				8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */,
-				8E6AD1772816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,6 +341,44 @@
 				8EE07B3F27017D78005B0B40 /* YLZString.swift */,
 			);
 			path = Kit;
+			sourceTree = "<group>";
+		};
+		8ECBC2D32817DE9F00071F21 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */,
+				8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */,
+				8E6AD16B281548AB00BD50F6 /* YLZRouteCodeCell.swift */,
+				8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8ECBC2D42817DEB200071F21 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		8ECBC2D52817DEBB00071F21 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
+		8ECBC2D62817DED900071F21 /* CodeView */ = {
+			isa = PBXGroup;
+			children = (
+				8E6AD16F28163D0000BD50F6 /* YLZRouteCodeCellView.swift */,
+				8E6AD17128164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift */,
+				8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */,
+				8E6AD1772816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift */,
+			);
+			path = CodeView;
 			sourceTree = "<group>";
 		};
 		8EE07B3B27016C87005B0B40 /* OC */ = {

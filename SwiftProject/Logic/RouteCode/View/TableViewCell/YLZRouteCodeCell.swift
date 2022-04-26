@@ -1,20 +1,26 @@
 //
-//  YLZRouteCodeLoadingCell.swift
+//  YLZRouteCodeCell.swift
 //  SwiftProject
 //
-//  Created by stone on 2022/4/25.
+//  Created by stone on 2022/4/24.
 //
 
 import UIKit
 
-class YLZRouteCodeLoadingCell: UITableViewCell {
+class YLZRouteCodeCell: UITableViewCell {
     
+    /**
+     * 0 : 绿码
+     * 1 : 橙码
+     * 2 : 红码
+     */
     var clickNum:Int = 0;
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
         self.contentView.backgroundColor = YLZColorRouteCode;
         self.setUI();
+        self.codeView.clickNum = 0;
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -35,7 +41,7 @@ class YLZRouteCodeLoadingCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.frame = CGRect.init(x: 24, y: 0, width: SCREENWIDTH - 48, height: 400)
+        bgView.frame = CGRect.init(x: 24, y: 0, width: SCREENWIDTH - 48, height: 556)
         bgView.backgroundColor = YLZColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 12.0;
@@ -51,19 +57,24 @@ class YLZRouteCodeLoadingCell: UITableViewCell {
         codeInfoView.frame = CGRect.init(x: 0, y: 0, width: SCREENWIDTH - 48, height: 76);
         codeInfoView.handle = {
            () -> Void in
+//            self?.clickNum = self!.clickNum+1;
+//            if (self!.clickNum>2) {
+//                self?.clickNum = 0;
+//            }
+//            self?.codeView.clickNum = self!.clickNum;
         }
         return codeInfoView
     }()
     
-    lazy var codeView:YLZRouteCodeLoadingCellView = {[weak self] in
-        var codeView = YLZRouteCodeLoadingCellView()
-        codeView.frame = CGRect.init(x: 16, y: 76, width: SCREENWIDTH - (48+32), height: 234);
+    lazy var codeView:YLZRouteCodeCellView = {[weak self] in
+        var codeView = YLZRouteCodeCellView()
+        codeView.frame = CGRect.init(x: 16, y: 76, width: SCREENWIDTH - (48+32), height: 380);
         return codeView
     }()
     
     lazy var bottomView:YLZRouteCodeCellBottomView = {[weak self] in
         var bottomView = YLZRouteCodeCellBottomView()
-        bottomView.frame = CGRect.init(x: 0, y: 300, width: SCREENWIDTH - 48, height: 100);
+        bottomView.frame = CGRect.init(x: 0, y: 456, width: SCREENWIDTH - 48, height: 100);
         return bottomView
     }()
     
@@ -79,5 +90,10 @@ class YLZRouteCodeLoadingCell: UITableViewCell {
     }
 }
 
+extension YLZRouteCodeCell {
+    @objc func toOperate(sender: UIButton) {
+        
+    }
+}
 
 

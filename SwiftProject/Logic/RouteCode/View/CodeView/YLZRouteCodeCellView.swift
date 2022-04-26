@@ -71,7 +71,6 @@ class YLZRouteCodeCellView: UIView {
     }()
     lazy var stateLabel:UILabel = {[weak self] in
         var stateLabel = UILabel()
-        let textString = "绿码：健康状态为低风险"
         return stateLabel
     }()
     lazy var operateView:UIView = {[weak self] in

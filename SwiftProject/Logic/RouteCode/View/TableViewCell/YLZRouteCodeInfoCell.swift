@@ -17,10 +17,12 @@ class YLZRouteCodeInfoCell: UITableViewCell {
             if (funcModel!.topFillet) {
                 let corners:UIRectCorner = [.topLeft,.topRight];
                 self.bgView.corner(byRoundingCorners: corners, radii: 12);
-            }
-            if (funcModel!.bottomFillet) {
+            } else  if (funcModel!.bottomFillet) {
                 let corners: UIRectCorner = [.bottomLeft,.bottomRight];
                 self.bgView.corner(byRoundingCorners: corners, radii: 12);
+            } else {
+                let corners: UIRectCorner = [.topLeft,.topRight,.bottomLeft,.bottomRight];
+                self.bgView.corner(byRoundingCorners: corners, radii: 0);
             }
             self.separatorView.isHidden = funcModel!.bottomFillet;
         }
