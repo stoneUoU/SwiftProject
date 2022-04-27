@@ -1,5 +1,5 @@
 //
-//  YLZRouteCodeLoadingCellView.swift
+//  YLZRouteCodeCellLoadingView.swift
 //  SwiftProject
 //
 //  Created by stone on 2022/4/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YLZRouteCodeLoadingCellView: UIView {
+class YLZRouteCodeCellLoadingView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

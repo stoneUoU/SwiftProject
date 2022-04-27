@@ -40,7 +40,7 @@
 		8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD17128164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift */; };
 		8E6AD17428164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */; };
 		8E6AD1762816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */; };
-		8E6AD1782816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1772816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift */; };
+		8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */; };
 		8E78C8122814F3CA00D6C59F /* YLZRouteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */; };
 		8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */; };
 		8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */; };
@@ -105,7 +105,7 @@
 		8E6AD17128164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellInfoView.swift; sourceTree = "<group>"; };
 		8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellBottomView.swift; sourceTree = "<group>"; };
 		8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeLoadingCell.swift; sourceTree = "<group>"; };
-		8E6AD1772816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeLoadingCellView.swift; sourceTree = "<group>"; };
+		8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellLoadingView.swift; sourceTree = "<group>"; };
 		8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeViewController.swift; sourceTree = "<group>"; };
 		8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeInfoCell.swift; sourceTree = "<group>"; };
 		8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableFooterView.swift; sourceTree = "<group>"; };
@@ -376,7 +376,7 @@
 				8E6AD16F28163D0000BD50F6 /* YLZRouteCodeCellView.swift */,
 				8E6AD17128164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift */,
 				8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */,
-				8E6AD1772816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift */,
+				8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */,
 			);
 			path = CodeView;
 			sourceTree = "<group>";
@@ -578,7 +578,7 @@
 				8E344A82265BD437008AF1BA /* Date+Extension.swift in Sources */,
 				8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */,
 				8E78C81C2814FB3700D6C59F /* YLZFunctionModel.swift in Sources */,
-				8E6AD1782816777000BD50F6 /* YLZRouteCodeLoadingCellView.swift in Sources */,
+				8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */,
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
 				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
 				8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */,

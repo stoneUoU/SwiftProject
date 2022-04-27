@@ -55,8 +55,8 @@ class YLZRouteCodeLoadingCell: UITableViewCell {
         return codeInfoView
     }()
     
-    lazy var codeView:YLZRouteCodeLoadingCellView = {[weak self] in
-        var codeView = YLZRouteCodeLoadingCellView()
+    lazy var codeView:YLZRouteCodeCellLoadingView = {[weak self] in
+        var codeView = YLZRouteCodeCellLoadingView()
         codeView.frame = CGRect.init(x: 16, y: 76, width: SCREENWIDTH - (48+32), height: 224);
         return codeView
     }()

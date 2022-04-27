@@ -21,7 +21,7 @@ class YLZRouteCodeCellBottomView: UIView {
     func setUI() {
         self.addSubview(self.leftIconImageView);
         self.addSubview(self.rightIconImageView);
-        
+        self.addSubview(self.dashImageView);
         self.addSubview(self.searchLabel);
         self.addSubview(self.arrowIconImageView);
         self.addSubview(self.infoLabel);
@@ -54,17 +54,23 @@ class YLZRouteCodeCellBottomView: UIView {
         self.processImageView.snp.makeConstraints{ (make) in
             make.bottom.right.equalTo(self);
         }
+        YLZView.drawLine(imageView: self.dashImageView, withDashColor: YLZColorTitleThree);
     }
     lazy var leftIconImageView:UIImageView = {[weak self] in
         var familyIconImageView = UIImageView()
         familyIconImageView.image = UIImage.init(named: "ylz_left_jiantou")
         return familyIconImageView
     }()
-    
     lazy var rightIconImageView:UIImageView = {[weak self] in
         var rightIconImageView = UIImageView()
         rightIconImageView.image = UIImage.init(named: "ylz_right_jiantou")
         return rightIconImageView
+    }()
+    
+    lazy var dashImageView:UIImageView = {[weak self] in
+        var dashImageView = UIImageView()
+        dashImageView.frame = CGRect.init(x: 16, y: 16, width: SCREENWIDTH - (48+32), height: 2)
+        return dashImageView
     }()
     lazy var searchLabel:UILabel = {[weak self] in
         var searchLabel = UILabel()
