@@ -33,7 +33,6 @@
 		8E344A99265BD5B6008AF1BA /* AlamofireExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A94265BD5B6008AF1BA /* AlamofireExtend.swift */; };
 		8E344A9A265BD5B6008AF1BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A95265BD5B6008AF1BA /* API.swift */; };
 		8E344A9B265BD5B6008AF1BA /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */; };
-		8E344A9C265BD5B6008AF1BA /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A97265BD5B6008AF1BA /* HttpTool.swift */; };
 		8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD16B281548AB00BD50F6 /* YLZRouteCodeCell.swift */; };
 		8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD16D2816387D00BD50F6 /* YLZRouteCodeView.swift */; };
 		8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD16F28163D0000BD50F6 /* YLZRouteCodeCellView.swift */; };
@@ -98,7 +97,6 @@
 		8E344A94265BD5B6008AF1BA /* AlamofireExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtend.swift; sourceTree = "<group>"; };
 		8E344A95265BD5B6008AF1BA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
-		8E344A97265BD5B6008AF1BA /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		8E6AD16B281548AB00BD50F6 /* YLZRouteCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCell.swift; sourceTree = "<group>"; };
 		8E6AD16D2816387D00BD50F6 /* YLZRouteCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeView.swift; sourceTree = "<group>"; };
 		8E6AD16F28163D0000BD50F6 /* YLZRouteCodeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellView.swift; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 				8E344A94265BD5B6008AF1BA /* AlamofireExtend.swift */,
 				8E344A95265BD5B6008AF1BA /* API.swift */,
 				8E344A96265BD5B6008AF1BA /* AuthPlugin.swift */,
-				8E344A97265BD5B6008AF1BA /* HttpTool.swift */,
 			);
 			path = Moya;
 			sourceTree = "<group>";
@@ -596,7 +593,6 @@
 				8E344A84265BD437008AF1BA /* UIView+Extension.swift in Sources */,
 				8E344A41265BCAF7008AF1BA /* Const.swift in Sources */,
 				8E344A8F265BD569008AF1BA /* AppInfo.swift in Sources */,
-				8E344A9C265BD5B6008AF1BA /* HttpTool.swift in Sources */,
 				8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */,
 				8E344A60265BCE45008AF1BA /* Toast.swift in Sources */,
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
@@ -752,7 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M6V744TAM;
+				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				INFOPLIST_FILE = "SwiftProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -760,7 +756,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stone.SwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -774,7 +770,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8M6V744TAM;
+				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				INFOPLIST_FILE = "SwiftProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -782,7 +778,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stone.SwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
