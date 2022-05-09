@@ -75,12 +75,12 @@ class YLZHealthCodeViewController:UIViewController {
     func setMas() {
         self.statusView.snp.makeConstraints { (make) in
             make.top.left.equalTo(self.view)
-            make.size.equalTo(CGSize.init(width: SCREENWIDTH, height: StatusBarH))
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH, height: HiStatusBarH))
         }
         self.navigationView.snp.makeConstraints { (make) in
             make.top.equalTo(self.statusView.snp.bottom)
             make.left.equalTo(self.view)
-            make.size.equalTo(CGSize.init(width: SCREENWIDTH, height: NavigationBarH))
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH, height: HiNavigationBarH))
         }
         self.titleLabel.snp.makeConstraints { (make) in
             make.center.equalTo(self.navigationView);

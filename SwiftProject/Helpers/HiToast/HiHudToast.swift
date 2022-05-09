@@ -1,5 +1,5 @@
 //
-//  HudToast.swift
+//  HiHudToast.swift.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/5/24.
@@ -7,7 +7,7 @@
 
 import MBProgressHUD
 
-class HudToast {
+public class HiHudToast {
     static func showHUD(ctrl:UIViewController) {
         let hud = MBProgressHUD.showAdded(to: ctrl.view, animated: true)
         hud.mode = MBProgressHUDMode.indeterminate

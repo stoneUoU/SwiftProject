@@ -61,7 +61,7 @@ extension AppWebViewController:WKNavigationDelegate,WKUIDelegate{//用于与JS�
             (make) -> Void in
             make.bottom.equalTo(self.navigationView.snp.bottom)
             make.left.equalTo(0)
-            make.width.equalTo(SCREENWIDTH)
+            make.width.equalTo(HiSCREENWIDTH)
             make.height.equalTo(2)
         }
         let encodeString = URL.init(string: "")
@@ -75,10 +75,10 @@ extension AppWebViewController:WKNavigationDelegate,WKUIDelegate{//用于与JS�
         self.view.addSubview(self.webView)
         self.webView.snp.makeConstraints{
             (make) -> Void in
-            make.top.equalTo(self.view.snp.top).offset(StatusBarAndNavigationBarH);
+            make.top.equalTo(self.view.snp.top).offset(HiStatusBarAndNavigationBarH);
             make.left.equalTo(0)
-            make.width.equalTo(SCREENWIDTH)
-            make.bottom.equalTo(self.view.snp.bottom).offset(-TabbarSafeBotM)
+            make.width.equalTo(HiSCREENWIDTH)
+            make.bottom.equalTo(self.view.snp.bottom).offset(-HiTabbarSafeBotM)
         }
         self.webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         

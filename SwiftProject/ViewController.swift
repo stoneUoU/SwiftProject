@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     
     func toShort() {
         AlamofireExtend.requestData(urlString, .GET, parameters: nil) { (json:Any) in
-            STLog("________\(json)");
+            YLZLog("________\(json)");
 //            if JSON(json)["code"] == 1 {
 //                let codeString = "\(JSON(json)["short"])";
 //                let pasteboard:UIPasteboard = UIPasteboard.general;

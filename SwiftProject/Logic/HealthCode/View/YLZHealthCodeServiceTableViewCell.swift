@@ -116,7 +116,7 @@ extension YLZHealthCodeServiceTableViewCell:UICollectionViewDelegate,UICollectio
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize.init(width: (SCREENWIDTH - 42)/2, height: 36);
+        return CGSize.init(width: (HiSCREENWIDTH - 42)/2, height: 36);
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

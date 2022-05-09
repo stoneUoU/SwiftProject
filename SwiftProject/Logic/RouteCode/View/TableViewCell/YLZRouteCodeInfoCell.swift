@@ -66,7 +66,7 @@ class YLZRouteCodeInfoCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.frame = CGRect.init(x: 24, y: 0, width: SCREENWIDTH - 48, height: 64)
+        bgView.frame = CGRect.init(x: 24, y: 0, width: HiSCREENWIDTH - 48, height: 64)
         bgView.backgroundColor = YLZColorWhite;
 //        bgView.layer.masksToBounds = true;
 //        bgView.layer.cornerRadius = 10.0;

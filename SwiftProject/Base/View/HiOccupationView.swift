@@ -1,14 +1,15 @@
 //
-//  PlaceholderView.swift
+//  HiOccupationView.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/5/24.
 //
 
 import UIKit
+import SnapKit
 
 /** 占位图的类型 */
-@objc enum PlaceholderViewType : Int {
+@objc enum HiOccupationViewType : Int {
     /** 没网 */
     case noNetwork = 1
     /** 网络请求加载失败 */
@@ -17,21 +18,21 @@ import UIKit
     case noSearchData
 }
 
-@objc protocol PlaceholderViewDelegate: class {
-    func placeholderView(placeholderView : PlaceholderView,sender:UIButton)
+@objc protocol HiOccupationViewDelegate: class {
+    func excute(occupationView : HiOccupationView,sender:UIButton)
 }
 
-class PlaceholderView: UIView {
+class HiOccupationView: UIView {
     
-    @objc weak var delegate : PlaceholderViewDelegate?
-    @objc var type: PlaceholderViewType
+    @objc weak var delegate : HiOccupationViewDelegate?
+    @objc var type: HiOccupationViewType
     
     var outerView:UIView = UIView()
     var imageView:UIImageView = UIImageView()
     var titleLabel:UILabel = UILabel()
     var reloadButton:UIButton!
     
-    @objc init(frame: CGRect, type: PlaceholderViewType,delegate:PlaceholderViewDelegate?) {
+    @objc init(frame: CGRect, type: HiOccupationViewType,delegate:HiOccupationViewDelegate?) {
         self.type = type
         self.delegate = delegate
         super.init(frame: frame)
@@ -39,7 +40,7 @@ class PlaceholderView: UIView {
         self.setUI()
     }
     
-    @objc init(frame: CGRect, type: PlaceholderViewType,delegate:PlaceholderViewDelegate?,bgColor:UIColor) {
+    @objc init(frame: CGRect, type: HiOccupationViewType,delegate:HiOccupationViewDelegate?,bgColor:UIColor) {
         self.type = type
         self.delegate = delegate
         super.init(frame: frame)
@@ -115,9 +116,7 @@ class PlaceholderView: UIView {
     // MARK: - 重新加载按钮点击
     /** 重新加载按钮点击 */
     @objc func reloadButtonClicked(sender: UIButton) {
-        // 代理方执行方法
-        STLog("重新加载按钮点击");
-        self.delegate?.placeholderView(placeholderView: self, sender: sender);
+        self.delegate?.excute(occupationView:self, sender: sender);
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

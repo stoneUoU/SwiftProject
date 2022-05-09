@@ -69,7 +69,7 @@ class YLZRouteCodeCellBottomView: UIView {
     
     lazy var dashImageView:UIImageView = {[weak self] in
         var dashImageView = UIImageView()
-        dashImageView.frame = CGRect.init(x: 16, y: 16, width: SCREENWIDTH - (48+32), height: 2)
+        dashImageView.frame = CGRect.init(x: 16, y: 16, width: HiSCREENWIDTH - (48+32), height: 2)
         return dashImageView
     }()
     lazy var searchLabel:UILabel = {[weak self] in

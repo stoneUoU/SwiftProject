@@ -38,7 +38,7 @@ class YLZRouteCodeRecordCell: UITableViewCell {
         self.leftView.snp.makeConstraints{ (make) in
             make.centerY.equalTo(self.contentView);
             make.left.equalTo(self.contentView.snp.left).offset(24);
-            make.size.equalTo(CGSize.init(width: (SCREENWIDTH - 48 - 16)/2, height: 96))
+            make.size.equalTo(CGSize.init(width: (HiSCREENWIDTH - 48 - 16)/2, height: 96))
         }
         self.titleLeftLabel.snp.makeConstraints{ (make) in
             make.top.equalTo(self.leftView.snp.top).offset(8);
@@ -61,7 +61,7 @@ class YLZRouteCodeRecordCell: UITableViewCell {
         self.rightView.snp.makeConstraints{ (make) in
             make.centerY.equalTo(self.contentView);
             make.right.equalTo(self.contentView.snp.right).offset(-24);
-            make.size.equalTo(CGSize.init(width: (SCREENWIDTH - 48 - 16)/2, height: 96))
+            make.size.equalTo(CGSize.init(width: (HiSCREENWIDTH - 48 - 16)/2, height: 96))
         }
         self.titleRightLabel.snp.makeConstraints{ (make) in
             make.top.equalTo(self.rightView.snp.top).offset(8);

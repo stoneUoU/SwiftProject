@@ -130,17 +130,17 @@ class YLZHealthCodeTableViewCell: UITableViewCell {
         self.familyButton.snp.makeConstraints{ (make) in
             make.bottom.equalTo(self.bgView.snp.bottom);
             make.left.equalTo(self.bgView);
-            make.size.equalTo(CGSize.init(width: (SCREENWIDTH - 32)/3, height: 44));
+            make.size.equalTo(CGSize.init(width: (HiSCREENWIDTH - 32)/3, height: 44));
         }
         self.onlineButton.snp.makeConstraints{ (make) in
             make.bottom.equalTo(self.bgView.snp.bottom);
             make.left.equalTo(self.familyButton.snp.right);
-            make.size.equalTo(CGSize.init(width: (SCREENWIDTH - 32)/3, height: 44));
+            make.size.equalTo(CGSize.init(width: (HiSCREENWIDTH - 32)/3, height: 44));
         }
         self.serviceButton.snp.makeConstraints{ (make) in
             make.bottom.equalTo(self.bgView.snp.bottom);
             make.left.equalTo(self.onlineButton.snp.right);
-            make.size.equalTo(CGSize.init(width: (SCREENWIDTH - 32)/3, height: 44));
+            make.size.equalTo(CGSize.init(width: (HiSCREENWIDTH - 32)/3, height: 44));
         }
         self.dashImageView.snp.makeConstraints{ (make) in
             make.bottom.equalTo(self.familyButton.snp.top);

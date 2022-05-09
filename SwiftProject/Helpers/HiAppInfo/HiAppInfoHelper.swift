@@ -1,5 +1,5 @@
 //
-//  AppInfo.swift
+//  HiAppInfoHelper.swift
 //  OLMovie
 //
 //  Created by lx on 2018/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppInfo: NSObject {
+class HiAppInfoHelper: NSObject {
     let infoDictionary = Bundle.main.infoDictionary
     func appDisplayName() -> String {
         return (infoDictionary?["CFBundleDisplayName"] as AnyObject) as! String //程序名称

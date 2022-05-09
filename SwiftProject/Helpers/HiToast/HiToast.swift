@@ -16,7 +16,7 @@ enum ToastShowType {
 let kDefaultForwardAnimationDuration:CFTimeInterval = 0.5
 let kDefaultBackwardAnimationDuration:CFTimeInterval = 0.5
 let kDefautlWaitAnimationDuration:CFTimeInterval = 1.0
-let kDefaultTopMargin:CGFloat = IS_IPHONE_X ? 108 : 84
+let kDefaultTopMargin:CGFloat = HiIPhoneX ? 108 : 84
 let kDefaultTextInset:CGFloat = 12
 
 class Toast: UILabel,CAAnimationDelegate {

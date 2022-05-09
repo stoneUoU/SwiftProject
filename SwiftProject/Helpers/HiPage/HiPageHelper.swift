@@ -1,5 +1,5 @@
 //
-//  PageTool.swift
+//  HiPageHelper.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/5/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PageTool: NSObject {
+public class HiPageHelper: NSObject {
     
     @objc static func pushToNextCtrl(currentController:UIViewController,targetController:UIViewController){
         DispatchQueue.main.async{

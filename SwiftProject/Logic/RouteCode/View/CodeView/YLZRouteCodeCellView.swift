@@ -255,7 +255,7 @@ extension YLZRouteCodeCellView {
         self.scanButton.snp.makeConstraints{ (make) in
             make.centerX.equalTo(self);
             make.top.equalTo(self.stateLabel.snp.bottom).offset(13);
-            make.size.equalTo(CGSize.init(width: SCREENWIDTH - 120, height: 44))
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH - 120, height: 44))
         }
         
         self.codeGradientView.layoutIfNeeded();

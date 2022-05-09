@@ -70,12 +70,12 @@ extension AppBaseViewController {
     func setStatusAndNavigationMas(ifLine:Bool) {
         self.statusView.snp.makeConstraints { (make) in
             make.top.left.equalTo(self.view)
-            make.size.equalTo(CGSize.init(width: SCREENWIDTH, height: StatusBarH))
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH, height: HiStatusBarH))
         }
         self.navigationView.snp.makeConstraints { (make) in
             make.top.equalTo(self.statusView.snp.bottom)
             make.left.equalTo(self.view)
-            make.size.equalTo(CGSize.init(width: SCREENWIDTH, height: NavigationBarH))
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH, height: HiNavigationBarH))
         }
         self.leftButton.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.navigationView)
@@ -83,11 +83,11 @@ extension AppBaseViewController {
         }
         self.centerLabel.snp.makeConstraints { (make) in
             make.center.equalTo(self.navigationView)
-            make.width.equalTo(2*SCREENWIDTH/3)
+            make.width.equalTo(2*HiSCREENWIDTH/3)
         }
         self.rightButton.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.navigationView)
-            make.height.equalTo(NavigationBarH)
+            make.height.equalTo(HiNavigationBarH)
             make.right.equalTo(-15)
         }
         if ifLine == true {
@@ -96,7 +96,7 @@ extension AppBaseViewController {
             self.lineView.snp.makeConstraints { (make) in
                 make.bottom.equalTo(self.navigationView.snp.bottom).offset(0)
                 make.height.equalTo(CGFloat(0.7))
-                make.width.equalTo(SCREENWIDTH)
+                make.width.equalTo(HiSCREENWIDTH)
             }
         }
     }
@@ -111,7 +111,7 @@ extension AppBaseViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @objc func toRight(_ sender :UIButton){
-        STLog("等继承者来完成相应功能")
+        YLZLog("等继承者来完成相应功能")
     }
     
 }

@@ -42,9 +42,9 @@ extension String {
     }
     
     func replacePhone() -> String {
-        if !MobileIsValidated(vStr: self) {
+        if !HiRegularHelper.mobileIsValidated(vStr: self) {
             return self;
-        }else{
+        } else {
             let start = self.index(self.startIndex, offsetBy: 3)
             let end = self.index(self.startIndex, offsetBy: 7)
             let range = Range(uncheckedBounds: (lower: start, upper: end))

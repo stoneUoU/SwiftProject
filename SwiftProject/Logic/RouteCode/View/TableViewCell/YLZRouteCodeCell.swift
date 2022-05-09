@@ -41,7 +41,7 @@ class YLZRouteCodeCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.frame = CGRect.init(x: 24, y: 0, width: SCREENWIDTH - 48, height: 556)
+        bgView.frame = CGRect.init(x: 24, y: 0, width: HiSCREENWIDTH - 48, height: 556)
         bgView.backgroundColor = YLZColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 12.0;
@@ -54,7 +54,7 @@ class YLZRouteCodeCell: UITableViewCell {
     
     lazy var codeInfoView:YLZRouteCodeCellInfoView = {[weak self] in
         var codeInfoView = YLZRouteCodeCellInfoView()
-        codeInfoView.frame = CGRect.init(x: 0, y: 0, width: SCREENWIDTH - 48, height: 76);
+        codeInfoView.frame = CGRect.init(x: 0, y: 0, width: HiSCREENWIDTH - 48, height: 76);
         codeInfoView.handle = {
            () -> Void in
 //            self?.clickNum = self!.clickNum+1;
@@ -68,13 +68,13 @@ class YLZRouteCodeCell: UITableViewCell {
     
     lazy var codeView:YLZRouteCodeCellView = {[weak self] in
         var codeView = YLZRouteCodeCellView()
-        codeView.frame = CGRect.init(x: 16, y: 76, width: SCREENWIDTH - (48+32), height: 380);
+        codeView.frame = CGRect.init(x: 16, y: 76, width: HiSCREENWIDTH - (48+32), height: 380);
         return codeView
     }()
     
     lazy var bottomView:YLZRouteCodeCellBottomView = {[weak self] in
         var bottomView = YLZRouteCodeCellBottomView()
-        bottomView.frame = CGRect.init(x: 0, y: 456, width: SCREENWIDTH - 48, height: 100);
+        bottomView.frame = CGRect.init(x: 0, y: 456, width: HiSCREENWIDTH - 48, height: 100);
         return bottomView
     }()
     

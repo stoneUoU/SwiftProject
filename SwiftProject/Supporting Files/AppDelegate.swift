@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func initWindow() {
-        self.window = UIWindow(frame: SCREENBOUNDS);
+        self.window = UIWindow(frame: HiSCREENBOUNDS);
         let animate = CATransition();
         animate.type = CATransitionType(rawValue: "rippleEffect")
         animate.duration = 1.0;
