@@ -29,8 +29,8 @@ class AppTabbarViewController: UITabBarController {
     
     private func setUI() {
         
-        addViewController(ViewController(), "首页", "tabbar_home")
-        addViewController(ViewController(), "我的", "tabbar_mine")
+        addViewController(ViewController(), "首页", "hi_tabbar_home")
+        addViewController(ViewController(), "我的", "hi_tabbar_mine")
     }
     
     func addObserver() {

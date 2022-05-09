@@ -14,5 +14,6 @@ target 'SwiftProject' do
     pod 'Moya'
     pod "MJRefresh"
     pod "Kingfisher" #, '5.14.1'
+    pod 'Reveal-SDK','~>4', :configurations => ['Debug']
     
 end
