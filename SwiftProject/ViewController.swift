@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     func toShort() {
-        AlamofireExtend.requestData(urlString, .GET, parameters: nil) { (json:Any) in
+        HiAlamofire.requestData(urlString, .GET, parameters: nil) { (json:Any) in
             YLZLog("________\(json)");
 //            if JSON(json)["code"] == 1 {
 //                let codeString = "\(JSON(json)["short"])";

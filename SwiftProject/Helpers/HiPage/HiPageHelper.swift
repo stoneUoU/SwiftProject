@@ -54,7 +54,7 @@ public class HiPageHelper: NSObject {
         }
     }
     
-    @objc class  func getCurrentController() -> UIViewController? {
+    @objc class  func fetchCurrentController() -> UIViewController? {
         guard let window = UIApplication.shared.windows.first else {
             return nil
         }

@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 // Swift的枚举支持任意数据类型,不需要,分隔
 
-enum MGHTTPMethod {
+enum HiHTTPMethod {
     case GET
     case POST
 }
@@ -23,8 +23,8 @@ struct AlamofireAppManager {
     }()
 }
 
-class AlamofireExtend {
-    class func requestData(_ url:String, _ type : MGHTTPMethod, parameters : [String : Any]? = nil, finishedCallback :  @escaping (_ result : Any) -> ()) {
+class HiAlamofire {
+    class func requestData(_ url:String, _ type : HiHTTPMethod, parameters : [String : Any]? = nil, finishedCallback :  @escaping (_ result : Any) -> ()) {
         // 1.获取类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
         let headers: HTTPHeaders = [
@@ -46,7 +46,6 @@ class AlamofireExtend {
         }
     }
     
-    @available(iOS, introduced: 2.0, deprecated: 8.0, message: "request方法已过期, 请使用requestString 或者 requestJson")
     class func request(_ url: String, method: HTTPMethod = HTTPMethod.get, parameters: Parameters? = nil, encoding:ParameterEncoding = URLEncoding.default,finish: @escaping (Any)->(), failure: @escaping (Error?)->()) {
         
         Alamofire.request(url, method: method, parameters: parameters, encoding: encoding).responseJSON { (response) in
@@ -101,7 +100,6 @@ class AlamofireExtend {
     ///   - finish: 成功回调
     ///   - failure: 失败回调
     class func requestJSON(_ url: String, method: HTTPMethod = HTTPMethod.get, parameters: Parameters? = nil, encoding:ParameterEncoding = URLEncoding.default,finish: @escaping (Any)->(), failure: @escaping (Error?)->()) {
-//        GFLog("___________\(parameters)");
         Alamofire.request(url, method: method, parameters: parameters, encoding: encoding)
             .responseJSON { (response) in
             if response.result.isSuccess {
