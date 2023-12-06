@@ -51,8 +51,8 @@ class ViewController: UIViewController {
     }
     
     func toShort() {
-        HiAlamofire.requestData(urlString, .GET, parameters: nil) { (json:Any) in
-            YLZLog("________\(json)");
+//        HiAlamofire.requestData(urlString, .GET, parameters: nil) { (json:Any) in
+//            YLZLog("________\(json)");
 //            if JSON(json)["code"] == 1 {
 //                let codeString = "\(JSON(json)["short"])";
 //                let pasteboard:UIPasteboard = UIPasteboard.general;
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
 //            } else {
 //                StToast().showToast(text:"\(JSON(json)["msg"])",isWhite: false,type:Pos)
 //            }
-        }
+//        }
     }
     
     @objc func toExcute(_ sender: UIButton) {

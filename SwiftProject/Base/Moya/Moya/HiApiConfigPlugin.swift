@@ -6,7 +6,6 @@
 //
 
 import Moya
-import Result
 import SwiftyJSON
 import MBProgressHUD
 
