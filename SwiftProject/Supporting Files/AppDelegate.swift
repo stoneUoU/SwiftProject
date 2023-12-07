@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import Flutter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    lazy var flutterEngine = FlutterEngine(name: "hi_flutter_module_engine");
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.initWindow();
+        self.flutterEngine.run();
         return true
     }
     
@@ -23,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         animate.duration = 1.0;
         self.window?.layer.add(animate, forKey: nil)
         self.window?.makeKeyAndVisible()
-        let tabbarView = YLZRouteCodeViewController();
+        let tabbarView = ViewController();
+//        let tabbarView = YLZRouteCodeViewController();
 //        let tabbarView = YLZHealthCodeViewController();
         self.window?.rootViewController = tabbarView;
     }

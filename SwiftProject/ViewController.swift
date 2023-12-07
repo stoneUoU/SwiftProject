@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Flutter
 
 class ViewController: UIViewController {
     
@@ -51,6 +51,12 @@ class ViewController: UIViewController {
     }
     
     func toShort() {
+        
+        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine;
+        let flutterViewController =
+          FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+        self.present(flutterViewController, animated: true, completion: nil)
+
 //        HiAlamofire.requestData(urlString, .GET, parameters: nil) { (json:Any) in
 //            YLZLog("________\(json)");
 //            if JSON(json)["code"] == 1 {
