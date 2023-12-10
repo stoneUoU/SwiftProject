@@ -171,6 +171,9 @@ class YLZRouteCodeViewController:UIViewController {
     lazy var routeCodeView: YLZRouteCodeView = {[weak self] in
         let routeCodeView = YLZRouteCodeView(frame:.zero)
         routeCodeView.routeCodeViewDelegate = self;
+//        routeCodeView.isUserInteractionEnabled = true;
+//        let ges:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self?.toExcute(sender:)));
+//        routeCodeView.addGestureRecognizer(ges);
         routeCodeView.handle = { [weak self]  in
         };
         return routeCodeView
@@ -180,6 +183,12 @@ class YLZRouteCodeViewController:UIViewController {
 //MARK: IB-Action
 extension YLZRouteCodeViewController {
     @objc func toOperate(sender: UIButton) {
+        self.navigationController?.popViewController(animated: true);
+    }
+    
+    @objc func toExcute(sender: UITapGestureRecognizer) {
+//        debugPrint("toExcute");
+        self.navigationController?.popViewController(animated: true);
     }
 }
 //MARK: Notice

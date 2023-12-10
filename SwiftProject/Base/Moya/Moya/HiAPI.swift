@@ -63,7 +63,7 @@ public struct HiAPI {
         error errorCallback: @escaping (String) -> Void,
         failure failureCallback: @escaping (MoyaError) -> Void
         ) {
-            MoyaProvider<MultiTarget>(endpointClosure: endpointClosure, requestClosure: requestClosure, plugins: [networkPlugin,HiApiConfigPlugin(configTarget: target)], trackInflights: false).request(MultiTarget(target as! TargetType)) { result in
+            MoyaProvider<MultiTarget>(endpointClosure: endpointClosure, requestClosure: requestClosure, plugins: [networkPlugin,HiApiConfigPlugin(configTarget: target)], trackInflights: false).request(MultiTarget(target as TargetType)) { result in
             switch result {
             case let .success(response):
                 do {

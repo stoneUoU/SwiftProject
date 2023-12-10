@@ -168,6 +168,7 @@ class YLZHealthCodeViewController:UIViewController {
 //MARK: IB-Action
 extension YLZHealthCodeViewController {
     @objc func toOperate(sender: UIButton) {
+        self.navigationController?.popViewController(animated: true);
     }
 }
 //MARK: Notice

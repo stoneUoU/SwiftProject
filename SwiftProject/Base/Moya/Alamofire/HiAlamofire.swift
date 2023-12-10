@@ -28,20 +28,31 @@ class HiAlamofire {
     class func requestData<T: Decodable>(_ url:String, _ requestType : HiHTTPMethod, parameters : [String : Any]? = nil, of type: T.Type = T.self, finishedCallback :  @escaping (_ result : Any) -> ()) {
         // 1.获取类型
         let method = requestType == .GET ? HTTPMethod.get : HTTPMethod.post
-        let headers: HTTPHeaders = [
-            "Content-Type": "application/json"
+        let headers: HTTPHeaders =  [
+            "Content-Type": "application/json",
+            "Accept-Language": "zh-Hans-CN;q=1, en-CN;q=0.9",
+            "User-Agent": "HealthCommunity/1.3.7 (iPhone; iOS 15.4.1; Scale/2.00)",
+            "appId": "19E179E5DC29C05E65B90CDE57A1C7E5",
+            "appVersion": "1.3.7",
+            "channel": "app",
+            "operateSystem": "iOS",
+            "operateSystemVersion": "15.4.1",
+            "x-tif-nonce": "15.4.1",
+            "x-tif-paasid": "sn7LxDszc7Ib4bOB",
+            "x-tif-signature": "a6ce2d32664636b8383a64017105e8ab9cd71975f543b9b437469aa3d444d4a2",
+            "x-tif-timestamp": "1652165413"
         ]
         AF.request(url, method: method, parameters: parameters, headers:headers).responseDecodable(of: type){ response in
             switch response.result {
-            case .failure:
-                let result = [String:Bool]()
-                finishedCallback(result)
             case .success:
                 // 3.获取结果
-                guard let result = response.data else {
+                guard response.data != nil else {
                     return
                 }
                 // 4.将结果回调出去
+                finishedCallback(response.value)
+            case .failure:
+                let result = [String:Bool]()
                 finishedCallback(result)
             }
         }

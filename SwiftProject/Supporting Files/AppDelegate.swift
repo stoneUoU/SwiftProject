@@ -29,7 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabbarView = ViewController();
 //        let tabbarView = YLZRouteCodeViewController();
 //        let tabbarView = YLZHealthCodeViewController();
-        self.window?.rootViewController = tabbarView;
+        
+        let targetVC:UINavigationController = UINavigationController.init(rootViewController: tabbarView)
+        self.window?.rootViewController = targetVC;
     }
     func applicationWillResignActive(_ application: UIApplication) {
     }

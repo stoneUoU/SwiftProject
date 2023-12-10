@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,6 +47,8 @@
 		8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAF2700344F00A9039B /* YLZFont.swift */; };
 		8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */; };
 		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
+		8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */; };
+		8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */; };
 		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
 		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
@@ -118,6 +120,8 @@
 		8EA21EAF2700344F00A9039B /* YLZFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFont.swift; sourceTree = "<group>"; };
 		8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZPaddingLabel.swift; sourceTree = "<group>"; };
 		8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZMSTabBar.swift; sourceTree = "<group>"; };
+		8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiModel.swift; sourceTree = "<group>"; };
+		8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelManager.swift; sourceTree = "<group>"; };
 		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
@@ -258,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */,
+				8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				8EFFDA162828B61F000EA7D6 /* Helpers */,
 				8E344A45265BCC66008AF1BA /* Supporting Files */,
 				8EFB12DD265BB46C007D9FE1 /* ViewController.swift */,
+				8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
@@ -677,6 +683,7 @@
 				8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */,
 				8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */,
 				8EFFDA2A2828B61F000EA7D6 /* HiPageHelper.swift in Sources */,
+				8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */,
 				8EFFDA282828B61F000EA7D6 /* HiToast.swift in Sources */,
 				8EFFDA6B282A4A62000EA7D6 /* HiApiConfig.swift in Sources */,
 				8EFFDA2C2828B61F000EA7D6 /* HiRegularHelper.swift in Sources */,
@@ -717,6 +724,7 @@
 				8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */,
 				8EFFDA122828B596000EA7D6 /* HiMarqueeView.swift in Sources */,
 				8EFFDA142828B596000EA7D6 /* HiOccupationView.swift in Sources */,
+				8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */,
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
 				8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */,
 				8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */,
