@@ -62,9 +62,9 @@ class ViewController: UIViewController {
         let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine;
         let flutterViewController =
         FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil);
-        let methodChannel:FlutterMethodChannel = FlutterMethodChannel.init(name: "hi_flutter_module_flutter_to_iOS", binaryMessenger: flutterViewController.binaryMessenger);
+        let methodChannel:FlutterMethodChannel = FlutterMethodChannel.init(name: "EVENT_FLUTTER_SEND_MESSAGE_IOS", binaryMessenger: flutterViewController.binaryMessenger);
         
-        self.channel = FlutterEventChannel(name: "hi_flutter_module_iOS_to_flutter", binaryMessenger: flutterViewController.binaryMessenger)
+        self.channel = FlutterEventChannel(name: "EVENT_IOS_SEND_MESSAGE_FLUTTER", binaryMessenger: flutterViewController.binaryMessenger)
         self.channel?.setStreamHandler(self)
 //        
         methodChannel.setMethodCallHandler { (call:FlutterMethodCall, result:@escaping FlutterResult) in
