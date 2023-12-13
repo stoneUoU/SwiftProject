@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007652B294CBF006C7D2A /* RequestViewController.swift */; };
+		8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */; };
 		8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */; };
 		8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */; };
 		8E344A41265BCAF7008AF1BA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A40265BCAF7008AF1BA /* Const.swift */; };
@@ -80,6 +82,8 @@
 /* Begin PBXFileReference section */
 		1F49EC176A0FC65056AB9AFF /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4D30EB616FAE162F5B05E2 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8E0007652B294CBF006C7D2A /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveViewController.swift; sourceTree = "<group>"; };
 		8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseNavigationController.swift; sourceTree = "<group>"; };
 		8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
 		8E344A40265BCAF7008AF1BA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -164,9 +168,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0007692B294D54006C7D2A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		8E344A39265BCA63008AF1BA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E0007692B294D54006C7D2A /* Event */,
 				8EE07B3B27016C87005B0B40 /* OC */,
 				8EA21EAE2700343900A9039B /* Kit */,
 				8E344A92265BD5B6008AF1BA /* Moya */,
@@ -425,7 +438,8 @@
 				8EFFDA162828B61F000EA7D6 /* Helpers */,
 				8E344A45265BCC66008AF1BA /* Supporting Files */,
 				8EFB12DD265BB46C007D9FE1 /* ViewController.swift */,
-				8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */,
+				8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */,
+				8E0007652B294CBF006C7D2A /* RequestViewController.swift */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
@@ -711,6 +725,7 @@
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
 				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */,
+				8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */,
 				8EFFDA6C282A4A63000EA7D6 /* HiAPI.swift in Sources */,
 				8EFFDA132828B596000EA7D6 /* HiCarouselView.swift in Sources */,
 				8EFFDA152828B596000EA7D6 /* HiMarqueeViewCell.swift in Sources */,
@@ -718,6 +733,7 @@
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
 				8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */,
 				8E344A84265BD437008AF1BA /* UIView+Extension.swift in Sources */,
+				8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */,
 				8E344A41265BCAF7008AF1BA /* Const.swift in Sources */,
 				8EFFDA2D2828B61F000EA7D6 /* HiJsonStrHelper.swift in Sources */,
 				8EFFDA2E2828B61F000EA7D6 /* HiJsonLoadHelper.swift in Sources */,
