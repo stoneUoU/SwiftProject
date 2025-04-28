@@ -90,7 +90,6 @@ class RequestViewController: UIViewController {
                 
         HiAlamofire.requestData(self.parseString, .GET,parameters: nil,of: HiBaseModel<User>.self) { result in
             let resp:HiBaseModel = result as! HiBaseModel<User>;
-            debugPrint(resp.toJSON());
         }
 
 //        AF.request(urlString).responseDecodable(of: HiModel.self) { response in

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,7 @@
 		8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */; };
 		8E78C81C2814FB3700D6C59F /* YLZFunctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */; };
 		8E78C81E2815334000D6C59F /* YLZRouteCodeRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */; };
+		8E95E6A22D803248005FF900 /* member_plus.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8E95E6A12D803248005FF900 /* member_plus.svg */; };
 		8EA21E9D27002E2000A9039B /* YLZHealthCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */; };
 		8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */; };
 		8EA21EA127002E5100A9039B /* YLZHealthCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA027002E5100A9039B /* YLZHealthCodeTableFooterView.swift */; };
@@ -51,6 +52,8 @@
 		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
 		8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */; };
 		8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */; };
+		8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCBE3C2BFC7C7800761070 /* A.swift */; };
+		8ECCBE3F2BFC7C8300761070 /* B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCBE3E2BFC7C8300761070 /* B.swift */; };
 		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
 		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
@@ -112,6 +115,7 @@
 		8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableHeaderView.swift; sourceTree = "<group>"; };
 		8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFunctionModel.swift; sourceTree = "<group>"; };
 		8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeRecordCell.swift; sourceTree = "<group>"; };
+		8E95E6A12D803248005FF900 /* member_plus.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = member_plus.svg; sourceTree = "<group>"; };
 		8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeViewController.swift; sourceTree = "<group>"; };
 		8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeView.swift; sourceTree = "<group>"; };
 		8EA21EA027002E5100A9039B /* YLZHealthCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeTableFooterView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,9 @@
 		8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZMSTabBar.swift; sourceTree = "<group>"; };
 		8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiModel.swift; sourceTree = "<group>"; };
 		8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelManager.swift; sourceTree = "<group>"; };
+		8ECA6FD62D8412CC00EBA4D3 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		8ECCBE3C2BFC7C7800761070 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
+		8ECCBE3E2BFC7C8300761070 /* B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B.swift; sourceTree = "<group>"; };
 		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
@@ -180,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				8E0007692B294D54006C7D2A /* Event */,
-				8EE07B3B27016C87005B0B40 /* OC */,
 				8EA21EAE2700343900A9039B /* Kit */,
 				8E344A92265BD5B6008AF1BA /* Moya */,
 				8E344A72265BD437008AF1BA /* SwiftExtension */,
@@ -194,6 +200,7 @@
 		8E344A45265BCC66008AF1BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E95E6A32D8032B5005FF900 /* svgs */,
 				8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */,
 				8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */,
 				8EFB12E4265BB46D007D9FE1 /* LaunchScreen.storyboard */,
@@ -300,9 +307,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8E95E6A32D8032B5005FF900 /* svgs */ = {
+			isa = PBXGroup;
+			children = (
+				8E95E6A12D803248005FF900 /* member_plus.svg */,
+			);
+			path = svgs;
+			sourceTree = "<group>";
+		};
 		8EA21E9727002D9E00A9039B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8ECCBE3B2BFC7C6000761070 /* PassValue */,
 				8E78C80C2814F37400D6C59F /* RouteCode */,
 				8EA21E9827002DA700A9039B /* HealthCode */,
 			);
@@ -397,19 +413,13 @@
 			path = CodeView;
 			sourceTree = "<group>";
 		};
-		8EE07B3B27016C87005B0B40 /* OC */ = {
+		8ECCBE3B2BFC7C6000761070 /* PassValue */ = {
 			isa = PBXGroup;
 			children = (
-				8EE07B3C27016C8E005B0B40 /* Kit */,
+				8ECCBE3C2BFC7C7800761070 /* A.swift */,
+				8ECCBE3E2BFC7C8300761070 /* B.swift */,
 			);
-			path = OC;
-			sourceTree = "<group>";
-		};
-		8EE07B3C27016C8E005B0B40 /* Kit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Kit;
+			path = PassValue;
 			sourceTree = "<group>";
 		};
 		8EFB12CD265BB46C007D9FE1 = {
@@ -538,6 +548,7 @@
 		A12E40526790B2CEC923D51C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8ECA6FD62D8412CC00EBA4D3 /* libc++.1.tbd */,
 				1F49EC176A0FC65056AB9AFF /* Pods_SwiftProject.framework */,
 			);
 			name = Frameworks;
@@ -615,6 +626,7 @@
 			files = (
 				8EFB12E6265BB46D007D9FE1 /* LaunchScreen.storyboard in Resources */,
 				8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */,
+				8E95E6A22D803248005FF900 /* member_plus.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,12 +756,14 @@
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
 				8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */,
 				8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */,
+				8ECCBE3F2BFC7C8300761070 /* B.swift in Sources */,
 				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,
 				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
 				8E344A6C265BD03D008AF1BA /* AppTabbarViewController.swift in Sources */,
+				8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */,
 				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,
 				8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */,
 				8EFFDA6D282A4A63000EA7D6 /* HiApiConfigPlugin.swift in Sources */,
