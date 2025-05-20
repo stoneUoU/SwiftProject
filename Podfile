@@ -27,6 +27,10 @@ target 'SwiftProject' do
     pod "HandyJSON"
     pod 'SVGKit'
     pod 'PocketSVG', '~> 2.6'
+    pod 'UMCommon'
+    pod 'UMPush'
+    pod 'UMDevice'
+    pod 'UYuMao'
     
     install_all_flutter_pods(flutter_application_path)
 end

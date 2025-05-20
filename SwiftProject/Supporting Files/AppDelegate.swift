@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.initWindow();
         self.flutterEngine.run();
+        // 初始化友盟推送
+        UMengPushHelper.shared.setupUMengPush(
+            appKey: "682bdd2b55d24d3412d6f3cf",
+            launchOptions: launchOptions
+        )
         return true
     }
     
@@ -49,5 +54,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+    }
+    func application(_ application: UIApplication,
+                       didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // 注册设备token
+        UMengPushHelper.shared.registerDeviceToken(deviceToken)
+    }
+        
+    func application(_ application: UIApplication,
+                   didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("注册推送失败: \(error.localizedDescription)")
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007652B294CBF006C7D2A /* RequestViewController.swift */; };
 		8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */; };
+		8E2C4B712DDC2D3900109E5E /* UMengPushHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */; };
 		8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */; };
 		8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */; };
 		8E344A41265BCAF7008AF1BA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A40265BCAF7008AF1BA /* Const.swift */; };
@@ -87,6 +88,9 @@
 		3C4D30EB616FAE162F5B05E2 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8E0007652B294CBF006C7D2A /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveViewController.swift; sourceTree = "<group>"; };
+		8E2C4B6D2DDC2CA400109E5E /* SwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E2C4B6E2DDC2D1000109E5E /* SwiftProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftProject.entitlements; sourceTree = "<group>"; };
+		8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMengPushHelper.swift; sourceTree = "<group>"; };
 		8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseNavigationController.swift; sourceTree = "<group>"; };
 		8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
 		8E344A40265BCAF7008AF1BA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -183,6 +187,14 @@
 			path = Event;
 			sourceTree = "<group>";
 		};
+		8E2C4B702DDC2D3900109E5E /* UMPush */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */,
+			);
+			path = UMPush;
+			sourceTree = "<group>";
+		};
 		8E344A39265BCA63008AF1BA /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +217,7 @@
 				8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */,
 				8EFB12E4265BB46D007D9FE1 /* LaunchScreen.storyboard */,
 				8EFB12E7265BB46D007D9FE1 /* Info.plist */,
+				8E2C4B6D2DDC2CA400109E5E /* SwiftProject-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -443,6 +456,7 @@
 		8EFB12D8265BB46C007D9FE1 /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				8E2C4B6E2DDC2D1000109E5E /* SwiftProject.entitlements */,
 				8EA21E9727002D9E00A9039B /* Logic */,
 				8E344A39265BCA63008AF1BA /* Base */,
 				8EFFDA162828B61F000EA7D6 /* Helpers */,
@@ -457,6 +471,7 @@
 		8EFFDA162828B61F000EA7D6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8E2C4B702DDC2D3900109E5E /* UMPush */,
 				8EFFDA172828B61F000EA7D6 /* HiToast */,
 				8EFFDA1A2828B61F000EA7D6 /* HiPage */,
 				8EFFDA1D2828B61F000EA7D6 /* HiRegular */,
@@ -577,6 +592,7 @@
 				8EFB12D4265BB46C007D9FE1 /* Resources */,
 				07477DB414B927C83EFC1F4B /* [CP] Embed Pods Frameworks */,
 				6B4DB246E6080D14EE9B8A08 /* [CP-User] Embed Flutter Build hi_flutter_module Script */,
+				1B2C59BFEBBD0BABBC279EFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -641,13 +657,38 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B2C59BFEBBD0BABBC279EFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67CA6C0944C399D65EDF06BD /* [CP] Check Pods Manifest.lock */ = {
@@ -677,7 +718,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
@@ -687,7 +732,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
@@ -711,6 +760,7 @@
 				8EFFDA2A2828B61F000EA7D6 /* HiPageHelper.swift in Sources */,
 				8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */,
 				8EFFDA282828B61F000EA7D6 /* HiToast.swift in Sources */,
+				8E2C4B712DDC2D3900109E5E /* UMengPushHelper.swift in Sources */,
 				8EFFDA6B282A4A62000EA7D6 /* HiApiConfig.swift in Sources */,
 				8EFFDA2C2828B61F000EA7D6 /* HiRegularHelper.swift in Sources */,
 				8E78C81E2815334000D6C59F /* YLZRouteCodeRecordCell.swift in Sources */,
@@ -907,18 +957,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftProject/SwiftProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2SRTBWK6P4;
+				DEVELOPMENT_TEAM = NZP64V26FR;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "SwiftProject/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.SwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neusoft.ihrss.jx.hi-swiftui.Hi-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProject/Supporting Files/SwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -930,18 +982,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftProject/SwiftProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2SRTBWK6P4;
+				DEVELOPMENT_TEAM = NZP64V26FR;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "SwiftProject/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.SwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neusoft.ihrss.jx.hi-swiftui.Hi-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProject/Supporting Files/SwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
