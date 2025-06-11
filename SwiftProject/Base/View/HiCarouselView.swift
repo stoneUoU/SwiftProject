@@ -9,6 +9,7 @@ import Kingfisher
 
 open class HiAutoModel:NSObject {
     public var image:String = ""
+    public var isNet:Bool = false
 }
 
 fileprivate class HiFlowLayout: UICollectionViewFlowLayout {
@@ -74,7 +75,11 @@ fileprivate class HiCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let image = autoModel?.image else { return }
             let imageUrl = image.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "";
-            self.imageView.kf.setImage(with: URL(string: imageUrl), placeholder: UIImage.init(named: ""), options: nil, progressBlock: nil, completionHandler: nil);
+            if (autoModel!.isNet) {
+                self.imageView.kf.setImage(with: URL(string: imageUrl), placeholder: UIImage.init(named: ""), options: nil, progressBlock: nil, completionHandler: nil);
+            } else {
+                self.imageView.image = UIImage.init(named: imageUrl)
+            }
         }
     }
     

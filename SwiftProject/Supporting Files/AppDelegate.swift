@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var flutterEngine = FlutterEngine(name: "hi_flutter_module_engine");
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.initWindow();
-        self.flutterEngine.run();
+//        self.flutterEngine.run();
         // 初始化友盟推送
         UMengPushHelper.shared.setupUMengPush(
             appKey: "682bdd2b55d24d3412d6f3cf",
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
 //        let tabbarView = A();
 //        let tabbarView = YLZRouteCodeViewController();
-        let tabbarView = InteractiveViewController();
+        let tabbarView = HrssViewController();
         
         let targetVC:UINavigationController = UINavigationController.init(rootViewController: tabbarView)
         self.window?.rootViewController = targetVC;

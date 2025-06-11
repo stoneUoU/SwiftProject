@@ -50,6 +50,12 @@
 		8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */; };
 		8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAF2700344F00A9039B /* YLZFont.swift */; };
 		8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */; };
+		8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF367C2DF95F1300645B1E /* HrssViewController.swift */; };
+		8EAF36802DF9630900645B1E /* HrssTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */; };
+		8EAF36822DF9639D00645B1E /* HrssNoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */; };
+		8EAF36842DF963AE00645B1E /* HrssTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */; };
+		8EAF36862DF963B900645B1E /* HrssEasyManTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */; };
+		8EAF36882DF963C400645B1E /* HrssAllDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36872DF963BE00645B1E /* HrssAllDoTableViewCell.swift */; };
 		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
 		8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */; };
 		8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */; };
@@ -131,6 +137,12 @@
 		8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8EA21EAF2700344F00A9039B /* YLZFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFont.swift; sourceTree = "<group>"; };
 		8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZPaddingLabel.swift; sourceTree = "<group>"; };
+		8EAF367C2DF95F1300645B1E /* HrssViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssViewController.swift; sourceTree = "<group>"; };
+		8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTableHeaderView.swift; sourceTree = "<group>"; };
+		8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssNoticeTableViewCell.swift; sourceTree = "<group>"; };
+		8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTopicTableViewCell.swift; sourceTree = "<group>"; };
+		8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssEasyManTableViewCell.swift; sourceTree = "<group>"; };
+		8EAF36872DF963BE00645B1E /* HrssAllDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssAllDoTableViewCell.swift; sourceTree = "<group>"; };
 		8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZMSTabBar.swift; sourceTree = "<group>"; };
 		8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiModel.swift; sourceTree = "<group>"; };
 		8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelManager.swift; sourceTree = "<group>"; };
@@ -331,6 +343,7 @@
 		8EA21E9727002D9E00A9039B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8EAF367B2DF95F0B00645B1E /* Hrss */,
 				8ECCBE3B2BFC7C6000761070 /* PassValue */,
 				8E78C80C2814F37400D6C59F /* RouteCode */,
 				8EA21E9827002DA700A9039B /* HealthCode */,
@@ -341,7 +354,6 @@
 		8EA21E9827002DA700A9039B /* HealthCode */ = {
 			isa = PBXGroup;
 			children = (
-				8EA21E9A27002DB400A9039B /* Model */,
 				8EA21E9927002DAF00A9039B /* View */,
 				8EA21E9B27002DB900A9039B /* Controller */,
 			);
@@ -363,13 +375,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8EA21E9A27002DB400A9039B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		8EA21E9B27002DB900A9039B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +391,27 @@
 				8EE07B3F27017D78005B0B40 /* YLZString.swift */,
 			);
 			path = Kit;
+			sourceTree = "<group>";
+		};
+		8EAF367B2DF95F0B00645B1E /* Hrss */ = {
+			isa = PBXGroup;
+			children = (
+				8EAF367E2DF962DE00645B1E /* View */,
+				8EAF367C2DF95F1300645B1E /* HrssViewController.swift */,
+			);
+			path = Hrss;
+			sourceTree = "<group>";
+		};
+		8EAF367E2DF962DE00645B1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EAF36872DF963BE00645B1E /* HrssAllDoTableViewCell.swift */,
+				8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */,
+				8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */,
+				8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */,
+				8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8ECBC2D32817DE9F00071F21 /* TableViewCell */ = {
@@ -752,6 +778,7 @@
 				8E6AD17428164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift in Sources */,
 				8EFFDA292828B61F000EA7D6 /* HiHudToast.swift in Sources */,
 				8E344A81265BD437008AF1BA /* Int+Extension.swift in Sources */,
+				8EAF36822DF9639D00645B1E /* HrssNoticeTableViewCell.swift in Sources */,
 				8E344A70265BD115008AF1BA /* AppWebViewController.swift in Sources */,
 				8EA21EA527002E7400A9039B /* YLZHealthCodeTableViewCell.swift in Sources */,
 				8E344A83265BD437008AF1BA /* UIButton+Extension.swift in Sources */,
@@ -762,6 +789,7 @@
 				8EFFDA282828B61F000EA7D6 /* HiToast.swift in Sources */,
 				8E2C4B712DDC2D3900109E5E /* UMengPushHelper.swift in Sources */,
 				8EFFDA6B282A4A62000EA7D6 /* HiApiConfig.swift in Sources */,
+				8EAF36842DF963AE00645B1E /* HrssTopicTableViewCell.swift in Sources */,
 				8EFFDA2C2828B61F000EA7D6 /* HiRegularHelper.swift in Sources */,
 				8E78C81E2815334000D6C59F /* YLZRouteCodeRecordCell.swift in Sources */,
 				8EA21EA927002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift in Sources */,
@@ -780,12 +808,14 @@
 				8E78C81C2814FB3700D6C59F /* YLZFunctionModel.swift in Sources */,
 				8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */,
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
+				8EAF36802DF9630900645B1E /* HrssTableHeaderView.swift in Sources */,
 				8EFFDA69282A4A62000EA7D6 /* HiAlamofire.swift in Sources */,
 				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
 				8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */,
 				8E344A86265BD437008AF1BA /* String+Extension.swift in Sources */,
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
 				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
+				8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */,
 				8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */,
 				8EFFDA6C282A4A63000EA7D6 /* HiAPI.swift in Sources */,
@@ -794,6 +824,7 @@
 				8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */,
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
 				8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */,
+				8EAF36882DF963C400645B1E /* HrssAllDoTableViewCell.swift in Sources */,
 				8E344A84265BD437008AF1BA /* UIView+Extension.swift in Sources */,
 				8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */,
 				8E344A41265BCAF7008AF1BA /* Const.swift in Sources */,
@@ -816,6 +847,7 @@
 				8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */,
 				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,
 				8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */,
+				8EAF36862DF963B900645B1E /* HrssEasyManTableViewCell.swift in Sources */,
 				8EFFDA6D282A4A63000EA7D6 /* HiApiConfigPlugin.swift in Sources */,
 				8EA21E9D27002E2000A9039B /* YLZHealthCodeViewController.swift in Sources */,
 			);
@@ -968,7 +1000,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.neusoft.ihrss.jx.hi-swiftui.Hi-SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.ihrss.jx.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProject/Supporting Files/SwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -993,7 +1025,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.neusoft.ihrss.jx.hi-swiftui.Hi-SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.ihrss.jx.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProject/Supporting Files/SwiftProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
