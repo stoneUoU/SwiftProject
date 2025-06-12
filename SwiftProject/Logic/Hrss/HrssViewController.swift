@@ -159,9 +159,6 @@ class HrssViewController:UIViewController {
         msgButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         return msgButton
     }()
-    //MARK: Public Method
-    //MARK: Private Method
-    //MARK: lazy load
     public lazy var tableView:UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.delegate = self

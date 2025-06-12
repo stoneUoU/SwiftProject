@@ -56,6 +56,10 @@
 		8EAF36842DF963AE00645B1E /* HrssTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */; };
 		8EAF36862DF963B900645B1E /* HrssEasyManTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */; };
 		8EAF36882DF963C400645B1E /* HrssAllDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36872DF963BE00645B1E /* HrssAllDoTableViewCell.swift */; };
+		8EAF36902DF9816D00645B1E /* HrssFuncCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF368F2DF9816300645B1E /* HrssFuncCollectionViewCell.swift */; };
+		8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36922DF986DD00645B1E /* HrssModel.swift */; };
+		8EAF36AE2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36AD2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift */; };
+		8EAF36B02DFAA9FA00645B1E /* HrssAllDoSonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36AF2DFAA9F300645B1E /* HrssAllDoSonTableViewCell.swift */; };
 		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
 		8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */; };
 		8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */; };
@@ -143,6 +147,10 @@
 		8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTopicTableViewCell.swift; sourceTree = "<group>"; };
 		8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssEasyManTableViewCell.swift; sourceTree = "<group>"; };
 		8EAF36872DF963BE00645B1E /* HrssAllDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssAllDoTableViewCell.swift; sourceTree = "<group>"; };
+		8EAF368F2DF9816300645B1E /* HrssFuncCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssFuncCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EAF36922DF986DD00645B1E /* HrssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssModel.swift; sourceTree = "<group>"; };
+		8EAF36AD2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssEasyManCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EAF36AF2DFAA9F300645B1E /* HrssAllDoSonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssAllDoSonTableViewCell.swift; sourceTree = "<group>"; };
 		8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZMSTabBar.swift; sourceTree = "<group>"; };
 		8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiModel.swift; sourceTree = "<group>"; };
 		8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelManager.swift; sourceTree = "<group>"; };
@@ -396,6 +404,7 @@
 		8EAF367B2DF95F0B00645B1E /* Hrss */ = {
 			isa = PBXGroup;
 			children = (
+				8EAF36912DF986D600645B1E /* Model */,
 				8EAF367E2DF962DE00645B1E /* View */,
 				8EAF367C2DF95F1300645B1E /* HrssViewController.swift */,
 			);
@@ -405,13 +414,24 @@
 		8EAF367E2DF962DE00645B1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */,
+				8EAF368F2DF9816300645B1E /* HrssFuncCollectionViewCell.swift */,
 				8EAF36872DF963BE00645B1E /* HrssAllDoTableViewCell.swift */,
+				8EAF36AF2DFAA9F300645B1E /* HrssAllDoSonTableViewCell.swift */,
 				8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */,
+				8EAF36AD2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift */,
 				8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */,
 				8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */,
-				8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8EAF36912DF986D600645B1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EAF36922DF986DD00645B1E /* HrssModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8ECBC2D32817DE9F00071F21 /* TableViewCell */ = {
@@ -810,6 +830,7 @@
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
 				8EAF36802DF9630900645B1E /* HrssTableHeaderView.swift in Sources */,
 				8EFFDA69282A4A62000EA7D6 /* HiAlamofire.swift in Sources */,
+				8EAF36902DF9816D00645B1E /* HrssFuncCollectionViewCell.swift in Sources */,
 				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
 				8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */,
 				8E344A86265BD437008AF1BA /* String+Extension.swift in Sources */,
@@ -840,12 +861,15 @@
 				8ECCBE3F2BFC7C8300761070 /* B.swift in Sources */,
 				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
+				8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,
 				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
 				8E344A6C265BD03D008AF1BA /* AppTabbarViewController.swift in Sources */,
 				8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */,
+				8EAF36B02DFAA9FA00645B1E /* HrssAllDoSonTableViewCell.swift in Sources */,
 				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,
+				8EAF36AE2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift in Sources */,
 				8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */,
 				8EAF36862DF963B900645B1E /* HrssEasyManTableViewCell.swift in Sources */,
 				8EFFDA6D282A4A63000EA7D6 /* HiApiConfigPlugin.swift in Sources */,

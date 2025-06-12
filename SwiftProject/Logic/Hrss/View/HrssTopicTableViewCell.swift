@@ -22,7 +22,7 @@ class HrssTopicTableViewCell: UITableViewCell {
     func setUI() {
         self.contentView.addSubview(self.bgView)
         self.bgView.addSubview(self.titleLabel)
-        
+        self.bgView.addSubview(self.logoImageView)
         self.setMas();
     }
     
@@ -35,6 +35,10 @@ class HrssTopicTableViewCell: UITableViewCell {
         self.titleLabel.snp.makeConstraints{ (make) in
             make.top.equalTo(self.bgView.snp.top).offset(16);
             make.left.equalTo(self.bgView).offset(16);
+        }
+        self.logoImageView.snp.makeConstraints{ (make) in
+            make.top.equalTo(self.bgView.snp.top);
+            make.right.equalTo(self.bgView);
         }
     }
     
@@ -56,6 +60,12 @@ class HrssTopicTableViewCell: UITableViewCell {
         titleLabel.textColor = YLZColorTitleOne
         titleLabel.text = "专题服务";
         return titleLabel
+    }()
+    
+    lazy var logoImageView:UIImageView = {[weak self] in
+        var logoImageView = UIImageView()
+        logoImageView.image = UIImage.init(named: "ic_topic_banner")
+        return logoImageView
     }()
     
     override func awakeFromNib() {
