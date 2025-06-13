@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class HrssTopicTableViewCell: UITableViewCell {
     
@@ -23,6 +24,9 @@ class HrssTopicTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.bgView)
         self.bgView.addSubview(self.titleLabel)
         self.bgView.addSubview(self.logoImageView)
+        self.bgView.addSubview(self.jobView)
+        self.bgView.addSubview(self.doThingView)
+        self.bgView.addSubview(self.certificateView)
         self.setMas();
     }
     
@@ -39,6 +43,21 @@ class HrssTopicTableViewCell: UITableViewCell {
         self.logoImageView.snp.makeConstraints{ (make) in
             make.top.equalTo(self.bgView.snp.top);
             make.right.equalTo(self.bgView);
+        }
+        self.jobView.snp.makeConstraints{ (make) in
+            make.bottom.equalTo(self.bgView.snp.bottom).offset(-12)
+            make.left.equalTo(self.bgView.snp.left).offset(16)
+            make.size.equalTo(CGSize(width: (HiSCREENWIDTH - 74)/2, height: 136))
+        }
+        self.doThingView.snp.makeConstraints{ (make) in
+            make.top.equalTo(self.jobView.snp.top)
+            make.right.equalTo(self.bgView.snp.right).offset(-16)
+            make.size.equalTo(CGSize(width: (HiSCREENWIDTH - 74)/2, height: 63))
+        }
+        self.certificateView.snp.makeConstraints{ (make) in
+            make.bottom.equalTo(self.jobView.snp.bottom)
+            make.right.equalTo(self.bgView.snp.right).offset(-16)
+            make.size.equalTo(CGSize(width: (HiSCREENWIDTH - 74)/2, height: 63))
         }
     }
     
@@ -66,6 +85,23 @@ class HrssTopicTableViewCell: UITableViewCell {
         var logoImageView = UIImageView()
         logoImageView.image = UIImage.init(named: "ic_topic_banner")
         return logoImageView
+    }()
+    
+    lazy var jobView:HrssTopicLeftView = {[weak self] in
+        var jobView = HrssTopicLeftView()
+        return jobView
+    }()
+    lazy var doThingView:HrssTopicRightView = {[weak self] in
+        var doThingView = HrssTopicRightView()
+        let model:HrssModel = HrssModel.init(json:JSON(["iconUrl":"文案文案通办","title":"跨省通办","bgUrl":"ic_topic_top_right"]));
+        doThingView.model = model;
+        return doThingView
+    }()
+    lazy var certificateView:HrssTopicRightView = {[weak self] in
+        var certificateView = HrssTopicRightView()
+        let model:HrssModel = HrssModel.init(json:JSON(["iconUrl":"证书、证照查询","title":"我的证书","bgUrl":"ic_topic_bottom_right"]));
+        certificateView.model = model;
+        return certificateView
     }()
     
     override func awakeFromNib() {

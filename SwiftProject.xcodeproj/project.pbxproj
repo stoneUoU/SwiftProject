@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007652B294CBF006C7D2A /* RequestViewController.swift */; };
 		8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */; };
+		8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6102DFBB82400B3E0A9 /* HrssTopicLeftView.swift */; };
+		8E29D6132DFBB83C00B3E0A9 /* HrssTopicRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6122DFBB83300B3E0A9 /* HrssTopicRightView.swift */; };
+		8E29D6152DFBBEB900B3E0A9 /* HrssLoopNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6142DFBBE9600B3E0A9 /* HrssLoopNavigationCell.swift */; };
+		8E29D6182DFBC5DD00B3E0A9 /* HiLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6172DFBC5DD00B3E0A9 /* HiLoopView.swift */; };
+		8E29D61A2DFBC5E600B3E0A9 /* HiLoopQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6192DFBC5E600B3E0A9 /* HiLoopQueue.swift */; };
+		8E29D61C2DFBC70600B3E0A9 /* HrssLoopNoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D61B2DFBC6FF00B3E0A9 /* HrssLoopNoticeCell.swift */; };
 		8E2C4B712DDC2D3900109E5E /* UMengPushHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */; };
 		8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */; };
 		8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */; };
@@ -98,6 +104,12 @@
 		3C4D30EB616FAE162F5B05E2 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 		8E0007652B294CBF006C7D2A /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveViewController.swift; sourceTree = "<group>"; };
+		8E29D6102DFBB82400B3E0A9 /* HrssTopicLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTopicLeftView.swift; sourceTree = "<group>"; };
+		8E29D6122DFBB83300B3E0A9 /* HrssTopicRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTopicRightView.swift; sourceTree = "<group>"; };
+		8E29D6142DFBBE9600B3E0A9 /* HrssLoopNavigationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssLoopNavigationCell.swift; sourceTree = "<group>"; };
+		8E29D6172DFBC5DD00B3E0A9 /* HiLoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiLoopView.swift; sourceTree = "<group>"; };
+		8E29D6192DFBC5E600B3E0A9 /* HiLoopQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiLoopQueue.swift; sourceTree = "<group>"; };
+		8E29D61B2DFBC6FF00B3E0A9 /* HrssLoopNoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssLoopNoticeCell.swift; sourceTree = "<group>"; };
 		8E2C4B6D2DDC2CA400109E5E /* SwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E2C4B6E2DDC2D1000109E5E /* SwiftProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftProject.entitlements; sourceTree = "<group>"; };
 		8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMengPushHelper.swift; sourceTree = "<group>"; };
@@ -207,6 +219,17 @@
 			path = Event;
 			sourceTree = "<group>";
 		};
+		8E29D6162DFBC5B400B3E0A9 /* Marquee */ = {
+			isa = PBXGroup;
+			children = (
+				8E29D6192DFBC5E600B3E0A9 /* HiLoopQueue.swift */,
+				8E29D6172DFBC5DD00B3E0A9 /* HiLoopView.swift */,
+				8EFFDA0E2828B595000EA7D6 /* HiMarqueeView.swift */,
+				8EFFDA112828B596000EA7D6 /* HiMarqueeViewCell.swift */,
+			);
+			path = Marquee;
+			sourceTree = "<group>";
+		};
 		8E2C4B702DDC2D3900109E5E /* UMPush */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,9 +279,8 @@
 		8E344A59265BCD96008AF1BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E29D6162DFBC5B400B3E0A9 /* Marquee */,
 				8EFFDA0F2828B595000EA7D6 /* HiCarouselView.swift */,
-				8EFFDA0E2828B595000EA7D6 /* HiMarqueeView.swift */,
-				8EFFDA112828B596000EA7D6 /* HiMarqueeViewCell.swift */,
 				8EFFDA102828B596000EA7D6 /* HiOccupationView.swift */,
 				8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */,
 				8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */,
@@ -421,7 +443,11 @@
 				8EAF36852DF963B300645B1E /* HrssEasyManTableViewCell.swift */,
 				8EAF36AD2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift */,
 				8EAF36832DF963A600645B1E /* HrssTopicTableViewCell.swift */,
+				8E29D6102DFBB82400B3E0A9 /* HrssTopicLeftView.swift */,
+				8E29D6122DFBB83300B3E0A9 /* HrssTopicRightView.swift */,
 				8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */,
+				8E29D61B2DFBC6FF00B3E0A9 /* HrssLoopNoticeCell.swift */,
+				8E29D6142DFBBE9600B3E0A9 /* HrssLoopNavigationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -829,7 +855,9 @@
 				8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */,
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
 				8EAF36802DF9630900645B1E /* HrssTableHeaderView.swift in Sources */,
+				8E29D61A2DFBC5E600B3E0A9 /* HiLoopQueue.swift in Sources */,
 				8EFFDA69282A4A62000EA7D6 /* HiAlamofire.swift in Sources */,
+				8E29D61C2DFBC70600B3E0A9 /* HrssLoopNoticeCell.swift in Sources */,
 				8EAF36902DF9816D00645B1E /* HrssFuncCollectionViewCell.swift in Sources */,
 				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
 				8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */,
@@ -861,11 +889,15 @@
 				8ECCBE3F2BFC7C8300761070 /* B.swift in Sources */,
 				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
+				8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */,
+				8E29D6152DFBBEB900B3E0A9 /* HrssLoopNavigationCell.swift in Sources */,
 				8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,
 				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
+				8E29D6182DFBC5DD00B3E0A9 /* HiLoopView.swift in Sources */,
 				8E344A6C265BD03D008AF1BA /* AppTabbarViewController.swift in Sources */,
+				8E29D6132DFBB83C00B3E0A9 /* HrssTopicRightView.swift in Sources */,
 				8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */,
 				8EAF36B02DFAA9FA00645B1E /* HrssAllDoSonTableViewCell.swift in Sources */,
 				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,

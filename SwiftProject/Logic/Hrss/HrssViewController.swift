@@ -7,30 +7,27 @@
 
 import UIKit
 import MBProgressHUD
+import SwiftyJSON
 
 class HrssViewController:UIViewController {
-
+    var loopModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"新版掌上12333上线！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"百日千万网络招聘行动！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"众志成城  共同战役！"]))];
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent;
     }
-    
     //MARK: LifeCycle
     deinit {
             
     }
-        
     //视图初始化
     override func loadView() {
         super.loadView()
     }
-        
     // 当加载视图结束时调用该方法
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = YLZColorWhite;
         self.setUI()
     }
-        
     // 视图将要显示时调用该方法
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -68,10 +65,12 @@ class HrssViewController:UIViewController {
         self.navigationView.addSubview(self.titleLabel);
         self.navigationView.addSubview(self.msgButton);
         self.navigationView.addSubview(self.searchView);
-        self.searchView.addSubview(self.loopImageView);
-        self.searchView.addSubview(self.loopLabel);
+        self.searchView.addSubview(self.marqueeView);
         
         self.setMas();
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.marqueeView.reloadDataAndStartRoll()
+        }
     }
         
     func setMas() {
@@ -102,25 +101,18 @@ class HrssViewController:UIViewController {
             make.right.equalTo(self.msgButton.snp.left).offset(-16);
             make.height.equalTo(28);
         }
-        self.loopImageView.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self.searchView)
-            make.left.equalTo(self.searchView.snp.left).offset(16)
-        }
-        self.loopLabel.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self.searchView)
-            make.left.equalTo(self.loopImageView.snp.right).offset(16)
+        self.marqueeView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.searchView)
         }
     }
         
     //MARK: lazy load
     lazy var statusView: UIView = {[weak self] in
         let statusView = UIView(frame:.zero)
-//        statusView.backgroundColor = YLZColorMZTBlueView;
         return statusView
     }()
     lazy var navigationView: UIView = {[weak self] in
         let navigationView = UIView(frame:.zero)
-//        navigationView.backgroundColor = YLZColorMZTBlueView;
         return navigationView
     }()
     lazy var titleLabel: UILabel = {[weak self] in
@@ -138,18 +130,13 @@ class HrssViewController:UIViewController {
         searchView.backgroundColor = YLZColorWhite;
         return searchView
     }()
-    lazy var loopImageView: UIImageView = {[weak self] in
-        let loopImageView = UIImageView(frame:.zero)
-        loopImageView.image = UIImage.init(named: "icon_sousuo");
-        return loopImageView
-    }()
-    lazy var loopLabel: UILabel = {[weak self] in
-        let loopLabel = UILabel(frame:.zero)
-        loopLabel.text = "新版掌上12333上线！";
-        loopLabel.textAlignment = .center
-        loopLabel.textColor = YLZColorTitleThree;
-        loopLabel.font = YLZFont.regular(size: 12);
-        return loopLabel
+    fileprivate lazy var marqueeView: HiMarqueeView = {
+        var marqueeView = HiMarqueeView.init(frame: .zero)
+        marqueeView.dataSource = self;
+        marqueeView.delegate = self;
+        marqueeView.tag = 0;
+        marqueeView.register(HrssLoopNavigationCell.self, forCellReuseIdentifier: NSStringFromClass(HrssLoopNavigationCell.self));
+        return marqueeView;
     }()
     lazy var msgButton: UIButton = {[weak self] in
         let msgButton = UIButton(type: .custom)
@@ -188,6 +175,22 @@ class HrssViewController:UIViewController {
         return tableHeaderView
     }()
 }
+
+extension HrssViewController:HiMarqueeViewDelegate,HiMarqueeViewDataSource {
+    func numberOfRowsFor(roolingView: HiMarqueeView) -> Int {
+        return self.loopModels.count;
+    }
+    func rollingNoticeView(roolingView: HiMarqueeView, cellAtIndex index: Int) -> HiMarqueeViewCell {
+        let viewCell:HrssLoopNavigationCell = roolingView.dequeueReusableCell(withIdentifier: NSStringFromClass(HrssLoopNavigationCell.self)) as! HrssLoopNavigationCell;
+        viewCell.model = self.loopModels[index];
+        return viewCell;
+    }
+    
+    func rollingNoticeView(_ roolingView: HiMarqueeView, didClickAt index: Int) {
+        
+    }
+}
+
 
 extension HrssViewController:UITableViewDataSource,UITableViewDelegate {
     
