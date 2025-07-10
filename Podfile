@@ -31,6 +31,7 @@ target 'SwiftProject' do
     pod 'UMPush'
     pod 'UMDevice'
     pod 'UYuMao'
+    pod 'RollingNotice-Swift'
     
     install_all_flutter_pods(flutter_application_path)
 end

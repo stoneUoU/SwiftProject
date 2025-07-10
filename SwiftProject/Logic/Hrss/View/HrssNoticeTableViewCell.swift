@@ -26,6 +26,9 @@ class HrssNoticeTableViewCell: UITableViewCell {
         self.leftView.addSubview(self.leftImageView)
         self.bgView.addSubview(self.loopView)
         self.setMas();
+        
+        self.loopView.reloadData();
+        self.loopView.start();
     }
     
     func setMas() {
@@ -72,10 +75,12 @@ class HrssNoticeTableViewCell: UITableViewCell {
     }()
     
     lazy var loopView:HiLoopView = {[weak self] in
-        let loopView = HiLoopView(scrollDirection: .vertical)
-        loopView.dataSourse = self
-        loopView.register(HrssLoopNoticeCell.self, forItemReuseIdentifier: String(describing: HrssLoopNoticeCell.self))
-        loopView.pixelsPerSecond = 24;
+        let loopView = HiLoopView()
+        loopView.delegate = self;
+        loopView.timeIntervalPerScroll = 2.0;
+        loopView.timeDurationPerScroll = 0.5;
+        loopView.isTouchEnabled = true;
+        loopView.pause();
         return loopView
     }()
     
@@ -97,17 +102,29 @@ extension HrssNoticeTableViewCell {
     }
 }
 
-extension HrssNoticeTableViewCell:HiLoopViewDataSource {
-    func numberOfItems(in marqueeView: HiLoopView) -> Int {
-        return self.loopModels.chunked(into: 2).count
+extension HrssNoticeTableViewCell:HiLoopViewDelegate {
+    
+    func numberOfVisibleItems(for loopView: HiLoopView!) -> UInt {
+        return 2;
     }
-    func marqueeView(_ marqueeView: HiLoopView, itemForIndexAt index: Int) -> HiLoopViewItem {
-        let item = marqueeView.dequeueReusableItem(withIdentifier: String(describing: HrssLoopNoticeCell.self)) as! HrssLoopNoticeCell
-        item.model = self.loopModels.chunked(into: 2)[index];
-        return item
+    func numberOfData(for loopView: HiLoopView!) -> UInt {
+        return UInt(self.loopModels.count)
     }
     
-    func marqueeView(_ marqueeView: HiLoopView, itemSizeForIndexAt index: Int) -> CGSize {
-        return CGSize(width: HiSCREENWIDTH-(36+72),height: 48);
+    func createItemView(_ itemView: UIView!, for loopView: HiLoopView!) {
+        itemView.size = CGSize.init(width: HiSCREENWIDTH-(36+72), height: 24);
+        let loopItemView:HrssLoopNoticeItemView = HrssLoopNoticeItemView();
+        loopItemView.tag = 10001;
+        loopItemView.size = CGSize.init(width: HiSCREENWIDTH-(36+72), height: 24);
+        itemView.addSubview(loopItemView);
+    }
+    
+    func updateItemView(_ itemView: UIView!, at index: UInt, for loopView: HiLoopView!) {
+        let loopItemView:HrssLoopNoticeItemView = itemView.viewWithTag(10001) as! HrssLoopNoticeItemView;
+        loopItemView.model = self.loopModels[Int(index)];
+    }
+    func didTouchItemView(at index: UInt, for loopView: HiLoopView!) {
+        let model:HrssModel = self.loopModels[Int(index)];
+        print("model_______\(model.title)");
     }
 }

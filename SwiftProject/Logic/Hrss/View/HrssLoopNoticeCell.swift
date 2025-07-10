@@ -5,30 +5,21 @@
 //  Created by stone on 2025/6/13.
 //
 
-class HrssLoopNoticeCell:HiLoopViewItem {
+class HrssLoopNoticeItemView:UIView {
     
-    public var model = [HrssModel]() {
+    public var model:HrssModel? {
         didSet {
-            if (model.count > 1) {
-                self.titleLabel.text = model[0].title;
-                self.iconImageView.image = UIImage(named: model[0].iconUrl)
-                self.arrowImageView.image = UIImage(named: "icon_hrss_home_arrow")
-                
-                self.bottomTitleLabel.text = model[1].title;
-                self.bottomIconImageView.image = UIImage(named: model[1].iconUrl)
-                self.bottomArrowImageView.image = UIImage(named: "icon_hrss_home_arrow")
-            } else if (model.count > 0) {
-                self.titleLabel.text = model[0].title;
-                self.iconImageView.image = UIImage(named: model[0].iconUrl)
-                self.arrowImageView.image = UIImage(named: "icon_hrss_home_arrow")
-            }
+            guard let functionName = model?.title else { return }
+            self.titleLabel.text = functionName;
+            self.iconImageView.image = UIImage(named: model?.iconUrl ?? "")
+            self.arrowImageView.image = UIImage(named: "icon_hrss_home_arrow")
         }
     }
-    required init(reuseIdentifier: String) {
-        super.init(reuseIdentifier: reuseIdentifier)
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         self.setUI()
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,11 +29,6 @@ class HrssLoopNoticeCell:HiLoopViewItem {
         self.topView.addSubview(self.iconImageView);
         self.topView.addSubview(self.arrowImageView);
         self.topView.addSubview(self.titleLabel);
-        
-        self.addSubview(self.bottomView);
-        self.bottomView.addSubview(self.bottomIconImageView);
-        self.bottomView.addSubview(self.bottomArrowImageView);
-        self.bottomView.addSubview(self.bottomTitleLabel);
         
         self.setMas();
     }
@@ -70,25 +56,6 @@ class HrssLoopNoticeCell:HiLoopViewItem {
             make.right.equalTo(self.arrowImageView.snp.left).offset(-8);
         }
         
-        self.bottomView.snp.makeConstraints { (make) in
-            make.left.bottom.right.equalTo(self)
-            make.height.equalTo(24)
-        }
-        self.bottomIconImageView.snp.makeConstraints { (make) in
-            make.left.equalTo(self.bottomView.snp.left)
-            make.centerY.equalTo(self.bottomView)
-            make.size.equalTo(CGSize(width: 28, height: 17))
-        }
-        self.bottomArrowImageView.snp.makeConstraints { (make) in
-            make.right.equalTo(self.bottomView.right).offset(-12)
-            make.centerY.equalTo(self.bottomView)
-            make.size.equalTo(CGSize(width: 14, height: 15))
-        }
-        self.bottomTitleLabel.snp.makeConstraints { (make) in
-            make.top.bottom.equalTo(self.bottomView)
-            make.left.equalTo(self.bottomIconImageView.snp.right).offset(8);
-            make.right.equalTo(self.bottomArrowImageView.snp.left).offset(-8);
-        }
     }
     
     fileprivate lazy var topView: UIView = {
@@ -112,28 +79,5 @@ class HrssLoopNoticeCell:HiLoopViewItem {
     fileprivate lazy var arrowImageView: UIImageView = {
         let arrowImageView = UIImageView()
         return arrowImageView
-    }()
-    
-    fileprivate lazy var bottomView: UIView = {
-        let bottomView = UIView()
-        return bottomView
-    }()
-    
-    fileprivate lazy var bottomTitleLabel: UILabel = {
-        let bottomTitleLabel = UILabel()
-        bottomTitleLabel.font = YLZFont.regular(size: 12);
-        bottomTitleLabel.textAlignment = .left
-        bottomTitleLabel.textColor = YLZColorTitleOne;
-        bottomTitleLabel.numberOfLines = 0;
-        return bottomTitleLabel
-    }()
-    
-    fileprivate lazy var bottomIconImageView: UIImageView = {
-        let bottomIconImageView = UIImageView()
-        return bottomIconImageView
-    }()
-    fileprivate lazy var bottomArrowImageView: UIImageView = {
-        let bottomArrowImageView = UIImageView()
-        return bottomArrowImageView
     }()
 }
