@@ -6,27 +6,34 @@
 //
 
 import UIKit
-import Flutter
+//import Flutter
 import SwiftyJSON
 import Alamofire
-import FlutterPluginRegistrant
+//import FlutterPluginRegistrant
 
-class InteractiveViewController: UIViewController,FlutterStreamHandler {
-    
+//class InteractiveViewController: UIViewController,FlutterStreamHandler {
+class InteractiveViewController: UIViewController {
     let urlString:String = "https://api.uomg.com/api/rand.avatar?sort=男&format=json";
     let parseString:String = "https://api.uomg.com/api/comments.163?format=json";
     let HSAURL:String = "https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/api/unitCfg";
     
-    var channel:FlutterEventChannel?
-    var eventSink:FlutterEventSink?
+//    var channel:FlutterEventChannel?
+//    var eventSink:FlutterEventSink?
     
+    lazy var titleLabel:UILabel = {[weak self] in
+        var titleLabel = UILabel()
+        titleLabel.font = YLZFont.medium(size:22)
+        titleLabel.textColor = YLZColorLightBlueView
+        titleLabel.text = "Swift 与 Flutter 交互"
+        return titleLabel
+    }()
     @objc lazy var registerButton: UIButton = {
         let registerButton = UIButton.init(type: UIButton.ButtonType.custom)
-        registerButton.setTitle("Swift 与 Flutter 交互", for: UIControl.State.normal)
+        registerButton.setTitle("执行", for: UIControl.State.normal)
         registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        registerButton.setTitleColor(.black, for: .normal)
+        registerButton.setTitleColor(YLZColorLightBlueView, for: .normal)
         registerButton.layer.borderWidth = 0.5;
-        registerButton.layer.borderColor = UIColor.lightGray.cgColor;
+        registerButton.layer.borderColor = YLZColorLightBlueView.cgColor;
         registerButton.layer.cornerRadius = 20;
         registerButton.layer.masksToBounds = true;
         registerButton.addTarget(self, action: #selector(toExcute(_:)), for: .touchUpInside)
@@ -45,66 +52,72 @@ class InteractiveViewController: UIViewController,FlutterStreamHandler {
     
     func setUI() {
         self.view.backgroundColor = .white;
+        self.view.addSubview(self.titleLabel)
         self.view.addSubview(self.registerButton)
         
         self.setMas();
     }
     
     func setMas() {
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.view)
+            make.centerY.equalTo(self.view).offset(-18)
+        }
         self.registerButton.snp.makeConstraints { (make) in
-            make.center.equalTo(self.view)
+            make.centerX.equalTo(self.view)
+            make.top.equalTo(self.titleLabel.snp.bottom).offset(36)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
     }
     
     func toShort() {
         
-        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine;
-        let flutterViewController =
-        FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil);
-        GeneratedPluginRegistrant.register(with: flutterViewController);
-        let methodChannel:FlutterMethodChannel = FlutterMethodChannel.init(name: "EVENT_FLUTTER_SEND_MESSAGE_IOS", binaryMessenger: flutterViewController.binaryMessenger);
-        
-        self.channel = FlutterEventChannel(name: "EVENT_IOS_SEND_MESSAGE_FLUTTER", binaryMessenger: flutterViewController.binaryMessenger)
-        self.channel?.setStreamHandler(self)
+//        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine;
+//        let flutterViewController =
+//        FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil);
+//        GeneratedPluginRegistrant.register(with: flutterViewController);
+//        let methodChannel:FlutterMethodChannel = FlutterMethodChannel.init(name: "EVENT_FLUTTER_SEND_MESSAGE_IOS", binaryMessenger: flutterViewController.binaryMessenger);
 //        
-        methodChannel.setMethodCallHandler { (call:FlutterMethodCall, result:@escaping FlutterResult) in
-            if let dict = call.arguments as? Dictionary<String, Any> {
-                print("dict________\(dict)");
-            }
-            if (call.method == "flutterIOSMethod") {
-                HiAlamofire.requestData(self.parseString, .GET,parameters: nil,of: HiBaseModel<User>.self) { json in
-                    let resp:HiBaseModel = json as! HiBaseModel<User>;
-                    result(resp.toJSON());
-                }
-            } else if (call.method == "backToViewController") {
-                self.navigationController?.popViewController(animated: true);
-            } else if (call.method == "iOSFlutterMethodToPage") {
-                let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
-                self.navigationController?.pushViewController(vc, animated: true);
-            }
-        };
-        
-//        let eventChannelManager = EventChannelManager(messager: flutterViewController.binaryMessenger)
-//        eventChannelManager.config()
-        
-        //swift 发送信息给flutter
-        let dic:[String:String] = ["hello":"flutter"];
-        self.eventSink?(dic)
-        self.navigationController?.pushViewController(flutterViewController, animated: true)
+//        self.channel = FlutterEventChannel(name: "EVENT_IOS_SEND_MESSAGE_FLUTTER", binaryMessenger: flutterViewController.binaryMessenger)
+//        self.channel?.setStreamHandler(self)
+////        
+//        methodChannel.setMethodCallHandler { (call:FlutterMethodCall, result:@escaping FlutterResult) in
+//            if let dict = call.arguments as? Dictionary<String, Any> {
+//                print("dict________\(dict)");
+//            }
+//            if (call.method == "flutterIOSMethod") {
+//                HiAlamofire.requestData(self.parseString, .GET,parameters: nil,of: HiBaseModel<User>.self) { json in
+//                    let resp:HiBaseModel = json as! HiBaseModel<User>;
+//                    result(resp.toJSON());
+//                }
+//            } else if (call.method == "backToViewController") {
+//                self.navigationController?.popViewController(animated: true);
+//            } else if (call.method == "iOSFlutterMethodToPage") {
+//                let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
+//                self.navigationController?.pushViewController(vc, animated: true);
+//            }
+//        };
+//        
+////        let eventChannelManager = EventChannelManager(messager: flutterViewController.binaryMessenger)
+////        eventChannelManager.config()
+//        
+//        //swift 发送信息给flutter
+//        let dic:[String:String] = ["hello":"flutter"];
+//        self.eventSink?(dic)
+//        self.navigationController?.pushViewController(flutterViewController, animated: true)
     }
     
     @objc func toExcute(_ sender: UIButton) {
         self.toShort();
     }
     
-    func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
-        self.eventSink = events;
-        return nil
-    }
-    func onCancel(withArguments arguments: Any?) -> FlutterError? {
-        return nil
-    }
+//    func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
+//        self.eventSink = events;
+//        return nil
+//    }
+//    func onCancel(withArguments arguments: Any?) -> FlutterError? {
+//        return nil
+//    }
 }
 //
 //

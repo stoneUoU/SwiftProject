@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '11.0'
+platform :ios, '13.0'
 
-flutter_application_path = '../hi_flutter_module/'
+flutter_application_path = '../../Flutter/hi_flutter_module/'
 
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
@@ -23,7 +23,7 @@ target 'SwiftProject' do
     pod 'Moya'
     pod "MJRefresh"
     pod "Kingfisher" #, '5.14.1'
-    pod 'Reveal-SDK','~>4', :configurations => ['Debug']
+#    pod 'Reveal-SDK','~>4', :configurations => ['Debug']
     pod "HandyJSON"
     pod 'SVGKit'
     pod 'PocketSVG', '~> 2.6'

@@ -6,16 +6,21 @@
 //
 
 import UIKit
-import Flutter
+//import Flutter
+//import FlutterPluginRegistrant
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    lazy var flutterEngine = FlutterEngine(name: "hi_flutter_module_engine");
+//    lazy var flutterEngine = FlutterEngine(name: "hi_flutter_module_engine");
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.initWindow();
-//        self.flutterEngine.run();
+        self.initWindow { boolean in
+            DispatchQueue.main.async {
+//                self.flutterEngine.run()
+            }
+//            GeneratedPluginRegistrant.register(with: self.flutterEngine);
+        };
         // 初始化友盟推送
         UMengPushHelper.shared.setupUMengPush(
             appKey: "682bdd2b55d24d3412d6f3cf",
@@ -24,19 +29,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func initWindow() {
+    func initWindow(callback:@escaping (_ boolean:Bool)->()) {
         self.window = UIWindow(frame: HiSCREENBOUNDS);
         let animate = CATransition();
         animate.type = CATransitionType(rawValue: "rippleEffect")
         animate.duration = 1.0;
         self.window?.layer.add(animate, forKey: nil)
         self.window?.makeKeyAndVisible()
-//        let tabbarView = A();
+        let tabbarView = ViewController();
 //        let tabbarView = YLZRouteCodeViewController();
-        let tabbarView = HrssViewController();
+//        let tabbarView = InteractiveViewController();
         
         let targetVC:UINavigationController = UINavigationController.init(rootViewController: tabbarView)
         self.window?.rootViewController = targetVC;
+        callback(true);
     }
     func applicationWillResignActive(_ application: UIApplication) {
     }
