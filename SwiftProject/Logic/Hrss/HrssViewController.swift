@@ -9,7 +9,7 @@ import UIKit
 import MBProgressHUD
 import SwiftyJSON
 
-class HrssViewController:UIViewController {
+class HrssViewController:UIViewController,UIGestureRecognizerDelegate {
     var loopModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"新版掌上12333上线！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"百日千万网络招聘行动！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"众志成城  共同战役！"]))];
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent;
@@ -26,17 +26,24 @@ class HrssViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = YLZColorWhite;
+        let GesTar = self.navigationController?.interactivePopGestureRecognizer!.delegate
+        let Ges = UIPanGestureRecognizer(target:GesTar,
+                                         action:Selector(("handleNavigationTransition:")))
+        Ges.delegate = self
+        self.view.addGestureRecognizer(Ges)
+        self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
         self.setUI()
     }
-    // 视图将要显示时调用该方法
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-        
+    
     // 当视图已经显示时调用该方法
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true;
+    }
+    
+    override func viewWillAppear(_ animated: Bool){
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
         
     // 当视图将要消失时调用该方法
@@ -172,6 +179,10 @@ class HrssViewController:UIViewController {
     }()
     lazy var tableHeaderView: HrssTableHeaderView = {[weak self] in
         let tableHeaderView = HrssTableHeaderView(frame:CGRectMake(0, 0, HiSCREENWIDTH, HiStatusBarAndNavigationBarH + 354))
+        tableHeaderView.viewClickHandle = {
+            (_ index:Int) -> Void in
+            print("000000000000");
+         }
         return tableHeaderView
     }()
 }
@@ -269,12 +280,21 @@ extension HrssViewController:UITableViewDataSource,UITableViewDelegate {
 //MARK: IB-Action
 extension HrssViewController {
     @objc func toOperate(sender: UIButton) {
+        print("88888888888");
         self.navigationController?.popViewController(animated: true);
     }
     
     @objc func toExcute(sender: UITapGestureRecognizer) {
 //        debugPrint("toExcute");
+        print("88888888888");
         self.navigationController?.popViewController(animated: true);
+    }
+    //手势代码：
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if self.navigationController?.viewControllers.count == 1 {
+            return false
+        }
+        return true
     }
 }
 //MARK: Notice

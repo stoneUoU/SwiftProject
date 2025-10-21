@@ -8,7 +8,7 @@
 import UIKit
 import MBProgressHUD
 
-class YLZRouteCodeViewController:UIViewController {
+class YLZRouteCodeViewController:UIViewController,UIGestureRecognizerDelegate {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
@@ -29,6 +29,13 @@ class YLZRouteCodeViewController:UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = YLZColorWhite;
         self.setUI()
+        let GesTar = self.navigationController?.interactivePopGestureRecognizer!.delegate
+        let Ges = UIPanGestureRecognizer(target:GesTar,
+                                         action:Selector(("handleNavigationTransition:")))
+        Ges.delegate = self
+        self.view.addGestureRecognizer(Ges)
+        self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
+        
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         //纯文本模式
         hud.mode = .indeterminate;
@@ -200,5 +207,13 @@ extension YLZRouteCodeViewController:YLZRouteCodeViewDelegate {
     
     func toOperate(view: YLZRouteCodeView) {
         
+    }
+    
+    //手势代码：
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if self.navigationController?.viewControllers.count == 1 {
+            return false
+        }
+        return true
     }
 }

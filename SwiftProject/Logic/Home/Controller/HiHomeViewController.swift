@@ -7,17 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HiHomeViewController: UIViewController {
 
     @objc lazy var registerButton: UIButton = {
         let registerButton = UIButton.init(type: UIButton.ButtonType.custom)
         registerButton.setTitle("Swift Project", for: UIControl.State.normal)
-        registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 32)
         registerButton.setTitleColor(.black, for: .normal)
-        registerButton.layer.borderWidth = 0.5;
-        registerButton.layer.borderColor = UIColor.lightGray.cgColor;
-        registerButton.layer.cornerRadius = 20;
-        registerButton.layer.masksToBounds = true;
         registerButton.tag = 0;
         registerButton.addTarget(self, action: #selector(toExcute(_:)), for: .touchUpInside)
         return registerButton
@@ -27,9 +23,9 @@ class ViewController: UIViewController {
         let hrssButton = UIButton.init(type: UIButton.ButtonType.custom)
         hrssButton.setTitle("掌上12333首页", for: UIControl.State.normal)
         hrssButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        hrssButton.setTitleColor(.black, for: .normal)
+        hrssButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         hrssButton.layer.borderWidth = 0.5;
-        hrssButton.layer.borderColor = UIColor.lightGray.cgColor;
+        hrssButton.layer.borderColor = UIColor.color_HexStr("#8676d7").cgColor;
         hrssButton.layer.cornerRadius = 20;
         hrssButton.layer.masksToBounds = true;
         hrssButton.tag = 1;
@@ -41,9 +37,9 @@ class ViewController: UIViewController {
         let routeButton = UIButton.init(type: UIButton.ButtonType.custom)
         routeButton.setTitle("路由码", for: UIControl.State.normal)
         routeButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        routeButton.setTitleColor(.black, for: .normal)
+        routeButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         routeButton.layer.borderWidth = 0.5;
-        routeButton.layer.borderColor = UIColor.lightGray.cgColor;
+        routeButton.layer.borderColor = UIColor.color_HexStr("#8676d7").cgColor;
         routeButton.layer.cornerRadius = 20;
         routeButton.layer.masksToBounds = true;
         routeButton.tag = 2;
@@ -55,9 +51,9 @@ class ViewController: UIViewController {
         let healthButton = UIButton.init(type: UIButton.ButtonType.custom)
         healthButton.setTitle("健康码", for: UIControl.State.normal)
         healthButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        healthButton.setTitleColor(.black, for: .normal)
+        healthButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         healthButton.layer.borderWidth = 0.5;
-        healthButton.layer.borderColor = UIColor.lightGray.cgColor;
+        healthButton.layer.borderColor = UIColor.color_HexStr("#8676d7").cgColor;
         healthButton.layer.cornerRadius = 20;
         healthButton.layer.masksToBounds = true;
         healthButton.tag = 3;

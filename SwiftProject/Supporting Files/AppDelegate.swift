@@ -36,12 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         animate.duration = 1.0;
         self.window?.layer.add(animate, forKey: nil)
         self.window?.makeKeyAndVisible()
-        let tabbarView = ViewController();
+        let tabbarView = HiTabbarViewController();
+        self.window?.rootViewController = tabbarView;
 //        let tabbarView = YLZRouteCodeViewController();
 //        let tabbarView = InteractiveViewController();
         
-        let targetVC:UINavigationController = UINavigationController.init(rootViewController: tabbarView)
-        self.window?.rootViewController = targetVC;
+//        let targetVC:UINavigationController = UINavigationController.init(rootViewController: tabbarView)
+//        self.window?.rootViewController = targetVC;
         callback(true);
     }
     func applicationWillResignActive(_ application: UIApplication) {

@@ -8,7 +8,12 @@
 import Foundation
 import SwiftyJSON
 
+typealias HrssTableHeaderViewClickHandle = (_ index:Int) -> Void
+
 class HrssTableHeaderView: UIView {
+    
+    var viewClickHandle: HrssTableHeaderViewClickHandle?
+    
     var menuModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"ic_home_scaning","title":"扫一扫","tag":"0"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_sdking","title":"电子社保卡","tag":"0"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_teling","title":"12333","tag":"0"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_msg_center","title":"消息中心","tag":"0"]))];
     var funcModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_area","title":"扫一扫","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_origation","title":"电子社保卡","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_area","title":"12333","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_origation","title":"消息中心","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_area","title":"扫一扫","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_origation","title":"电子社保卡","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_rs_area","title":"12333","tag":"1"])),HrssModel.init(json:JSON(["iconUrl":"ic_home_more_service","title":"更多服务","tag":"1"]))];
     override init(frame: CGRect) {
@@ -85,6 +90,8 @@ extension HrssTableHeaderView:UICollectionViewDelegateFlowLayout,UICollectionVie
         return viewCell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let viewClickHandle = self.viewClickHandle else { return }
+        viewClickHandle(indexPath.row);
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: (HiSCREENWIDTH - 42)/4, height: 82);

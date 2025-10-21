@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YLZHealthCodeViewController:UIViewController {
+class YLZHealthCodeViewController:UIViewController,UIGestureRecognizerDelegate {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
@@ -27,6 +27,12 @@ class YLZHealthCodeViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = YLZColorWhite;
+        let GesTar = self.navigationController?.interactivePopGestureRecognizer!.delegate
+        let Ges = UIPanGestureRecognizer(target:GesTar,
+                                         action:Selector(("handleNavigationTransition:")))
+        Ges.delegate = self
+        self.view.addGestureRecognizer(Ges)
+        self.navigationController?.interactivePopGestureRecognizer!.isEnabled = false
         self.setUI()
     }
         
@@ -180,5 +186,13 @@ extension YLZHealthCodeViewController:YLZHealthCodeViewDelegate {
     
     func toOperate(view: YLZHealthCodeView) {
         
+    }
+    
+    //手势代码：
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if self.navigationController?.viewControllers.count == 1 {
+            return false
+        }
+        return true
     }
 }

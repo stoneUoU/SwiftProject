@@ -1,5 +1,5 @@
 //
-//  AppBaseViewController.swift
+//  HiBaseViewController.swift
 //  AppManage
 //
 //  Created by stone on 2021/5/22.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class AppBaseViewController: UIViewController,UIGestureRecognizerDelegate {
+class HiBaseViewController: UIViewController,UIGestureRecognizerDelegate {
 
     var statusView = UIView()
     var navigationView = UIView()
@@ -36,7 +36,7 @@ class AppBaseViewController: UIViewController,UIGestureRecognizerDelegate {
     
 }
 
-extension AppBaseViewController {
+extension HiBaseViewController {
     
     func setStatusAndNavigationUI(centerLabelTitle:String,rightButtonTitle:String,ifWhiteIMV:Bool = true,navigationColor:UIColor = .black,centerLabelColor:UIColor = .white,rightButtonColor:UIColor = .white,ifLine:Bool = false) {
         

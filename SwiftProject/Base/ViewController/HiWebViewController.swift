@@ -1,5 +1,5 @@
 //
-//  AppWebViewController.swift
+//  HiWebViewController.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/5/24.
@@ -13,7 +13,7 @@ typealias WebViewBackBlock = () -> Void
 
 //初步的webviewController:
     
-class AppWebViewController: AppBaseViewController {
+class HiWebViewController: HiBaseViewController {
     public var webView = WKWebView()
     public var progressView = UIProgressView()
     public var rootView = UIViewController()
@@ -44,14 +44,14 @@ class AppWebViewController: AppBaseViewController {
     }
 }
 
-extension AppWebViewController {
+extension HiWebViewController {
     func mg_canJumpToExternalApp(with URL: URL?) -> Bool {
         let validSchemes = Set<AnyHashable>(["http", "https"])
         return !validSchemes.contains(URL?.scheme ?? "")
     }
 }
 
-extension AppWebViewController:WKNavigationDelegate,WKUIDelegate{//用于与JS交互
+extension HiWebViewController:WKNavigationDelegate,WKUIDelegate{//用于与JS交互
     func setUI(){
         self.progressView = UIProgressView(frame: .zero)
         self.progressView.trackTintColor = UIColor.white

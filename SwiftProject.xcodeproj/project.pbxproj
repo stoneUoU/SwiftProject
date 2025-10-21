@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007652B294CBF006C7D2A /* RequestViewController.swift */; };
-		8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */; };
 		8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6102DFBB82400B3E0A9 /* HrssTopicLeftView.swift */; };
 		8E29D6132DFBB83C00B3E0A9 /* HrssTopicRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6122DFBB83300B3E0A9 /* HrssTopicRightView.swift */; };
 		8E29D6152DFBBEB900B3E0A9 /* HrssLoopNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D6142DFBBE9600B3E0A9 /* HrssLoopNavigationCell.swift */; };
 		8E29D61C2DFBC70600B3E0A9 /* HrssLoopNoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29D61B2DFBC6FF00B3E0A9 /* HrssLoopNoticeCell.swift */; };
 		8E2C4B712DDC2D3900109E5E /* UMengPushHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */; };
-		8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */; };
-		8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */; };
+		8E344A3C265BCA87008AF1BA /* HiBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3A265BCA85008AF1BA /* HiBaseNavigationController.swift */; };
+		8E344A3D265BCA87008AF1BA /* HiBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A3B265BCA87008AF1BA /* HiBaseViewController.swift */; };
 		8E344A41265BCAF7008AF1BA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A40265BCAF7008AF1BA /* Const.swift */; };
-		8E344A6C265BD03D008AF1BA /* AppTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A6B265BD03D008AF1BA /* AppTabbarViewController.swift */; };
-		8E344A70265BD115008AF1BA /* AppWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A6F265BD115008AF1BA /* AppWebViewController.swift */; };
+		8E344A70265BD115008AF1BA /* HiWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A6F265BD115008AF1BA /* HiWebViewController.swift */; };
 		8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A73265BD437008AF1BA /* UIImageView+Extension.swift */; };
 		8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A74265BD437008AF1BA /* Array+NSLayoutConstraint.swift */; };
 		8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E344A75265BD437008AF1BA /* UIColor+Extension.swift */; };
@@ -68,13 +65,14 @@
 		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
 		8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */; };
 		8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */; };
-		8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCBE3C2BFC7C7800761070 /* A.swift */; };
-		8ECCBE3F2BFC7C8300761070 /* B.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECCBE3E2BFC7C8300761070 /* B.swift */; };
+		8ED5D4182EA7165A00AED7FC /* HiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */; };
+		8ED5D4192EA7165A00AED7FC /* HiTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */; };
+		8ED5D4262EA718DC00AED7FC /* HiMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */; };
 		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
 		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
 		8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */; };
-		8EFB12DE265BB46C007D9FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12DD265BB46C007D9FE1 /* ViewController.swift */; };
+		8EFB12DE265BB46C007D9FE1 /* HiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12DD265BB46C007D9FE1 /* HiHomeViewController.swift */; };
 		8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */; };
 		8EFB12E6265BB46D007D9FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12E4265BB46D007D9FE1 /* LaunchScreen.storyboard */; };
 		8EFFDA122828B596000EA7D6 /* HiMarqueeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFFDA0E2828B595000EA7D6 /* HiMarqueeView.swift */; };
@@ -101,8 +99,6 @@
 /* Begin PBXFileReference section */
 		1F49EC176A0FC65056AB9AFF /* Pods_SwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4D30EB616FAE162F5B05E2 /* Pods-SwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProject/Pods-SwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
-		8E0007652B294CBF006C7D2A /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
-		8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveViewController.swift; sourceTree = "<group>"; };
 		8E29D6102DFBB82400B3E0A9 /* HrssTopicLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTopicLeftView.swift; sourceTree = "<group>"; };
 		8E29D6122DFBB83300B3E0A9 /* HrssTopicRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTopicRightView.swift; sourceTree = "<group>"; };
 		8E29D6142DFBBE9600B3E0A9 /* HrssLoopNavigationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssLoopNavigationCell.swift; sourceTree = "<group>"; };
@@ -110,11 +106,10 @@
 		8E2C4B6D2DDC2CA400109E5E /* SwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E2C4B6E2DDC2D1000109E5E /* SwiftProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftProject.entitlements; sourceTree = "<group>"; };
 		8E2C4B6F2DDC2D3900109E5E /* UMengPushHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMengPushHelper.swift; sourceTree = "<group>"; };
-		8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseNavigationController.swift; sourceTree = "<group>"; };
-		8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
+		8E344A3A265BCA85008AF1BA /* HiBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiBaseNavigationController.swift; sourceTree = "<group>"; };
+		8E344A3B265BCA87008AF1BA /* HiBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiBaseViewController.swift; sourceTree = "<group>"; };
 		8E344A40265BCAF7008AF1BA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		8E344A6B265BD03D008AF1BA /* AppTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarViewController.swift; sourceTree = "<group>"; };
-		8E344A6F265BD115008AF1BA /* AppWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebViewController.swift; sourceTree = "<group>"; };
+		8E344A6F265BD115008AF1BA /* HiWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiWebViewController.swift; sourceTree = "<group>"; };
 		8E344A73265BD437008AF1BA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		8E344A74265BD437008AF1BA /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		8E344A75265BD437008AF1BA /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -166,14 +161,15 @@
 		8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiModel.swift; sourceTree = "<group>"; };
 		8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelManager.swift; sourceTree = "<group>"; };
 		8ECA6FD62D8412CC00EBA4D3 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
-		8ECCBE3C2BFC7C7800761070 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
-		8ECCBE3E2BFC7C8300761070 /* B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = B.swift; sourceTree = "<group>"; };
+		8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTabBar.swift; sourceTree = "<group>"; };
+		8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTabbarViewController.swift; sourceTree = "<group>"; };
+		8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMineViewController.swift; sourceTree = "<group>"; };
 		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
 		8EFB12D6265BB46C007D9FE1 /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EFB12DD265BB46C007D9FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EFB12DD265BB46C007D9FE1 /* HiHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiHomeViewController.swift; sourceTree = "<group>"; };
 		8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EFB12E5265BB46D007D9FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EFB12E7265BB46D007D9FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -267,10 +263,9 @@
 		8E344A58265BCD85008AF1BA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8E344A3A265BCA85008AF1BA /* AppBaseNavigationController.swift */,
-				8E344A3B265BCA87008AF1BA /* AppBaseViewController.swift */,
-				8E344A6F265BD115008AF1BA /* AppWebViewController.swift */,
-				8E344A6B265BD03D008AF1BA /* AppTabbarViewController.swift */,
+				8E344A3A265BCA85008AF1BA /* HiBaseNavigationController.swift */,
+				8E344A3B265BCA87008AF1BA /* HiBaseViewController.swift */,
+				8E344A6F265BD115008AF1BA /* HiWebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -372,8 +367,11 @@
 		8EA21E9727002D9E00A9039B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8ED5D41D2EA7183100AED7FC /* Home */,
+				8ED5D41C2EA7171E00AED7FC /* Mine */,
+				8ED5D41B2EA7171500AED7FC /* Login */,
+				8ED5D4172EA7165A00AED7FC /* Tabbar */,
 				8EAF367B2DF95F0B00645B1E /* Hrss */,
-				8ECCBE3B2BFC7C6000761070 /* PassValue */,
 				8E78C80C2814F37400D6C59F /* RouteCode */,
 				8EA21E9827002DA700A9039B /* HealthCode */,
 			);
@@ -497,13 +495,84 @@
 			path = CodeView;
 			sourceTree = "<group>";
 		};
-		8ECCBE3B2BFC7C6000761070 /* PassValue */ = {
+		8ED5D4172EA7165A00AED7FC /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				8ECCBE3C2BFC7C7800761070 /* A.swift */,
-				8ECCBE3E2BFC7C8300761070 /* B.swift */,
+				8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */,
+				8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */,
 			);
-			path = PassValue;
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		8ED5D41B2EA7171500AED7FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8ED5D41C2EA7171E00AED7FC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4212EA7189F00AED7FC /* Model */,
+				8ED5D4222EA718A500AED7FC /* View */,
+				8ED5D4232EA718AC00AED7FC /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		8ED5D41D2EA7183100AED7FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D41E2EA7187E00AED7FC /* Model */,
+				8ED5D41F2EA7188500AED7FC /* View */,
+				8ED5D4202EA7189000AED7FC /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8ED5D41E2EA7187E00AED7FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ED5D41F2EA7188500AED7FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8ED5D4202EA7189000AED7FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EFB12DD265BB46C007D9FE1 /* HiHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8ED5D4212EA7189F00AED7FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ED5D4222EA718A500AED7FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8ED5D4232EA718AC00AED7FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8EFB12CD265BB46C007D9FE1 = {
@@ -530,11 +599,8 @@
 				8E2C4B6E2DDC2D1000109E5E /* SwiftProject.entitlements */,
 				8E344A39265BCA63008AF1BA /* Base */,
 				8EFFDA162828B61F000EA7D6 /* Helpers */,
-				8E344A45265BCC66008AF1BA /* Supporting Files */,
 				8EA21E9727002D9E00A9039B /* Logic */,
-				8EFB12DD265BB46C007D9FE1 /* ViewController.swift */,
-				8E0007662B294CC0006C7D2A /* InteractiveViewController.swift */,
-				8E0007652B294CBF006C7D2A /* RequestViewController.swift */,
+				8E344A45265BCC66008AF1BA /* Supporting Files */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
@@ -728,9 +794,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -745,9 +815,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -781,7 +855,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
@@ -791,7 +869,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
@@ -808,11 +890,11 @@
 				8EFFDA292828B61F000EA7D6 /* HiHudToast.swift in Sources */,
 				8E344A81265BD437008AF1BA /* Int+Extension.swift in Sources */,
 				8EAF36822DF9639D00645B1E /* HrssNoticeTableViewCell.swift in Sources */,
-				8E344A70265BD115008AF1BA /* AppWebViewController.swift in Sources */,
+				8E344A70265BD115008AF1BA /* HiWebViewController.swift in Sources */,
 				8EA21EA527002E7400A9039B /* YLZHealthCodeTableViewCell.swift in Sources */,
 				8E344A83265BD437008AF1BA /* UIButton+Extension.swift in Sources */,
 				8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */,
-				8E344A3C265BCA87008AF1BA /* AppBaseNavigationController.swift in Sources */,
+				8E344A3C265BCA87008AF1BA /* HiBaseNavigationController.swift in Sources */,
 				8EFFDA2A2828B61F000EA7D6 /* HiPageHelper.swift in Sources */,
 				8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */,
 				8EFFDA282828B61F000EA7D6 /* HiToast.swift in Sources */,
@@ -828,7 +910,7 @@
 				8E6AD1762816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift in Sources */,
 				8EFFDA312828B61F000EA7D6 /* HiLoginHelper.swift in Sources */,
 				8EA21EAB27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift in Sources */,
-				8EFB12DE265BB46C007D9FE1 /* ViewController.swift in Sources */,
+				8EFB12DE265BB46C007D9FE1 /* HiHomeViewController.swift in Sources */,
 				8E78C8122814F3CA00D6C59F /* YLZRouteCodeViewController.swift in Sources */,
 				8EFFDA2F2828B61F000EA7D6 /* HiAssetsHelper.swift in Sources */,
 				8E344A82265BD437008AF1BA /* Date+Extension.swift in Sources */,
@@ -848,17 +930,17 @@
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
 				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
 				8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */,
-				8E344A3D265BCA87008AF1BA /* AppBaseViewController.swift in Sources */,
-				8E0007672B294CC1006C7D2A /* RequestViewController.swift in Sources */,
+				8E344A3D265BCA87008AF1BA /* HiBaseViewController.swift in Sources */,
 				8EFFDA6C282A4A63000EA7D6 /* HiAPI.swift in Sources */,
 				8EFFDA132828B596000EA7D6 /* HiCarouselView.swift in Sources */,
+				8ED5D4182EA7165A00AED7FC /* HiTabBar.swift in Sources */,
+				8ED5D4192EA7165A00AED7FC /* HiTabbarViewController.swift in Sources */,
 				8EFFDA152828B596000EA7D6 /* HiMarqueeViewCell.swift in Sources */,
 				8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */,
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
 				8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */,
 				8EAF36882DF963C400645B1E /* HrssAllDoTableViewCell.swift in Sources */,
 				8E344A84265BD437008AF1BA /* UIView+Extension.swift in Sources */,
-				8E0007682B294CC1006C7D2A /* InteractiveViewController.swift in Sources */,
 				8E344A41265BCAF7008AF1BA /* Const.swift in Sources */,
 				8EFFDA2D2828B61F000EA7D6 /* HiJsonStrHelper.swift in Sources */,
 				8EFFDA2E2828B61F000EA7D6 /* HiJsonLoadHelper.swift in Sources */,
@@ -869,7 +951,6 @@
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
 				8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */,
 				8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */,
-				8ECCBE3F2BFC7C8300761070 /* B.swift in Sources */,
 				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
 				8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */,
@@ -878,11 +959,10 @@
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,
 				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
-				8E344A6C265BD03D008AF1BA /* AppTabbarViewController.swift in Sources */,
 				8E29D6132DFBB83C00B3E0A9 /* HrssTopicRightView.swift in Sources */,
-				8ECCBE3D2BFC7C7800761070 /* A.swift in Sources */,
 				8EAF36B02DFAA9FA00645B1E /* HrssAllDoSonTableViewCell.swift in Sources */,
 				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,
+				8ED5D4262EA718DC00AED7FC /* HiMineViewController.swift in Sources */,
 				8EAF36AE2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift in Sources */,
 				8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */,
 				8EAF36862DF963B900645B1E /* HrssEasyManTableViewCell.swift in Sources */,
