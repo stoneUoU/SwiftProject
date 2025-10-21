@@ -1,5 +1,5 @@
 //
-//  HiLoginViewController.swift
+//  HiSettingViewController.swift
 //  SwiftProject
 //
 //  Created by stone on 2025/10/21.
@@ -8,13 +8,13 @@
 import UIKit
 import MBProgressHUD
 
-class HiLoginViewController: HiBaseViewController {
+class HiSettingViewController: HiBaseViewController {
 
     var loginHandle:((_ isSuccess:Bool)->Void)?
     
     @objc lazy var registerButton: UIButton = {
         let registerButton = UIButton.init(type: UIButton.ButtonType.custom)
-        registerButton.setTitle("登录页", for: UIControl.State.normal)
+        registerButton.setTitle("设 置 页", for: UIControl.State.normal)
         registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 32)
         registerButton.setTitleColor(.black, for: .normal)
         registerButton.tag = 0;
@@ -24,7 +24,7 @@ class HiLoginViewController: HiBaseViewController {
     
     @objc lazy var openButton: UIButton = {
         let openButton = UIButton.init(type: UIButton.ButtonType.custom)
-        openButton.setTitle("点击 登录", for: UIControl.State.normal)
+        openButton.setTitle("退出 登录", for: UIControl.State.normal)
         openButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         openButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         openButton.layer.borderWidth = 0.5;
@@ -49,7 +49,7 @@ class HiLoginViewController: HiBaseViewController {
     
     func setUI() {
         self.view.backgroundColor = .white;
-        self.setStatusAndNavigationCloseIconUI(centerLabelTitle: "登录", rightButtonTitle: "",ifWhiteIMV:false,navigationColor:.white,centerLabelColor:.black,ifLine: true);
+        self.setStatusAndNavigationUI(centerLabelTitle: "设置", rightButtonTitle: "",ifWhiteIMV:false,navigationColor:.white,centerLabelColor:.black,ifLine: true);
         self.view.addSubview(self.registerButton)
         self.view.addSubview(self.openButton)
         self.setMas();
@@ -77,14 +77,14 @@ class HiLoginViewController: HiBaseViewController {
             hud.mode = .indeterminate;
     //        hud.bezelView.backgroundColor = YLZColorTitleTwo;
             //设置提示标题
-            hud.label.text = "正在登录，请稍候..."
+            hud.label.text = "正在退出，请稍候..."
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 hud.hide(animated: true);
-                HiUserDefault.shared.setBool(true, forKey: "ACCESS-TOKEN")
+                HiUserDefault.shared.setBool(false, forKey: "ACCESS-TOKEN")
                 self.toClose();
                 guard let loginHandle = self.loginHandle else { return }
                 loginHandle(true);
-                HiToast().showToast(text: "登录成功",type: .bottom);
+                HiToast().showToast(text: "退出成功",type: .bottom);
             }
         }
     }
@@ -94,11 +94,6 @@ class HiLoginViewController: HiBaseViewController {
     }
     
     func toClose() {
-        if let navigationController = self.navigationController,
-           navigationController.viewControllers.first != self {
-            navigationController.popViewController(animated: true)
-        } else {
-            self.dismiss(animated: true, completion: nil)
-        }
+        self.navigationController?.popViewController(animated: true);
     }
 }

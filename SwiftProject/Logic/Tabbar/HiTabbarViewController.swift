@@ -107,9 +107,12 @@ extension HiTabbarViewController:UITabBarControllerDelegate {
             }
             
         }
-        HiLoginHelper.shared.loginWithSuccess { isSuccess in
+        HiLoginHelper.shared.loginWithSuccess(viewController: self) { isSuccess in
             tabBarController.selectedViewController = viewController;
-        };
+        }
+//        HiLoginHelper.shared.loginWithSuccess { isSuccess in
+//            tabBarController.selectedViewController = viewController;
+//        };
         return false
     }
     

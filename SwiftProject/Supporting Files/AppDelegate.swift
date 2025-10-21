@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let options = NSMutableDictionary.init(dictionary: launchOptions ?? [:])
         options.setValue(NSNumber.init(value:true), forKey: "debug")
         DCUniMPSDKEngine.initSDKEnvironment(launchOptions: options as! [AnyHashable : Any]);
-        HiUserDefault.shared.setBool(false, forKey: "ACCESS-TOKEN")
+//        HiUserDefault.shared.setBool(false, forKey: "ACCESS-TOKEN")
         self.initWindow { boolean in
             DispatchQueue.main.async {
 //                self.flutterEngine.run()

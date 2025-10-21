@@ -67,6 +67,35 @@ extension HiBaseViewController {
         
     }
     
+    func setStatusAndNavigationCloseIconUI(centerLabelTitle:String,rightButtonTitle:String,ifWhiteIMV:Bool = true,navigationColor:UIColor = .black,centerLabelColor:UIColor = .white,rightButtonColor:UIColor = .white,ifLine:Bool = false) {
+        
+        self.statusView.backgroundColor = navigationColor
+        self.view.addSubview(self.statusView)
+        
+        self.navigationView.backgroundColor = navigationColor
+        self.view.addSubview(self.navigationView)
+        
+        self.leftButton = UIButton()
+        self.leftButton.setImage(UIImage(named: "hsa_login_cancel.png"), for:.normal);
+        self.leftButton.addTarget(self, action:#selector(self.toLeft(_:)), for:.touchUpInside)
+//        self.leftButton.fitSize(toBtn: CGSize.init(width: 15, height: 15))
+        self.navigationView.addSubview(self.leftButton)
+        self.centerLabel.text = centerLabelTitle
+        self.centerLabel.textAlignment = .center
+        self.centerLabel.textColor = centerLabelColor
+        self.navigationView.addSubview(self.centerLabel)
+        self.rightButton = UIButton()
+        self.rightButton.setTitle(rightButtonTitle, for:.normal)
+        self.rightButton.setTitleColor(rightButtonColor, for: .normal)
+        self.rightButton.titleLabel!.font = UIFont.systemFont(ofSize: 16)
+        self.rightButton.addTarget(self, action:#selector(self.toRight(_:)), for:.touchUpInside)
+        self.rightButton.contentHorizontalAlignment = .center
+        self.navigationView.addSubview(self.rightButton)
+        
+        self.setStatusAndNavigationMas(ifLine: ifLine)
+        
+    }
+    
     func setStatusAndNavigationMas(ifLine:Bool) {
         self.statusView.snp.makeConstraints { (make) in
             make.top.left.equalTo(self.view)

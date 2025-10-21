@@ -20,13 +20,19 @@ open class HiLoginHelper:NSObject {
         
     }
     
-    func loginWithSuccess(loginHandle:@escaping (_ isSuccess:Bool) -> Void) {
+    func loginWithSuccess(viewController:UIViewController,loginHandle:@escaping (_ isSuccess:Bool) -> Void) {
         if (HiLoginHelper.shared.isLogined()) {
             loginHandle(true);
         } else {
             let loginView = HiLoginViewController();
             loginView.loginHandle = loginHandle;
-            HiPageHelper.fetchCurrentController()?.navigationController?.pushViewController(loginView, animated: true);
+            let nav = UINavigationController(rootViewController: loginView)
+            nav.modalTransitionStyle = .coverVertical
+            nav.modalPresentationStyle = .fullScreen;
+            DispatchQueue.main.async{
+                viewController.present(nav, animated: true, completion: nil)
+            }
+            HiToast().showToast(text: "您暂未登录，请先登录！",type: .bottom);
         }
     }
     
