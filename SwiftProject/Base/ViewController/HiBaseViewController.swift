@@ -47,7 +47,7 @@ extension HiBaseViewController {
         self.view.addSubview(self.navigationView)
         
         self.leftButton = UIButton()
-        self.leftButton.setImage(ifWhiteIMV == true ? UIImage(named: "back_white.png") : UIImage(named: "nav_back.png"), for:.normal);
+        self.leftButton.setImage(ifWhiteIMV == true ? UIImage(named: "hi_back_w.png") : UIImage(named: "hi_back_default.png"), for:.normal);
         self.leftButton.addTarget(self, action:#selector(self.toLeft(_:)), for:.touchUpInside)
 //        self.leftButton.fitSize(toBtn: CGSize.init(width: 15, height: 15))
         self.navigationView.addSubview(self.leftButton)

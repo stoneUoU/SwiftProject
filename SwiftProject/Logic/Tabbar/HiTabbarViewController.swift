@@ -24,6 +24,7 @@ class HiTabbarViewController: UITabBarController {
         self.tabBar.isTranslucent = true;
         self.tabBar.barTintColor = UIColor.white;
         self.tabBar.backgroundColor = UIColor.color_HexStr("#F7F9FD");
+        self.delegate = self;
         if #available(iOS 13, *) {
             let appearance = self.tabBar.standardAppearance.copy()
             appearance.backgroundImage = UIImage.hi_color(hiColor: .clear)
@@ -88,6 +89,33 @@ class HiTabbarViewController: UITabBarController {
                 break
             }
         }
+    }
+    
+}
+
+extension HiTabbarViewController:UITabBarControllerDelegate {
+    // 拦截tab bar的点击事件
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
+        let idx = tabBarController.viewControllers?.firstIndex(of: viewController)
+        
+        if (idx == 0) {
+            return true;
+        } else {
+            if (HiLoginHelper.shared.isLogined()) {
+                return true;
+            }
+            
+        }
+        HiLoginHelper.shared.loginWithSuccess { isSuccess in
+            tabBarController.selectedViewController = viewController;
+        };
+        return false
+    }
+    
+    // 拦截tab bar的点击事件，但不改变是否选择
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        print("已选择视图控制器: \(viewController)")
     }
 }
 

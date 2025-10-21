@@ -19,7 +19,7 @@ let kDefautlWaitAnimationDuration:CFTimeInterval = 1.0
 let kDefaultTopMargin:CGFloat = HiIPhoneX ? 108 : 84
 let kDefaultTextInset:CGFloat = 12
 
-class Toast: UILabel,CAAnimationDelegate {
+class HiToast: UILabel,CAAnimationDelegate {
     
     private var forwardAnimationDuration : CFTimeInterval!
     private var backwardAnimationDuration : CFTimeInterval!
@@ -39,11 +39,11 @@ class Toast: UILabel,CAAnimationDelegate {
         self.maxWidth = UIScreen.main.bounds.size.width - 20
         self.layer.cornerRadius = 5
         self.layer.masksToBounds = true
-        self.backgroundColor = UIColor.white//UIColor.gray.withAlphaComponent(0.8)
+        self.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
         self.numberOfLines = 0
         self.adjustsFontSizeToFitWidth = true
         self.textAlignment = .center
-        self.textColor = UIColor.black
+        self.textColor = UIColor.white
         self.font = UIFont.systemFont(ofSize: 13.0)
     }
     

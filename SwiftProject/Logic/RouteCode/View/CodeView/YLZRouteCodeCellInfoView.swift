@@ -16,10 +16,10 @@ protocol YLZRouteCodeCellInfoViewDelegate: AnyObject {
 class YLZRouteCodeCellInfoView: UIView {
     
     var eyeFlag:Bool = false;
-    var nameDesensitizationString:String = "*磊";
-    var certDesensitizationString:String = "362324********6010";
-    var nameString:String = "林磊";
-    var certString:String = "362324199610016010";
+    var nameDesensitizationString:String = "**智";
+    var certDesensitizationString:String = "362352********6015";
+    var nameString:String = "袁华智";
+    var certString:String = "362352199809016015";
     
     var handle:YLZRouteCodeCellInfoViewHandle?
     weak var routeCodeCellInfoViewDelegate : YLZRouteCodeCellInfoViewDelegate?

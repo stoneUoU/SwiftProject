@@ -19,6 +19,20 @@ open class HiLoginHelper:NSObject {
     @objc func toExcute() {
         
     }
+    
+    func loginWithSuccess(loginHandle:@escaping (_ isSuccess:Bool) -> Void) {
+        if (HiLoginHelper.shared.isLogined()) {
+            loginHandle(true);
+        } else {
+            let loginView = HiLoginViewController();
+            loginView.loginHandle = loginHandle;
+            HiPageHelper.fetchCurrentController()?.navigationController?.pushViewController(loginView, animated: true);
+        }
+    }
+    
+    func isLogined() -> Bool {
+        return HiUserDefault.shared.boolean(forKey: "ACCESS-TOKEN") ?? false;
+    }
 }
 
 

@@ -68,8 +68,6 @@
 		8ED5D4182EA7165A00AED7FC /* HiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */; };
 		8ED5D4192EA7165A00AED7FC /* HiTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */; };
 		8ED5D4262EA718DC00AED7FC /* HiMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */; };
-		8ED5D42B2EA725C900AED7FC /* __UNI__CBDCE04.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4282EA725C900AED7FC /* __UNI__CBDCE04.wgt */; };
-		8ED5D42C2EA725C900AED7FC /* __UNI__11E9B73.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4272EA725C900AED7FC /* __UNI__11E9B73.wgt */; };
 		8ED5D42E2EA7268900AED7FC /* HiUniSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D42D2EA7268900AED7FC /* HiUniSplashView.swift */; };
 		8ED5D4912EA72A9600AED7FC /* weex-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D48D2EA72A9600AED7FC /* weex-polyfill.js */; };
 		8ED5D4922EA72A9600AED7FC /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4882EA72A9600AED7FC /* __uniappes6.js */; };
@@ -89,6 +87,10 @@
 		8ED5D4A02EA72A9600AED7FC /* liblibStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4822EA72A9600AED7FC /* liblibStorage.a */; };
 		8ED5D4A12EA72A9600AED7FC /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D47D2EA72A9600AED7FC /* liblibIO.a */; };
 		8ED5D4A22EA72A9600AED7FC /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4812EA72A9600AED7FC /* liblibPDRCore.a */; };
+		8ED5D4A72EA72D3500AED7FC /* HiLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4A62EA72D2C00AED7FC /* HiLoginViewController.swift */; };
+		8ED5D4AA2EA756A900AED7FC /* __UNI__CBDCE04.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4A92EA756A900AED7FC /* __UNI__CBDCE04.wgt */; };
+		8ED5D4AB2EA756A900AED7FC /* __UNI__11E9B73.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4A82EA756A900AED7FC /* __UNI__11E9B73.wgt */; };
+		8ED5D4AE2EA7570300AED7FC /* HiUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */; };
 		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
 		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
@@ -185,8 +187,6 @@
 		8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTabBar.swift; sourceTree = "<group>"; };
 		8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTabbarViewController.swift; sourceTree = "<group>"; };
 		8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMineViewController.swift; sourceTree = "<group>"; };
-		8ED5D4272EA725C900AED7FC /* __UNI__11E9B73.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__11E9B73.wgt; sourceTree = "<group>"; };
-		8ED5D4282EA725C900AED7FC /* __UNI__CBDCE04.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__CBDCE04.wgt; sourceTree = "<group>"; };
 		8ED5D42D2EA7268900AED7FC /* HiUniSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUniSplashView.swift; sourceTree = "<group>"; };
 		8ED5D4302EA72A9600AED7FC /* flex_enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flex_enum.h; sourceTree = "<group>"; };
 		8ED5D4312EA72A9600AED7FC /* JSContext+Weex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSContext+Weex.h"; sourceTree = "<group>"; };
@@ -280,6 +280,10 @@
 		8ED5D48C2EA72A9600AED7FC /* unincomponents.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unincomponents.ttf; sourceTree = "<group>"; };
 		8ED5D48D2EA72A9600AED7FC /* weex-polyfill.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "weex-polyfill.js"; sourceTree = "<group>"; };
 		8ED5D48E2EA72A9600AED7FC /* weexUniJs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = weexUniJs.js; sourceTree = "<group>"; };
+		8ED5D4A62EA72D2C00AED7FC /* HiLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiLoginViewController.swift; sourceTree = "<group>"; };
+		8ED5D4A82EA756A900AED7FC /* __UNI__11E9B73.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__11E9B73.wgt; sourceTree = "<group>"; };
+		8ED5D4A92EA756A900AED7FC /* __UNI__CBDCE04.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__CBDCE04.wgt; sourceTree = "<group>"; };
+		8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUserDefault.swift; sourceTree = "<group>"; };
 		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
@@ -635,6 +639,9 @@
 		8ED5D41B2EA7171500AED7FC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8ED5D4A32EA72D1200AED7FC /* Model */,
+				8ED5D4A42EA72D1900AED7FC /* View */,
+				8ED5D4A52EA72D1F00AED7FC /* Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -704,19 +711,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		8ED5D4292EA725C900AED7FC /* Apps */ = {
-			isa = PBXGroup;
-			children = (
-				8ED5D4272EA725C900AED7FC /* __UNI__11E9B73.wgt */,
-				8ED5D4282EA725C900AED7FC /* __UNI__CBDCE04.wgt */,
-			);
-			path = Apps;
-			sourceTree = "<group>";
-		};
 		8ED5D42A2EA725C900AED7FC /* uniMPs */ = {
 			isa = PBXGroup;
 			children = (
-				8ED5D4292EA725C900AED7FC /* Apps */,
+				8ED5D4A82EA756A900AED7FC /* __UNI__11E9B73.wgt */,
+				8ED5D4A92EA756A900AED7FC /* __UNI__CBDCE04.wgt */,
 			);
 			path = uniMPs;
 			sourceTree = "<group>";
@@ -860,6 +859,36 @@
 			path = UniSdk;
 			sourceTree = "<group>";
 		};
+		8ED5D4A32EA72D1200AED7FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ED5D4A42EA72D1900AED7FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8ED5D4A52EA72D1F00AED7FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4A62EA72D2C00AED7FC /* HiLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8ED5D4AC2EA756EC00AED7FC /* HiUserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */,
+			);
+			path = HiUserDefault;
+			sourceTree = "<group>";
+		};
 		8EFB12CD265BB46C007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -894,6 +923,7 @@
 		8EFFDA162828B61F000EA7D6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8ED5D4AC2EA756EC00AED7FC /* HiUserDefault */,
 				8E2C4B702DDC2D3900109E5E /* UMPush */,
 				8EFFDA172828B61F000EA7D6 /* HiToast */,
 				8EFFDA1A2828B61F000EA7D6 /* HiPage */,
@@ -1064,8 +1094,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EFB12E6265BB46D007D9FE1 /* LaunchScreen.storyboard in Resources */,
-				8ED5D42B2EA725C900AED7FC /* __UNI__CBDCE04.wgt in Resources */,
-				8ED5D42C2EA725C900AED7FC /* __UNI__11E9B73.wgt in Resources */,
 				8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */,
 				8ED5D4912EA72A9600AED7FC /* weex-polyfill.js in Resources */,
 				8ED5D4922EA72A9600AED7FC /* __uniappes6.js in Resources */,
@@ -1074,6 +1102,8 @@
 				8ED5D4952EA72A9600AED7FC /* PandoraApi.bundle in Resources */,
 				8ED5D4962EA72A9600AED7FC /* weexUniJs.js in Resources */,
 				8ED5D4972EA72A9600AED7FC /* unincomponents.ttf in Resources */,
+				8ED5D4AA2EA756A900AED7FC /* __UNI__CBDCE04.wgt in Resources */,
+				8ED5D4AB2EA756A900AED7FC /* __UNI__11E9B73.wgt in Resources */,
 				8E95E6A22D803248005FF900 /* member_plus.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1089,9 +1119,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1106,9 +1140,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1142,7 +1180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
@@ -1152,7 +1194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
@@ -1207,6 +1253,7 @@
 				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
 				8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */,
 				8E344A86265BD437008AF1BA /* String+Extension.swift in Sources */,
+				8ED5D4AE2EA7570300AED7FC /* HiUserDefault.swift in Sources */,
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
 				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
 				8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */,
@@ -1219,6 +1266,7 @@
 				8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */,
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
 				8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */,
+				8ED5D4A72EA72D3500AED7FC /* HiLoginViewController.swift in Sources */,
 				8EAF36882DF963C400645B1E /* HrssAllDoTableViewCell.swift in Sources */,
 				8E344A84265BD437008AF1BA /* UIView+Extension.swift in Sources */,
 				8E344A41265BCAF7008AF1BA /* Const.swift in Sources */,

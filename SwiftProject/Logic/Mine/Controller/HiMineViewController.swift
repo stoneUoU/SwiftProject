@@ -48,6 +48,7 @@ class HiMineViewController: UIViewController {
     
     @objc func toExcute(_ sender: UIButton) {
         debugPrint("Swift Project");
-        
+        let vc:HiLoginViewController = HiLoginViewController();
+        self.navigationController?.pushViewController(vc, animated: true);
     }
 }
