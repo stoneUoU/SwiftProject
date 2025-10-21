@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 //    lazy var flutterEngine = FlutterEngine(name: "hi_flutter_module_engine");
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let options = NSMutableDictionary.init(dictionary: launchOptions ?? [:])
+        options.setValue(NSNumber.init(value:true), forKey: "debug")
+        DCUniMPSDKEngine.initSDKEnvironment(launchOptions: options as! [AnyHashable : Any]);
+        
         self.initWindow { boolean in
             DispatchQueue.main.async {
 //                self.flutterEngine.run()

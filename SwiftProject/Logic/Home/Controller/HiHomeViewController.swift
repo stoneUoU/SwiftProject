@@ -7,8 +7,11 @@
 
 import UIKit
 
-class HiHomeViewController: UIViewController {
+//#warning ("swift 工程仅作为运行参考，更多示例请参考 OC 工程")
+class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
 
+    let APPID1 = "__UNI__11E9B73"
+    
     @objc lazy var registerButton: UIButton = {
         let registerButton = UIButton.init(type: UIButton.ButtonType.custom)
         registerButton.setTitle("Swift Project", for: UIControl.State.normal)
@@ -61,9 +64,25 @@ class HiHomeViewController: UIViewController {
         return healthButton
     }()
     
+    @objc lazy var openButton: UIButton = {
+        let openButton = UIButton.init(type: UIButton.ButtonType.custom)
+        openButton.setTitle("打开Uni小程序", for: UIControl.State.normal)
+        openButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        openButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
+        openButton.layer.borderWidth = 0.5;
+        openButton.layer.borderColor = UIColor.color_HexStr("#8676d7").cgColor;
+        openButton.layer.cornerRadius = 20;
+        openButton.layer.masksToBounds = true;
+        openButton.tag = 4;
+        openButton.addTarget(self, action: #selector(toExcute(_:)), for: .touchUpInside)
+        return openButton
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI();
+        DCUniMPSDKEngine.setDelegate(self)
+        self.checkUniMPResoutce(appid: APPID1)
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -78,6 +97,7 @@ class HiHomeViewController: UIViewController {
         self.view.addSubview(self.hrssButton)
         self.view.addSubview(self.routeButton)
         self.view.addSubview(self.healthButton)
+        self.view.addSubview(self.openButton)
         
         self.setMas();
     }
@@ -103,6 +123,11 @@ class HiHomeViewController: UIViewController {
             make.top.equalTo(self.routeButton.snp.bottom).offset(64)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
+        self.openButton.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.view)
+            make.top.equalTo(self.healthButton.snp.bottom).offset(64)
+            make.size.equalTo(CGSize.init(width: 240, height: 40))
+        }
     }
     
     @objc func toExcute(_ sender: UIButton) {
@@ -114,9 +139,59 @@ class HiHomeViewController: UIViewController {
         } else if (tag == 2) {
             let vc:YLZHealthCodeViewController = YLZHealthCodeViewController();
             self.navigationController?.pushViewController(vc, animated: true);
-        } else {
+        } else if (tag == 3) {
             let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
             self.navigationController?.pushViewController(vc, animated: true);
+        } else if (tag == 4) {
+            let configuration = DCUniMPConfiguration.init()
+            configuration.enableBackground = true
+            
+            DCUniMPSDKEngine.openUniMP(APPID1, configuration: configuration) { instance, error in
+                if instance != nil {
+                    print("小程序打开成功")
+                } else {
+                    print(error as Any)
+                }
+            }
         }
+    }
+    
+    func checkUniMPResoutce(appid: String) -> Void {
+        let wgtPath = Bundle.main.path(forResource: appid, ofType: "wgt") ?? ""
+#warning ("注意：isExistsUniMP: 方法判断的仅是运行路径中是否有对应的应用资源，宿主还需要做好内置wgt版本的管理，如果更新了内置的wgt也应该执行 releaseAppResourceToRunPathWithAppid 方法应用最新的资源")
+        if DCUniMPSDKEngine.isExistsUniMP(appid) {
+            let version = DCUniMPSDKEngine.getUniMPVersionInfo(withAppid: appid)!
+            let name = version["code"]!
+            let code = version["code"]!
+            print("小程序：\(appid) 资源已存在，版本信息：name:\(name) code:\(code)")
+        } else {
+            do {
+                try DCUniMPSDKEngine.installUniMPResource(withAppid: appid, resourceFilePath: wgtPath, password: nil)
+                let version = DCUniMPSDKEngine.getUniMPVersionInfo(withAppid: appid)!
+                let name = version["code"]!
+                let code = version["code"]!
+                print("✅ 小程序：\(appid) 资源释放成功，版本信息：name:\(name) code:\(code)")
+            } catch let err as NSError {
+                print("❌ 小程序：\(appid) 资源释放失败:\(err)")
+            }
+        }
+    }
+}
+
+
+extension HiHomeViewController {
+    
+    // MARK: - DCUniMPSDKEngineDelegate
+    func uniMP(onClose appid: String) {
+        print("小程序：\(appid) closed")
+    }
+    
+    func defaultMenuItemClicked(_ appid: String, identifier: String) {
+        print("defaultMenuItemClicked：\(appid) \(identifier)")
+    }
+    
+    func splashView(forApp appid: String) -> UIView {
+        let splashView:UIView = HiUniSplashView();
+        return splashView
     }
 }

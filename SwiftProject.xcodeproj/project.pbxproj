@@ -68,6 +68,27 @@
 		8ED5D4182EA7165A00AED7FC /* HiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */; };
 		8ED5D4192EA7165A00AED7FC /* HiTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */; };
 		8ED5D4262EA718DC00AED7FC /* HiMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */; };
+		8ED5D42B2EA725C900AED7FC /* __UNI__CBDCE04.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4282EA725C900AED7FC /* __UNI__CBDCE04.wgt */; };
+		8ED5D42C2EA725C900AED7FC /* __UNI__11E9B73.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4272EA725C900AED7FC /* __UNI__11E9B73.wgt */; };
+		8ED5D42E2EA7268900AED7FC /* HiUniSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D42D2EA7268900AED7FC /* HiUniSplashView.swift */; };
+		8ED5D4912EA72A9600AED7FC /* weex-polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D48D2EA72A9600AED7FC /* weex-polyfill.js */; };
+		8ED5D4922EA72A9600AED7FC /* __uniappes6.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4882EA72A9600AED7FC /* __uniappes6.js */; };
+		8ED5D4932EA72A9600AED7FC /* uni-jsframework-vue3.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D48B2EA72A9600AED7FC /* uni-jsframework-vue3.js */; };
+		8ED5D4942EA72A9600AED7FC /* uni-jsframework.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D48A2EA72A9600AED7FC /* uni-jsframework.js */; };
+		8ED5D4952EA72A9600AED7FC /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4892EA72A9600AED7FC /* PandoraApi.bundle */; };
+		8ED5D4962EA72A9600AED7FC /* weexUniJs.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D48E2EA72A9600AED7FC /* weexUniJs.js */; };
+		8ED5D4972EA72A9600AED7FC /* unincomponents.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D48C2EA72A9600AED7FC /* unincomponents.ttf */; };
+		8ED5D4982EA72A9600AED7FC /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D47C2EA72A9600AED7FC /* libcoreSupport.a */; };
+		8ED5D4992EA72A9600AED7FC /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4852EA72A9600AED7FC /* libSDWebImage.a */; };
+		8ED5D49A2EA72A9600AED7FC /* storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4862EA72A9600AED7FC /* storage.framework */; };
+		8ED5D49B2EA72A9600AED7FC /* liblibUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4832EA72A9600AED7FC /* liblibUI.a */; };
+		8ED5D49C2EA72A9600AED7FC /* liblibNativeUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D47F2EA72A9600AED7FC /* liblibNativeUI.a */; };
+		8ED5D49D2EA72A9600AED7FC /* liblibNativeObj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D47E2EA72A9600AED7FC /* liblibNativeObj.a */; };
+		8ED5D49E2EA72A9600AED7FC /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4802EA72A9600AED7FC /* liblibNavigator.a */; };
+		8ED5D49F2EA72A9600AED7FC /* liblibWeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4842EA72A9600AED7FC /* liblibWeex.a */; };
+		8ED5D4A02EA72A9600AED7FC /* liblibStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4822EA72A9600AED7FC /* liblibStorage.a */; };
+		8ED5D4A12EA72A9600AED7FC /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D47D2EA72A9600AED7FC /* liblibIO.a */; };
+		8ED5D4A22EA72A9600AED7FC /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED5D4812EA72A9600AED7FC /* liblibPDRCore.a */; };
 		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
 		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
@@ -164,6 +185,101 @@
 		8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTabBar.swift; sourceTree = "<group>"; };
 		8ED5D4162EA7165A00AED7FC /* HiTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiTabbarViewController.swift; sourceTree = "<group>"; };
 		8ED5D4252EA718D100AED7FC /* HiMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMineViewController.swift; sourceTree = "<group>"; };
+		8ED5D4272EA725C900AED7FC /* __UNI__11E9B73.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__11E9B73.wgt; sourceTree = "<group>"; };
+		8ED5D4282EA725C900AED7FC /* __UNI__CBDCE04.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__CBDCE04.wgt; sourceTree = "<group>"; };
+		8ED5D42D2EA7268900AED7FC /* HiUniSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUniSplashView.swift; sourceTree = "<group>"; };
+		8ED5D4302EA72A9600AED7FC /* flex_enum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flex_enum.h; sourceTree = "<group>"; };
+		8ED5D4312EA72A9600AED7FC /* JSContext+Weex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSContext+Weex.h"; sourceTree = "<group>"; };
+		8ED5D4322EA72A9600AED7FC /* layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layout.h; sourceTree = "<group>"; };
+		8ED5D4332EA72A9600AED7FC /* NSObject+WXSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WXSwizzle.h"; sourceTree = "<group>"; };
+		8ED5D4342EA72A9600AED7FC /* style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = style.h; sourceTree = "<group>"; };
+		8ED5D4352EA72A9600AED7FC /* UniPluginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniPluginProtocol.h; sourceTree = "<group>"; };
+		8ED5D4362EA72A9600AED7FC /* WeexProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeexProtocol.h; sourceTree = "<group>"; };
+		8ED5D4372EA72A9600AED7FC /* WeexSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeexSDK.h; sourceTree = "<group>"; };
+		8ED5D4382EA72A9600AED7FC /* WXAComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAComponent.h; sourceTree = "<group>"; };
+		8ED5D4392EA72A9600AED7FC /* WXAnalyzerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAnalyzerCenter.h; sourceTree = "<group>"; };
+		8ED5D43A2EA72A9600AED7FC /* WXAnalyzerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAnalyzerProtocol.h; sourceTree = "<group>"; };
+		8ED5D43B2EA72A9600AED7FC /* WXApmForInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApmForInstance.h; sourceTree = "<group>"; };
+		8ED5D43C2EA72A9600AED7FC /* WXApmProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApmProtocol.h; sourceTree = "<group>"; };
+		8ED5D43D2EA72A9600AED7FC /* WXAppConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAppConfiguration.h; sourceTree = "<group>"; };
+		8ED5D43E2EA72A9600AED7FC /* WXAppMonitorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAppMonitorProtocol.h; sourceTree = "<group>"; };
+		8ED5D43F2EA72A9600AED7FC /* WXBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXBaseViewController.h; sourceTree = "<group>"; };
+		8ED5D4402EA72A9600AED7FC /* WXBridgeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXBridgeManager.h; sourceTree = "<group>"; };
+		8ED5D4412EA72A9600AED7FC /* WXBridgeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXBridgeProtocol.h; sourceTree = "<group>"; };
+		8ED5D4422EA72A9600AED7FC /* WXComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXComponent.h; sourceTree = "<group>"; };
+		8ED5D4432EA72A9600AED7FC /* WXComponent+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXComponent+Layout.h"; sourceTree = "<group>"; };
+		8ED5D4442EA72A9600AED7FC /* WXComponentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXComponentManager.h; sourceTree = "<group>"; };
+		8ED5D4452EA72A9600AED7FC /* WXConfigCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXConfigCenterProtocol.h; sourceTree = "<group>"; };
+		8ED5D4462EA72A9600AED7FC /* WXConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXConvert.h; sourceTree = "<group>"; };
+		8ED5D4472EA72A9600AED7FC /* WXDebugTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXDebugTool.h; sourceTree = "<group>"; };
+		8ED5D4482EA72A9600AED7FC /* WXDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXDefine.h; sourceTree = "<group>"; };
+		8ED5D4492EA72A9600AED7FC /* WXDisplayLinkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXDisplayLinkManager.h; sourceTree = "<group>"; };
+		8ED5D44A2EA72A9600AED7FC /* WXErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXErrorView.h; sourceTree = "<group>"; };
+		8ED5D44B2EA72A9600AED7FC /* WXEventModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXEventModuleProtocol.h; sourceTree = "<group>"; };
+		8ED5D44C2EA72A9600AED7FC /* WXExceptionUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXExceptionUtils.h; sourceTree = "<group>"; };
+		8ED5D44D2EA72A9600AED7FC /* WXExtendCallNativeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXExtendCallNativeProtocol.h; sourceTree = "<group>"; };
+		8ED5D44E2EA72A9600AED7FC /* WXImgLoaderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderProtocol.h; sourceTree = "<group>"; };
+		8ED5D44F2EA72A9600AED7FC /* WXIndicatorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXIndicatorComponent.h; sourceTree = "<group>"; };
+		8ED5D4502EA72A9600AED7FC /* WXJSExceptionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXJSExceptionInfo.h; sourceTree = "<group>"; };
+		8ED5D4512EA72A9600AED7FC /* WXJSExceptionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXJSExceptionProtocol.h; sourceTree = "<group>"; };
+		8ED5D4522EA72A9600AED7FC /* WXJSFrameworkLoadProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXJSFrameworkLoadProtocol.h; sourceTree = "<group>"; };
+		8ED5D4532EA72A9600AED7FC /* WXListComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXListComponent.h; sourceTree = "<group>"; };
+		8ED5D4542EA72A9600AED7FC /* WXModalUIModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXModalUIModule.h; sourceTree = "<group>"; };
+		8ED5D4552EA72A9600AED7FC /* WXModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXModuleProtocol.h; sourceTree = "<group>"; };
+		8ED5D4562EA72A9600AED7FC /* WXMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMonitor.h; sourceTree = "<group>"; };
+		8ED5D4572EA72A9600AED7FC /* WXNavigationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXNavigationProtocol.h; sourceTree = "<group>"; };
+		8ED5D4582EA72A9600AED7FC /* WXNetworkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXNetworkProtocol.h; sourceTree = "<group>"; };
+		8ED5D4592EA72A9600AED7FC /* WXPageEventNotifyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXPageEventNotifyEvent.h; sourceTree = "<group>"; };
+		8ED5D45A2EA72A9600AED7FC /* WXPrerenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXPrerenderManager.h; sourceTree = "<group>"; };
+		8ED5D45B2EA72A9600AED7FC /* WXRecyclerComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXRecyclerComponent.h; sourceTree = "<group>"; };
+		8ED5D45C2EA72A9600AED7FC /* WXResourceLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXResourceLoader.h; sourceTree = "<group>"; };
+		8ED5D45D2EA72A9600AED7FC /* WXResourceRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXResourceRequest.h; sourceTree = "<group>"; };
+		8ED5D45E2EA72A9600AED7FC /* WXResourceRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXResourceRequestHandler.h; sourceTree = "<group>"; };
+		8ED5D45F2EA72A9600AED7FC /* WXResourceResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXResourceResponse.h; sourceTree = "<group>"; };
+		8ED5D4602EA72A9600AED7FC /* WXRichText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXRichText.h; sourceTree = "<group>"; };
+		8ED5D4612EA72A9600AED7FC /* WXRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXRootView.h; sourceTree = "<group>"; };
+		8ED5D4622EA72A9600AED7FC /* WXRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXRootViewController.h; sourceTree = "<group>"; };
+		8ED5D4632EA72A9600AED7FC /* WXScrollerComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXScrollerComponent.h; sourceTree = "<group>"; };
+		8ED5D4642EA72A9600AED7FC /* WXScrollerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXScrollerProtocol.h; sourceTree = "<group>"; };
+		8ED5D4652EA72A9600AED7FC /* WXSDKEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSDKEngine.h; sourceTree = "<group>"; };
+		8ED5D4662EA72A9600AED7FC /* WXSDKError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSDKError.h; sourceTree = "<group>"; };
+		8ED5D4672EA72A9600AED7FC /* WXSDKInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSDKInstance.h; sourceTree = "<group>"; };
+		8ED5D4682EA72A9600AED7FC /* WXSDKInstance+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSDKInstance+Bridge.h"; sourceTree = "<group>"; };
+		8ED5D4692EA72A9600AED7FC /* WXSDKInstance+DCExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSDKInstance+DCExtend.h"; sourceTree = "<group>"; };
+		8ED5D46A2EA72A9600AED7FC /* WXSDKManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSDKManager.h; sourceTree = "<group>"; };
+		8ED5D46B2EA72A9600AED7FC /* WXTracingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXTracingManager.h; sourceTree = "<group>"; };
+		8ED5D46C2EA72A9600AED7FC /* WXTracingProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXTracingProtocol.h; sourceTree = "<group>"; };
+		8ED5D46D2EA72A9600AED7FC /* WXType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXType.h; sourceTree = "<group>"; };
+		8ED5D46E2EA72A9600AED7FC /* WXURLRewriteProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXURLRewriteProtocol.h; sourceTree = "<group>"; };
+		8ED5D46F2EA72A9600AED7FC /* WXUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXUtility.h; sourceTree = "<group>"; };
+		8ED5D4702EA72A9600AED7FC /* WXValidateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXValidateProtocol.h; sourceTree = "<group>"; };
+		8ED5D4712EA72A9600AED7FC /* WXView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXView.h; sourceTree = "<group>"; };
+		8ED5D4722EA72A9600AED7FC /* WXVoiceOverModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXVoiceOverModule.h; sourceTree = "<group>"; };
+		8ED5D4732EA72A9600AED7FC /* WXWebSocketHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXWebSocketHandler.h; sourceTree = "<group>"; };
+		8ED5D4752EA72A9600AED7FC /* DCUniMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniMP.h; sourceTree = "<group>"; };
+		8ED5D4762EA72A9600AED7FC /* DCUniMPConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniMPConfiguration.h; sourceTree = "<group>"; };
+		8ED5D4772EA72A9600AED7FC /* DCUniMPError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniMPError.h; sourceTree = "<group>"; };
+		8ED5D4782EA72A9600AED7FC /* DCUniMPInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniMPInstance.h; sourceTree = "<group>"; };
+		8ED5D4792EA72A9600AED7FC /* DCUniMPMenuActionSheetStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniMPMenuActionSheetStyle.h; sourceTree = "<group>"; };
+		8ED5D47A2EA72A9600AED7FC /* DCUniMPSDKEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCUniMPSDKEngine.h; sourceTree = "<group>"; };
+		8ED5D47C2EA72A9600AED7FC /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoreSupport.a; sourceTree = "<group>"; };
+		8ED5D47D2EA72A9600AED7FC /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibIO.a; sourceTree = "<group>"; };
+		8ED5D47E2EA72A9600AED7FC /* liblibNativeObj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeObj.a; sourceTree = "<group>"; };
+		8ED5D47F2EA72A9600AED7FC /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNativeUI.a; sourceTree = "<group>"; };
+		8ED5D4802EA72A9600AED7FC /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibNavigator.a; sourceTree = "<group>"; };
+		8ED5D4812EA72A9600AED7FC /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibPDRCore.a; sourceTree = "<group>"; };
+		8ED5D4822EA72A9600AED7FC /* liblibStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibStorage.a; sourceTree = "<group>"; };
+		8ED5D4832EA72A9600AED7FC /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibUI.a; sourceTree = "<group>"; };
+		8ED5D4842EA72A9600AED7FC /* liblibWeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibWeex.a; sourceTree = "<group>"; };
+		8ED5D4852EA72A9600AED7FC /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDWebImage.a; sourceTree = "<group>"; };
+		8ED5D4862EA72A9600AED7FC /* storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = storage.framework; sourceTree = "<group>"; };
+		8ED5D4882EA72A9600AED7FC /* __uniappes6.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = __uniappes6.js; sourceTree = "<group>"; };
+		8ED5D4892EA72A9600AED7FC /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
+		8ED5D48A2EA72A9600AED7FC /* uni-jsframework.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework.js"; sourceTree = "<group>"; };
+		8ED5D48B2EA72A9600AED7FC /* uni-jsframework-vue3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "uni-jsframework-vue3.js"; sourceTree = "<group>"; };
+		8ED5D48C2EA72A9600AED7FC /* unincomponents.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unincomponents.ttf; sourceTree = "<group>"; };
+		8ED5D48D2EA72A9600AED7FC /* weex-polyfill.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "weex-polyfill.js"; sourceTree = "<group>"; };
+		8ED5D48E2EA72A9600AED7FC /* weexUniJs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = weexUniJs.js; sourceTree = "<group>"; };
 		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
@@ -199,6 +315,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED5D4982EA72A9600AED7FC /* libcoreSupport.a in Frameworks */,
+				8ED5D4992EA72A9600AED7FC /* libSDWebImage.a in Frameworks */,
+				8ED5D49A2EA72A9600AED7FC /* storage.framework in Frameworks */,
+				8ED5D49B2EA72A9600AED7FC /* liblibUI.a in Frameworks */,
+				8ED5D49C2EA72A9600AED7FC /* liblibNativeUI.a in Frameworks */,
+				8ED5D49D2EA72A9600AED7FC /* liblibNativeObj.a in Frameworks */,
+				8ED5D49E2EA72A9600AED7FC /* liblibNavigator.a in Frameworks */,
+				8ED5D49F2EA72A9600AED7FC /* liblibWeex.a in Frameworks */,
+				8ED5D4A02EA72A9600AED7FC /* liblibStorage.a in Frameworks */,
+				8ED5D4A12EA72A9600AED7FC /* liblibIO.a in Frameworks */,
+				8ED5D4A22EA72A9600AED7FC /* liblibPDRCore.a in Frameworks */,
 				92517691E6A6C0953452DAFC /* Pods_SwiftProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +377,7 @@
 		8E344A45265BCC66008AF1BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8ED5D42A2EA725C900AED7FC /* uniMPs */,
 				8E95E6A32D8032B5005FF900 /* svgs */,
 				8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */,
 				8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */,
@@ -541,6 +669,7 @@
 		8ED5D41F2EA7188500AED7FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8ED5D42D2EA7268900AED7FC /* HiUniSplashView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -575,6 +704,162 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8ED5D4292EA725C900AED7FC /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4272EA725C900AED7FC /* __UNI__11E9B73.wgt */,
+				8ED5D4282EA725C900AED7FC /* __UNI__CBDCE04.wgt */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		8ED5D42A2EA725C900AED7FC /* uniMPs */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4292EA725C900AED7FC /* Apps */,
+			);
+			path = uniMPs;
+			sourceTree = "<group>";
+		};
+		8ED5D42F2EA72A8000AED7FC /* ThirdSdks */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4902EA72A9600AED7FC /* UniSdk */,
+			);
+			path = ThirdSdks;
+			sourceTree = "<group>";
+		};
+		8ED5D4742EA72A9600AED7FC /* weexHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4302EA72A9600AED7FC /* flex_enum.h */,
+				8ED5D4312EA72A9600AED7FC /* JSContext+Weex.h */,
+				8ED5D4322EA72A9600AED7FC /* layout.h */,
+				8ED5D4332EA72A9600AED7FC /* NSObject+WXSwizzle.h */,
+				8ED5D4342EA72A9600AED7FC /* style.h */,
+				8ED5D4352EA72A9600AED7FC /* UniPluginProtocol.h */,
+				8ED5D4362EA72A9600AED7FC /* WeexProtocol.h */,
+				8ED5D4372EA72A9600AED7FC /* WeexSDK.h */,
+				8ED5D4382EA72A9600AED7FC /* WXAComponent.h */,
+				8ED5D4392EA72A9600AED7FC /* WXAnalyzerCenter.h */,
+				8ED5D43A2EA72A9600AED7FC /* WXAnalyzerProtocol.h */,
+				8ED5D43B2EA72A9600AED7FC /* WXApmForInstance.h */,
+				8ED5D43C2EA72A9600AED7FC /* WXApmProtocol.h */,
+				8ED5D43D2EA72A9600AED7FC /* WXAppConfiguration.h */,
+				8ED5D43E2EA72A9600AED7FC /* WXAppMonitorProtocol.h */,
+				8ED5D43F2EA72A9600AED7FC /* WXBaseViewController.h */,
+				8ED5D4402EA72A9600AED7FC /* WXBridgeManager.h */,
+				8ED5D4412EA72A9600AED7FC /* WXBridgeProtocol.h */,
+				8ED5D4422EA72A9600AED7FC /* WXComponent.h */,
+				8ED5D4432EA72A9600AED7FC /* WXComponent+Layout.h */,
+				8ED5D4442EA72A9600AED7FC /* WXComponentManager.h */,
+				8ED5D4452EA72A9600AED7FC /* WXConfigCenterProtocol.h */,
+				8ED5D4462EA72A9600AED7FC /* WXConvert.h */,
+				8ED5D4472EA72A9600AED7FC /* WXDebugTool.h */,
+				8ED5D4482EA72A9600AED7FC /* WXDefine.h */,
+				8ED5D4492EA72A9600AED7FC /* WXDisplayLinkManager.h */,
+				8ED5D44A2EA72A9600AED7FC /* WXErrorView.h */,
+				8ED5D44B2EA72A9600AED7FC /* WXEventModuleProtocol.h */,
+				8ED5D44C2EA72A9600AED7FC /* WXExceptionUtils.h */,
+				8ED5D44D2EA72A9600AED7FC /* WXExtendCallNativeProtocol.h */,
+				8ED5D44E2EA72A9600AED7FC /* WXImgLoaderProtocol.h */,
+				8ED5D44F2EA72A9600AED7FC /* WXIndicatorComponent.h */,
+				8ED5D4502EA72A9600AED7FC /* WXJSExceptionInfo.h */,
+				8ED5D4512EA72A9600AED7FC /* WXJSExceptionProtocol.h */,
+				8ED5D4522EA72A9600AED7FC /* WXJSFrameworkLoadProtocol.h */,
+				8ED5D4532EA72A9600AED7FC /* WXListComponent.h */,
+				8ED5D4542EA72A9600AED7FC /* WXModalUIModule.h */,
+				8ED5D4552EA72A9600AED7FC /* WXModuleProtocol.h */,
+				8ED5D4562EA72A9600AED7FC /* WXMonitor.h */,
+				8ED5D4572EA72A9600AED7FC /* WXNavigationProtocol.h */,
+				8ED5D4582EA72A9600AED7FC /* WXNetworkProtocol.h */,
+				8ED5D4592EA72A9600AED7FC /* WXPageEventNotifyEvent.h */,
+				8ED5D45A2EA72A9600AED7FC /* WXPrerenderManager.h */,
+				8ED5D45B2EA72A9600AED7FC /* WXRecyclerComponent.h */,
+				8ED5D45C2EA72A9600AED7FC /* WXResourceLoader.h */,
+				8ED5D45D2EA72A9600AED7FC /* WXResourceRequest.h */,
+				8ED5D45E2EA72A9600AED7FC /* WXResourceRequestHandler.h */,
+				8ED5D45F2EA72A9600AED7FC /* WXResourceResponse.h */,
+				8ED5D4602EA72A9600AED7FC /* WXRichText.h */,
+				8ED5D4612EA72A9600AED7FC /* WXRootView.h */,
+				8ED5D4622EA72A9600AED7FC /* WXRootViewController.h */,
+				8ED5D4632EA72A9600AED7FC /* WXScrollerComponent.h */,
+				8ED5D4642EA72A9600AED7FC /* WXScrollerProtocol.h */,
+				8ED5D4652EA72A9600AED7FC /* WXSDKEngine.h */,
+				8ED5D4662EA72A9600AED7FC /* WXSDKError.h */,
+				8ED5D4672EA72A9600AED7FC /* WXSDKInstance.h */,
+				8ED5D4682EA72A9600AED7FC /* WXSDKInstance+Bridge.h */,
+				8ED5D4692EA72A9600AED7FC /* WXSDKInstance+DCExtend.h */,
+				8ED5D46A2EA72A9600AED7FC /* WXSDKManager.h */,
+				8ED5D46B2EA72A9600AED7FC /* WXTracingManager.h */,
+				8ED5D46C2EA72A9600AED7FC /* WXTracingProtocol.h */,
+				8ED5D46D2EA72A9600AED7FC /* WXType.h */,
+				8ED5D46E2EA72A9600AED7FC /* WXURLRewriteProtocol.h */,
+				8ED5D46F2EA72A9600AED7FC /* WXUtility.h */,
+				8ED5D4702EA72A9600AED7FC /* WXValidateProtocol.h */,
+				8ED5D4712EA72A9600AED7FC /* WXView.h */,
+				8ED5D4722EA72A9600AED7FC /* WXVoiceOverModule.h */,
+				8ED5D4732EA72A9600AED7FC /* WXWebSocketHandler.h */,
+			);
+			path = weexHeader;
+			sourceTree = "<group>";
+		};
+		8ED5D47B2EA72A9600AED7FC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4742EA72A9600AED7FC /* weexHeader */,
+				8ED5D4752EA72A9600AED7FC /* DCUniMP.h */,
+				8ED5D4762EA72A9600AED7FC /* DCUniMPConfiguration.h */,
+				8ED5D4772EA72A9600AED7FC /* DCUniMPError.h */,
+				8ED5D4782EA72A9600AED7FC /* DCUniMPInstance.h */,
+				8ED5D4792EA72A9600AED7FC /* DCUniMPMenuActionSheetStyle.h */,
+				8ED5D47A2EA72A9600AED7FC /* DCUniMPSDKEngine.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8ED5D4872EA72A9600AED7FC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D47C2EA72A9600AED7FC /* libcoreSupport.a */,
+				8ED5D47D2EA72A9600AED7FC /* liblibIO.a */,
+				8ED5D47E2EA72A9600AED7FC /* liblibNativeObj.a */,
+				8ED5D47F2EA72A9600AED7FC /* liblibNativeUI.a */,
+				8ED5D4802EA72A9600AED7FC /* liblibNavigator.a */,
+				8ED5D4812EA72A9600AED7FC /* liblibPDRCore.a */,
+				8ED5D4822EA72A9600AED7FC /* liblibStorage.a */,
+				8ED5D4832EA72A9600AED7FC /* liblibUI.a */,
+				8ED5D4842EA72A9600AED7FC /* liblibWeex.a */,
+				8ED5D4852EA72A9600AED7FC /* libSDWebImage.a */,
+				8ED5D4862EA72A9600AED7FC /* storage.framework */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		8ED5D48F2EA72A9600AED7FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D4882EA72A9600AED7FC /* __uniappes6.js */,
+				8ED5D4892EA72A9600AED7FC /* PandoraApi.bundle */,
+				8ED5D48A2EA72A9600AED7FC /* uni-jsframework.js */,
+				8ED5D48B2EA72A9600AED7FC /* uni-jsframework-vue3.js */,
+				8ED5D48C2EA72A9600AED7FC /* unincomponents.ttf */,
+				8ED5D48D2EA72A9600AED7FC /* weex-polyfill.js */,
+				8ED5D48E2EA72A9600AED7FC /* weexUniJs.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8ED5D4902EA72A9600AED7FC /* UniSdk */ = {
+			isa = PBXGroup;
+			children = (
+				8ED5D47B2EA72A9600AED7FC /* Headers */,
+				8ED5D4872EA72A9600AED7FC /* Libs */,
+				8ED5D48F2EA72A9600AED7FC /* Resources */,
+			);
+			path = UniSdk;
+			sourceTree = "<group>";
+		};
 		8EFB12CD265BB46C007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -598,6 +883,7 @@
 			children = (
 				8E2C4B6E2DDC2D1000109E5E /* SwiftProject.entitlements */,
 				8E344A39265BCA63008AF1BA /* Base */,
+				8ED5D42F2EA72A8000AED7FC /* ThirdSdks */,
 				8EFFDA162828B61F000EA7D6 /* Helpers */,
 				8EA21E9727002D9E00A9039B /* Logic */,
 				8E344A45265BCC66008AF1BA /* Supporting Files */,
@@ -778,7 +1064,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EFB12E6265BB46D007D9FE1 /* LaunchScreen.storyboard in Resources */,
+				8ED5D42B2EA725C900AED7FC /* __UNI__CBDCE04.wgt in Resources */,
+				8ED5D42C2EA725C900AED7FC /* __UNI__11E9B73.wgt in Resources */,
 				8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */,
+				8ED5D4912EA72A9600AED7FC /* weex-polyfill.js in Resources */,
+				8ED5D4922EA72A9600AED7FC /* __uniappes6.js in Resources */,
+				8ED5D4932EA72A9600AED7FC /* uni-jsframework-vue3.js in Resources */,
+				8ED5D4942EA72A9600AED7FC /* uni-jsframework.js in Resources */,
+				8ED5D4952EA72A9600AED7FC /* PandoraApi.bundle in Resources */,
+				8ED5D4962EA72A9600AED7FC /* weexUniJs.js in Resources */,
+				8ED5D4972EA72A9600AED7FC /* unincomponents.ttf in Resources */,
 				8E95E6A22D803248005FF900 /* member_plus.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,13 +1089,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -815,13 +1106,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -855,11 +1142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
@@ -869,11 +1152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
@@ -920,6 +1199,7 @@
 				8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */,
 				8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */,
 				8EAF36802DF9630900645B1E /* HrssTableHeaderView.swift in Sources */,
+				8ED5D42E2EA7268900AED7FC /* HiUniSplashView.swift in Sources */,
 				8E61FA5A2E1F949400A0B498 /* HiLoopView.m in Sources */,
 				8EFFDA69282A4A62000EA7D6 /* HiAlamofire.swift in Sources */,
 				8E29D61C2DFBC70600B3E0A9 /* HrssLoopNoticeCell.swift in Sources */,
@@ -1111,13 +1391,119 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZP64V26FR;
 				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftProject/ThirdSdks/Unisdk/Libs",
+				);
 				INFOPLIST_FILE = "SwiftProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftProject/ThirdSdks/Unisdk/Libs",
+				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"coreSupport\"",
+					"-l\"iconv\"",
+					"-l\"libNativeObj\"",
+					"-l\"libNativeUI\"",
+					"-l\"libNavigator\"",
+					"-l\"libPDRCore\"",
+					"-l\"libStorage\"",
+					"-l\"libUI\"",
+					"-l\"libWeex\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FlutterPluginRegistrant\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"PocketSVG\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"QuickLook\"",
+					"-framework",
+					"\"RollingNotice_Swift\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVGKit\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMCommon\"",
+					"-framework",
+					"\"UMDevice\"",
+					"-framework",
+					"\"UMPush\"",
+					"-framework",
+					"\"UYuMao\"",
+					"-framework",
+					"\"UserNotifications\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"storage\"",
+					"-weak_framework",
+					"\"Combine\"",
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.ihrss.jx.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProject/Supporting Files/SwiftProject-Bridging-Header.h";
@@ -1136,13 +1522,119 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZP64V26FR;
 				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftProject/ThirdSdks/Unisdk/Libs",
+				);
 				INFOPLIST_FILE = "SwiftProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftProject/ThirdSdks/Unisdk/Libs",
+				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"coreSupport\"",
+					"-l\"iconv\"",
+					"-l\"libNativeObj\"",
+					"-l\"libNativeUI\"",
+					"-l\"libNavigator\"",
+					"-l\"libPDRCore\"",
+					"-l\"libStorage\"",
+					"-l\"libUI\"",
+					"-l\"libWeex\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FlutterPluginRegistrant\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"PocketSVG\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"QuickLook\"",
+					"-framework",
+					"\"RollingNotice_Swift\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVGKit\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMCommon\"",
+					"-framework",
+					"\"UMDevice\"",
+					"-framework",
+					"\"UMPush\"",
+					"-framework",
+					"\"UYuMao\"",
+					"-framework",
+					"\"UserNotifications\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"storage\"",
+					"-weak_framework",
+					"\"Combine\"",
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.ihrss.jx.SwiftProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProject/Supporting Files/SwiftProject-Bridging-Header.h";
