@@ -31,8 +31,10 @@ open class HiLoginHelper:NSObject {
             nav.modalPresentationStyle = .fullScreen;
             DispatchQueue.main.async{
                 viewController.present(nav, animated: true, completion: nil)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    HiToast().showToast(text: "您暂未登录，请先登录！",type: .bottom);
+                }
             }
-            HiToast().showToast(text: "您暂未登录，请先登录！",type: .bottom);
         }
     }
     

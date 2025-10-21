@@ -54,6 +54,7 @@ extension HiBaseViewController {
         self.centerLabel.text = centerLabelTitle
         self.centerLabel.textAlignment = .center
         self.centerLabel.textColor = centerLabelColor
+        self.centerLabel.font = UIFont.boldSystemFont(ofSize: 18)
         self.navigationView.addSubview(self.centerLabel)
         self.rightButton = UIButton()
         self.rightButton.setTitle(rightButtonTitle, for:.normal)
@@ -92,7 +93,7 @@ extension HiBaseViewController {
         self.rightButton.contentHorizontalAlignment = .center
         self.navigationView.addSubview(self.rightButton)
         
-        self.setStatusAndNavigationMas(ifLine: ifLine)
+        self.setStatusAndNavigationCloseIconMas(ifLine: ifLine)
         
     }
     
@@ -109,6 +110,40 @@ extension HiBaseViewController {
         self.leftButton.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.navigationView)
             make.left.equalTo(self.navigationView.snp.left).offset(10)
+        }
+        self.centerLabel.snp.makeConstraints { (make) in
+            make.center.equalTo(self.navigationView)
+            make.width.equalTo(2*HiSCREENWIDTH/3)
+        }
+        self.rightButton.snp.makeConstraints { (make) in
+            make.centerY.equalTo(self.navigationView)
+            make.height.equalTo(HiNavigationBarH)
+            make.right.equalTo(-15)
+        }
+        if ifLine == true {
+            self.lineView.backgroundColor = UIColor.gray;
+            self.navigationView.addSubview(self.lineView)
+            self.lineView.snp.makeConstraints { (make) in
+                make.bottom.equalTo(self.navigationView.snp.bottom).offset(0)
+                make.height.equalTo(CGFloat(0.7))
+                make.width.equalTo(HiSCREENWIDTH)
+            }
+        }
+    }
+    
+    func setStatusAndNavigationCloseIconMas(ifLine:Bool) {
+        self.statusView.snp.makeConstraints { (make) in
+            make.top.left.equalTo(self.view)
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH, height: HiStatusBarH))
+        }
+        self.navigationView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.statusView.snp.bottom)
+            make.left.equalTo(self.view)
+            make.size.equalTo(CGSize.init(width: HiSCREENWIDTH, height: HiNavigationBarH))
+        }
+        self.leftButton.snp.makeConstraints { (make) in
+            make.centerY.equalTo(self.navigationView)
+            make.left.equalTo(self.navigationView.snp.left).offset(16)
         }
         self.centerLabel.snp.makeConstraints { (make) in
             make.center.equalTo(self.navigationView)
