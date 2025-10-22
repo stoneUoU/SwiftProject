@@ -10,7 +10,7 @@ import SwiftyJSON
 
 class HrssEasyManTableViewCell: UITableViewCell {
     
-    var menuModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"ic_easy_left","title":"扫一扫","bgUrl":"ic_easy_01"])),HrssModel.init(json:JSON(["iconUrl":"ic_easy_middle","title":"电子社保卡","bgUrl":"ic_easy_02"])),HrssModel.init(json:JSON(["iconUrl":"ic_easy_right","title":"12333","bgUrl":"ic_easy_03"]))];
+    var menuModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"ic_easy_left","title":"扫一扫","bgUrl":"ic_easy_01"])),HrssModel.init(json:JSON(["iconUrl":"ic_easy_middle","title":"电子社保卡","bgUrl":"ic_easy_02"])),HrssModel.init(json:JSON(["iconUrl":"ic_easy_right","title":"","bgUrl":"ic_easy_03"]))];
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)

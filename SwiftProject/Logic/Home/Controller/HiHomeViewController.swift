@@ -24,7 +24,7 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
     
     @objc lazy var hrssButton: UIButton = {
         let hrssButton = UIButton.init(type: UIButton.ButtonType.custom)
-        hrssButton.setTitle("掌上12333首页", for: UIControl.State.normal)
+        hrssButton.setTitle("首页", for: UIControl.State.normal)
         hrssButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         hrssButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         hrssButton.layer.borderWidth = 0.5;
@@ -110,22 +110,22 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
         }
         self.hrssButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.registerButton.snp.bottom).offset(64)
+            make.top.equalTo(self.registerButton.snp.bottom).offset(54)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
         self.routeButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.hrssButton.snp.bottom).offset(64)
+            make.top.equalTo(self.hrssButton.snp.bottom).offset(54)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
         self.healthButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.routeButton.snp.bottom).offset(64)
+            make.top.equalTo(self.routeButton.snp.bottom).offset(54)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
         self.openButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.healthButton.snp.bottom).offset(64)
+            make.top.equalTo(self.healthButton.snp.bottom).offset(54)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
     }
@@ -140,12 +140,14 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
             let vc:YLZHealthCodeViewController = YLZHealthCodeViewController();
             self.navigationController?.pushViewController(vc, animated: true);
         } else if (tag == 3) {
-            let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
-            self.navigationController?.pushViewController(vc, animated: true);
+            HiLoginHelper.shared.loginWithSuccess(viewController: self) { isSuccess in
+                let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
+                self.navigationController?.pushViewController(vc, animated: true);
+            }
         } else if (tag == 4) {
             let configuration = DCUniMPConfiguration.init()
-            configuration.enableBackground = true
-            
+            configuration.enableBackground = true;
+            configuration.openMode = .push;
             DCUniMPSDKEngine.openUniMP(APPID1, configuration: configuration) { instance, error in
                 if instance != nil {
                     print("小程序打开成功")

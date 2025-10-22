@@ -10,7 +10,7 @@ import MBProgressHUD
 import SwiftyJSON
 
 class HrssViewController:UIViewController,UIGestureRecognizerDelegate {
-    var loopModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"新版掌上12333上线！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"百日千万网络招聘行动！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"众志成城  共同战役！"]))];
+    var loopModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"新版上线！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"百日千万网络招聘行动！"])),HrssModel.init(json:JSON(["iconUrl":"icon_sousuo","title":"众志成城  共同战役！"]))];
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent;
     }
