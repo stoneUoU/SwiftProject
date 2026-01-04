@@ -92,6 +92,7 @@
 		8ED5D4AB2EA756A900AED7FC /* __UNI__11E9B73.wgt in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5D4A82EA756A900AED7FC /* __UNI__11E9B73.wgt */; };
 		8ED5D4AE2EA7570300AED7FC /* HiUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */; };
 		8ED5D4B02EA7676700AED7FC /* HiSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4AF2EA7675200AED7FC /* HiSettingViewController.swift */; };
+		8EDB71A42F02691400538F53 /* HiMyFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB71A32F02691400538F53 /* HiMyFooterViewController.swift */; };
 		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
 		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
@@ -286,6 +287,7 @@
 		8ED5D4A92EA756A900AED7FC /* __UNI__CBDCE04.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = __UNI__CBDCE04.wgt; sourceTree = "<group>"; };
 		8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUserDefault.swift; sourceTree = "<group>"; };
 		8ED5D4AF2EA7675200AED7FC /* HiSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSettingViewController.swift; sourceTree = "<group>"; };
+		8EDB71A32F02691400538F53 /* HiMyFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMyFooterViewController.swift; sourceTree = "<group>"; };
 		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 		8EA21E9727002D9E00A9039B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8EDB71A22F0268F700538F53 /* Footer */,
 				8ED5D41D2EA7183100AED7FC /* Home */,
 				8ED5D41C2EA7171E00AED7FC /* Mine */,
 				8ED5D41B2EA7171500AED7FC /* Login */,
@@ -892,6 +895,14 @@
 			path = HiUserDefault;
 			sourceTree = "<group>";
 		};
+		8EDB71A22F0268F700538F53 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				8EDB71A32F02691400538F53 /* HiMyFooterViewController.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
 		8EFB12CD265BB46C007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -1190,7 +1201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 		96D0B170E03FB1EF4CA263E5 /* [CP-User] Run Flutter Build hi_flutter_module Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1204,7 +1215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1227,6 +1238,7 @@
 				8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */,
 				8EFFDA282828B61F000EA7D6 /* HiToast.swift in Sources */,
 				8E2C4B712DDC2D3900109E5E /* UMengPushHelper.swift in Sources */,
+				8EDB71A42F02691400538F53 /* HiMyFooterViewController.swift in Sources */,
 				8EFFDA6B282A4A62000EA7D6 /* HiApiConfig.swift in Sources */,
 				8EAF36842DF963AE00645B1E /* HrssTopicTableViewCell.swift in Sources */,
 				8EFFDA2C2828B61F000EA7D6 /* HiRegularHelper.swift in Sources */,

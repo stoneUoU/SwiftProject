@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '13.0'
 
-flutter_application_path = '../../Flutter/hi_flutter_module/'
+flutter_application_path = '../../../Flutter/hi_flutter_module/'
 
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 

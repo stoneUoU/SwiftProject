@@ -52,7 +52,7 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
     
     @objc lazy var healthButton: UIButton = {
         let healthButton = UIButton.init(type: UIButton.ButtonType.custom)
-        healthButton.setTitle("健康码", for: UIControl.State.normal)
+        healthButton.setTitle("Footer Btn", for: UIControl.State.normal)
         healthButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         healthButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         healthButton.layer.borderWidth = 0.5;
@@ -140,10 +140,12 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
             let vc:YLZHealthCodeViewController = YLZHealthCodeViewController();
             self.navigationController?.pushViewController(vc, animated: true);
         } else if (tag == 3) {
-            HiLoginHelper.shared.loginWithSuccess(viewController: self) { isSuccess in
-                let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
-                self.navigationController?.pushViewController(vc, animated: true);
-            }
+//            HiLoginHelper.shared.loginWithSuccess(viewController: self) { isSuccess in
+//                let vc:YLZRouteCodeViewController = YLZRouteCodeViewController();
+//                self.navigationController?.pushViewController(vc, animated: true);
+//            }
+            let vc:HiMyFooterViewController = HiMyFooterViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
         } else if (tag == 4) {
             let configuration = DCUniMPConfiguration.init()
             configuration.enableBackground = true;
