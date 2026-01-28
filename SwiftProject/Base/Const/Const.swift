@@ -33,7 +33,11 @@ public let HiIPhone12Mini = HiSCREENWIDTH == 360 && HiSCREENHEIGHT == 780
 
 public let HiIPhone12ProMax = HiSCREENWIDTH == 428 && HiSCREENHEIGHT == 926
 
-public let isIPhoneX = (HiIPhoneX || HiIPhoneXrMax || HiIPhone12PRO || HiIPhone12Mini || HiIPhone12ProMax)
+public let HiIPhone14Pro = HiSCREENWIDTH == 393 && HiSCREENHEIGHT == 852
+
+public let HiIPhone14ProMax = HiSCREENWIDTH == 430 && HiSCREENHEIGHT == 932
+
+public let isIPhoneX = (HiIPhoneX || HiIPhoneXrMax || HiIPhone12PRO || HiIPhone12Mini || HiIPhone12ProMax || HiIPhone14Pro || HiIPhone14ProMax)
 
 public let HiStatusBarH:CGFloat = (isIPhoneX ? 44 : 20)
 

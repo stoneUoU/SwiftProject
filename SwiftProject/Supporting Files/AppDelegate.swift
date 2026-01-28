@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         animate.duration = 1.0;
         self.window?.layer.add(animate, forKey: nil)
         self.window?.makeKeyAndVisible()
-        let tabbarView = HiMyFooterViewController();
+        let tabbarView = HiTabbarViewController();
         self.window?.rootViewController = tabbarView;
 //        let tabbarView = YLZRouteCodeViewController();
 //        let tabbarView = InteractiveViewController();
