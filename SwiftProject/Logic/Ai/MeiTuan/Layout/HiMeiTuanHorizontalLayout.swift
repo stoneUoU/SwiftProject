@@ -1,5 +1,5 @@
 //
-//  HiChatHorizontalLayout.swift
+//  HiMeiTuanHorizontalLayout.swift
 //  SwiftProject
 //
 //  Created by stone on 2026/3/31.
@@ -9,7 +9,7 @@
 
 import UIKit
 
-class HiChatHorizontalLayout: UICollectionViewFlowLayout {
+class HiMeiTuanHorizontalLayout: UICollectionViewFlowLayout {
     // 保存所有item
     fileprivate var attributesArr: [UICollectionViewLayoutAttributes] = []
     fileprivate var col: Int = 0

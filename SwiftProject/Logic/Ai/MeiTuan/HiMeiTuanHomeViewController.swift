@@ -64,10 +64,10 @@ class HiMeiTuanHomeViewController: UIViewController {
         return button
     }()
     
-    lazy var moreView: HiChatMoreView = { [unowned self] in
-        let moreV = HiChatMoreView()
-        moreV.delegate = self
-        return moreV
+    lazy var slideView: HiMeiTuanSlideView = { [unowned self] in
+        let slideView = HiMeiTuanSlideView()
+        slideView.delegate = self
+        return slideView
     }()
     
     
@@ -88,7 +88,7 @@ class HiMeiTuanHomeViewController: UIViewController {
         navigationView.addSubview(searchButton)
         navigationView.addSubview(menuButton)
         
-        self.view.addSubview(moreView)
+        self.view.addSubview(slideView)
         
         setupConstraints()
     }
@@ -133,7 +133,7 @@ class HiMeiTuanHomeViewController: UIViewController {
             make.width.height.equalTo(24)
         }
         
-        moreView.snp.makeConstraints { (make) in
+        slideView.snp.makeConstraints { (make) in
             make.left.right.equalTo(self.view)
             make.height.equalTo(216.0)
             make.top.equalTo(self.navigationView.snp.bottom)
@@ -145,11 +145,16 @@ class HiMeiTuanHomeViewController: UIViewController {
     }
 }
 
-extension HiMeiTuanHomeViewController : HiChatMoreViewDelegate {
-    func chatMoreView(moreView: HiChatMoreView, didSeletedType type: HiChatMoreType) {
+extension HiMeiTuanHomeViewController : HiMeiTuanSlideViewDelegate {
+    func chatMoreView(moreView: HiMeiTuanSlideView, didSeletedType type: HiMeiTuanSlideType) {
         if type == .pic {
+            print("图片");
+            let vc:HiLinkViewController = HiLinkViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
         } else if type == .sight {  // 小视频
         } else if type == .video {  // 视频聊天
+        } else if type == .camera {  // 相机
+            print("相机");
         }
     }
 }

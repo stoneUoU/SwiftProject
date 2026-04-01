@@ -1,5 +1,5 @@
 //
-//  LXFChatMoreCell.swift
+//  HiMeiTuanSlideCell.swift
 //  SwiftProject
 //
 //  Created by stone on 2026/3/31.
@@ -10,7 +10,7 @@
 
 import UIKit
 
-class HiChatMoreCell: UICollectionViewCell {
+class HiMeiTuanSlideCell: UICollectionViewCell {
     lazy var itemButton: UIButton = {
         let itemBtn = UIButton()
         itemBtn.backgroundColor = UIColor.white
@@ -30,10 +30,10 @@ class HiChatMoreCell: UICollectionViewCell {
         return itemL
     }()
     
-    var type: HiChatMoreType?
+    var type: HiMeiTuanSlideType?
     
     // MARK:- 记录属性
-    var model: (name: String, icon: UIImage, type: HiChatMoreType)? {
+    var model: (name: String, icon: UIImage, type: HiMeiTuanSlideType)? {
         didSet {
             self.itemButton.setImage(model?.icon, for: .normal)
             self.itemLabel.text = model?.name
