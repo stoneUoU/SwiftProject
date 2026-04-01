@@ -40,6 +40,10 @@
 		8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */; };
 		8E78C81C2814FB3700D6C59F /* YLZFunctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */; };
 		8E78C81E2815334000D6C59F /* YLZRouteCodeRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */; };
+		8E85E0BF2F7BCBEC00736EFD /* HiMeiTuanHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0BE2F7BCBDA00736EFD /* HiMeiTuanHomeViewController.swift */; };
+		8E85E0C42F7CEAC800736EFD /* HiChatMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0C32F7CEAC800736EFD /* HiChatMoreView.swift */; };
+		8E85E0C72F7CEB3100736EFD /* HiChatHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0C62F7CEB3100736EFD /* HiChatHorizontalLayout.swift */; };
+		8E85E0C92F7CEBCC00736EFD /* HiChatMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0C82F7CEBCC00736EFD /* HiChatMoreCell.swift */; };
 		8E95E6A22D803248005FF900 /* member_plus.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8E95E6A12D803248005FF900 /* member_plus.svg */; };
 		8EA21E9D27002E2000A9039B /* YLZHealthCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */; };
 		8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */; };
@@ -160,6 +164,10 @@
 		8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableHeaderView.swift; sourceTree = "<group>"; };
 		8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFunctionModel.swift; sourceTree = "<group>"; };
 		8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeRecordCell.swift; sourceTree = "<group>"; };
+		8E85E0BE2F7BCBDA00736EFD /* HiMeiTuanHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMeiTuanHomeViewController.swift; sourceTree = "<group>"; };
+		8E85E0C32F7CEAC800736EFD /* HiChatMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatMoreView.swift; sourceTree = "<group>"; };
+		8E85E0C62F7CEB3100736EFD /* HiChatHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatHorizontalLayout.swift; sourceTree = "<group>"; };
+		8E85E0C82F7CEBCC00736EFD /* HiChatMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiChatMoreCell.swift; sourceTree = "<group>"; };
 		8E95E6A12D803248005FF900 /* member_plus.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = member_plus.svg; sourceTree = "<group>"; };
 		8EA21E9C27002E2000A9039B /* YLZHealthCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeViewController.swift; sourceTree = "<group>"; };
 		8EA21E9E27002E4200A9039B /* YLZHealthCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeView.swift; sourceTree = "<group>"; };
@@ -492,6 +500,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8E85E0BD2F7BCBCC00736EFD /* Ai */ = {
+			isa = PBXGroup;
+			children = (
+				8E85E0C52F7CEB2600736EFD /* Layout */,
+				8E85E0C22F7CEABD00736EFD /* View */,
+				8E85E0BE2F7BCBDA00736EFD /* HiMeiTuanHomeViewController.swift */,
+			);
+			path = Ai;
+			sourceTree = "<group>";
+		};
+		8E85E0C22F7CEABD00736EFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E85E0C82F7CEBCC00736EFD /* HiChatMoreCell.swift */,
+				8E85E0C32F7CEAC800736EFD /* HiChatMoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E85E0C52F7CEB2600736EFD /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				8E85E0C62F7CEB3100736EFD /* HiChatHorizontalLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		8E95E6A32D8032B5005FF900 /* svgs */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +538,7 @@
 		8EA21E9727002D9E00A9039B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E85E0BD2F7BCBCC00736EFD /* Ai */,
 				8EDB71A22F0268F700538F53 /* Footer */,
 				8ED5D41D2EA7183100AED7FC /* Home */,
 				8ED5D41C2EA7171E00AED7FC /* Mine */,
@@ -1270,6 +1306,7 @@
 				8E344A86265BD437008AF1BA /* String+Extension.swift in Sources */,
 				8ED5D4AE2EA7570300AED7FC /* HiUserDefault.swift in Sources */,
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
+				8E85E0C42F7CEAC800736EFD /* HiChatMoreView.swift in Sources */,
 				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
 				8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* HiBaseViewController.swift in Sources */,
@@ -1290,14 +1327,17 @@
 				8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */,
 				8ED5D4B02EA7676700AED7FC /* HiSettingViewController.swift in Sources */,
 				8EFFDA122828B596000EA7D6 /* HiMarqueeView.swift in Sources */,
+				8E85E0C72F7CEB3100736EFD /* HiChatHorizontalLayout.swift in Sources */,
 				8EFFDA142828B596000EA7D6 /* HiOccupationView.swift in Sources */,
 				8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */,
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
 				8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */,
+				8E85E0BF2F7BCBEC00736EFD /* HiMeiTuanHomeViewController.swift in Sources */,
 				8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */,
 				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
 				8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */,
+				8E85E0C92F7CEBCC00736EFD /* HiChatMoreCell.swift in Sources */,
 				8E29D6152DFBBEB900B3E0A9 /* HrssLoopNavigationCell.swift in Sources */,
 				8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,

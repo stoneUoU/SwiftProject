@@ -148,4 +148,6 @@ let YLZColorAllInsertCode:UIColor = UIColor.color_HexStr("#f3fcf5");
 let YLZColorCodeBlue:UIColor = UIColor.color_HexStr("#3a5ddd");
 let YLZColorCodeButtonbgColor:UIColor = UIColor.color_HexStr("#eceffb");
 
-
+func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    return UIColor (red: r, green: g, blue: b, alpha: a)
+}

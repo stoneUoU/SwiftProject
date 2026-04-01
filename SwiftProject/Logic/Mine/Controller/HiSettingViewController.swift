@@ -24,7 +24,7 @@ class HiSettingViewController: HiBaseViewController {
     
     @objc lazy var openButton: UIButton = {
         let openButton = UIButton.init(type: UIButton.ButtonType.custom)
-        openButton.setTitle("退出 登录", for: UIControl.State.normal)
+        openButton.setTitle("退出登录", for: UIControl.State.normal)
         openButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         openButton.setTitleColor(UIColor.color_HexStr("#8676d7"), for: .normal)
         openButton.layer.borderWidth = 0.5;
@@ -70,22 +70,46 @@ class HiSettingViewController: HiBaseViewController {
     
     @objc func toExcute(_ sender: UIButton) {
         debugPrint("Swift Project");
-        
         if (sender.tag == 1) {
-            let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
-            //纯文本模式
-            hud.mode = .indeterminate;
-    //        hud.bezelView.backgroundColor = YLZColorTitleTwo;
-            //设置提示标题
-            hud.label.text = "正在退出，请稍候..."
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                hud.hide(animated: true);
-                HiUserDefault.shared.setBool(false, forKey: "ACCESS-TOKEN")
-                self.toClose();
-                guard let loginHandle = self.loginHandle else { return }
-                loginHandle(true);
-                HiToast().showToast(text: "退出成功",type: .bottom);
-            }
+            self.toExitAlert();
+        }
+    }
+    
+    func toExit() {
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        //纯文本模式
+        hud.mode = .indeterminate;
+//        hud.bezelView.backgroundColor = YLZColorTitleTwo;
+        //设置提示标题
+        hud.label.text = "正在退出，请稍候..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            hud.hide(animated: true);
+            HiUserDefault.shared.setBool(false, forKey: "ACCESS-TOKEN")
+            self.toClose();
+            guard let loginHandle = self.loginHandle else { return }
+            loginHandle(true);
+            HiToast().showToast(text: "退出成功",type: .bottom);
+        }
+    }
+    
+    func toExitAlert() {
+        // 创建UIAlertController
+        let alertController = UIAlertController(title: "温馨提示", message: "是否退出登录?", preferredStyle: .alert)
+        // 创建取消按钮
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel) { _ in
+        }
+        // 创建确认按钮，使用.default样式，这样会显示为蓝色
+        let confirmAction = UIAlertAction(title: "确认", style: .destructive) { _ in
+            self.toExit()
+        }
+        // 添加按钮到弹窗
+        alertController.addAction(cancelAction)
+        alertController.addAction(confirmAction)
+        // 获取当前的UIViewController并显示弹窗
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first,
+           let rootViewController = window.rootViewController {
+            rootViewController.present(alertController, animated: true, completion: nil)
         }
     }
     

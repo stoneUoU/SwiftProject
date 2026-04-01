@@ -40,7 +40,8 @@ class HiTabbarViewController: UITabBarController {
     }
     
     private func setUI() {
-        let homeVC:HiHomeViewController = HiHomeViewController();
+//        let homeVC:HiHomeViewController = HiHomeViewController();
+        let homeVC:HiMeiTuanHomeViewController = HiMeiTuanHomeViewController();
         let mineVC:HiMineViewController = HiMineViewController();
         self.addViewController(homeVC, "首页", "hi_tabbar_home")
         self.addViewController(mineVC, "我的", "hi_tabbar_mine")

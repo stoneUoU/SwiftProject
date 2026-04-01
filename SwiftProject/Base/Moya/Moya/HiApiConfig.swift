@@ -14,15 +14,6 @@ public enum HiApiConfig {
     
     case fetchPostMethod([String : Any])
     
-    //获取app的基本配置信息：
-    case fetchBaseInfo(Void)
-    
-    //获取首页导航栏数据：
-    case fetchNavigationData(Void)
-    
-    //获取首页信息：
-    case fetchHomeData([String : Any])
-    
     //获取unitCfg接口数据：
     case fetchUnitCfg([String : Any])
 }
@@ -45,19 +36,13 @@ extension HiApiConfig:HiApiConfigTargetType {
             return ""
         case .fetchPostMethod(_):
             return ""
-        case .fetchBaseInfo(_):
-            return "/provide/baseinfo"
-        case .fetchNavigationData(_):
-            return "/provide/home_nav"
-        case .fetchHomeData(_):
-            return "/vod/top2"
         case .fetchUnitCfg(_):
             return "/base/api/unitCfg"
         }
     }
     public var method: Moya.Method {
         switch self {
-        case .fetchGetMethod(_),.fetchBaseInfo(_),.fetchNavigationData(_):
+        case .fetchGetMethod(_):
             return .get
         default:
             return .post
@@ -73,7 +58,7 @@ extension HiApiConfig:HiApiConfigTargetType {
             return .requestParameters(parameters: params,
                                       encoding: URLEncoding.default)
         //post 走这
-        case .fetchPostMethod(let  paras),.fetchHomeData(let paras):
+        case .fetchPostMethod(let  paras):
             var params: [String: Any] = [:]
             params = paras
             return .requestParameters(parameters: params,
@@ -117,7 +102,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要Loading
     public var needLoading: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_):
+        case .fetchGetMethod(_):
             return true
         default:
             return false
@@ -127,7 +112,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要加密:
     public var needEncypted: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_):
+        case .fetchGetMethod(_):
             return true
         default:
             return false
@@ -137,7 +122,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要打印请求体:
     public var needLogRequest: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_):
+        case .fetchGetMethod(_):
             return false
         default:
             return true
@@ -147,7 +132,7 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要打印响应体:
     public var needLogResponse: Bool {
         switch self {
-        case .fetchGetMethod(_),.fetchHomeData(_),.fetchUnitCfg(_):
+        case .fetchGetMethod(_),.fetchUnitCfg(_):
             return true
         default:
             return false
