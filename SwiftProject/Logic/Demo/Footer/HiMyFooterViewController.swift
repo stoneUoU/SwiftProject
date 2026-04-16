@@ -8,8 +8,6 @@
 import UIKit
 import SnapKit
 
-private let HiFootprintBlueColor = UIColor.color_HexStr("#4077F4")
-
 struct HiFootprintItem {
     let title: String
     let backgroundColor: UIColor
@@ -58,7 +56,7 @@ class HiMyFooterViewController: HiBaseViewController {
         setStatusAndNavigationUI(centerLabelTitle: "我的足迹",
                                  rightButtonTitle: "",
                                  ifWhiteIMV: true,
-                                 navigationColor: HiFootprintBlueColor,
+                                 navigationColor: UIColor.color_HexStr("#4077F4"),
                                  centerLabelColor: .white,
                                  rightButtonColor: .white,
                                  ifLine: false)
@@ -153,7 +151,7 @@ class HiMyFooterViewController: HiBaseViewController {
         dateLabel.textAlignment = .center
         dateLabel.textColor = .white
         dateLabel.font = YLZFont.medium(size: 12)
-        dateLabel.backgroundColor = HiFootprintBlueColor
+        dateLabel.backgroundColor = UIColor.color_HexStr("#4077F4")
         dateLabel.layer.cornerRadius = 14
         dateLabel.layer.masksToBounds = true
 

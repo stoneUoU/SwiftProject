@@ -215,14 +215,16 @@ extension HiHomeViewController {
 
 extension HiHomeViewController : HiMeiTuanSlideViewDelegate {
     func chatMoreView(moreView: HiMeiTuanSlideView, didSeletedType type: HiMeiTuanSlideType) {
-        if type == .pic {
-            print("图片");
-            let vc:HiLinkViewController = HiLinkViewController();
-            self.navigationController?.pushViewController(vc, animated: true);
-        } else if type == .sight {  // 小视频
-        } else if type == .video {  // 视频聊天
-        } else if type == .camera {  // 相机
-            print("相机");
-        }
+//        if type == .pic {
+//            print("图片");
+//            let vc:HiAiViewController = HiAiViewController();
+//            self.navigationController?.pushViewController(vc, animated: true);
+//        } else if type == .sight {  // 小视频
+//        } else if type == .video {  // 视频聊天
+//        } else if type == .camera {  // 相机
+//            print("相机");
+//        }
+        let vc:HiAiViewController = HiAiViewController();
+        self.navigationController?.pushViewController(vc, animated: true);
     }
 }

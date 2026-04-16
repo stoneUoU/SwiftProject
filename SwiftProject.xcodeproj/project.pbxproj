@@ -34,6 +34,7 @@
 		8E6AD17428164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */; };
 		8E6AD1762816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */; };
 		8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */; };
+		8E6CBAEE2F90867700754045 /* HiAiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAED2F90867000754045 /* HiAiViewController.swift */; };
 		8E78C8122814F3CA00D6C59F /* YLZRouteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */; };
 		8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */; };
 		8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */; };
@@ -163,6 +164,7 @@
 		8E6AD17328164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellBottomView.swift; sourceTree = "<group>"; };
 		8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeLoadingCell.swift; sourceTree = "<group>"; };
 		8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellLoadingView.swift; sourceTree = "<group>"; };
+		8E6CBAED2F90867000754045 /* HiAiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAiViewController.swift; sourceTree = "<group>"; };
 		8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeViewController.swift; sourceTree = "<group>"; };
 		8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeInfoCell.swift; sourceTree = "<group>"; };
 		8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableFooterView.swift; sourceTree = "<group>"; };
@@ -472,6 +474,16 @@
 			path = Moya;
 			sourceTree = "<group>";
 		};
+		8E6CBAEC2F90865800754045 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBAED2F90867000754045 /* HiAiViewController.swift */,
+				8E85E0BD2F7BCBCC00736EFD /* Ai */,
+				8EDB71A22F0268F700538F53 /* Footer */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		8E78C80C2814F37400D6C59F /* RouteCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,8 +586,7 @@
 		8EA21E9727002D9E00A9039B /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				8E85E0BD2F7BCBCC00736EFD /* Ai */,
-				8EDB71A22F0268F700538F53 /* Footer */,
+				8E6CBAEC2F90865800754045 /* Demo */,
 				8ED5D41D2EA7183100AED7FC /* Home */,
 				8ED5D41C2EA7171E00AED7FC /* Mine */,
 				8ED5D41B2EA7171500AED7FC /* Login */,
@@ -1319,6 +1330,7 @@
 				8EAF36842DF963AE00645B1E /* HrssTopicTableViewCell.swift in Sources */,
 				8EFFDA2C2828B61F000EA7D6 /* HiRegularHelper.swift in Sources */,
 				8E78C81E2815334000D6C59F /* YLZRouteCodeRecordCell.swift in Sources */,
+				8E6CBAEE2F90867700754045 /* HiAiViewController.swift in Sources */,
 				8EA21EA927002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift in Sources */,
 				8EFFDA302828B61F000EA7D6 /* HiAppInfoHelper.swift in Sources */,
 				8EA21EA127002E5100A9039B /* YLZHealthCodeTableFooterView.swift in Sources */,
