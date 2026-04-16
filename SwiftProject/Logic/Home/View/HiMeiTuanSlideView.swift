@@ -38,7 +38,6 @@ class HiMeiTuanSlideView: UIView {
     // MARK:- 懒加载
     lazy var moreView: UICollectionView = { [unowned self] in
         let collectionV = UICollectionView(frame: CGRect.zero, collectionViewLayout: HiMeiTuanHorizontalLayout(column: kMoreCellNumberOfOneRow, row: kMoreCellRow))
-        collectionV.backgroundColor = UIColor(red: 1, green: 0.8, blue: 0, alpha: 1)
         collectionV.dataSource = self
         collectionV.delegate = self
         return collectionV
@@ -95,9 +94,6 @@ class HiMeiTuanSlideView: UIView {
             make.height.equalTo(35)
             make.bottom.equalTo(self.snp.bottom)
         }
-        self.backgroundColor = UIColor(red: 1, green: 0.8, blue: 0, alpha: 1)
-//        moreView.contentSize = CGSize(width:HiSCREENWIDTH * 2, height: moreView.height)
-        // 注册itemID
         moreView.register(HiMeiTuanSlideCell.self, forCellWithReuseIdentifier: NSStringFromClass(HiMeiTuanSlideCell.self))
     }
 }

@@ -78,6 +78,12 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
         return openButton
     }()
     
+    lazy var slideView: HiMeiTuanSlideView = { [unowned self] in
+        let slideView = HiMeiTuanSlideView()
+        slideView.delegate = self
+        return slideView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI();
@@ -93,6 +99,7 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
     
     func setUI() {
         self.view.backgroundColor = .white;
+        self.view.addSubview(self.slideView)
         self.view.addSubview(self.registerButton)
         self.view.addSubview(self.hrssButton)
         self.view.addSubview(self.routeButton)
@@ -103,29 +110,35 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
     }
     
     func setMas() {
+        
         self.registerButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
             make.top.equalTo(self.view.snp.top).offset(96)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
+        self.slideView.snp.makeConstraints { (make) in
+            make.left.right.equalTo(self.view)
+            make.height.equalTo(216.0)
+            make.top.equalTo(self.registerButton.snp.bottom).offset(32)
+        }
         self.hrssButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.registerButton.snp.bottom).offset(54)
+            make.top.equalTo(self.slideView.snp.bottom).offset(16)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
         self.routeButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.hrssButton.snp.bottom).offset(54)
+            make.top.equalTo(self.hrssButton.snp.bottom).offset(16)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
         self.healthButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.routeButton.snp.bottom).offset(54)
+            make.top.equalTo(self.routeButton.snp.bottom).offset(16)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
         self.openButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
-            make.top.equalTo(self.healthButton.snp.bottom).offset(54)
+            make.top.equalTo(self.healthButton.snp.bottom).offset(16)
             make.size.equalTo(CGSize.init(width: 240, height: 40))
         }
     }
@@ -197,5 +210,19 @@ extension HiHomeViewController {
     func splashView(forApp appid: String) -> UIView {
         let splashView:UIView = HiUniSplashView();
         return splashView
+    }
+}
+
+extension HiHomeViewController : HiMeiTuanSlideViewDelegate {
+    func chatMoreView(moreView: HiMeiTuanSlideView, didSeletedType type: HiMeiTuanSlideType) {
+        if type == .pic {
+            print("图片");
+            let vc:HiLinkViewController = HiLinkViewController();
+            self.navigationController?.pushViewController(vc, animated: true);
+        } else if type == .sight {  // 小视频
+        } else if type == .video {  // 视频聊天
+        } else if type == .camera {  // 相机
+            print("相机");
+        }
     }
 }

@@ -141,20 +141,21 @@ extension HiLinkViewController {
         if leftTableView == tableView {
             return 0
         }
-        return 20
-//        return 0.01
+//        return 20
+        return 0.0001
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if leftTableView == tableView {
             return nil
         }
-        let headerView = HiLinkTableViewHeaderView(frame: CGRect(x: 0, y: 0, width: HiSCREENWIDTH, height: 20))
-        let model = self.categoryDatas.food_spu_tags[section]
-        headerView.nameLabel.text = model.name
-        return headerView
-//        let headerView = UIView();
+//        let headerView = HiLinkTableViewHeaderView(frame: CGRect(x: 0, y: 0, width: HiSCREENWIDTH, height: 20))
+//        let model = self.categoryDatas.food_spu_tags[section]
+//        headerView.nameLabel.text = model.name
 //        return headerView
+        let headerView = UIView();
+        headerView.backgroundColor = UIColor.red
+        return headerView
     }
     
     // TableView 分区标题即将展示

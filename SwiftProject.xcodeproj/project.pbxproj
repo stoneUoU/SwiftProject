@@ -40,7 +40,6 @@
 		8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */; };
 		8E78C81C2814FB3700D6C59F /* YLZFunctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */; };
 		8E78C81E2815334000D6C59F /* YLZRouteCodeRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */; };
-		8E85E0BF2F7BCBEC00736EFD /* HiMeiTuanHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0BE2F7BCBDA00736EFD /* HiMeiTuanHomeViewController.swift */; };
 		8E85E0C42F7CEAC800736EFD /* HiMeiTuanSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0C32F7CEAC800736EFD /* HiMeiTuanSlideView.swift */; };
 		8E85E0C72F7CEB3100736EFD /* HiMeiTuanHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0C62F7CEB3100736EFD /* HiMeiTuanHorizontalLayout.swift */; };
 		8E85E0C92F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85E0C82F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift */; };
@@ -170,7 +169,6 @@
 		8E78C8192814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableHeaderView.swift; sourceTree = "<group>"; };
 		8E78C81B2814FB3700D6C59F /* YLZFunctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFunctionModel.swift; sourceTree = "<group>"; };
 		8E78C81D2815334000D6C59F /* YLZRouteCodeRecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeRecordCell.swift; sourceTree = "<group>"; };
-		8E85E0BE2F7BCBDA00736EFD /* HiMeiTuanHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMeiTuanHomeViewController.swift; sourceTree = "<group>"; };
 		8E85E0C32F7CEAC800736EFD /* HiMeiTuanSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMeiTuanSlideView.swift; sourceTree = "<group>"; };
 		8E85E0C62F7CEB3100736EFD /* HiMeiTuanHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMeiTuanHorizontalLayout.swift; sourceTree = "<group>"; };
 		8E85E0C82F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMeiTuanSlideCell.swift; sourceTree = "<group>"; };
@@ -517,18 +515,8 @@
 			isa = PBXGroup;
 			children = (
 				8E85E0CB2F7CF62500736EFD /* Link */,
-				8E85E0CA2F7CF60A00736EFD /* MeiTuan */,
 			);
 			path = Ai;
-			sourceTree = "<group>";
-		};
-		8E85E0C22F7CEABD00736EFD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8E85E0C82F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift */,
-				8E85E0C32F7CEAC800736EFD /* HiMeiTuanSlideView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		8E85E0C52F7CEB2600736EFD /* Layout */ = {
@@ -537,16 +525,6 @@
 				8E85E0C62F7CEB3100736EFD /* HiMeiTuanHorizontalLayout.swift */,
 			);
 			path = Layout;
-			sourceTree = "<group>";
-		};
-		8E85E0CA2F7CF60A00736EFD /* MeiTuan */ = {
-			isa = PBXGroup;
-			children = (
-				8E85E0C52F7CEB2600736EFD /* Layout */,
-				8E85E0C22F7CEABD00736EFD /* View */,
-				8E85E0BE2F7BCBDA00736EFD /* HiMeiTuanHomeViewController.swift */,
-			);
-			path = MeiTuan;
 			sourceTree = "<group>";
 		};
 		8E85E0CB2F7CF62500736EFD /* Link */ = {
@@ -761,6 +739,7 @@
 				8ED5D41E2EA7187E00AED7FC /* Model */,
 				8ED5D41F2EA7188500AED7FC /* View */,
 				8ED5D4202EA7189000AED7FC /* Controller */,
+				8E85E0C52F7CEB2600736EFD /* Layout */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -775,6 +754,8 @@
 		8ED5D41F2EA7188500AED7FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E85E0C82F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift */,
+				8E85E0C32F7CEAC800736EFD /* HiMeiTuanSlideView.swift */,
 				8ED5D42D2EA7268900AED7FC /* HiUniSplashView.swift */,
 			);
 			path = View;
@@ -1396,7 +1377,6 @@
 				8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */,
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
 				8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */,
-				8E85E0BF2F7BCBEC00736EFD /* HiMeiTuanHomeViewController.swift in Sources */,
 				8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */,
 				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
