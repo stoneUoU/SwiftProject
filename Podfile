@@ -34,6 +34,7 @@ target 'SwiftProject' do
     pod 'UYuMao'
     pod 'RollingNotice-Swift'
     pod 'SDWebImage'
+    pod 'GMObjC'
 #    pod 'unimp', :git => 'https://gitcode.com/dcloud/unimpsdk-ios.git', :subspecs => [
 #            'Core',               ##核心库(必需)
 #    #        'Log',                ##
@@ -87,3 +88,34 @@ target 'SwiftProject' do
     
     install_all_flutter_pods(flutter_application_path)
 end
+
+pre_install do |installer|
+  # workaround for https://github.com/CocoaPods/CocoaPods/issues/3289
+  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
+
+#
+#import GMObjC
+#
+#// 1. 准备参数 (Hex 格式)
+#// 密钥: 128位 (16字节) 对应 Hex 就是 32个字符
+#let sm4Key = "0123456789abcdef0123456789abcdef"
+#// 待加密的原文
+#let plainText = "Hello, 国密 SM4!"
+#// (可选) CBC 模式需要 IV，ECB 模式不需要
+#let ivHex = "0123456789abcdef0123456789abcdef"
+#
+#// 2. ECB 模式加解密
+#// 加密
+#let cipherHex = GMSm4Utils.encryptText(plainText, withECBKey: sm4Key) // 默认输出 Hex
+#print("密文(Hex): \(cipherHex ?? "")")
+#
+#// 解密
+#let decryptedText = GMSm4Utils.decryptText(withECB: cipherHex, keyHex: sm4Key)
+#print("解密结果: \(decryptedText ?? "")")
+#
+#// 3. CBC 模式加解密
+#// 加密
+#let cipherCBCHex = GMSm4Utils.encryptText(plainText, withCBCKey: sm4Key, ivecHex: ivHex)
+#// 解密
+#let decryptedCBCText = GMSm4Utils.decryptText(withCBC: cipherCBCHex, keyHex: sm4Key, ivecHex: ivHex)

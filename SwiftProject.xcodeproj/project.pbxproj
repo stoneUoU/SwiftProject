@@ -35,6 +35,10 @@
 		8E6AD1762816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */; };
 		8E6AD1782816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */; };
 		8E6CBAEE2F90867700754045 /* HiAiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAED2F90867000754045 /* HiAiViewController.swift */; };
+		8E6CBAF12F90AF0F00754045 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF02F90AF0C00754045 /* MedicineTableViewCell.swift */; };
+		8E6CBAF32F90AF3A00754045 /* MedicineBoxPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF22F90AF3800754045 /* MedicineBoxPopup.swift */; };
+		8E6CBAF72F90B23900754045 /* PaymentMethodPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF62F90B23700754045 /* PaymentMethodPopup.swift */; };
+		8E6CBAFA2F90B4A700754045 /* GenericAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF92F90B4A500754045 /* GenericAlertView.swift */; };
 		8E78C8122814F3CA00D6C59F /* YLZRouteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */; };
 		8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */; };
 		8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */; };
@@ -165,6 +169,10 @@
 		8E6AD1752816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeLoadingCell.swift; sourceTree = "<group>"; };
 		8E6AD1772816777000BD50F6 /* YLZRouteCodeCellLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeCellLoadingView.swift; sourceTree = "<group>"; };
 		8E6CBAED2F90867000754045 /* HiAiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiAiViewController.swift; sourceTree = "<group>"; };
+		8E6CBAF02F90AF0C00754045 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		8E6CBAF22F90AF3800754045 /* MedicineBoxPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineBoxPopup.swift; sourceTree = "<group>"; };
+		8E6CBAF62F90B23700754045 /* PaymentMethodPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPopup.swift; sourceTree = "<group>"; };
+		8E6CBAF92F90B4A500754045 /* GenericAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAlertView.swift; sourceTree = "<group>"; };
 		8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeViewController.swift; sourceTree = "<group>"; };
 		8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeInfoCell.swift; sourceTree = "<group>"; };
 		8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableFooterView.swift; sourceTree = "<group>"; };
@@ -477,11 +485,47 @@
 		8E6CBAEC2F90865800754045 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8E6CBAEF2F90AF0300754045 /* View */,
 				8E6CBAED2F90867000754045 /* HiAiViewController.swift */,
 				8E85E0BD2F7BCBCC00736EFD /* Ai */,
 				8EDB71A22F0268F700538F53 /* Footer */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		8E6CBAEF2F90AF0300754045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBAF82F90B49D00754045 /* Generic */,
+				8E6CBAF52F90B20100754045 /* PayType */,
+				8E6CBAF42F90B00300754045 /* YaoBox */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E6CBAF42F90B00300754045 /* YaoBox */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBAF22F90AF3800754045 /* MedicineBoxPopup.swift */,
+				8E6CBAF02F90AF0C00754045 /* MedicineTableViewCell.swift */,
+			);
+			path = YaoBox;
+			sourceTree = "<group>";
+		};
+		8E6CBAF52F90B20100754045 /* PayType */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBAF62F90B23700754045 /* PaymentMethodPopup.swift */,
+			);
+			path = PayType;
+			sourceTree = "<group>";
+		};
+		8E6CBAF82F90B49D00754045 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBAF92F90B4A500754045 /* GenericAlertView.swift */,
+			);
+			path = Generic;
 			sourceTree = "<group>";
 		};
 		8E78C80C2814F37400D6C59F /* RouteCode */ = {
@@ -1220,13 +1264,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1241,13 +1281,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1281,11 +1317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
@@ -1295,11 +1327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
@@ -1311,6 +1339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6CBAFA2F90B4A700754045 /* GenericAlertView.swift in Sources */,
 				8EA21EA327002E6300A9039B /* YLZHealthCodeInfoTableViewCell.swift in Sources */,
 				8E6AD17428164D0E00BD50F6 /* YLZRouteCodeCellBottomView.swift in Sources */,
 				8EFFDA292828B61F000EA7D6 /* HiHudToast.swift in Sources */,
@@ -1334,6 +1363,7 @@
 				8EA21EA927002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift in Sources */,
 				8EFFDA302828B61F000EA7D6 /* HiAppInfoHelper.swift in Sources */,
 				8EA21EA127002E5100A9039B /* YLZHealthCodeTableFooterView.swift in Sources */,
+				8E6CBAF12F90AF0F00754045 /* MedicineTableViewCell.swift in Sources */,
 				8E344A88265BD437008AF1BA /* CAGradientLayer+Extension.swift in Sources */,
 				8E6AD1762816768D00BD50F6 /* YLZRouteCodeLoadingCell.swift in Sources */,
 				8EFFDA312828B61F000EA7D6 /* HiLoginHelper.swift in Sources */,
@@ -1351,6 +1381,7 @@
 				8ED5D42E2EA7268900AED7FC /* HiUniSplashView.swift in Sources */,
 				8E61FA5A2E1F949400A0B498 /* HiLoopView.m in Sources */,
 				8EFFDA69282A4A62000EA7D6 /* HiAlamofire.swift in Sources */,
+				8E6CBAF32F90AF3A00754045 /* MedicineBoxPopup.swift in Sources */,
 				8E29D61C2DFBC70600B3E0A9 /* HrssLoopNoticeCell.swift in Sources */,
 				8EAF36902DF9816D00645B1E /* HrssFuncCollectionViewCell.swift in Sources */,
 				8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */,
@@ -1395,6 +1426,7 @@
 				8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */,
 				8E85E0C92F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift in Sources */,
 				8E29D6152DFBBEB900B3E0A9 /* HrssLoopNavigationCell.swift in Sources */,
+				8E6CBAF72F90B23900754045 /* PaymentMethodPopup.swift in Sources */,
 				8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,

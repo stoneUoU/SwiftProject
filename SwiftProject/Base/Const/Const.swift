@@ -39,7 +39,7 @@ public let HiIPhone14ProMax = HiSCREENWIDTH == 430 && HiSCREENHEIGHT == 932
 
 public let isIPhoneX = (HiIPhoneX || HiIPhoneXrMax || HiIPhone12PRO || HiIPhone12Mini || HiIPhone12ProMax || HiIPhone14Pro || HiIPhone14ProMax)
 
-public let HiStatusBarH:CGFloat = (isIPhoneX ? 44 : 20)
+public let HiStatusBarH:CGFloat = UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame.height ?? (isIPhoneX ? 44 : 20)
 
 public let HiNavigationBarH:CGFloat = 44
 
