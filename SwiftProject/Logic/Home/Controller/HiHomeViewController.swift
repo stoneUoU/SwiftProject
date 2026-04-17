@@ -86,6 +86,7 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
     }()
     
     var menuListRespModel:HiMenuListRespModel?
+    var menuListModels:[HiMenuListModel] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -186,11 +187,19 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
         params["cityCode"] = "610100";
         params["channel"] = "ios";
         HiAPI.request(.selectHomePageApi(params), success: { json in
-            let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
-            if let handyJSON:HiMenuListRespModel = HiMenuListRespModel.deserialize(from: dataHandyJSON) {
-                self.menuListRespModel = handyJSON;
-                print("handyJSON_____\(self.menuListRespModel?.toJSON())")
+//            let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
+//            if let handyJSON:HiMenuListRespModel = HiMenuListRespModel.deserialize(from: dataHandyJSON) {
+//                self.menuListRespModel = handyJSON;
+//                print("handyJSON_____\(self.menuListRespModel?.toJSON())")
+//            }
+            let dataHandyJSONs:[[String : Any]] = JSON(json)["data"]["data"].rawValue as! [[String : Any]];
+            self.menuListModels.removeAll();
+            for dataHandyJSON:[String : Any] in dataHandyJSONs {
+                if let handyJSON:HiMenuListModel = HiMenuListModel.deserialize(from: dataHandyJSON) {
+                    self.menuListModels.append(handyJSON);
+                }
             }
+            print("handyJSONs_____\(self.menuListModels.toJSON())");
         }, error: { statusCode in
         }, failure: { error in
         })
