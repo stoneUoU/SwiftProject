@@ -69,7 +69,6 @@ class HiSettingViewController: HiBaseViewController {
     }
     
     @objc func toExcute(_ sender: UIButton) {
-        debugPrint("Swift Project");
         if (sender.tag == 1) {
             self.toExitAlert();
         }

@@ -39,6 +39,150 @@
 		8E6CBAF32F90AF3A00754045 /* MedicineBoxPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF22F90AF3800754045 /* MedicineBoxPopup.swift */; };
 		8E6CBAF72F90B23900754045 /* PaymentMethodPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF62F90B23700754045 /* PaymentMethodPopup.swift */; };
 		8E6CBAFA2F90B4A700754045 /* GenericAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAF92F90B4A500754045 /* GenericAlertView.swift */; };
+		8E6CBAFC2F90D67C00754045 /* HiEncrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBAFB2F90D66C00754045 /* HiEncrypt.swift */; };
+		8E6CBB162F90E11300754045 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB0D2F90E11300754045 /* NSObject+YYModel.m */; };
+		8E6CBB172F90E11300754045 /* OCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB142F90E11300754045 /* OCProject.m */; };
+		8E6CBB182F90E11300754045 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB0F2F90E11300754045 /* YYClassInfo.m */; };
+		8E6CBBC12F91CB2C00754045 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA42F91CB2C00754045 /* LICENSE */; };
+		8E6CBBC22F91CB2C00754045 /* .cproject in Resources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA62F91CB2C00754045 /* .cproject */; };
+		8E6CBBC32F91CB2C00754045 /* callgraph.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA22F91CB2C00754045 /* callgraph.txt */; };
+		8E6CBBC42F91CB2C00754045 /* changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA32F91CB2C00754045 /* changes.txt */; };
+		8E6CBBC52F91CB2C00754045 /* bn_mp_montgomery_calc_normalization.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB632F91CB2C00754045 /* bn_mp_montgomery_calc_normalization.c */; };
+		8E6CBBC62F91CB2C00754045 /* bn_mp_toradix_n.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB952F91CB2C00754045 /* bn_mp_toradix_n.c */; };
+		8E6CBBC72F91CB2C00754045 /* sms4.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBB92F91CB2C00754045 /* sms4.c */; };
+		8E6CBBC82F91CB2C00754045 /* bn_mp_to_signed_bin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8E2F91CB2C00754045 /* bn_mp_to_signed_bin.c */; };
+		8E6CBBC92F91CB2C00754045 /* bn_mp_is_square.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5A2F91CB2C00754045 /* bn_mp_is_square.c */; };
+		8E6CBBCA2F91CB2C00754045 /* bn_mp_dr_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB472F91CB2C00754045 /* bn_mp_dr_setup.c */; };
+		8E6CBBCB2F91CB2C00754045 /* bn_mp_lcm.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5E2F91CB2C00754045 /* bn_mp_lcm.c */; };
+		8E6CBBCC2F91CB2C00754045 /* YLZSMEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */; };
+		8E6CBBCD2F91CB2C00754045 /* bn_mp_mod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB602F91CB2C00754045 /* bn_mp_mod.c */; };
+		8E6CBBCE2F91CB2C00754045 /* bn_mp_signed_bin_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB872F91CB2C00754045 /* bn_mp_signed_bin_size.c */; };
+		8E6CBBCF2F91CB2C00754045 /* bn_fast_mp_invmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2C2F91CB2C00754045 /* bn_fast_mp_invmod.c */; };
+		8E6CBBD02F91CB2C00754045 /* bn_mp_grow.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB512F91CB2C00754045 /* bn_mp_grow.c */; };
+		8E6CBBD12F91CB2C00754045 /* bncore.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA12F91CB2C00754045 /* bncore.c */; };
+		8E6CBBD22F91CB2C00754045 /* sm4test.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBB72F91CB2C00754045 /* sm4test.c */; };
+		8E6CBBD32F91CB2C00754045 /* bn_mp_invmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB582F91CB2C00754045 /* bn_mp_invmod.c */; };
+		8E6CBBD42F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB262F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m */; };
+		8E6CBBD52F91CB2C00754045 /* bn_mp_fread.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4D2F91CB2C00754045 /* bn_mp_fread.c */; };
+		8E6CBBD62F91CB2C00754045 /* bn_mp_expt_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB492F91CB2C00754045 /* bn_mp_expt_d.c */; };
+		8E6CBBD72F91CB2C00754045 /* bn_mp_count_bits.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3F2F91CB2C00754045 /* bn_mp_count_bits.c */; };
+		8E6CBBD82F91CB2C00754045 /* bn_mp_set_int.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB852F91CB2C00754045 /* bn_mp_set_int.c */; };
+		8E6CBBD92F91CB2C00754045 /* bn_mp_jacobi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5B2F91CB2C00754045 /* bn_mp_jacobi.c */; };
+		8E6CBBDA2F91CB2C00754045 /* bn_mp_div.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB402F91CB2C00754045 /* bn_mp_div.c */; };
+		8E6CBBDB2F91CB2C00754045 /* bn_mp_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3A2F91CB2C00754045 /* bn_mp_cmp.c */; };
+		8E6CBBDC2F91CB2C00754045 /* bn_mp_dr_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB462F91CB2C00754045 /* bn_mp_dr_reduce.c */; };
+		8E6CBBDD2F91CB2C00754045 /* bn_mp_prime_is_divisible.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6F2F91CB2C00754045 /* bn_mp_prime_is_divisible.c */; };
+		8E6CBBDE2F91CB2C00754045 /* bn_mp_init_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB532F91CB2C00754045 /* bn_mp_init_copy.c */; };
+		8E6CBBDF2F91CB2C00754045 /* bn_mp_init_multi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB542F91CB2C00754045 /* bn_mp_init_multi.c */; };
+		8E6CBBE02F91CB2C00754045 /* bn_reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9A2F91CB2C00754045 /* bn_reverse.c */; };
+		8E6CBBE12F91CB2C00754045 /* bn_s_mp_add.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9B2F91CB2C00754045 /* bn_s_mp_add.c */; };
+		8E6CBBE22F91CB2C00754045 /* bn_mp_reduce_2k.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7C2F91CB2C00754045 /* bn_mp_reduce_2k.c */; };
+		8E6CBBE32F91CB2C00754045 /* bn_mp_reduce_is_2k.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB802F91CB2C00754045 /* bn_mp_reduce_is_2k.c */; };
+		8E6CBBE42F91CB2C00754045 /* bn_mp_reduce_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB822F91CB2C00754045 /* bn_mp_reduce_setup.c */; };
+		8E6CBBE52F91CB2C00754045 /* bn_s_mp_mul_high_digs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9E2F91CB2C00754045 /* bn_s_mp_mul_high_digs.c */; };
+		8E6CBBE62F91CB2C00754045 /* bn_mp_fwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4E2F91CB2C00754045 /* bn_mp_fwrite.c */; };
+		8E6CBBE72F91CB2C00754045 /* bn_mp_reduce_2k_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7E2F91CB2C00754045 /* bn_mp_reduce_2k_setup.c */; };
+		8E6CBBE82F91CB2C00754045 /* bn_mp_init_set_int.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB562F91CB2C00754045 /* bn_mp_init_set_int.c */; };
+		8E6CBBE92F91CB2C00754045 /* bn_prime_tab.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB992F91CB2C00754045 /* bn_prime_tab.c */; };
+		8E6CBBEA2F91CB2C00754045 /* bn_mp_lshd.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5F2F91CB2C00754045 /* bn_mp_lshd.c */; };
+		8E6CBBEB2F91CB2C00754045 /* bn_mp_mul_2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB682F91CB2C00754045 /* bn_mp_mul_2d.c */; };
+		8E6CBBEC2F91CB2C00754045 /* bn_mp_toom_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB932F91CB2C00754045 /* bn_mp_toom_sqr.c */; };
+		8E6CBBED2F91CB2C00754045 /* bn_mp_gcd.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4F2F91CB2C00754045 /* bn_mp_gcd.c */; };
+		8E6CBBEE2F91CB2C00754045 /* YLZMSEncryptionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB222F91CB2C00754045 /* YLZMSEncryptionConfig.m */; };
+		8E6CBBEF2F91CB2C00754045 /* bn_s_mp_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9F2F91CB2C00754045 /* bn_s_mp_sqr.c */; };
+		8E6CBBF02F91CB2C00754045 /* NSDictionary+YLZSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1E2F91CB2C00754045 /* NSDictionary+YLZSign.m */; };
+		8E6CBBF12F91CB2C00754045 /* bn_mp_reduce_2k_l.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7D2F91CB2C00754045 /* bn_mp_reduce_2k_l.c */; };
+		8E6CBBF22F91CB2C00754045 /* bn_mp_submod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8D2F91CB2C00754045 /* bn_mp_submod.c */; };
+		8E6CBBF32F91CB2C00754045 /* bn_mp_dr_is_modulus.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB452F91CB2C00754045 /* bn_mp_dr_is_modulus.c */; };
+		8E6CBBF42F91CB2C00754045 /* bn_mp_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7B2F91CB2C00754045 /* bn_mp_reduce.c */; };
+		8E6CBBF52F91CB2C00754045 /* bn_s_mp_exptmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9C2F91CB2C00754045 /* bn_s_mp_exptmod.c */; };
+		8E6CBBF62F91CB2C00754045 /* bn_mp_reduce_is_2k_l.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB812F91CB2C00754045 /* bn_mp_reduce_is_2k_l.c */; };
+		8E6CBBF72F91CB2C00754045 /* bn_mp_div_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB412F91CB2C00754045 /* bn_mp_div_2.c */; };
+		8E6CBBF82F91CB2C00754045 /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBB52F91CB2C00754045 /* sm4.c */; };
+		8E6CBBF92F91CB2C00754045 /* bn_mp_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6C2F91CB2C00754045 /* bn_mp_neg.c */; };
+		8E6CBBFA2F91CB2C00754045 /* bn_mp_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB662F91CB2C00754045 /* bn_mp_mul.c */; };
+		8E6CBBFB2F91CB2C00754045 /* bn_mp_div_3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB432F91CB2C00754045 /* bn_mp_div_3.c */; };
+		8E6CBBFC2F91CB2C00754045 /* bn_mp_to_signed_bin_n.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8F2F91CB2C00754045 /* bn_mp_to_signed_bin_n.c */; };
+		8E6CBBFD2F91CB2C00754045 /* bn_mp_exch.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB482F91CB2C00754045 /* bn_mp_exch.c */; };
+		8E6CBBFE2F91CB2C00754045 /* bn_mp_shrink.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB862F91CB2C00754045 /* bn_mp_shrink.c */; };
+		8E6CBBFF2F91CB2C00754045 /* bn_mp_and.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB362F91CB2C00754045 /* bn_mp_and.c */; };
+		8E6CBC002F91CB2C00754045 /* bn_s_mp_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA02F91CB2C00754045 /* bn_s_mp_sub.c */; };
+		8E6CBC012F91CB2C00754045 /* bn_fast_s_mp_mul_digs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2E2F91CB2C00754045 /* bn_fast_s_mp_mul_digs.c */; };
+		8E6CBC022F91CB2C00754045 /* bn_mp_mod_2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB612F91CB2C00754045 /* bn_mp_mod_2d.c */; };
+		8E6CBC032F91CB2C00754045 /* bn_mp_div_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB442F91CB2C00754045 /* bn_mp_div_d.c */; };
+		8E6CBC042F91CB2C00754045 /* bn_mp_clamp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB372F91CB2C00754045 /* bn_mp_clamp.c */; };
+		8E6CBC052F91CB2C00754045 /* bn_mp_sub_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8C2F91CB2C00754045 /* bn_mp_sub_d.c */; };
+		8E6CBC062F91CB2C00754045 /* bn_mp_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB522F91CB2C00754045 /* bn_mp_init.c */; };
+		8E6CBC072F91CB2C00754045 /* bn_s_mp_mul_digs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9D2F91CB2C00754045 /* bn_s_mp_mul_digs.c */; };
+		8E6CBC082F91CB2C00754045 /* bn_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2B2F91CB2C00754045 /* bn_error.c */; };
+		8E6CBC092F91CB2C00754045 /* YLZRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB292F91CB2C00754045 /* YLZRSA.m */; };
+		8E6CBC0A2F91CB2C00754045 /* bn_mp_prime_is_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB702F91CB2C00754045 /* bn_mp_prime_is_prime.c */; };
+		8E6CBC0B2F91CB2C00754045 /* bn_mp_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8B2F91CB2C00754045 /* bn_mp_sub.c */; };
+		8E6CBC0C2F91CB2C00754045 /* bn_mp_sqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8A2F91CB2C00754045 /* bn_mp_sqrt.c */; };
+		8E6CBC0D2F91CB2C00754045 /* bn_mp_invmod_slow.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB592F91CB2C00754045 /* bn_mp_invmod_slow.c */; };
+		8E6CBC0E2F91CB2C00754045 /* YLZSecKeyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBBC2F91CB2C00754045 /* YLZSecKeyWrapper.m */; };
+		8E6CBC0F2F91CB2C00754045 /* sm2_Intrfs_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBAA2F91CB2C00754045 /* sm2_Intrfs_test.cpp */; };
+		8E6CBC102F91CB2C00754045 /* bn_mp_prime_random_ex.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB742F91CB2C00754045 /* bn_mp_prime_random_ex.c */; };
+		8E6CBC112F91CB2C00754045 /* bn_mp_cnt_lsb.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3D2F91CB2C00754045 /* bn_mp_cnt_lsb.c */; };
+		8E6CBC122F91CB2C00754045 /* bn_mp_add_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB342F91CB2C00754045 /* bn_mp_add_d.c */; };
+		8E6CBC132F91CB2C00754045 /* bn_fast_mp_montgomery_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2D2F91CB2C00754045 /* bn_fast_mp_montgomery_reduce.c */; };
+		8E6CBC142F91CB2C00754045 /* bn_mp_cmp_mag.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3C2F91CB2C00754045 /* bn_mp_cmp_mag.c */; };
+		8E6CBC152F91CB2C00754045 /* bn_mp_abs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB322F91CB2C00754045 /* bn_mp_abs.c */; };
+		8E6CBC162F91CB2C00754045 /* bn_mp_to_unsigned_bin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB902F91CB2C00754045 /* bn_mp_to_unsigned_bin.c */; };
+		8E6CBC172F91CB2C00754045 /* bn_mp_addmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB352F91CB2C00754045 /* bn_mp_addmod.c */; };
+		8E6CBC182F91CB2C00754045 /* bn_mp_2expt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB312F91CB2C00754045 /* bn_mp_2expt.c */; };
+		8E6CBC192F91CB2C00754045 /* bn_mp_cmp_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3B2F91CB2C00754045 /* bn_mp_cmp_d.c */; };
+		8E6CBC1A2F91CB2C00754045 /* bn_mp_exteuclid.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4C2F91CB2C00754045 /* bn_mp_exteuclid.c */; };
+		8E6CBC1B2F91CB2C00754045 /* bn_mp_init_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB572F91CB2C00754045 /* bn_mp_init_size.c */; };
+		8E6CBC1C2F91CB2C00754045 /* bn_mp_read_unsigned_bin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7A2F91CB2C00754045 /* bn_mp_read_unsigned_bin.c */; };
+		8E6CBC1D2F91CB2C00754045 /* bn_mp_rshd.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB832F91CB2C00754045 /* bn_mp_rshd.c */; };
+		8E6CBC1E2F91CB2C00754045 /* bn_mp_xor.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB972F91CB2C00754045 /* bn_mp_xor.c */; };
+		8E6CBC1F2F91CB2C00754045 /* bn_mp_prime_miller_rabin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB712F91CB2C00754045 /* bn_mp_prime_miller_rabin.c */; };
+		8E6CBC202F91CB2C00754045 /* bn_mp_montgomery_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB652F91CB2C00754045 /* bn_mp_montgomery_setup.c */; };
+		8E6CBC212F91CB2C00754045 /* sm3test.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBB22F91CB2C00754045 /* sm3test.c */; };
+		8E6CBC222F91CB2C00754045 /* bn_mp_mod_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB622F91CB2C00754045 /* bn_mp_mod_d.c */; };
+		8E6CBC232F91CB2C00754045 /* bn_mp_init_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB552F91CB2C00754045 /* bn_mp_init_set.c */; };
+		8E6CBC242F91CB2C00754045 /* bn_mp_montgomery_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB642F91CB2C00754045 /* bn_mp_montgomery_reduce.c */; };
+		8E6CBC252F91CB2C00754045 /* bn_mp_rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB772F91CB2C00754045 /* bn_mp_rand.c */; };
+		8E6CBC262F91CB2C00754045 /* bn_mp_sqrmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB892F91CB2C00754045 /* bn_mp_sqrmod.c */; };
+		8E6CBC272F91CB2C00754045 /* bn_mp_read_radix.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB782F91CB2C00754045 /* bn_mp_read_radix.c */; };
+		8E6CBC282F91CB2C00754045 /* bn_mp_radix_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB752F91CB2C00754045 /* bn_mp_radix_size.c */; };
+		8E6CBC292F91CB2C00754045 /* bn_mp_n_root.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6B2F91CB2C00754045 /* bn_mp_n_root.c */; };
+		8E6CBC2A2F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB912F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c */; };
+		8E6CBC2B2F91CB2C00754045 /* YLZNetEncryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB242F91CB2C00754045 /* YLZNetEncryptManager.m */; };
+		8E6CBC2C2F91CB2C00754045 /* bn_mp_prime_fermat.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6E2F91CB2C00754045 /* bn_mp_prime_fermat.c */; };
+		8E6CBC2D2F91CB2C00754045 /* bn_mp_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB842F91CB2C00754045 /* bn_mp_set.c */; };
+		8E6CBC2E2F91CB2C00754045 /* bn_mp_radix_smap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB762F91CB2C00754045 /* bn_mp_radix_smap.c */; };
+		8E6CBC2F2F91CB2C00754045 /* bn_mp_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB882F91CB2C00754045 /* bn_mp_sqr.c */; };
+		8E6CBC302F91CB2C00754045 /* bn_mp_add.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB332F91CB2C00754045 /* bn_mp_add.c */; };
+		8E6CBC312F91CB2C00754045 /* bn_mp_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3E2F91CB2C00754045 /* bn_mp_copy.c */; };
+		8E6CBC322F91CB2C00754045 /* bn_mp_mulmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6A2F91CB2C00754045 /* bn_mp_mulmod.c */; };
+		8E6CBC332F91CB2C00754045 /* bn_mp_or.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6D2F91CB2C00754045 /* bn_mp_or.c */; };
+		8E6CBC342F91CB2C00754045 /* bn_mp_prime_rabin_miller_trials.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB732F91CB2C00754045 /* bn_mp_prime_rabin_miller_trials.c */; };
+		8E6CBC352F91CB2C00754045 /* bn_mp_mul_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB672F91CB2C00754045 /* bn_mp_mul_2.c */; };
+		8E6CBC362F91CB2C00754045 /* bn_mp_toradix.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB942F91CB2C00754045 /* bn_mp_toradix.c */; };
+		8E6CBC372F91CB2C00754045 /* bn_mp_div_2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB422F91CB2C00754045 /* bn_mp_div_2d.c */; };
+		8E6CBC382F91CB2C00754045 /* bn_mp_get_int.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB502F91CB2C00754045 /* bn_mp_get_int.c */; };
+		8E6CBC392F91CB2C00754045 /* bn_mp_unsigned_bin_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB962F91CB2C00754045 /* bn_mp_unsigned_bin_size.c */; };
+		8E6CBC3A2F91CB2C00754045 /* bn_mp_karatsuba_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5D2F91CB2C00754045 /* bn_mp_karatsuba_sqr.c */; };
+		8E6CBC3B2F91CB2C00754045 /* sm2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA92F91CB2C00754045 /* sm2.cpp */; };
+		8E6CBC3C2F91CB2C00754045 /* bn_mp_reduce_2k_setup_l.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7F2F91CB2C00754045 /* bn_mp_reduce_2k_setup_l.c */; };
+		8E6CBC3D2F91CB2C00754045 /* bn_mp_karatsuba_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5C2F91CB2C00754045 /* bn_mp_karatsuba_mul.c */; };
+		8E6CBC3E2F91CB2C00754045 /* bn_mp_toom_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB922F91CB2C00754045 /* bn_mp_toom_mul.c */; };
+		8E6CBC3F2F91CB2C00754045 /* bn_mp_mul_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB692F91CB2C00754045 /* bn_mp_mul_d.c */; };
+		8E6CBC402F91CB2C00754045 /* NSData+YLZHexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1C2F91CB2C00754045 /* NSData+YLZHexadecimal.m */; };
+		8E6CBC412F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2F2F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c */; };
+		8E6CBC422F91CB2C00754045 /* bn_mp_clear_multi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB392F91CB2C00754045 /* bn_mp_clear_multi.c */; };
+		8E6CBC432F91CB2C00754045 /* NSData+YLZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1A2F91CB2C00754045 /* NSData+YLZBase64.m */; };
+		8E6CBC442F91CB2C00754045 /* bn_mp_prime_next_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB722F91CB2C00754045 /* bn_mp_prime_next_prime.c */; };
+		8E6CBC452F91CB2C00754045 /* bn_mp_exptmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4A2F91CB2C00754045 /* bn_mp_exptmod.c */; };
+		8E6CBC462F91CB2C00754045 /* bn_mp_clear.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB382F91CB2C00754045 /* bn_mp_clear.c */; };
+		8E6CBC472F91CB2C00754045 /* bn_fast_s_mp_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB302F91CB2C00754045 /* bn_fast_s_mp_sqr.c */; };
+		8E6CBC482F91CB2C00754045 /* bn_mp_zero.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB982F91CB2C00754045 /* bn_mp_zero.c */; };
+		8E6CBC492F91CB2C00754045 /* sm3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBB12F91CB2C00754045 /* sm3.c */; };
+		8E6CBC4A2F91CB2C00754045 /* bn_mp_read_signed_bin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB792F91CB2C00754045 /* bn_mp_read_signed_bin.c */; };
+		8E6CBC4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c */; };
+		8E6CBC4D2F91CEDD00754045 /* HiInitLoginRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */; };
 		8E78C8122814F3CA00D6C59F /* YLZRouteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */; };
 		8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */; };
 		8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */; };
@@ -173,6 +317,173 @@
 		8E6CBAF22F90AF3800754045 /* MedicineBoxPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineBoxPopup.swift; sourceTree = "<group>"; };
 		8E6CBAF62F90B23700754045 /* PaymentMethodPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPopup.swift; sourceTree = "<group>"; };
 		8E6CBAF92F90B4A500754045 /* GenericAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAlertView.swift; sourceTree = "<group>"; };
+		8E6CBAFB2F90D66C00754045 /* HiEncrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiEncrypt.swift; sourceTree = "<group>"; };
+		8E6CBB0C2F90E11300754045 /* NSObject+YYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		8E6CBB0D2F90E11300754045 /* NSObject+YYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		8E6CBB0E2F90E11300754045 /* YYClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		8E6CBB0F2F90E11300754045 /* YYClassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		8E6CBB102F90E11300754045 /* YYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		8E6CBB132F90E11300754045 /* OCProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProject.h; sourceTree = "<group>"; };
+		8E6CBB142F90E11300754045 /* OCProject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCProject.m; sourceTree = "<group>"; };
+		8E6CBB192F91CB2C00754045 /* NSData+YLZBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+YLZBase64.h"; sourceTree = "<group>"; };
+		8E6CBB1A2F91CB2C00754045 /* NSData+YLZBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+YLZBase64.m"; sourceTree = "<group>"; };
+		8E6CBB1B2F91CB2C00754045 /* NSData+YLZHexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+YLZHexadecimal.h"; sourceTree = "<group>"; };
+		8E6CBB1C2F91CB2C00754045 /* NSData+YLZHexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+YLZHexadecimal.m"; sourceTree = "<group>"; };
+		8E6CBB1D2F91CB2C00754045 /* NSDictionary+YLZSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YLZSign.h"; sourceTree = "<group>"; };
+		8E6CBB1E2F91CB2C00754045 /* NSDictionary+YLZSign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YLZSign.m"; sourceTree = "<group>"; };
+		8E6CBB202F91CB2C00754045 /* YLZ-NetEncryption-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLZ-NetEncryption-iOS.h"; sourceTree = "<group>"; };
+		8E6CBB212F91CB2C00754045 /* YLZMSEncryptionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSEncryptionConfig.h; sourceTree = "<group>"; };
+		8E6CBB222F91CB2C00754045 /* YLZMSEncryptionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMSEncryptionConfig.m; sourceTree = "<group>"; };
+		8E6CBB232F91CB2C00754045 /* YLZNetEncryptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetEncryptManager.h; sourceTree = "<group>"; };
+		8E6CBB242F91CB2C00754045 /* YLZNetEncryptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetEncryptManager.m; sourceTree = "<group>"; };
+		8E6CBB252F91CB2C00754045 /* YLZRequestEncryptConfigKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRequestEncryptConfigKeys.h; sourceTree = "<group>"; };
+		8E6CBB262F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRequestEncryptConfigKeys.m; sourceTree = "<group>"; };
+		8E6CBB282F91CB2C00754045 /* YLZRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRSA.h; sourceTree = "<group>"; };
+		8E6CBB292F91CB2C00754045 /* YLZRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRSA.m; sourceTree = "<group>"; };
+		8E6CBB2B2F91CB2C00754045 /* bn_error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_error.c; sourceTree = "<group>"; };
+		8E6CBB2C2F91CB2C00754045 /* bn_fast_mp_invmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_mp_invmod.c; sourceTree = "<group>"; };
+		8E6CBB2D2F91CB2C00754045 /* bn_fast_mp_montgomery_reduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_mp_montgomery_reduce.c; sourceTree = "<group>"; };
+		8E6CBB2E2F91CB2C00754045 /* bn_fast_s_mp_mul_digs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_s_mp_mul_digs.c; sourceTree = "<group>"; };
+		8E6CBB2F2F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_s_mp_mul_high_digs.c; sourceTree = "<group>"; };
+		8E6CBB302F91CB2C00754045 /* bn_fast_s_mp_sqr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_s_mp_sqr.c; sourceTree = "<group>"; };
+		8E6CBB312F91CB2C00754045 /* bn_mp_2expt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_2expt.c; sourceTree = "<group>"; };
+		8E6CBB322F91CB2C00754045 /* bn_mp_abs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_abs.c; sourceTree = "<group>"; };
+		8E6CBB332F91CB2C00754045 /* bn_mp_add.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_add.c; sourceTree = "<group>"; };
+		8E6CBB342F91CB2C00754045 /* bn_mp_add_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_add_d.c; sourceTree = "<group>"; };
+		8E6CBB352F91CB2C00754045 /* bn_mp_addmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_addmod.c; sourceTree = "<group>"; };
+		8E6CBB362F91CB2C00754045 /* bn_mp_and.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_and.c; sourceTree = "<group>"; };
+		8E6CBB372F91CB2C00754045 /* bn_mp_clamp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_clamp.c; sourceTree = "<group>"; };
+		8E6CBB382F91CB2C00754045 /* bn_mp_clear.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_clear.c; sourceTree = "<group>"; };
+		8E6CBB392F91CB2C00754045 /* bn_mp_clear_multi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_clear_multi.c; sourceTree = "<group>"; };
+		8E6CBB3A2F91CB2C00754045 /* bn_mp_cmp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_cmp.c; sourceTree = "<group>"; };
+		8E6CBB3B2F91CB2C00754045 /* bn_mp_cmp_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_cmp_d.c; sourceTree = "<group>"; };
+		8E6CBB3C2F91CB2C00754045 /* bn_mp_cmp_mag.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_cmp_mag.c; sourceTree = "<group>"; };
+		8E6CBB3D2F91CB2C00754045 /* bn_mp_cnt_lsb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_cnt_lsb.c; sourceTree = "<group>"; };
+		8E6CBB3E2F91CB2C00754045 /* bn_mp_copy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_copy.c; sourceTree = "<group>"; };
+		8E6CBB3F2F91CB2C00754045 /* bn_mp_count_bits.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_count_bits.c; sourceTree = "<group>"; };
+		8E6CBB402F91CB2C00754045 /* bn_mp_div.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_div.c; sourceTree = "<group>"; };
+		8E6CBB412F91CB2C00754045 /* bn_mp_div_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_div_2.c; sourceTree = "<group>"; };
+		8E6CBB422F91CB2C00754045 /* bn_mp_div_2d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_div_2d.c; sourceTree = "<group>"; };
+		8E6CBB432F91CB2C00754045 /* bn_mp_div_3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_div_3.c; sourceTree = "<group>"; };
+		8E6CBB442F91CB2C00754045 /* bn_mp_div_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_div_d.c; sourceTree = "<group>"; };
+		8E6CBB452F91CB2C00754045 /* bn_mp_dr_is_modulus.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_dr_is_modulus.c; sourceTree = "<group>"; };
+		8E6CBB462F91CB2C00754045 /* bn_mp_dr_reduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_dr_reduce.c; sourceTree = "<group>"; };
+		8E6CBB472F91CB2C00754045 /* bn_mp_dr_setup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_dr_setup.c; sourceTree = "<group>"; };
+		8E6CBB482F91CB2C00754045 /* bn_mp_exch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_exch.c; sourceTree = "<group>"; };
+		8E6CBB492F91CB2C00754045 /* bn_mp_expt_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_expt_d.c; sourceTree = "<group>"; };
+		8E6CBB4A2F91CB2C00754045 /* bn_mp_exptmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_exptmod.c; sourceTree = "<group>"; };
+		8E6CBB4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_exptmod_fast.c; sourceTree = "<group>"; };
+		8E6CBB4C2F91CB2C00754045 /* bn_mp_exteuclid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_exteuclid.c; sourceTree = "<group>"; };
+		8E6CBB4D2F91CB2C00754045 /* bn_mp_fread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_fread.c; sourceTree = "<group>"; };
+		8E6CBB4E2F91CB2C00754045 /* bn_mp_fwrite.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_fwrite.c; sourceTree = "<group>"; };
+		8E6CBB4F2F91CB2C00754045 /* bn_mp_gcd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_gcd.c; sourceTree = "<group>"; };
+		8E6CBB502F91CB2C00754045 /* bn_mp_get_int.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_get_int.c; sourceTree = "<group>"; };
+		8E6CBB512F91CB2C00754045 /* bn_mp_grow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_grow.c; sourceTree = "<group>"; };
+		8E6CBB522F91CB2C00754045 /* bn_mp_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_init.c; sourceTree = "<group>"; };
+		8E6CBB532F91CB2C00754045 /* bn_mp_init_copy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_init_copy.c; sourceTree = "<group>"; };
+		8E6CBB542F91CB2C00754045 /* bn_mp_init_multi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_init_multi.c; sourceTree = "<group>"; };
+		8E6CBB552F91CB2C00754045 /* bn_mp_init_set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_init_set.c; sourceTree = "<group>"; };
+		8E6CBB562F91CB2C00754045 /* bn_mp_init_set_int.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_init_set_int.c; sourceTree = "<group>"; };
+		8E6CBB572F91CB2C00754045 /* bn_mp_init_size.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_init_size.c; sourceTree = "<group>"; };
+		8E6CBB582F91CB2C00754045 /* bn_mp_invmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_invmod.c; sourceTree = "<group>"; };
+		8E6CBB592F91CB2C00754045 /* bn_mp_invmod_slow.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_invmod_slow.c; sourceTree = "<group>"; };
+		8E6CBB5A2F91CB2C00754045 /* bn_mp_is_square.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_is_square.c; sourceTree = "<group>"; };
+		8E6CBB5B2F91CB2C00754045 /* bn_mp_jacobi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_jacobi.c; sourceTree = "<group>"; };
+		8E6CBB5C2F91CB2C00754045 /* bn_mp_karatsuba_mul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_karatsuba_mul.c; sourceTree = "<group>"; };
+		8E6CBB5D2F91CB2C00754045 /* bn_mp_karatsuba_sqr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_karatsuba_sqr.c; sourceTree = "<group>"; };
+		8E6CBB5E2F91CB2C00754045 /* bn_mp_lcm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_lcm.c; sourceTree = "<group>"; };
+		8E6CBB5F2F91CB2C00754045 /* bn_mp_lshd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_lshd.c; sourceTree = "<group>"; };
+		8E6CBB602F91CB2C00754045 /* bn_mp_mod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mod.c; sourceTree = "<group>"; };
+		8E6CBB612F91CB2C00754045 /* bn_mp_mod_2d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mod_2d.c; sourceTree = "<group>"; };
+		8E6CBB622F91CB2C00754045 /* bn_mp_mod_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mod_d.c; sourceTree = "<group>"; };
+		8E6CBB632F91CB2C00754045 /* bn_mp_montgomery_calc_normalization.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_montgomery_calc_normalization.c; sourceTree = "<group>"; };
+		8E6CBB642F91CB2C00754045 /* bn_mp_montgomery_reduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_montgomery_reduce.c; sourceTree = "<group>"; };
+		8E6CBB652F91CB2C00754045 /* bn_mp_montgomery_setup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_montgomery_setup.c; sourceTree = "<group>"; };
+		8E6CBB662F91CB2C00754045 /* bn_mp_mul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mul.c; sourceTree = "<group>"; };
+		8E6CBB672F91CB2C00754045 /* bn_mp_mul_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mul_2.c; sourceTree = "<group>"; };
+		8E6CBB682F91CB2C00754045 /* bn_mp_mul_2d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mul_2d.c; sourceTree = "<group>"; };
+		8E6CBB692F91CB2C00754045 /* bn_mp_mul_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mul_d.c; sourceTree = "<group>"; };
+		8E6CBB6A2F91CB2C00754045 /* bn_mp_mulmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_mulmod.c; sourceTree = "<group>"; };
+		8E6CBB6B2F91CB2C00754045 /* bn_mp_n_root.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_n_root.c; sourceTree = "<group>"; };
+		8E6CBB6C2F91CB2C00754045 /* bn_mp_neg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_neg.c; sourceTree = "<group>"; };
+		8E6CBB6D2F91CB2C00754045 /* bn_mp_or.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_or.c; sourceTree = "<group>"; };
+		8E6CBB6E2F91CB2C00754045 /* bn_mp_prime_fermat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_fermat.c; sourceTree = "<group>"; };
+		8E6CBB6F2F91CB2C00754045 /* bn_mp_prime_is_divisible.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_is_divisible.c; sourceTree = "<group>"; };
+		8E6CBB702F91CB2C00754045 /* bn_mp_prime_is_prime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_is_prime.c; sourceTree = "<group>"; };
+		8E6CBB712F91CB2C00754045 /* bn_mp_prime_miller_rabin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_miller_rabin.c; sourceTree = "<group>"; };
+		8E6CBB722F91CB2C00754045 /* bn_mp_prime_next_prime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_next_prime.c; sourceTree = "<group>"; };
+		8E6CBB732F91CB2C00754045 /* bn_mp_prime_rabin_miller_trials.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_rabin_miller_trials.c; sourceTree = "<group>"; };
+		8E6CBB742F91CB2C00754045 /* bn_mp_prime_random_ex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_prime_random_ex.c; sourceTree = "<group>"; };
+		8E6CBB752F91CB2C00754045 /* bn_mp_radix_size.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_radix_size.c; sourceTree = "<group>"; };
+		8E6CBB762F91CB2C00754045 /* bn_mp_radix_smap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_radix_smap.c; sourceTree = "<group>"; };
+		8E6CBB772F91CB2C00754045 /* bn_mp_rand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_rand.c; sourceTree = "<group>"; };
+		8E6CBB782F91CB2C00754045 /* bn_mp_read_radix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_read_radix.c; sourceTree = "<group>"; };
+		8E6CBB792F91CB2C00754045 /* bn_mp_read_signed_bin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_read_signed_bin.c; sourceTree = "<group>"; };
+		8E6CBB7A2F91CB2C00754045 /* bn_mp_read_unsigned_bin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_read_unsigned_bin.c; sourceTree = "<group>"; };
+		8E6CBB7B2F91CB2C00754045 /* bn_mp_reduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce.c; sourceTree = "<group>"; };
+		8E6CBB7C2F91CB2C00754045 /* bn_mp_reduce_2k.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_2k.c; sourceTree = "<group>"; };
+		8E6CBB7D2F91CB2C00754045 /* bn_mp_reduce_2k_l.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_2k_l.c; sourceTree = "<group>"; };
+		8E6CBB7E2F91CB2C00754045 /* bn_mp_reduce_2k_setup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_2k_setup.c; sourceTree = "<group>"; };
+		8E6CBB7F2F91CB2C00754045 /* bn_mp_reduce_2k_setup_l.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_2k_setup_l.c; sourceTree = "<group>"; };
+		8E6CBB802F91CB2C00754045 /* bn_mp_reduce_is_2k.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_is_2k.c; sourceTree = "<group>"; };
+		8E6CBB812F91CB2C00754045 /* bn_mp_reduce_is_2k_l.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_is_2k_l.c; sourceTree = "<group>"; };
+		8E6CBB822F91CB2C00754045 /* bn_mp_reduce_setup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_reduce_setup.c; sourceTree = "<group>"; };
+		8E6CBB832F91CB2C00754045 /* bn_mp_rshd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_rshd.c; sourceTree = "<group>"; };
+		8E6CBB842F91CB2C00754045 /* bn_mp_set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_set.c; sourceTree = "<group>"; };
+		8E6CBB852F91CB2C00754045 /* bn_mp_set_int.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_set_int.c; sourceTree = "<group>"; };
+		8E6CBB862F91CB2C00754045 /* bn_mp_shrink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_shrink.c; sourceTree = "<group>"; };
+		8E6CBB872F91CB2C00754045 /* bn_mp_signed_bin_size.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_signed_bin_size.c; sourceTree = "<group>"; };
+		8E6CBB882F91CB2C00754045 /* bn_mp_sqr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_sqr.c; sourceTree = "<group>"; };
+		8E6CBB892F91CB2C00754045 /* bn_mp_sqrmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_sqrmod.c; sourceTree = "<group>"; };
+		8E6CBB8A2F91CB2C00754045 /* bn_mp_sqrt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_sqrt.c; sourceTree = "<group>"; };
+		8E6CBB8B2F91CB2C00754045 /* bn_mp_sub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_sub.c; sourceTree = "<group>"; };
+		8E6CBB8C2F91CB2C00754045 /* bn_mp_sub_d.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_sub_d.c; sourceTree = "<group>"; };
+		8E6CBB8D2F91CB2C00754045 /* bn_mp_submod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_submod.c; sourceTree = "<group>"; };
+		8E6CBB8E2F91CB2C00754045 /* bn_mp_to_signed_bin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_to_signed_bin.c; sourceTree = "<group>"; };
+		8E6CBB8F2F91CB2C00754045 /* bn_mp_to_signed_bin_n.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_to_signed_bin_n.c; sourceTree = "<group>"; };
+		8E6CBB902F91CB2C00754045 /* bn_mp_to_unsigned_bin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_to_unsigned_bin.c; sourceTree = "<group>"; };
+		8E6CBB912F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_to_unsigned_bin_n.c; sourceTree = "<group>"; };
+		8E6CBB922F91CB2C00754045 /* bn_mp_toom_mul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_toom_mul.c; sourceTree = "<group>"; };
+		8E6CBB932F91CB2C00754045 /* bn_mp_toom_sqr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_toom_sqr.c; sourceTree = "<group>"; };
+		8E6CBB942F91CB2C00754045 /* bn_mp_toradix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_toradix.c; sourceTree = "<group>"; };
+		8E6CBB952F91CB2C00754045 /* bn_mp_toradix_n.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_toradix_n.c; sourceTree = "<group>"; };
+		8E6CBB962F91CB2C00754045 /* bn_mp_unsigned_bin_size.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_unsigned_bin_size.c; sourceTree = "<group>"; };
+		8E6CBB972F91CB2C00754045 /* bn_mp_xor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_xor.c; sourceTree = "<group>"; };
+		8E6CBB982F91CB2C00754045 /* bn_mp_zero.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mp_zero.c; sourceTree = "<group>"; };
+		8E6CBB992F91CB2C00754045 /* bn_prime_tab.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_prime_tab.c; sourceTree = "<group>"; };
+		8E6CBB9A2F91CB2C00754045 /* bn_reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_reverse.c; sourceTree = "<group>"; };
+		8E6CBB9B2F91CB2C00754045 /* bn_s_mp_add.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_s_mp_add.c; sourceTree = "<group>"; };
+		8E6CBB9C2F91CB2C00754045 /* bn_s_mp_exptmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_s_mp_exptmod.c; sourceTree = "<group>"; };
+		8E6CBB9D2F91CB2C00754045 /* bn_s_mp_mul_digs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_s_mp_mul_digs.c; sourceTree = "<group>"; };
+		8E6CBB9E2F91CB2C00754045 /* bn_s_mp_mul_high_digs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_s_mp_mul_high_digs.c; sourceTree = "<group>"; };
+		8E6CBB9F2F91CB2C00754045 /* bn_s_mp_sqr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_s_mp_sqr.c; sourceTree = "<group>"; };
+		8E6CBBA02F91CB2C00754045 /* bn_s_mp_sub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_s_mp_sub.c; sourceTree = "<group>"; };
+		8E6CBBA12F91CB2C00754045 /* bncore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bncore.c; sourceTree = "<group>"; };
+		8E6CBBA22F91CB2C00754045 /* callgraph.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = callgraph.txt; sourceTree = "<group>"; };
+		8E6CBBA32F91CB2C00754045 /* changes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = changes.txt; sourceTree = "<group>"; };
+		8E6CBBA42F91CB2C00754045 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8E6CBBA62F91CB2C00754045 /* .cproject */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = .cproject; sourceTree = "<group>"; };
+		8E6CBBA72F91CB2C00754045 /* GM_define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GM_define.h; sourceTree = "<group>"; };
+		8E6CBBA82F91CB2C00754045 /* sm2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sm2.h; sourceTree = "<group>"; };
+		8E6CBBA92F91CB2C00754045 /* sm2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sm2.cpp; sourceTree = "<group>"; };
+		8E6CBBAA2F91CB2C00754045 /* sm2_Intrfs_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sm2_Intrfs_test.cpp; sourceTree = "<group>"; };
+		8E6CBBAB2F91CB2C00754045 /* tommath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tommath.h; sourceTree = "<group>"; };
+		8E6CBBAC2F91CB2C00754045 /* tommath_class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tommath_class.h; sourceTree = "<group>"; };
+		8E6CBBAD2F91CB2C00754045 /* tommath_superclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tommath_superclass.h; sourceTree = "<group>"; };
+		8E6CBBB02F91CB2C00754045 /* sm3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sm3.h; sourceTree = "<group>"; };
+		8E6CBBB12F91CB2C00754045 /* sm3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sm3.c; sourceTree = "<group>"; };
+		8E6CBBB22F91CB2C00754045 /* sm3test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sm3test.c; sourceTree = "<group>"; };
+		8E6CBBB42F91CB2C00754045 /* sm4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sm4.h; sourceTree = "<group>"; };
+		8E6CBBB52F91CB2C00754045 /* sm4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sm4.c; sourceTree = "<group>"; };
+		8E6CBBB62F91CB2C00754045 /* sm4test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sm4test.h; sourceTree = "<group>"; };
+		8E6CBBB72F91CB2C00754045 /* sm4test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sm4test.c; sourceTree = "<group>"; };
+		8E6CBBB82F91CB2C00754045 /* sms4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sms4.h; sourceTree = "<group>"; };
+		8E6CBBB92F91CB2C00754045 /* sms4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sms4.c; sourceTree = "<group>"; };
+		8E6CBBBB2F91CB2C00754045 /* YLZSecKeyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSecKeyWrapper.h; sourceTree = "<group>"; };
+		8E6CBBBC2F91CB2C00754045 /* YLZSecKeyWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSecKeyWrapper.m; sourceTree = "<group>"; };
+		8E6CBBBD2F91CB2C00754045 /* YLZSMEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSMEncryption.h; sourceTree = "<group>"; };
+		8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSMEncryption.m; sourceTree = "<group>"; };
+		8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiInitLoginRespModel.swift; sourceTree = "<group>"; };
 		8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeViewController.swift; sourceTree = "<group>"; };
 		8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeInfoCell.swift; sourceTree = "<group>"; };
 		8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableFooterView.swift; sourceTree = "<group>"; };
@@ -399,6 +710,7 @@
 		8E344A39265BCA63008AF1BA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E6CBB152F90E11300754045 /* OC */,
 				8E0007692B294D54006C7D2A /* Event */,
 				8EA21EAE2700343900A9039B /* Kit */,
 				8E344A92265BD5B6008AF1BA /* Moya */,
@@ -526,6 +838,266 @@
 				8E6CBAF92F90B4A500754045 /* GenericAlertView.swift */,
 			);
 			path = Generic;
+			sourceTree = "<group>";
+		};
+		8E6CBB112F90E11300754045 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB0C2F90E11300754045 /* NSObject+YYModel.h */,
+				8E6CBB0D2F90E11300754045 /* NSObject+YYModel.m */,
+				8E6CBB0E2F90E11300754045 /* YYClassInfo.h */,
+				8E6CBB0F2F90E11300754045 /* YYClassInfo.m */,
+				8E6CBB102F90E11300754045 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		8E6CBB152F90E11300754045 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBBC02F91CB2C00754045 /* SM */,
+				8E6CBB112F90E11300754045 /* YYModel */,
+				8E6CBB132F90E11300754045 /* OCProject.h */,
+				8E6CBB142F90E11300754045 /* OCProject.m */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		8E6CBB1F2F91CB2C00754045 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB192F91CB2C00754045 /* NSData+YLZBase64.h */,
+				8E6CBB1A2F91CB2C00754045 /* NSData+YLZBase64.m */,
+				8E6CBB1B2F91CB2C00754045 /* NSData+YLZHexadecimal.h */,
+				8E6CBB1C2F91CB2C00754045 /* NSData+YLZHexadecimal.m */,
+				8E6CBB1D2F91CB2C00754045 /* NSDictionary+YLZSign.h */,
+				8E6CBB1E2F91CB2C00754045 /* NSDictionary+YLZSign.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8E6CBB272F91CB2C00754045 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB202F91CB2C00754045 /* YLZ-NetEncryption-iOS.h */,
+				8E6CBB212F91CB2C00754045 /* YLZMSEncryptionConfig.h */,
+				8E6CBB222F91CB2C00754045 /* YLZMSEncryptionConfig.m */,
+				8E6CBB232F91CB2C00754045 /* YLZNetEncryptManager.h */,
+				8E6CBB242F91CB2C00754045 /* YLZNetEncryptManager.m */,
+				8E6CBB252F91CB2C00754045 /* YLZRequestEncryptConfigKeys.h */,
+				8E6CBB262F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8E6CBB2A2F91CB2C00754045 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB282F91CB2C00754045 /* YLZRSA.h */,
+				8E6CBB292F91CB2C00754045 /* YLZRSA.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		8E6CBBA52F91CB2C00754045 /* libtommath-0.42.0 */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB2B2F91CB2C00754045 /* bn_error.c */,
+				8E6CBB2C2F91CB2C00754045 /* bn_fast_mp_invmod.c */,
+				8E6CBB2D2F91CB2C00754045 /* bn_fast_mp_montgomery_reduce.c */,
+				8E6CBB2E2F91CB2C00754045 /* bn_fast_s_mp_mul_digs.c */,
+				8E6CBB2F2F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c */,
+				8E6CBB302F91CB2C00754045 /* bn_fast_s_mp_sqr.c */,
+				8E6CBB312F91CB2C00754045 /* bn_mp_2expt.c */,
+				8E6CBB322F91CB2C00754045 /* bn_mp_abs.c */,
+				8E6CBB332F91CB2C00754045 /* bn_mp_add.c */,
+				8E6CBB342F91CB2C00754045 /* bn_mp_add_d.c */,
+				8E6CBB352F91CB2C00754045 /* bn_mp_addmod.c */,
+				8E6CBB362F91CB2C00754045 /* bn_mp_and.c */,
+				8E6CBB372F91CB2C00754045 /* bn_mp_clamp.c */,
+				8E6CBB382F91CB2C00754045 /* bn_mp_clear.c */,
+				8E6CBB392F91CB2C00754045 /* bn_mp_clear_multi.c */,
+				8E6CBB3A2F91CB2C00754045 /* bn_mp_cmp.c */,
+				8E6CBB3B2F91CB2C00754045 /* bn_mp_cmp_d.c */,
+				8E6CBB3C2F91CB2C00754045 /* bn_mp_cmp_mag.c */,
+				8E6CBB3D2F91CB2C00754045 /* bn_mp_cnt_lsb.c */,
+				8E6CBB3E2F91CB2C00754045 /* bn_mp_copy.c */,
+				8E6CBB3F2F91CB2C00754045 /* bn_mp_count_bits.c */,
+				8E6CBB402F91CB2C00754045 /* bn_mp_div.c */,
+				8E6CBB412F91CB2C00754045 /* bn_mp_div_2.c */,
+				8E6CBB422F91CB2C00754045 /* bn_mp_div_2d.c */,
+				8E6CBB432F91CB2C00754045 /* bn_mp_div_3.c */,
+				8E6CBB442F91CB2C00754045 /* bn_mp_div_d.c */,
+				8E6CBB452F91CB2C00754045 /* bn_mp_dr_is_modulus.c */,
+				8E6CBB462F91CB2C00754045 /* bn_mp_dr_reduce.c */,
+				8E6CBB472F91CB2C00754045 /* bn_mp_dr_setup.c */,
+				8E6CBB482F91CB2C00754045 /* bn_mp_exch.c */,
+				8E6CBB492F91CB2C00754045 /* bn_mp_expt_d.c */,
+				8E6CBB4A2F91CB2C00754045 /* bn_mp_exptmod.c */,
+				8E6CBB4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c */,
+				8E6CBB4C2F91CB2C00754045 /* bn_mp_exteuclid.c */,
+				8E6CBB4D2F91CB2C00754045 /* bn_mp_fread.c */,
+				8E6CBB4E2F91CB2C00754045 /* bn_mp_fwrite.c */,
+				8E6CBB4F2F91CB2C00754045 /* bn_mp_gcd.c */,
+				8E6CBB502F91CB2C00754045 /* bn_mp_get_int.c */,
+				8E6CBB512F91CB2C00754045 /* bn_mp_grow.c */,
+				8E6CBB522F91CB2C00754045 /* bn_mp_init.c */,
+				8E6CBB532F91CB2C00754045 /* bn_mp_init_copy.c */,
+				8E6CBB542F91CB2C00754045 /* bn_mp_init_multi.c */,
+				8E6CBB552F91CB2C00754045 /* bn_mp_init_set.c */,
+				8E6CBB562F91CB2C00754045 /* bn_mp_init_set_int.c */,
+				8E6CBB572F91CB2C00754045 /* bn_mp_init_size.c */,
+				8E6CBB582F91CB2C00754045 /* bn_mp_invmod.c */,
+				8E6CBB592F91CB2C00754045 /* bn_mp_invmod_slow.c */,
+				8E6CBB5A2F91CB2C00754045 /* bn_mp_is_square.c */,
+				8E6CBB5B2F91CB2C00754045 /* bn_mp_jacobi.c */,
+				8E6CBB5C2F91CB2C00754045 /* bn_mp_karatsuba_mul.c */,
+				8E6CBB5D2F91CB2C00754045 /* bn_mp_karatsuba_sqr.c */,
+				8E6CBB5E2F91CB2C00754045 /* bn_mp_lcm.c */,
+				8E6CBB5F2F91CB2C00754045 /* bn_mp_lshd.c */,
+				8E6CBB602F91CB2C00754045 /* bn_mp_mod.c */,
+				8E6CBB612F91CB2C00754045 /* bn_mp_mod_2d.c */,
+				8E6CBB622F91CB2C00754045 /* bn_mp_mod_d.c */,
+				8E6CBB632F91CB2C00754045 /* bn_mp_montgomery_calc_normalization.c */,
+				8E6CBB642F91CB2C00754045 /* bn_mp_montgomery_reduce.c */,
+				8E6CBB652F91CB2C00754045 /* bn_mp_montgomery_setup.c */,
+				8E6CBB662F91CB2C00754045 /* bn_mp_mul.c */,
+				8E6CBB672F91CB2C00754045 /* bn_mp_mul_2.c */,
+				8E6CBB682F91CB2C00754045 /* bn_mp_mul_2d.c */,
+				8E6CBB692F91CB2C00754045 /* bn_mp_mul_d.c */,
+				8E6CBB6A2F91CB2C00754045 /* bn_mp_mulmod.c */,
+				8E6CBB6B2F91CB2C00754045 /* bn_mp_n_root.c */,
+				8E6CBB6C2F91CB2C00754045 /* bn_mp_neg.c */,
+				8E6CBB6D2F91CB2C00754045 /* bn_mp_or.c */,
+				8E6CBB6E2F91CB2C00754045 /* bn_mp_prime_fermat.c */,
+				8E6CBB6F2F91CB2C00754045 /* bn_mp_prime_is_divisible.c */,
+				8E6CBB702F91CB2C00754045 /* bn_mp_prime_is_prime.c */,
+				8E6CBB712F91CB2C00754045 /* bn_mp_prime_miller_rabin.c */,
+				8E6CBB722F91CB2C00754045 /* bn_mp_prime_next_prime.c */,
+				8E6CBB732F91CB2C00754045 /* bn_mp_prime_rabin_miller_trials.c */,
+				8E6CBB742F91CB2C00754045 /* bn_mp_prime_random_ex.c */,
+				8E6CBB752F91CB2C00754045 /* bn_mp_radix_size.c */,
+				8E6CBB762F91CB2C00754045 /* bn_mp_radix_smap.c */,
+				8E6CBB772F91CB2C00754045 /* bn_mp_rand.c */,
+				8E6CBB782F91CB2C00754045 /* bn_mp_read_radix.c */,
+				8E6CBB792F91CB2C00754045 /* bn_mp_read_signed_bin.c */,
+				8E6CBB7A2F91CB2C00754045 /* bn_mp_read_unsigned_bin.c */,
+				8E6CBB7B2F91CB2C00754045 /* bn_mp_reduce.c */,
+				8E6CBB7C2F91CB2C00754045 /* bn_mp_reduce_2k.c */,
+				8E6CBB7D2F91CB2C00754045 /* bn_mp_reduce_2k_l.c */,
+				8E6CBB7E2F91CB2C00754045 /* bn_mp_reduce_2k_setup.c */,
+				8E6CBB7F2F91CB2C00754045 /* bn_mp_reduce_2k_setup_l.c */,
+				8E6CBB802F91CB2C00754045 /* bn_mp_reduce_is_2k.c */,
+				8E6CBB812F91CB2C00754045 /* bn_mp_reduce_is_2k_l.c */,
+				8E6CBB822F91CB2C00754045 /* bn_mp_reduce_setup.c */,
+				8E6CBB832F91CB2C00754045 /* bn_mp_rshd.c */,
+				8E6CBB842F91CB2C00754045 /* bn_mp_set.c */,
+				8E6CBB852F91CB2C00754045 /* bn_mp_set_int.c */,
+				8E6CBB862F91CB2C00754045 /* bn_mp_shrink.c */,
+				8E6CBB872F91CB2C00754045 /* bn_mp_signed_bin_size.c */,
+				8E6CBB882F91CB2C00754045 /* bn_mp_sqr.c */,
+				8E6CBB892F91CB2C00754045 /* bn_mp_sqrmod.c */,
+				8E6CBB8A2F91CB2C00754045 /* bn_mp_sqrt.c */,
+				8E6CBB8B2F91CB2C00754045 /* bn_mp_sub.c */,
+				8E6CBB8C2F91CB2C00754045 /* bn_mp_sub_d.c */,
+				8E6CBB8D2F91CB2C00754045 /* bn_mp_submod.c */,
+				8E6CBB8E2F91CB2C00754045 /* bn_mp_to_signed_bin.c */,
+				8E6CBB8F2F91CB2C00754045 /* bn_mp_to_signed_bin_n.c */,
+				8E6CBB902F91CB2C00754045 /* bn_mp_to_unsigned_bin.c */,
+				8E6CBB912F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c */,
+				8E6CBB922F91CB2C00754045 /* bn_mp_toom_mul.c */,
+				8E6CBB932F91CB2C00754045 /* bn_mp_toom_sqr.c */,
+				8E6CBB942F91CB2C00754045 /* bn_mp_toradix.c */,
+				8E6CBB952F91CB2C00754045 /* bn_mp_toradix_n.c */,
+				8E6CBB962F91CB2C00754045 /* bn_mp_unsigned_bin_size.c */,
+				8E6CBB972F91CB2C00754045 /* bn_mp_xor.c */,
+				8E6CBB982F91CB2C00754045 /* bn_mp_zero.c */,
+				8E6CBB992F91CB2C00754045 /* bn_prime_tab.c */,
+				8E6CBB9A2F91CB2C00754045 /* bn_reverse.c */,
+				8E6CBB9B2F91CB2C00754045 /* bn_s_mp_add.c */,
+				8E6CBB9C2F91CB2C00754045 /* bn_s_mp_exptmod.c */,
+				8E6CBB9D2F91CB2C00754045 /* bn_s_mp_mul_digs.c */,
+				8E6CBB9E2F91CB2C00754045 /* bn_s_mp_mul_high_digs.c */,
+				8E6CBB9F2F91CB2C00754045 /* bn_s_mp_sqr.c */,
+				8E6CBBA02F91CB2C00754045 /* bn_s_mp_sub.c */,
+				8E6CBBA12F91CB2C00754045 /* bncore.c */,
+				8E6CBBA22F91CB2C00754045 /* callgraph.txt */,
+				8E6CBBA32F91CB2C00754045 /* changes.txt */,
+				8E6CBBA42F91CB2C00754045 /* LICENSE */,
+			);
+			path = "libtommath-0.42.0";
+			sourceTree = "<group>";
+		};
+		8E6CBBAE2F91CB2C00754045 /* sm2_impl */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBBA62F91CB2C00754045 /* .cproject */,
+				8E6CBBA72F91CB2C00754045 /* GM_define.h */,
+				8E6CBBA82F91CB2C00754045 /* sm2.h */,
+				8E6CBBA92F91CB2C00754045 /* sm2.cpp */,
+				8E6CBBAA2F91CB2C00754045 /* sm2_Intrfs_test.cpp */,
+				8E6CBBAB2F91CB2C00754045 /* tommath.h */,
+				8E6CBBAC2F91CB2C00754045 /* tommath_class.h */,
+				8E6CBBAD2F91CB2C00754045 /* tommath_superclass.h */,
+			);
+			path = sm2_impl;
+			sourceTree = "<group>";
+		};
+		8E6CBBAF2F91CB2C00754045 /* SM2 */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBBA52F91CB2C00754045 /* libtommath-0.42.0 */,
+				8E6CBBAE2F91CB2C00754045 /* sm2_impl */,
+			);
+			path = SM2;
+			sourceTree = "<group>";
+		};
+		8E6CBBB32F91CB2C00754045 /* SM3 */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBBB02F91CB2C00754045 /* sm3.h */,
+				8E6CBBB12F91CB2C00754045 /* sm3.c */,
+				8E6CBBB22F91CB2C00754045 /* sm3test.c */,
+			);
+			path = SM3;
+			sourceTree = "<group>";
+		};
+		8E6CBBBA2F91CB2C00754045 /* SM4 */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBBB42F91CB2C00754045 /* sm4.h */,
+				8E6CBBB52F91CB2C00754045 /* sm4.c */,
+				8E6CBBB62F91CB2C00754045 /* sm4test.h */,
+				8E6CBBB72F91CB2C00754045 /* sm4test.c */,
+				8E6CBBB82F91CB2C00754045 /* sms4.h */,
+				8E6CBBB92F91CB2C00754045 /* sms4.c */,
+			);
+			path = SM4;
+			sourceTree = "<group>";
+		};
+		8E6CBBBF2F91CB2C00754045 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB2A2F91CB2C00754045 /* RSA */,
+				8E6CBBAF2F91CB2C00754045 /* SM2 */,
+				8E6CBBB32F91CB2C00754045 /* SM3 */,
+				8E6CBBBA2F91CB2C00754045 /* SM4 */,
+				8E6CBBBB2F91CB2C00754045 /* YLZSecKeyWrapper.h */,
+				8E6CBBBC2F91CB2C00754045 /* YLZSecKeyWrapper.m */,
+				8E6CBBBD2F91CB2C00754045 /* YLZSMEncryption.h */,
+				8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		8E6CBBC02F91CB2C00754045 /* SM */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CBB1F2F91CB2C00754045 /* Category */,
+				8E6CBB272F91CB2C00754045 /* Config */,
+				8E6CBBBF2F91CB2C00754045 /* Wrapper */,
+			);
+			path = SM;
 			sourceTree = "<group>";
 		};
 		8E78C80C2814F37400D6C59F /* RouteCode */ = {
@@ -802,6 +1374,7 @@
 		8ED5D41E2EA7187E00AED7FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1149,6 +1722,7 @@
 		8EFFDA64282A4A62000EA7D6 /* Moya */ = {
 			isa = PBXGroup;
 			children = (
+				8E6CBAFB2F90D66C00754045 /* HiEncrypt.swift */,
 				8EFFDA67282A4A62000EA7D6 /* HiAPI.swift */,
 				8EFFDA66282A4A62000EA7D6 /* HiApiConfig.swift */,
 				8EFFDA65282A4A62000EA7D6 /* HiAPIConst.swift */,
@@ -1239,6 +1813,10 @@
 			files = (
 				8EFB12E6265BB46D007D9FE1 /* LaunchScreen.storyboard in Resources */,
 				8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */,
+				8E6CBBC12F91CB2C00754045 /* LICENSE in Resources */,
+				8E6CBBC22F91CB2C00754045 /* .cproject in Resources */,
+				8E6CBBC32F91CB2C00754045 /* callgraph.txt in Resources */,
+				8E6CBBC42F91CB2C00754045 /* changes.txt in Resources */,
 				8ED5D4912EA72A9600AED7FC /* weex-polyfill.js in Resources */,
 				8ED5D4922EA72A9600AED7FC /* __uniappes6.js in Resources */,
 				8ED5D4932EA72A9600AED7FC /* uni-jsframework-vue3.js in Resources */,
@@ -1264,9 +1842,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1281,9 +1863,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftProject/Pods-SwiftProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1317,7 +1903,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
@@ -1327,7 +1917,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
@@ -1345,6 +1939,141 @@
 				8EFFDA292828B61F000EA7D6 /* HiHudToast.swift in Sources */,
 				8E344A81265BD437008AF1BA /* Int+Extension.swift in Sources */,
 				8EAF36822DF9639D00645B1E /* HrssNoticeTableViewCell.swift in Sources */,
+				8E6CBBC52F91CB2C00754045 /* bn_mp_montgomery_calc_normalization.c in Sources */,
+				8E6CBBC62F91CB2C00754045 /* bn_mp_toradix_n.c in Sources */,
+				8E6CBBC72F91CB2C00754045 /* sms4.c in Sources */,
+				8E6CBBC82F91CB2C00754045 /* bn_mp_to_signed_bin.c in Sources */,
+				8E6CBBC92F91CB2C00754045 /* bn_mp_is_square.c in Sources */,
+				8E6CBBCA2F91CB2C00754045 /* bn_mp_dr_setup.c in Sources */,
+				8E6CBBCB2F91CB2C00754045 /* bn_mp_lcm.c in Sources */,
+				8E6CBBCC2F91CB2C00754045 /* YLZSMEncryption.m in Sources */,
+				8E6CBBCD2F91CB2C00754045 /* bn_mp_mod.c in Sources */,
+				8E6CBBCE2F91CB2C00754045 /* bn_mp_signed_bin_size.c in Sources */,
+				8E6CBBCF2F91CB2C00754045 /* bn_fast_mp_invmod.c in Sources */,
+				8E6CBBD02F91CB2C00754045 /* bn_mp_grow.c in Sources */,
+				8E6CBBD12F91CB2C00754045 /* bncore.c in Sources */,
+				8E6CBBD22F91CB2C00754045 /* sm4test.c in Sources */,
+				8E6CBBD32F91CB2C00754045 /* bn_mp_invmod.c in Sources */,
+				8E6CBBD42F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m in Sources */,
+				8E6CBBD52F91CB2C00754045 /* bn_mp_fread.c in Sources */,
+				8E6CBBD62F91CB2C00754045 /* bn_mp_expt_d.c in Sources */,
+				8E6CBBD72F91CB2C00754045 /* bn_mp_count_bits.c in Sources */,
+				8E6CBBD82F91CB2C00754045 /* bn_mp_set_int.c in Sources */,
+				8E6CBBD92F91CB2C00754045 /* bn_mp_jacobi.c in Sources */,
+				8E6CBBDA2F91CB2C00754045 /* bn_mp_div.c in Sources */,
+				8E6CBBDB2F91CB2C00754045 /* bn_mp_cmp.c in Sources */,
+				8E6CBBDC2F91CB2C00754045 /* bn_mp_dr_reduce.c in Sources */,
+				8E6CBBDD2F91CB2C00754045 /* bn_mp_prime_is_divisible.c in Sources */,
+				8E6CBBDE2F91CB2C00754045 /* bn_mp_init_copy.c in Sources */,
+				8E6CBBDF2F91CB2C00754045 /* bn_mp_init_multi.c in Sources */,
+				8E6CBBE02F91CB2C00754045 /* bn_reverse.c in Sources */,
+				8E6CBBE12F91CB2C00754045 /* bn_s_mp_add.c in Sources */,
+				8E6CBBE22F91CB2C00754045 /* bn_mp_reduce_2k.c in Sources */,
+				8E6CBBE32F91CB2C00754045 /* bn_mp_reduce_is_2k.c in Sources */,
+				8E6CBBE42F91CB2C00754045 /* bn_mp_reduce_setup.c in Sources */,
+				8E6CBBE52F91CB2C00754045 /* bn_s_mp_mul_high_digs.c in Sources */,
+				8E6CBBE62F91CB2C00754045 /* bn_mp_fwrite.c in Sources */,
+				8E6CBBE72F91CB2C00754045 /* bn_mp_reduce_2k_setup.c in Sources */,
+				8E6CBBE82F91CB2C00754045 /* bn_mp_init_set_int.c in Sources */,
+				8E6CBBE92F91CB2C00754045 /* bn_prime_tab.c in Sources */,
+				8E6CBBEA2F91CB2C00754045 /* bn_mp_lshd.c in Sources */,
+				8E6CBBEB2F91CB2C00754045 /* bn_mp_mul_2d.c in Sources */,
+				8E6CBBEC2F91CB2C00754045 /* bn_mp_toom_sqr.c in Sources */,
+				8E6CBBED2F91CB2C00754045 /* bn_mp_gcd.c in Sources */,
+				8E6CBBEE2F91CB2C00754045 /* YLZMSEncryptionConfig.m in Sources */,
+				8E6CBBEF2F91CB2C00754045 /* bn_s_mp_sqr.c in Sources */,
+				8E6CBBF02F91CB2C00754045 /* NSDictionary+YLZSign.m in Sources */,
+				8E6CBBF12F91CB2C00754045 /* bn_mp_reduce_2k_l.c in Sources */,
+				8E6CBBF22F91CB2C00754045 /* bn_mp_submod.c in Sources */,
+				8E6CBBF32F91CB2C00754045 /* bn_mp_dr_is_modulus.c in Sources */,
+				8E6CBBF42F91CB2C00754045 /* bn_mp_reduce.c in Sources */,
+				8E6CBBF52F91CB2C00754045 /* bn_s_mp_exptmod.c in Sources */,
+				8E6CBBF62F91CB2C00754045 /* bn_mp_reduce_is_2k_l.c in Sources */,
+				8E6CBBF72F91CB2C00754045 /* bn_mp_div_2.c in Sources */,
+				8E6CBBF82F91CB2C00754045 /* sm4.c in Sources */,
+				8E6CBBF92F91CB2C00754045 /* bn_mp_neg.c in Sources */,
+				8E6CBBFA2F91CB2C00754045 /* bn_mp_mul.c in Sources */,
+				8E6CBBFB2F91CB2C00754045 /* bn_mp_div_3.c in Sources */,
+				8E6CBBFC2F91CB2C00754045 /* bn_mp_to_signed_bin_n.c in Sources */,
+				8E6CBBFD2F91CB2C00754045 /* bn_mp_exch.c in Sources */,
+				8E6CBBFE2F91CB2C00754045 /* bn_mp_shrink.c in Sources */,
+				8E6CBBFF2F91CB2C00754045 /* bn_mp_and.c in Sources */,
+				8E6CBC002F91CB2C00754045 /* bn_s_mp_sub.c in Sources */,
+				8E6CBC012F91CB2C00754045 /* bn_fast_s_mp_mul_digs.c in Sources */,
+				8E6CBC022F91CB2C00754045 /* bn_mp_mod_2d.c in Sources */,
+				8E6CBC032F91CB2C00754045 /* bn_mp_div_d.c in Sources */,
+				8E6CBC042F91CB2C00754045 /* bn_mp_clamp.c in Sources */,
+				8E6CBC052F91CB2C00754045 /* bn_mp_sub_d.c in Sources */,
+				8E6CBC062F91CB2C00754045 /* bn_mp_init.c in Sources */,
+				8E6CBC072F91CB2C00754045 /* bn_s_mp_mul_digs.c in Sources */,
+				8E6CBC082F91CB2C00754045 /* bn_error.c in Sources */,
+				8E6CBC092F91CB2C00754045 /* YLZRSA.m in Sources */,
+				8E6CBC0A2F91CB2C00754045 /* bn_mp_prime_is_prime.c in Sources */,
+				8E6CBC0B2F91CB2C00754045 /* bn_mp_sub.c in Sources */,
+				8E6CBC0C2F91CB2C00754045 /* bn_mp_sqrt.c in Sources */,
+				8E6CBC0D2F91CB2C00754045 /* bn_mp_invmod_slow.c in Sources */,
+				8E6CBC0E2F91CB2C00754045 /* YLZSecKeyWrapper.m in Sources */,
+				8E6CBC0F2F91CB2C00754045 /* sm2_Intrfs_test.cpp in Sources */,
+				8E6CBC102F91CB2C00754045 /* bn_mp_prime_random_ex.c in Sources */,
+				8E6CBC112F91CB2C00754045 /* bn_mp_cnt_lsb.c in Sources */,
+				8E6CBC122F91CB2C00754045 /* bn_mp_add_d.c in Sources */,
+				8E6CBC132F91CB2C00754045 /* bn_fast_mp_montgomery_reduce.c in Sources */,
+				8E6CBC142F91CB2C00754045 /* bn_mp_cmp_mag.c in Sources */,
+				8E6CBC152F91CB2C00754045 /* bn_mp_abs.c in Sources */,
+				8E6CBC162F91CB2C00754045 /* bn_mp_to_unsigned_bin.c in Sources */,
+				8E6CBC172F91CB2C00754045 /* bn_mp_addmod.c in Sources */,
+				8E6CBC182F91CB2C00754045 /* bn_mp_2expt.c in Sources */,
+				8E6CBC192F91CB2C00754045 /* bn_mp_cmp_d.c in Sources */,
+				8E6CBC1A2F91CB2C00754045 /* bn_mp_exteuclid.c in Sources */,
+				8E6CBC1B2F91CB2C00754045 /* bn_mp_init_size.c in Sources */,
+				8E6CBC1C2F91CB2C00754045 /* bn_mp_read_unsigned_bin.c in Sources */,
+				8E6CBC1D2F91CB2C00754045 /* bn_mp_rshd.c in Sources */,
+				8E6CBC1E2F91CB2C00754045 /* bn_mp_xor.c in Sources */,
+				8E6CBC1F2F91CB2C00754045 /* bn_mp_prime_miller_rabin.c in Sources */,
+				8E6CBC202F91CB2C00754045 /* bn_mp_montgomery_setup.c in Sources */,
+				8E6CBC212F91CB2C00754045 /* sm3test.c in Sources */,
+				8E6CBC222F91CB2C00754045 /* bn_mp_mod_d.c in Sources */,
+				8E6CBC232F91CB2C00754045 /* bn_mp_init_set.c in Sources */,
+				8E6CBC242F91CB2C00754045 /* bn_mp_montgomery_reduce.c in Sources */,
+				8E6CBC252F91CB2C00754045 /* bn_mp_rand.c in Sources */,
+				8E6CBC262F91CB2C00754045 /* bn_mp_sqrmod.c in Sources */,
+				8E6CBC272F91CB2C00754045 /* bn_mp_read_radix.c in Sources */,
+				8E6CBC282F91CB2C00754045 /* bn_mp_radix_size.c in Sources */,
+				8E6CBC292F91CB2C00754045 /* bn_mp_n_root.c in Sources */,
+				8E6CBC2A2F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c in Sources */,
+				8E6CBC2B2F91CB2C00754045 /* YLZNetEncryptManager.m in Sources */,
+				8E6CBC2C2F91CB2C00754045 /* bn_mp_prime_fermat.c in Sources */,
+				8E6CBC2D2F91CB2C00754045 /* bn_mp_set.c in Sources */,
+				8E6CBC2E2F91CB2C00754045 /* bn_mp_radix_smap.c in Sources */,
+				8E6CBC2F2F91CB2C00754045 /* bn_mp_sqr.c in Sources */,
+				8E6CBC302F91CB2C00754045 /* bn_mp_add.c in Sources */,
+				8E6CBC312F91CB2C00754045 /* bn_mp_copy.c in Sources */,
+				8E6CBC322F91CB2C00754045 /* bn_mp_mulmod.c in Sources */,
+				8E6CBC332F91CB2C00754045 /* bn_mp_or.c in Sources */,
+				8E6CBC342F91CB2C00754045 /* bn_mp_prime_rabin_miller_trials.c in Sources */,
+				8E6CBC352F91CB2C00754045 /* bn_mp_mul_2.c in Sources */,
+				8E6CBC362F91CB2C00754045 /* bn_mp_toradix.c in Sources */,
+				8E6CBC372F91CB2C00754045 /* bn_mp_div_2d.c in Sources */,
+				8E6CBC382F91CB2C00754045 /* bn_mp_get_int.c in Sources */,
+				8E6CBC392F91CB2C00754045 /* bn_mp_unsigned_bin_size.c in Sources */,
+				8E6CBC3A2F91CB2C00754045 /* bn_mp_karatsuba_sqr.c in Sources */,
+				8E6CBC3B2F91CB2C00754045 /* sm2.cpp in Sources */,
+				8E6CBC3C2F91CB2C00754045 /* bn_mp_reduce_2k_setup_l.c in Sources */,
+				8E6CBC3D2F91CB2C00754045 /* bn_mp_karatsuba_mul.c in Sources */,
+				8E6CBC3E2F91CB2C00754045 /* bn_mp_toom_mul.c in Sources */,
+				8E6CBC3F2F91CB2C00754045 /* bn_mp_mul_d.c in Sources */,
+				8E6CBC402F91CB2C00754045 /* NSData+YLZHexadecimal.m in Sources */,
+				8E6CBC412F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c in Sources */,
+				8E6CBC422F91CB2C00754045 /* bn_mp_clear_multi.c in Sources */,
+				8E6CBC432F91CB2C00754045 /* NSData+YLZBase64.m in Sources */,
+				8E6CBC442F91CB2C00754045 /* bn_mp_prime_next_prime.c in Sources */,
+				8E6CBC452F91CB2C00754045 /* bn_mp_exptmod.c in Sources */,
+				8E6CBC462F91CB2C00754045 /* bn_mp_clear.c in Sources */,
+				8E6CBC472F91CB2C00754045 /* bn_fast_s_mp_sqr.c in Sources */,
+				8E6CBC482F91CB2C00754045 /* bn_mp_zero.c in Sources */,
+				8E6CBC492F91CB2C00754045 /* sm3.c in Sources */,
+				8E6CBC4A2F91CB2C00754045 /* bn_mp_read_signed_bin.c in Sources */,
+				8E6CBC4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c in Sources */,
 				8E344A70265BD115008AF1BA /* HiWebViewController.swift in Sources */,
 				8EA21EA527002E7400A9039B /* YLZHealthCodeTableViewCell.swift in Sources */,
 				8E344A83265BD437008AF1BA /* UIButton+Extension.swift in Sources */,
@@ -1394,6 +2123,7 @@
 				8E85E0C42F7CEAC800736EFD /* HiMeiTuanSlideView.swift in Sources */,
 				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
 				8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */,
+				8E6CBC4D2F91CEDD00754045 /* HiInitLoginRespModel.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* HiBaseViewController.swift in Sources */,
 				8EFFDA6C282A4A63000EA7D6 /* HiAPI.swift in Sources */,
 				8EFFDA132828B596000EA7D6 /* HiCarouselView.swift in Sources */,
@@ -1432,9 +2162,13 @@
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,
 				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
 				8E29D6132DFBB83C00B3E0A9 /* HrssTopicRightView.swift in Sources */,
+				8E6CBB162F90E11300754045 /* NSObject+YYModel.m in Sources */,
+				8E6CBB172F90E11300754045 /* OCProject.m in Sources */,
+				8E6CBB182F90E11300754045 /* YYClassInfo.m in Sources */,
 				8EAF36B02DFAA9FA00645B1E /* HrssAllDoSonTableViewCell.swift in Sources */,
 				8EA21E9F27002E4200A9039B /* YLZHealthCodeView.swift in Sources */,
 				8ED5D4262EA718DC00AED7FC /* HiMineViewController.swift in Sources */,
+				8E6CBAFC2F90D67C00754045 /* HiEncrypt.swift in Sources */,
 				8EAF36AE2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift in Sources */,
 				8EA21EA727002E8900A9039B /* YLZHealthCodeCheckTableViewCell.swift in Sources */,
 				8EAF36862DF963B900645B1E /* HrssEasyManTableViewCell.swift in Sources */,

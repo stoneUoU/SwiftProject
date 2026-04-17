@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 //#warning ("swift 工程仅作为运行参考，更多示例请参考 OC 工程")
 class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
@@ -144,7 +145,6 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
     }
     
     @objc func toExcute(_ sender: UIButton) {
-        debugPrint("Swift Project");
         let tag = sender.tag;
         if (tag == 1) {
             let vc:HrssViewController = HrssViewController();
@@ -160,17 +160,41 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
             let vc:HiMyFooterViewController = HiMyFooterViewController();
             self.navigationController?.pushViewController(vc, animated: true);
         } else if (tag == 4) {
-            let configuration = DCUniMPConfiguration.init()
-            configuration.enableBackground = true;
-            configuration.openMode = .push;
-            DCUniMPSDKEngine.openUniMP(APPID1, configuration: configuration) { instance, error in
-                if instance != nil {
-                    print("小程序打开成功")
-                } else {
-                    print(error as Any)
-                }
-            }
+//            let configuration = DCUniMPConfiguration.init()
+//            configuration.enableBackground = true;
+//            configuration.openMode = .push;
+//            DCUniMPSDKEngine.openUniMP(APPID1, configuration: configuration) { instance, error in
+//                if instance != nil {
+//                    print("小程序打开成功")
+//                } else {
+//                    print(error as Any)
+//                }
+//            }
+            self.isNeedEquipLoginApi { respModel in
+                
+            };
         }
+    }
+    
+    func isNeedEquipLoginApi(callback:@escaping (_ respModel:Any)->()) {
+        var params = Dictionary<String,Any>();
+        params["acct"] = "15717914505";
+        params["pwd"] = "51459c23ca91ebce271449dd8b5c26751c99039c2ae4c628067898ca0e104039";
+        params["deviceToken"] = "69808e92fbcd466080e9bc8dd5516332";
+        params["oprtSysVer"] = "26.3.1";
+        params["appVer"] = "2.1.0";
+        params["channel"] = "app";
+        params["oprtSys"] = "iOS";
+        params["appId"] = "cn.hsa.app.qh";
+        HiAPI.request(.isNeedEquipLoginApi(params), success: { json in
+            let dataHandyJSON:[String : Any] = JSON(json)["data"]["data"].rawValue as! [String : Any];
+            if let handyJSON:HiInitLoginRespModel = HiInitLoginRespModel.deserialize(from: dataHandyJSON) {
+                callback(handyJSON);
+                print("HandyJSON______\(JSON(handyJSON.toJSON() ?? ""))");
+            }
+        }, error: { statusCode in
+        }, failure: { error in
+        })
     }
     
     func checkUniMPResoutce(appid: String) -> Void {

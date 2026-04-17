@@ -26,14 +26,16 @@ struct HiApiConfigPlugin: PluginType {
     
     func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
         //判断该请求是否需要Loading
+        var request = request;
+        request.addValue("this is a accessToken", forHTTPHeaderField: "accessToken");
         self.logRequest(request:request);
         guard let needLoading = configTarget?.needLoading, needLoading else {
             return request;
         }
-        let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
-        HiHudToast.showHUD(ctrl: vc);
-        var request = request;
-        request.addValue("this is a accessToken", forHTTPHeaderField: "accessToken");
+        DispatchQueue.main.async{
+            let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
+            HiHudToast.showHUD(ctrl: vc);
+        }
         return request
     }
     
@@ -46,21 +48,23 @@ struct HiApiConfigPlugin: PluginType {
         guard let needLoading = configTarget?.needLoading,needLoading else {
             return;
         }
-        let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
-        HiHudToast.hideHUD(ctrl: vc);
+        DispatchQueue.main.async{
+            let vc:UIViewController = HiPageHelper.fetchCurrentController() ?? UIViewController();
+            HiHudToast.hideHUD(ctrl: vc);
+        }
     }
     
     func logRequest(request: URLRequest) {
         guard let needLogRequest = configTarget?.needLogRequest,needLogRequest else {
             return;
         }
-        if let requestData = request.httpBody {
+        if let header = request.allHTTPHeaderFields {
+            print("请求头内容：\(header)")
+        }
+        if request.httpBody != nil {
             print("请求地址：\(request.url!)" + "\n" + "请求方式：\(request.httpMethod ?? "")" + "\n" + "请求参数：" + "\(String(data: request.httpBody!, encoding: String.Encoding.utf8) ?? "")")
         } else {
             print("请求地址：\(request.url!)" + "\n" + "请求方式：\(String(describing: request.httpMethod!))")
-        }
-        if let header = request.allHTTPHeaderFields {
-            print("请求头内容：\(header)")
         }
     }
     
@@ -74,7 +78,11 @@ struct HiApiConfigPlugin: PluginType {
                 //如果数据返回成功则直接将结果转为JSON
                 try response.filterSuccessfulStatusCodes()
                 let json = try JSON(response.mapJSON())
-                print("响应内容：\(json)");
+                var encParams:[String:Any] = json.rawValue as! [String : Any];
+                var data:[String:Any] = encParams["data"] as! [String : Any];
+                data["data"] = HiEncrypt.decrypt(encData: data["encData"] as! String);
+                encParams["data"] = data;
+                print("响应内容：\(JSON(encParams))");
             }
             catch let error {
                 //如果数据获取失败，则返回错误状态码

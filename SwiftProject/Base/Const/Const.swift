@@ -151,3 +151,7 @@ let YLZColorCodeButtonbgColor:UIColor = UIColor.color_HexStr("#eceffb");
 func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
     return UIColor (red: r, green: g, blue: b, alpha: a)
 }
+
+let HiAppId = "1544f37522ee43b4ab36d88d08b93c06";
+let HiSm4KeySe = "aea510ceb79143c7817f10df0cc77cf8";
+let HiPrivateKey = "AMU+eVFp8nkC/UmQryb1QnDSIZdf6/zQVByKN5Rixzws";

@@ -70,7 +70,11 @@ public struct HiAPI {
                     //如果数据返回成功则直接将结果转为JSON
                     try response.filterSuccessfulStatusCodes()
                     let json = try JSON(response.mapJSON())
-                    successCallback(json)
+                    var encParams:[String:Any] = json.rawValue as! [String : Any];
+                    var data:[String:Any] = encParams["data"] as! [String : Any];
+                    data["data"] = HiEncrypt.decrypt(encData: data["encData"] as! String);
+                    encParams["data"] = data;
+                    successCallback(JSON(encParams));
                 }
                 catch let error {
                     //如果数据获取失败，则返回错误状态码

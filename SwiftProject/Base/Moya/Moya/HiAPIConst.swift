@@ -10,3 +10,5 @@ let HiRequestSwiftURL = "https://app.appearoo.top/api.php"
 let HiRequestImageSwiftURL = "https://app.appearoo.top/"
 
 let HiHSARequestSwiftURL = "https://fuwu.nhsa.gov.cn/ebus/fuwu/api"
+
+let HiShanXiRequestSwiftURL = "https://jszx.ybj.shaanxi.gov.cn/hsa-pss-app"

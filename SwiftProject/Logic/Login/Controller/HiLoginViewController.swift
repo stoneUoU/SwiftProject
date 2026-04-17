@@ -69,8 +69,6 @@ class HiLoginViewController: HiBaseViewController {
     }
     
     @objc func toExcute(_ sender: UIButton) {
-        debugPrint("Swift Project");
-        
         if (sender.tag == 1) {
             let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
             //纯文本模式

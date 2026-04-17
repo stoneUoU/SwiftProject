@@ -51,5 +51,9 @@ extension String {
             return self.replacingCharacters(in: range, with: "****")
         }
     }
+    
+    var hexString: String {
+        return self.utf8.map { String(format: "%02hhx", $0) }.joined()
+    }
 }
 
