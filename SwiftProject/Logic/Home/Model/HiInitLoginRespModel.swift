@@ -8,7 +8,7 @@
 import Foundation
 import HandyJSON
 
-class HiInitLoginRespModel: HandyJSON, ObservableObject {
+class HiInitLoginRespModel: HandyJSON {
     var certNo: String?
     var certType: String?
     var psnName: String?

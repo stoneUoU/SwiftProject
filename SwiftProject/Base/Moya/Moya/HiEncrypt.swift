@@ -16,8 +16,8 @@ class HiEncrypt {
         return encParams;
     }
     
-    static func decrypt(encData: String)->[String: Any] {
-        let decryptedParams:[String:Any] = YLZNetEncryptManager.decryptData(encData, appId: HiAppId, appSecret: HiSm4KeySe, encryptType: "SM4", encodeType: "hex") as! [String : Any];
+    static func decrypt(encData: String)->Any {
+        let decryptedParams:Any = YLZNetEncryptManager.decryptData(encData, appId: HiAppId, appSecret: HiSm4KeySe, encryptType: "SM4", encodeType: "hex");
         return decryptedParams;
     }
 }

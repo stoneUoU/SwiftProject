@@ -183,6 +183,7 @@
 		8E6CBC4A2F91CB2C00754045 /* bn_mp_read_signed_bin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB792F91CB2C00754045 /* bn_mp_read_signed_bin.c */; };
 		8E6CBC4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4B2F91CB2C00754045 /* bn_mp_exptmod_fast.c */; };
 		8E6CBC4D2F91CEDD00754045 /* HiInitLoginRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */; };
+		8E6CBC4F2F9208C300754045 /* HiMenuListRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBC4E2F9208C300754045 /* HiMenuListRespModel.swift */; };
 		8E78C8122814F3CA00D6C59F /* YLZRouteCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */; };
 		8E78C8162814F92A00D6C59F /* YLZRouteCodeInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */; };
 		8E78C8182814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */; };
@@ -484,6 +485,7 @@
 		8E6CBBBD2F91CB2C00754045 /* YLZSMEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSMEncryption.h; sourceTree = "<group>"; };
 		8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSMEncryption.m; sourceTree = "<group>"; };
 		8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiInitLoginRespModel.swift; sourceTree = "<group>"; };
+		8E6CBC4E2F9208C300754045 /* HiMenuListRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMenuListRespModel.swift; sourceTree = "<group>"; };
 		8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeViewController.swift; sourceTree = "<group>"; };
 		8E78C8152814F92A00D6C59F /* YLZRouteCodeInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeInfoCell.swift; sourceTree = "<group>"; };
 		8E78C8172814FAD300D6C59F /* YLZRouteCodeTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeTableFooterView.swift; sourceTree = "<group>"; };
@@ -1375,6 +1377,7 @@
 			isa = PBXGroup;
 			children = (
 				8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */,
+				8E6CBC4E2F9208C300754045 /* HiMenuListRespModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2134,6 +2137,7 @@
 				8E344A7E265BD437008AF1BA /* UIImageView+Extension.swift in Sources */,
 				8E344A80265BD437008AF1BA /* UIColor+Extension.swift in Sources */,
 				8ED5D4A72EA72D3500AED7FC /* HiLoginViewController.swift in Sources */,
+				8E6CBC4F2F9208C300754045 /* HiMenuListRespModel.swift in Sources */,
 				8EAF36882DF963C400645B1E /* HrssAllDoTableViewCell.swift in Sources */,
 				8E344A84265BD437008AF1BA /* UIView+Extension.swift in Sources */,
 				8E344A41265BCAF7008AF1BA /* Const.swift in Sources */,

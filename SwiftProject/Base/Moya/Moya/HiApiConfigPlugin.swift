@@ -75,14 +75,17 @@ struct HiApiConfigPlugin: PluginType {
         switch result {
         case let .success(response):
             do {
-                //如果数据返回成功则直接将结果转为JSON
-                try response.filterSuccessfulStatusCodes()
                 let json = try JSON(response.mapJSON())
-                var encParams:[String:Any] = json.rawValue as! [String : Any];
-                var data:[String:Any] = encParams["data"] as! [String : Any];
-                data["data"] = HiEncrypt.decrypt(encData: data["encData"] as! String);
-                encParams["data"] = data;
-                print("响应内容：\(JSON(encParams))");
+                if (configTarget?.needEncypted ?? false) {
+                    var encParams:[String:Any] = json.rawValue as! [String : Any];
+                    var data:[String:Any] = encParams["data"] as! [String : Any];
+                    data["data"] = HiEncrypt.decrypt(encData: data["encData"] as! String);
+                    data["encData"] = "";
+                    encParams["data"] = data;
+                    print("响应内容：\(JSON(encParams))");
+                } else {
+                    print("响应内容：\(JSON(json))");
+                }
             }
             catch let error {
                 //如果数据获取失败，则返回错误状态码

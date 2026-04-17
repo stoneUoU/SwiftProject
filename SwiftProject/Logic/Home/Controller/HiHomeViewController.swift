@@ -85,6 +85,8 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
         return slideView
     }()
     
+    var menuListRespModel:HiMenuListRespModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI();
@@ -170,10 +172,28 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
 //                    print(error as Any)
 //                }
 //            }
+            self.selectHomePageApi { respModel in
+                
+            };
             self.isNeedEquipLoginApi { respModel in
                 
             };
         }
+    }
+    
+    func selectHomePageApi(callback:@escaping (_ respModel:Any)->()) {
+        var params = Dictionary<String,Any>();
+        params["cityCode"] = "610100";
+        params["channel"] = "ios";
+        HiAPI.request(.selectHomePageApi(params), success: { json in
+            let dataHandyJSON:[String : Any] = JSON(json)["data"].rawValue as! [String : Any];
+            if let handyJSON:HiMenuListRespModel = HiMenuListRespModel.deserialize(from: dataHandyJSON) {
+                self.menuListRespModel = handyJSON;
+                print("handyJSON_____\(self.menuListRespModel?.toJSON())")
+            }
+        }, error: { statusCode in
+        }, failure: { error in
+        })
     }
     
     func isNeedEquipLoginApi(callback:@escaping (_ respModel:Any)->()) {
@@ -190,7 +210,7 @@ class HiHomeViewController: UIViewController,DCUniMPSDKEngineDelegate {
             let dataHandyJSON:[String : Any] = JSON(json)["data"]["data"].rawValue as! [String : Any];
             if let handyJSON:HiInitLoginRespModel = HiInitLoginRespModel.deserialize(from: dataHandyJSON) {
                 callback(handyJSON);
-                print("HandyJSON______\(JSON(handyJSON.toJSON() ?? ""))");
+                print("handyJSON_____\(handyJSON.toJSON())")
             }
         }, error: { statusCode in
         }, failure: { error in

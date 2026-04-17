@@ -14,24 +14,22 @@ public enum HiApiConfig {
     
     case fetchPostMethod([String : Any])
     
-    //获取unitCfg接口数据：
-    case unitCfg([String : Any])
-    
     case isNeedEquipLoginApi([String : Any])
+    
+    case selectHomePageApi([String : Any])
+    ///api/menu/
 }
 
 //请求配置
 extension HiApiConfig:HiApiConfigTargetType {
     //服务器地址
     public var baseURL: URL {
-        switch self {
-            case .unitCfg(_):
-                return URL(string: HiHSARequestSwiftURL)!
-            case .isNeedEquipLoginApi(_):
+//        switch self {
+//            case .isNeedEquipLoginApi(_):
                 return URL(string: HiShanXiRequestSwiftURL)!
-            default:
-                return URL(string: HiRequestSwiftURL)!
-        }
+//            default:
+//                return URL(string: HiRequestSwiftURL)!
+//        }
     }
     //各个请求的具体路径
     public var path: String {
@@ -40,10 +38,10 @@ extension HiApiConfig:HiApiConfigTargetType {
             return ""
         case .fetchPostMethod(_):
             return ""
-        case .unitCfg(_):
-            return "/base/api/unitCfg"
         case .isNeedEquipLoginApi(_):
             return "/app/login/forward/acct/isNeedEquipLogin"
+        case .selectHomePageApi(_):
+            return "/api/menu/selectHomePage"
         }
     }
     public var method: Moya.Method {
@@ -69,11 +67,8 @@ extension HiApiConfig:HiApiConfigTargetType {
             params = paras
             return .requestParameters(parameters: params,
                                       encoding: JSONEncoding.default)
-        case .unitCfg(let paras):
-            return .requestParameters(parameters: HiEncrypt.encrypt(params: paras),
-                                      encoding: JSONEncoding.default)
-        case .isNeedEquipLoginApi(let paras):
-            return .requestParameters(parameters: HiEncrypt.encrypt(params:paras),
+        case .isNeedEquipLoginApi(let paras),.selectHomePageApi(let paras):
+            return .requestParameters(parameters: self.needEncypted ? HiEncrypt.encrypt(params:paras) : paras,
                                       encoding: JSONEncoding.default)
         //没有请求参数走这
         default:
@@ -104,10 +99,10 @@ extension HiApiConfig:HiApiConfigTargetType {
     //是否需要Loading
     public var needLoading: Bool {
         switch self {
-        case .fetchGetMethod(_),.isNeedEquipLoginApi(_):
-            return true
-        default:
+        case .fetchGetMethod(_):
             return false
+        default:
+            return true
         }
     }
     
@@ -115,29 +110,29 @@ extension HiApiConfig:HiApiConfigTargetType {
     public var needEncypted: Bool {
         switch self {
         case .fetchGetMethod(_):
-            return true
-        default:
             return false
+        default:
+            return true
         }
     }
     
     //是否需要打印请求体:
     public var needLogRequest: Bool {
         switch self {
-        case .fetchGetMethod(_),.isNeedEquipLoginApi(_):
-            return true
-        default:
+        case .fetchGetMethod(_):
             return false
+        default:
+            return true
         }
     }
     
     //是否需要打印响应体:
     public var needLogResponse: Bool {
         switch self {
-        case .fetchGetMethod(_),.isNeedEquipLoginApi(_):
+        case .fetchGetMethod(_):
             return false
         default:
-            return false
+            return true
         }
     }
     
