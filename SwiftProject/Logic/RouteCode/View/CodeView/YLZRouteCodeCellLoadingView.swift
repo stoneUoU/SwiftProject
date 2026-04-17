@@ -43,8 +43,8 @@ class YLZRouteCodeCellLoadingView: UIView {
     }()
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.bold(size: 24);
-        titleLabel.textColor = YLZColorCodeBlue
+        titleLabel.font = HiFont.bold(size: 24);
+        titleLabel.textColor = HiColorCodeBlue
         titleLabel.text = "点击出示健康码";
         return titleLabel
     }()

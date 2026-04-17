@@ -319,7 +319,7 @@ class HiAiViewController: HiBaseViewController {
 //    }()
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
-//        view.backgroundColor = YLZColorBackGround
+//        view.backgroundColor = HiColorBackGround
 //        setStatusAndNavigationUI(centerLabelTitle: "Ai",
 //                                 rightButtonTitle: "",
 //                                 ifWhiteIMV: true,

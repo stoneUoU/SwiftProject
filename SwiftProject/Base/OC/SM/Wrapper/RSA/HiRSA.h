@@ -1,6 +1,6 @@
 //
-//  YLZRSA.h
-//  YLZ-NetEncryption-iOS
+//  HiRSA.h
+//  Hi-NetEncryption-iOS
 //
 //  Created by stone on 2020/2/15.
 //
@@ -9,7 +9,7 @@
 
 #define kFastLoginPublicKey  @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCetI8aE7/Vf/AhVixzShW/JJPNmoU8ZkliyaIgKykkdAfsY5FmOaZZa7zP9sSwNUs6HTjU8Powp8vtxW39uTmmaiCgmzTyJq1xH1wmLCsXS2ASk7Jq+5t5Ii8P5wcjgSYOoYEkXsT0EtNk8DrBDVtglP2asX1s4Jq0IO8lOze6aQIDAQAB"
 
-@interface YLZRSA : NSObject
+@interface HiRSA : NSObject
 
 // return base64 encoded string
 + (NSString *)encryptString:(NSString *)str publicKey:(NSString *)pubKey;

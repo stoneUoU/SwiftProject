@@ -1,5 +1,5 @@
 //
-//  YLZPaddingLabel.swift
+//  HiPaddingLabel.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/9/26.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YLZPaddingLabel : UILabel {
+class HiPaddingLabel : UILabel {
     
     private var padding = UIEdgeInsets.zero
     

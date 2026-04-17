@@ -11,7 +11,7 @@ class YLZHealthCodeSourceTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorMZTBlueView;
+        self.contentView.backgroundColor = HiColorMZTBlueView;
         self.setUI();
     }
     
@@ -78,7 +78,7 @@ class YLZHealthCodeSourceTableViewCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 10.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
@@ -90,24 +90,24 @@ class YLZHealthCodeSourceTableViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.regular(size:24)
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.regular(size:24)
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "信息说明";
         return titleLabel
     }()
     
     lazy var leftOneLabel:UILabel = {[weak self] in
         var leftOneLabel = UILabel()
-        leftOneLabel.font = YLZFont.regular(size:12)
-        leftOneLabel.textColor = YLZColorTitleOne
+        leftOneLabel.font = HiFont.regular(size:12)
+        leftOneLabel.textColor = HiColorTitleOne
         leftOneLabel.text = ".数据来源：";
         return leftOneLabel
     }()
     
     lazy var rightOneLabel:UILabel = {[weak self] in
         var rightOneLabel = UILabel()
-        rightOneLabel.font = YLZFont.regular(size:12)
-        rightOneLabel.textColor = YLZColorTitleOne
+        rightOneLabel.font = HiFont.regular(size:12)
+        rightOneLabel.textColor = HiColorTitleOne
         rightOneLabel.textAlignment = .left;
         rightOneLabel.numberOfLines = 0;
         rightOneLabel.text = "国家政务服务平台和福建省相关部门。";
@@ -116,16 +116,16 @@ class YLZHealthCodeSourceTableViewCell: UITableViewCell {
     
     lazy var leftTwoLabel:UILabel = {[weak self] in
         var leftTwoLabel = UILabel()
-        leftTwoLabel.font = YLZFont.regular(size:12)
-        leftTwoLabel.textColor = YLZColorTitleOne
+        leftTwoLabel.font = HiFont.regular(size:12)
+        leftTwoLabel.textColor = HiColorTitleOne
         leftTwoLabel.text = ".注意事项：";
         return leftTwoLabel
     }()
     
     lazy var rightTwoLabel:UILabel = {[weak self] in
         var rightTwoLabel = UILabel()
-        rightTwoLabel.font = YLZFont.regular(size:12)
-        rightTwoLabel.textColor = YLZColorTitleOne
+        rightTwoLabel.font = HiFont.regular(size:12)
+        rightTwoLabel.textColor = HiColorTitleOne
         rightTwoLabel.textAlignment = .left;
         rightTwoLabel.numberOfLines = 0;
         rightTwoLabel.text = "使用健康码时不要离开本页面且需本人操作确认。";
@@ -134,16 +134,16 @@ class YLZHealthCodeSourceTableViewCell: UITableViewCell {
     
     lazy var leftThreeLabel:UILabel = {[weak self] in
         var leftThreeLabel = UILabel()
-        leftThreeLabel.font = YLZFont.regular(size:12)
-        leftThreeLabel.textColor = YLZColorTitleOne
+        leftThreeLabel.font = HiFont.regular(size:12)
+        leftThreeLabel.textColor = HiColorTitleOne
         leftThreeLabel.text = ".使用范围：";
         return leftThreeLabel
     }()
     
     lazy var rightThreeLabel:UILabel = {[weak self] in
         var rightThreeLabel = UILabel()
-        rightThreeLabel.font = YLZFont.regular(size:12)
-        rightThreeLabel.textColor = YLZColorTitleOne
+        rightThreeLabel.font = HiFont.regular(size:12)
+        rightThreeLabel.textColor = HiColorTitleOne
         rightThreeLabel.textAlignment = .left;
         rightThreeLabel.numberOfLines = 0;
         rightThreeLabel.text = "依托国家政务服务平台，实现跨省（区、市）数据共享和互通互认。";

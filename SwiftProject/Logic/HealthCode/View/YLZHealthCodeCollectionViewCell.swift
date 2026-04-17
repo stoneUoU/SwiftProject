@@ -18,7 +18,7 @@ class YLZHealthCodeCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame);
-        self.backgroundColor = YLZColorWhite;
+        self.backgroundColor = HiColorWhite;
         self.setUI();
     }
     
@@ -48,8 +48,8 @@ class YLZHealthCodeCollectionViewCell: UICollectionViewCell {
     
     lazy var titleLabel:UILabel = {
         let titleLabel =  UILabel()
-        titleLabel.font = YLZFont.regular(size: 16.0);
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.regular(size: 16.0);
+        titleLabel.textColor = HiColorTitleOne
         return titleLabel
     }()
     

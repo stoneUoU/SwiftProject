@@ -1,23 +1,22 @@
 //
-//  YLZNetEncryptManager.h
-//  YLZ-NetEncryption-iOS
+//  HiNetEncryptManager.h
+//  Hi-SwiftUI
 //
-//  Created by cy on 2018/12/7.
-//
+//  Created by stone on 2025/5/20.
 
 #import <Foundation/Foundation.h>
-#import "YLZRequestEncryptConfigKeys.h"
+#import "HiRequestEncryptConfigKeys.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLZNetEncryptManager : NSObject
+@interface HiNetEncryptManager : NSObject
 
 
 
 /**
  获取默认设置
  */
-+ (YLZRequestEncryptConfigKeys *)finalKeyConfigWithConfig:(YLZRequestEncryptConfigKeys *)config;
++ (HiRequestEncryptConfigKeys *)finalKeyConfigWithConfig:(HiRequestEncryptConfigKeys *)config;
 
 #pragma mark ----------------------------:: 加密 ::----------------------------
 
@@ -33,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param extraEncryptParam 不包含在请求数据中的加密签名相关参数
  @return 加密后的数据
  */
-+ (NSMutableDictionary *)encryptNetData:(NSDictionary *)param withConfigKeys:(YLZRequestEncryptConfigKeys *)configKeys extra:(NSDictionary * _Nullable)extraEncryptParam;
++ (NSMutableDictionary *)encryptNetData:(NSDictionary *)param withConfigKeys:(HiRequestEncryptConfigKeys *)configKeys extra:(NSDictionary * _Nullable)extraEncryptParam;
 
 /**
 加密、签名
@@ -68,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param extraEncryptParam 不包含在数据data中的解密验签相关参数
  @return 加密后的数据
  */
-+(NSMutableDictionary *)decryptNetData:(id)encData withConfigKeys:(YLZRequestEncryptConfigKeys *)configKeys extra:(NSDictionary * _Nullable)extraEncryptParam;
++(NSMutableDictionary *)decryptNetData:(id)encData withConfigKeys:(HiRequestEncryptConfigKeys *)configKeys extra:(NSDictionary * _Nullable)extraEncryptParam;
 
 /**
  解密、验签.

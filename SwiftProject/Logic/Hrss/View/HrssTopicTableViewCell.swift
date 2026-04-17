@@ -12,7 +12,7 @@ class HrssTopicTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorBackGround;
+        self.contentView.backgroundColor = HiColorBackGround;
         self.setUI();
     }
     
@@ -63,7 +63,7 @@ class HrssTopicTableViewCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 10.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
@@ -75,8 +75,8 @@ class HrssTopicTableViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.bold(size:18)
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.bold(size:18)
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "专题服务";
         return titleLabel
     }()

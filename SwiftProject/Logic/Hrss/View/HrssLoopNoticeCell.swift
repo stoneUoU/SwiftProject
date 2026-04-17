@@ -65,9 +65,9 @@ class HrssLoopNoticeItemView:UIView {
     
     fileprivate lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.font = YLZFont.regular(size: 12);
+        titleLabel.font = HiFont.regular(size: 12);
         titleLabel.textAlignment = .left
-        titleLabel.textColor = YLZColorTitleOne;
+        titleLabel.textColor = HiColorTitleOne;
         titleLabel.numberOfLines = 0;
         return titleLabel
     }()

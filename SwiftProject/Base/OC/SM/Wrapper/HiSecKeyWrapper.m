@@ -1,22 +1,20 @@
 //
-//  YLZSecKeyWrapper.m
-//  YiKaTongAPP
+//  HiSecKeyWrapper.m
+//  Hi-SwiftUI
 //
-//  Created by YLZ-MAC on 15-1-6.
-//  Copyright (c) 2015年 YLZ-MAC. All rights reserved.
-//
+//  Created by stone on 2025/5/20.
 
-#import "YLZSecKeyWrapper.h"
-#import "NSData+YLZBase64.h"
-#import "NSData+YLZHexadecimal.h"
-#import "YLZRequestEncryptConfigKeys.h"
+#import "HiSecKeyWrapper.h"
+#import "NSData+HiBase64.h"
+#import "NSData+HiHexadecimal.h"
+#import "HiRequestEncryptConfigKeys.h"
 #import <UIKit/UIKit.h>
 #import <Security/Security.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
 
-@implementation YLZSecKeyWrapper
+@implementation HiSecKeyWrapper
 
 + (NSString *)encryptUseRSA:(NSString *)content publicKey:(NSString *)publicKeyString
 {
@@ -26,11 +24,11 @@
 + (NSString *)encryptUseRSA:(NSString *)content publicKey:(NSString *)publicKeyString secPadding:(SecPadding)secPadding
 {
     
-    NSData *publicKey = [NSData ylz_dataFromBase64String:publicKeyString];
+    NSData *publicKey = [NSData hi_dataFromBase64String:publicKeyString];
     NSData *contentUTF8 = [content dataUsingEncoding: NSUTF8StringEncoding];
     
     SecKeyRef publicKeyRef = NULL;
-    YLZSecKeyWrapper * secKeyWrapper = [YLZSecKeyWrapper sharedWrapper];
+    HiSecKeyWrapper * secKeyWrapper = [HiSecKeyWrapper sharedWrapper];
     
     publicKeyRef = [secKeyWrapper addPublicKey:kPublicKeyName keyBits:[secKeyWrapper stripPublicKeyHeader:publicKey]];
     if (NULL == publicKeyRef)
@@ -38,7 +36,7 @@
         return nil;
     }
     NSData *newKey= [secKeyWrapper encrypt:contentUTF8 keyRef:publicKeyRef SecPadding:secPadding];
-    NSString *result = [newKey  ylz_base64EncodedString];
+    NSString *result = [newKey  hi_base64EncodedString];
     [secKeyWrapper removePublicKey:kPublicKeyName];
     
     result = [result stringByReplacingOccurrencesOfString:@"\r\n" withString:@""];
@@ -59,16 +57,16 @@
         return YES;
     }
     SecKeyRef publicKeyRef = NULL;
-    NSData *publicKey = [NSData ylz_dataFromBase64String:publicKeyStr];
-    publicKeyRef = [[YLZSecKeyWrapper sharedWrapper] addPublicKey:kPublicKeyName keyBits:[[YLZSecKeyWrapper sharedWrapper] stripPublicKeyHeader:publicKey]];
+    NSData *publicKey = [NSData hi_dataFromBase64String:publicKeyStr];
+    publicKeyRef = [[HiSecKeyWrapper sharedWrapper] addPublicKey:kPublicKeyName keyBits:[[HiSecKeyWrapper sharedWrapper] stripPublicKeyHeader:publicKey]];
     if (NULL == publicKeyRef)
     {
         return NO;
     }
     NSData *contentUTF8 = [content dataUsingEncoding: NSUTF8StringEncoding];
-    NSData *sigData = [NSData ylz_dataFromBase64String:sig];
-    BOOL result= [[YLZSecKeyWrapper sharedWrapper] verifySignature:contentUTF8 secKeyRef:publicKeyRef signature:sigData];
-    [[YLZSecKeyWrapper sharedWrapper] removePublicKey:kPublicKeyName];
+    NSData *sigData = [NSData hi_dataFromBase64String:sig];
+    BOOL result= [[HiSecKeyWrapper sharedWrapper] verifySignature:contentUTF8 secKeyRef:publicKeyRef signature:sigData];
+    [[HiSecKeyWrapper sharedWrapper] removePublicKey:kPublicKeyName];
     return result;
 }
 
@@ -112,14 +110,14 @@
 + (NSString *)encryptUseAES:(NSString *)content withKey:(NSString *)key withIv:(NSString *)iv withEncodeType:(NSString *)encode
 {
     NSData * contentData = [content dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *encryptedData = [[YLZSecKeyWrapper sharedWrapper] doAESCipher:contentData operation:kCCEncrypt key:key iv:iv];
+    NSData *encryptedData = [[HiSecKeyWrapper sharedWrapper] doAESCipher:contentData operation:kCCEncrypt key:key iv:iv];
     //加密后的数据
     NSString *result = nil;
     if (encryptedData) {
         if ([encode isEqualToString:@"base64"]) {
-            result = [encryptedData  ylz_base64EncodedString];
+            result = [encryptedData  hi_base64EncodedString];
         }else if ([encode isEqualToString:@"hex"]){
-            result = [encryptedData ylz_hexadecimalString];
+            result = [encryptedData hi_hexadecimalString];
         }
     }
     
@@ -140,14 +138,14 @@
     
     if ([encode isEqualToString:@"base64"]) {
         
-        encryptedData = [NSData ylz_dataFromBase64String:encryptedString];
+        encryptedData = [NSData hi_dataFromBase64String:encryptedString];
         
     }else if ([encode isEqualToString:@"hex"]){
         
-        encryptedData = [NSData ylz_dataFromHexadecimalString:encryptedString];
+        encryptedData = [NSData hi_dataFromHexadecimalString:encryptedString];
     }
     //解密
-    NSData *decryptedData = [[YLZSecKeyWrapper sharedWrapper] doAESCipher:encryptedData operation:kCCDecrypt key:key iv:iv];
+    NSData *decryptedData = [[HiSecKeyWrapper sharedWrapper] doAESCipher:encryptedData operation:kCCDecrypt key:key iv:iv];
     return decryptedData;
 }
 
@@ -159,7 +157,7 @@
     if (decryptedData) {
         resultString = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
         if (!resultString) {
-            resultString = [decryptedData  ylz_base64EncodedString];
+            resultString = [decryptedData  hi_base64EncodedString];
         }
     }
     return resultString;
@@ -171,11 +169,11 @@
 
 
 
-static YLZSecKeyWrapper * __sharedKeyWrapper = nil;
+static HiSecKeyWrapper * __sharedKeyWrapper = nil;
 
 /* Begin method definitions */
 
-+ (YLZSecKeyWrapper *)sharedWrapper {
++ (HiSecKeyWrapper *)sharedWrapper {
     @synchronized(self) {
         if (__sharedKeyWrapper == nil) {
             __sharedKeyWrapper=[[self alloc] init];
@@ -364,7 +362,7 @@ static YLZSecKeyWrapper * __sharedKeyWrapper = nil;
 - (NSString *)generateSymmetricKey
 {
     return @"";
-    //    return YLZ_AES_KEY;
+    //    return Hi_AES_KEY;
 }
 
 //加密
@@ -460,9 +458,9 @@ static YLZSecKeyWrapper * __sharedKeyWrapper = nil;
 + (NSString *)encryptUseAES:(NSString *)content key:(NSString *)key iv:(NSString *)iv
 {
     NSData * contentData = [content dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *encryptedData = [[YLZSecKeyWrapper sharedWrapper] doAESCipher:contentData operation:kCCEncrypt key:key iv:iv];
+    NSData *encryptedData = [[HiSecKeyWrapper sharedWrapper] doAESCipher:contentData operation:kCCEncrypt key:key iv:iv];
     //加密后的数据
-    NSString *result = encryptedData?[encryptedData  ylz_base64EncodedString]:nil;
+    NSString *result = encryptedData?[encryptedData  hi_base64EncodedString]:nil;
     
     return result;
 }

@@ -1,14 +1,14 @@
 //
-//  YLZRSA.m
-//  YLZ-NetEncryption-iOS
+//  HiRSA.m
+//  Hi-NetEncryption-iOS
 //
 //  Created by stone on 2020/2/15.
 //
 
-#import "YLZRSA.h"
+#import "HiRSA.h"
 #import <Security/Security.h>
 
-@implementation YLZRSA
+@implementation HiRSA
 
 /*
 static NSString *base64_encode(NSString *str){
@@ -120,7 +120,7 @@ static NSData *base64_decode(NSString *str){
     
     // This will be base64 encoded, decode it.
     NSData *data = base64_decode(key);
-    data = [YLZRSA stripPublicKeyHeader:data];
+    data = [HiRSA stripPublicKeyHeader:data];
     if(!data){
         return nil;
     }
@@ -189,7 +189,7 @@ static NSData *base64_decode(NSString *str){
 
     // This will be base64 encoded, decode it.
     NSData *data = base64_decode(key);
-    data = [YLZRSA stripPrivateKeyHeader:data];
+    data = [HiRSA stripPrivateKeyHeader:data];
     if(!data){
         return nil;
     }
@@ -288,7 +288,7 @@ static NSData *base64_decode(NSString *str){
 }
 
 + (NSString *)encryptString:(NSString *)str privateKey:(NSString *)privKey{
-    NSData *data = [YLZRSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] privateKey:privKey];
+    NSData *data = [HiRSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] privateKey:privKey];
     NSString *ret = base64_encode_data(data);
     return ret;
 }
@@ -297,11 +297,11 @@ static NSData *base64_decode(NSString *str){
     if(!data || !privKey){
         return nil;
     }
-    SecKeyRef keyRef = [YLZRSA addPrivateKey:privKey];
+    SecKeyRef keyRef = [HiRSA addPrivateKey:privKey];
     if(!keyRef){
         return nil;
     }
-    return [YLZRSA encryptData:data withKeyRef:keyRef isSign:YES];
+    return [HiRSA encryptData:data withKeyRef:keyRef isSign:YES];
 }
 
 + (NSData *)decryptData:(NSData *)data withKeyRef:(SecKeyRef) keyRef{
@@ -360,7 +360,7 @@ static NSData *base64_decode(NSString *str){
 
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey{
     NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    data = [YLZRSA decryptData:data privateKey:privKey];
+    data = [HiRSA decryptData:data privateKey:privKey];
     NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     return ret;
 }
@@ -369,11 +369,11 @@ static NSData *base64_decode(NSString *str){
     if(!data || !privKey){
         return nil;
     }
-    SecKeyRef keyRef = [YLZRSA addPrivateKey:privKey];
+    SecKeyRef keyRef = [HiRSA addPrivateKey:privKey];
     if(!keyRef){
         return nil;
     }
-    return [YLZRSA decryptData:data withKeyRef:keyRef];
+    return [HiRSA decryptData:data withKeyRef:keyRef];
 }
 
 /* END: Encryption & Decryption with RSA private key */
@@ -381,7 +381,7 @@ static NSData *base64_decode(NSString *str){
 /* START: Encryption & Decryption with RSA public key */
 
 + (NSString *)encryptString:(NSString *)str publicKey:(NSString *)pubKey {
-    NSData *data = [YLZRSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] publicKey:pubKey.length == 0 ? kFastLoginPublicKey : pubKey];
+    NSData *data = [HiRSA encryptData:[str dataUsingEncoding:NSUTF8StringEncoding] publicKey:pubKey.length == 0 ? kFastLoginPublicKey : pubKey];
     NSString *ret = base64_encode_data(data);
     return ret;
 }
@@ -390,16 +390,16 @@ static NSData *base64_decode(NSString *str){
     if(!data || !pubKey){
         return nil;
     }
-    SecKeyRef keyRef = [YLZRSA addPublicKey:pubKey];
+    SecKeyRef keyRef = [HiRSA addPublicKey:pubKey];
     if(!keyRef){
         return nil;
     }
-    return [YLZRSA encryptData:data withKeyRef:keyRef isSign:NO];
+    return [HiRSA encryptData:data withKeyRef:keyRef isSign:NO];
 }
 
 + (NSString *)decryptString:(NSString *)str publicKey:(NSString *)pubKey{
     NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    data = [YLZRSA decryptData:data publicKey:pubKey];
+    data = [HiRSA decryptData:data publicKey:pubKey];
     NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     return ret;
 }
@@ -408,11 +408,11 @@ static NSData *base64_decode(NSString *str){
     if(!data || !pubKey){
         return nil;
     }
-    SecKeyRef keyRef = [YLZRSA addPublicKey:pubKey];
+    SecKeyRef keyRef = [HiRSA addPublicKey:pubKey];
     if(!keyRef){
         return nil;
     }
-    return [YLZRSA decryptData:data withKeyRef:keyRef];
+    return [HiRSA decryptData:data withKeyRef:keyRef];
 }
 
 /* END: Encryption & Decryption with RSA public key */

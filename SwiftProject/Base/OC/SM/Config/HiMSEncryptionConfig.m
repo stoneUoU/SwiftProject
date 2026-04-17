@@ -1,24 +1,23 @@
 //
-//  YLZMSEncryptionConfig.m
-//  YLZ-NetEncryption-iOS
+//  HiMSEncryptionConfig.m
+//  Hi-SwiftUI
 //
-//  Created by stone on 2021/5/20.
-//
+//  Created by stone on 2025/5/20.
 
-#import "YLZMSEncryptionConfig.h"
+#import "HiMSEncryptionConfig.h"
 #import "YYModel.h"
 
-@implementation YLZMSEncryptionConfig
+@implementation HiMSEncryptionConfig
 
 /**
  通用
  */
- static YLZMSEncryptionConfig *_instance = nil;
+ static HiMSEncryptionConfig *_instance = nil;
 
 + (instancetype)shareConfig {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _instance = [[YLZMSEncryptionConfig alloc] init];
+        _instance = [[HiMSEncryptionConfig alloc] init];
     });
     return _instance;
 }
@@ -44,8 +43,8 @@
  * @param secretString 应用授权秘钥
  */
 + (void)initRequestConfigWithSecret:(NSString *)secretString {
-    YLZNetEncryptionConfig *_encryptConfig = [YLZNetEncryptionConfig yy_modelWithJSON:secretString];
-    [[YLZMSEncryptionConfig shareConfig] registerEncryptConfig:_encryptConfig];
+    HiNetEncryptionConfig *_encryptConfig = [HiNetEncryptionConfig yy_modelWithJSON:secretString];
+    [[HiMSEncryptionConfig shareConfig] registerEncryptConfig:_encryptConfig];
 }
 
 
@@ -53,7 +52,7 @@
  *  注册接口参数配置，未设置的属性将使用默认值填充
  *  @param encryptConfig 配置参数
  */
-- (void)registerEncryptConfig:(YLZNetEncryptionConfig *)encryptConfig
+- (void)registerEncryptConfig:(HiNetEncryptionConfig *)encryptConfig
 {
     self.encryptConfig = encryptConfig;
 }
@@ -61,6 +60,6 @@
 
 @end
 
-@implementation YLZNetEncryptionConfig
+@implementation HiNetEncryptionConfig
 
 @end

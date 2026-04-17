@@ -1,14 +1,12 @@
 //
-//  YLZSecKeyWrapper.h
-//  YiKaTongAPP
+//  HiSecKeyWrapper.h
+//  Hi-SwiftUI
 //
-//  Created by YLZ-MAC on 15-1-6.
-//  Copyright (c) 2015年 YLZ-MAC. All rights reserved.
-//
+//  Created by stone on 2025/5/20.
 
 #import <Foundation/Foundation.h>
 
-#define kPublicKeyName @"com.yh.ylz.publicCiper"
+#define kPublicKeyName @"com.yh.hi.publicCiper"
 
 #define kChosenDigestLength        CC_SHA1_DIGEST_LENGTH
 
@@ -20,7 +18,7 @@
 #define kMaxBlockSize            117
 
 
-@interface YLZSecKeyWrapper : NSObject
+@interface HiSecKeyWrapper : NSObject
 
 + (NSString *)encryptUseRSA:(NSString *)content publicKey:(NSString *)publicKeyString;
 
@@ -66,7 +64,7 @@
 + (NSString *)decryptAESWrap:(NSString *)encryptedString withKey:(NSString *)key withIv:(NSString *)iv withEncodeType:(NSString *)encode;
 
 
-+ (YLZSecKeyWrapper *)sharedWrapper;
++ (HiSecKeyWrapper *)sharedWrapper;
 
 @end
 

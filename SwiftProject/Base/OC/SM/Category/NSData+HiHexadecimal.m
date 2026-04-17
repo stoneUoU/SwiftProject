@@ -1,16 +1,14 @@
 //
-//  NSData+YLZHexadecimal.m
-//  YhPaymentAPP
+//  NSData+HiHexadecimal.m
+//  Hi-SwiftUI
 //
-//  Created by ljt on 2016/12/5.
-//  Copyright © 2016年 jagtu. All rights reserved.
-//
+//  Created by stone on 2025/5/20.
 
-#import "NSData+YLZHexadecimal.h"
+#import "NSData+HiHexadecimal.h"
 
 @implementation NSData (Hexadecimal)
 
-+ (NSData *)ylz_dataFromHexadecimalString:(NSString *)aString {
++ (NSData *)hi_dataFromHexadecimalString:(NSString *)aString {
     if (!aString || [aString length] == 0) {
         return nil;
     }
@@ -38,7 +36,7 @@
 }
 
 //NSData的十六进制的字符串
-- (NSString *)ylz_hexadecimalString{
+- (NSString *)hi_hexadecimalString{
     if (!self || [self length] == 0) {
         return @"";
     }

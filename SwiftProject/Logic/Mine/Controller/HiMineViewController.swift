@@ -31,7 +31,7 @@ class HiMineViewController: UIViewController {
         let msgButton = UIButton(type: .custom)
         msgButton.tag = 0
         msgButton.setImage(UIImage(named: "hsa_personal_module_setting"), for: .normal)
-        msgButton.setTitleColor(YLZColorTitleTwo, for: .normal)
+        msgButton.setTitleColor(HiColorTitleTwo, for: .normal)
         msgButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         return msgButton
     }()

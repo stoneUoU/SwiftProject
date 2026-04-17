@@ -78,7 +78,7 @@ class HiSettingViewController: HiBaseViewController {
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         //纯文本模式
         hud.mode = .indeterminate;
-//        hud.bezelView.backgroundColor = YLZColorTitleTwo;
+//        hud.bezelView.backgroundColor = HiColorTitleTwo;
         //设置提示标题
         hud.label.text = "正在退出，请稍候..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

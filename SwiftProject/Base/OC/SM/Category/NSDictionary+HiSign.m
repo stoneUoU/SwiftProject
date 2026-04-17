@@ -1,20 +1,18 @@
 //
-//  NSDictionary+YLZSign.m
-//  YLZ-NetEncryption-iOS
+//  NSDictionary+HiSign.m
+//  Hi-SwiftUI
 //
-//  Created by ljt on 19/5/14.
-//  Copyright (c) 2019年 dev. All rights reserved.
-//
+//  Created by stone on 2025/5/20.
 
-#import "NSDictionary+YLZSign.h"
-#import "NSData+YLZBase64.h"
-#import "NSData+YLZHexadecimal.h"
-#import "YLZSMEncryption.h"
-#import "YLZSecKeyWrapper.h"
+#import "NSDictionary+HiSign.h"
+#import "NSData+HiBase64.h"
+#import "NSData+HiHexadecimal.h"
+#import "HiSMEncryption.h"
+#import "HiSecKeyWrapper.h"
 
-@implementation NSArray(YLZSign)
+@implementation NSArray(HiSign)
 
--(NSString *)ylz_sortJsonString
+-(NSString *)hi_sortJsonString
 {
     NSMutableString * jsonString= [NSMutableString stringWithString:@"["];
     NSArray * valueArray = [self copy];
@@ -34,12 +32,12 @@
             valueString = [NSString stringWithFormat:@"\"%@\"",[value stringByReplacingEscapeCharacter]];
             
         }else if ([value isKindOfClass:[NSDictionary class]]) {
-            valueString = [((NSDictionary *)value) ylz_sortJsonString];
+            valueString = [((NSDictionary *)value) hi_sortJsonString];
         }else if ([value isKindOfClass:[NSArray class]]) {
 //            if ([((NSArray *)value) count]==0) {
 //                continue;//剔除空数组
 //            }
-            valueString = [((NSArray *)value) ylz_sortJsonString];
+            valueString = [((NSArray *)value) hi_sortJsonString];
         }else if([value isKindOfClass:NSClassFromString(@"__NSCFBoolean")]){
             valueString = [value boolValue]?@"\"true\"":@"\"false\"";
         }else if([value isKindOfClass:[NSNumber class]]){
@@ -67,7 +65,7 @@
 
 @end
 
-@implementation NSString(YLZSign)
+@implementation NSString(HiSign)
 
 -(NSString *)stringByReplacingEscapeCharacter{
     NSString * selfStr = self;
@@ -89,9 +87,9 @@
 @end
 
 
-@implementation NSDictionary(YLZSign)
+@implementation NSDictionary(HiSign)
 
--(NSString *)ylz_sortJsonString
+-(NSString *)hi_sortJsonString
 {
     NSMutableString * jsonString;
     jsonString = [NSMutableString stringWithString:@"{"];
@@ -114,13 +112,13 @@
                 
             }else if ([value isKindOfClass:[NSDictionary class]]) {
 
-                valueString = [((NSDictionary *)value) ylz_sortJsonString];
+                valueString = [((NSDictionary *)value) hi_sortJsonString];
                 
             }else if ([value isKindOfClass:[NSArray class]]) {
 //                if ([((NSArray *)value) count]==0) {
 //                    continue;//剔除空数组
 //                }
-                valueString = [((NSArray *)value) ylz_sortJsonString];
+                valueString = [((NSArray *)value) hi_sortJsonString];
             }else if([value isKindOfClass:NSClassFromString(@"__NSCFBoolean")]){
                 
                 valueString = [value boolValue]?@"\"true\"":@"\"false\"";
@@ -148,7 +146,7 @@
     return jsonString;
 }
 
--(NSString *)ylz_signSortStringWithBlackList:(NSArray<NSString *> *)blackList
+-(NSString *)hi_signSortStringWithBlackList:(NSArray<NSString *> *)blackList
 {
     NSMutableString * sortStr = nil;
     //按照参数名升序,以"参数名=值&参数名=值&...&参数名=值"格式生成,字符串尾部包含”&”字符,并拼接上key=你的密钥
@@ -174,13 +172,13 @@
                 
             }else if ([value isKindOfClass:[NSDictionary class]]) {
                 
-                valueString = [((NSDictionary *)value) ylz_sortJsonString];
+                valueString = [((NSDictionary *)value) hi_sortJsonString];
                 
             }else if ([value isKindOfClass:[NSArray class]]) {
 //                if ([((NSArray *)value) count]==0) {
 //                    continue;//剔除空数组
 //                }
-                valueString = [((NSArray *)value) ylz_sortJsonString];
+                valueString = [((NSArray *)value) hi_sortJsonString];
             }else if([value isKindOfClass:NSClassFromString(@"__NSCFBoolean")]){
                 
                 valueString = [value boolValue]?@"true":@"false";

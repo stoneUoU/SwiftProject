@@ -68,23 +68,23 @@ class HrssEasyManCollectionViewCell: UICollectionViewCell {
     
     lazy var titleLabel:UILabel = {
         let titleLabel =  UILabel()
-        titleLabel.font = YLZFont.medium(size: 14.0);
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.medium(size: 14.0);
+        titleLabel.textColor = HiColorTitleOne
         return titleLabel
     }()
     
     lazy var smallLabel:UILabel = {
         let smallLabel =  UILabel()
-        smallLabel.font = YLZFont.regular(size: 10);
-        smallLabel.textColor = YLZColorTitleFour
+        smallLabel.font = HiFont.regular(size: 10);
+        smallLabel.textColor = HiColorTitleFour
         smallLabel.text = "记录一生 保障一生";
         return smallLabel
     }()
     
     fileprivate lazy var seeLabel: UIButton = {
         let seeLabel = UIButton()
-        seeLabel.titleLabel?.font = YLZFont.medium(size:11)
-        seeLabel.setTitleColor(YLZColorMZTBlueView, for: .normal)
+        seeLabel.titleLabel?.font = HiFont.medium(size:11)
+        seeLabel.setTitleColor(HiColorMZTBlueView, for: .normal)
         seeLabel.setImageAndTitle(imageName:"ic_topic_go", title: "去看看", type: .PositionRight, Space: 6)
         return seeLabel
     }()

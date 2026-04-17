@@ -11,7 +11,7 @@ class YLZHealthCodeServiceTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorMZTBlueView;
+        self.contentView.backgroundColor = HiColorMZTBlueView;
         self.setUI();
     }
     
@@ -51,7 +51,7 @@ class YLZHealthCodeServiceTableViewCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 10.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
@@ -63,8 +63,8 @@ class YLZHealthCodeServiceTableViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.regular(size:24)
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.regular(size:24)
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "相关服务";
         return titleLabel
     }()
@@ -75,7 +75,7 @@ class YLZHealthCodeServiceTableViewCell: UITableViewCell {
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = YLZColorWhite;
+        collectionView.backgroundColor = HiColorWhite;
         collectionView.register(YLZHealthCodeCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(YLZHealthCodeCollectionViewCell.self))
         collectionView.showsVerticalScrollIndicator=false
         collectionView.showsHorizontalScrollIndicator=false;

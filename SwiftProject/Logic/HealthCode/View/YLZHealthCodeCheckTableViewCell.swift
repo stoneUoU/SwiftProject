@@ -11,7 +11,7 @@ class YLZHealthCodeCheckTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorMZTBlueView;
+        self.contentView.backgroundColor = HiColorMZTBlueView;
         self.setUI();
     }
     
@@ -51,7 +51,7 @@ class YLZHealthCodeCheckTableViewCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 10.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
@@ -63,16 +63,16 @@ class YLZHealthCodeCheckTableViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.regular(size:18)
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.regular(size:18)
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "通行大数据行程卡";
         return titleLabel
     }()
     
-    lazy var isCheckLabel:YLZPaddingLabel = {[weak self] in
-        var isCheckLabel = YLZPaddingLabel()
-        isCheckLabel.font = YLZFont.regular(size:14)
-        isCheckLabel.textColor = YLZColorTitleThree
+    lazy var isCheckLabel:HiPaddingLabel = {[weak self] in
+        var isCheckLabel = HiPaddingLabel()
+        isCheckLabel.font = HiFont.regular(size:14)
+        isCheckLabel.textColor = HiColorTitleThree
         isCheckLabel.text = "今日未核验"
         isCheckLabel.backgroundColor = UIColor.color_HexStr("eff5f3");
         isCheckLabel.paddingTop = 5.0
@@ -84,11 +84,11 @@ class YLZHealthCodeCheckTableViewCell: UITableViewCell {
     
     lazy var excuteButton:UIButton = {[weak self] in
         var excuteButton = UIButton(type: .custom)
-        excuteButton.titleLabel?.font = YLZFont.regular(size:14)
+        excuteButton.titleLabel?.font = HiFont.regular(size:14)
         excuteButton.layer.cornerRadius = 18
         excuteButton.layer.masksToBounds = true
-        excuteButton.backgroundColor = YLZColorMZTBlueView
-        excuteButton.setTitleColor(YLZColorWhite, for: .normal)
+        excuteButton.backgroundColor = HiColorMZTBlueView
+        excuteButton.setTitleColor(HiColorWhite, for: .normal)
         excuteButton.tag = 0
         excuteButton.setTitle("点击核验", for: .normal)
         excuteButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)

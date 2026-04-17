@@ -175,7 +175,7 @@ extension HiBaseViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @objc func toRight(_ sender :UIButton){
-        YLZLog("等继承者来完成相应功能")
+        HiLog("等继承者来完成相应功能")
     }
     
 }

@@ -1,13 +1,12 @@
 //
-//  YLZRequestEncryptConfigKeys.h
-//  YLZ-NetEncryption-iOS
+//  HiRequestEncryptConfigKeys.h
+//  Hi-SwiftUI
 //
-//  Created by stone on 2021/5/20.
-//
+//  Created by stone on 2025/5/20.
 
 #import <UIKit/UIKit.h>
 
-@interface YLZRequestEncryptConfigKeys : NSObject
+@interface HiRequestEncryptConfigKeys : NSObject
 
 /// 应⽤渠道编号key:
 @property (nonatomic, copy) NSString *appIdKey;
@@ -46,8 +45,8 @@
 @end
 
 /// 默认的请求 body 的 key
-static YLZRequestEncryptConfigKeys *ylz_defaultEncryptConfigKeys() {
-    YLZRequestEncryptConfigKeys *config = [[YLZRequestEncryptConfigKeys alloc] init];
+static HiRequestEncryptConfigKeys *hi_defaultEncryptConfigKeys() {
+    HiRequestEncryptConfigKeys *config = [[HiRequestEncryptConfigKeys alloc] init];
     config.appIdKey = @"appId";
     config.appSecretKey = @"appSecret";
     config.signTypeKey = @"signType";

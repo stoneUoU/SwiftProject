@@ -11,4 +11,4 @@
 #import "DCUniMP.h"
 #import "YYModel.h"
 #import "OCProject.h"
-#import "YLZNetEncryptManager.h"
+#import "HiNetEncryptManager.h"

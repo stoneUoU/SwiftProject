@@ -22,11 +22,11 @@ class HrssFuncCollectionViewCell: UICollectionViewCell {
                 }
             }
             if (model?.tag ?? "" == "0") {
-                self.titleLabel.font = YLZFont.bold(size: 14.0);
-                self.titleLabel.textColor = YLZColorWhite
+                self.titleLabel.font = HiFont.bold(size: 14.0);
+                self.titleLabel.textColor = HiColorWhite
             } else {
-                self.titleLabel.font = YLZFont.regular(size: 12.0);
-                self.titleLabel.textColor = YLZColorTitleOne
+                self.titleLabel.font = HiFont.regular(size: 12.0);
+                self.titleLabel.textColor = HiColorTitleOne
             }
         }
     }
@@ -62,8 +62,8 @@ class HrssFuncCollectionViewCell: UICollectionViewCell {
     
     lazy var titleLabel:UILabel = {
         let titleLabel =  UILabel()
-        titleLabel.font = YLZFont.medium(size: 14.0);
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.medium(size: 14.0);
+        titleLabel.textColor = HiColorTitleOne
         return titleLabel
     }()
     

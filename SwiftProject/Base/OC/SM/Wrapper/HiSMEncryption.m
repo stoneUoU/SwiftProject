@@ -1,16 +1,15 @@
 //
-//  YLZSMEncryption.m
-//  YLZ-NetEncryption-iOS
+//  HiSMEncryption.m
+//  Hi-SwiftUI
 //
-//  Created by cy on 2018/12/7.
-//
+//  Created by stone on 2025/5/20.
 
-#import "YLZSMEncryption.h"
+#import "HiSMEncryption.h"
 #import "sm2.h"
 #import "sm3.h"
 #import "sm4.h"
-#import "NSData+YLZBase64.h"
-#import "NSData+YLZHexadecimal.h"
+#import "NSData+HiBase64.h"
+#import "NSData+HiHexadecimal.h"
 #import <CommonCrypto/CommonCrypto.h>
 
 //static unsigned int const CURRENT_VERSION   =   23;
@@ -21,13 +20,13 @@ static unsigned int const BLOCK_SIZE_CRYPTO =   1024;
 static NSString * const IV_SM4              =   @"sm4ivectorcodec1";
 static NSString * const DEFAULT_UID_SM2     =   @"1234567812345678";
 
-@interface YLZSMEncryption ()
+@interface HiSMEncryption ()
 
 @end
 
-static YLZSMEncryption * instance = nil;
+static HiSMEncryption * instance = nil;
 
-@implementation YLZSMEncryption
+@implementation HiSMEncryption
 
 + (instancetype)shared {
     static dispatch_once_t onceToken;
@@ -291,7 +290,7 @@ static inline NSError * assembleErrorWithDomain(NSString *domain) {
     return [NSError errorWithDomain:domain code:-1 userInfo:nil];
 }
 
-long ylz_file_len(FILE *file) {
+long hi_file_len(FILE *file) {
     fseek(file, 0, SEEK_END);
     long size = ftell(file);
     fseek(file, 0, SEEK_SET);
@@ -339,7 +338,7 @@ long ylz_file_len(FILE *file) {
         goto encrypt_file_end;
     }
     //detect file length
-    file_length = ylz_file_len(in_f);
+    file_length = hi_file_len(in_f);
     if (file_length < 0) {
         err = assembleErrorWithDomain([NSString stringWithFormat:@"failed to detect file length:%ld", file_length]);
         goto encrypt_file_end;
@@ -464,7 +463,7 @@ encrypt_file_end:
         goto decrypt_file_end;
     }
     //detect file length
-    file_length = ylz_file_len(in_f);
+    file_length = hi_file_len(in_f);
     if (file_length < 0) {
         err = assembleErrorWithDomain([NSString stringWithFormat:@"failed to detect file length:%ld", file_length]);
         goto decrypt_file_end;
@@ -664,9 +663,9 @@ decrypt_file_end:
     NSData *pubYD = [NSData dataWithBytes:buff+32 length:32];
     NSData *priD = [NSData dataWithBytes:prikeyBuff length:priLen];
     
-    NSString *pubX = [[pubXD ylz_hexadecimalString] uppercaseString];
-    NSString *pubY = [[pubYD ylz_hexadecimalString] uppercaseString];
-    NSString *pri = [[priD ylz_hexadecimalString] uppercaseString];
+    NSString *pubX = [[pubXD hi_hexadecimalString] uppercaseString];
+    NSString *pubY = [[pubYD hi_hexadecimalString] uppercaseString];
+    NSString *pri = [[priD hi_hexadecimalString] uppercaseString];
     
     return @[pubX,pubY,pri];
 }
@@ -679,7 +678,7 @@ decrypt_file_end:
     unsigned char result[1024] = {0};
     unsigned long outlen = 1024;
     const char *encryptData = [str cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *keyData =  [NSData ylz_dataFromHexadecimalString:key];
+    NSData *keyData =  [NSData hi_dataFromHexadecimalString:key];
     
     int ret = GM_SM2Encrypt(result,&outlen,(unsigned char *)encryptData,strlen(encryptData),(unsigned char *)keyData.bytes,keyData.length);
     
@@ -691,7 +690,7 @@ decrypt_file_end:
     //多一位\x04 需要去掉
     NSData *data = [NSData dataWithBytes:result + 1 length:outlen - 1];
     
-    return [[data ylz_hexadecimalString] uppercaseString];
+    return [[data hi_hexadecimalString] uppercaseString];
 }
 
 - (NSString * _Nullable)sm2_decryptCipherString:(NSString *)str withPrivateKey:(NSString *)key {
@@ -704,9 +703,9 @@ decrypt_file_end:
     
     unsigned char pass[1024] = {0};
     
-    NSData *keyData =  [NSData ylz_dataFromHexadecimalString:key];
+    NSData *keyData =  [NSData hi_dataFromHexadecimalString:key];
     
-    NSData *data = [NSData ylz_dataFromHexadecimalString:str];
+    NSData *data = [NSData hi_dataFromHexadecimalString:str];
     pass[0] = '\x04'; //需要补一位\x04
     memcpy(pass + 1, data.bytes, data.length);
     
@@ -735,7 +734,7 @@ decrypt_file_end:
     unsigned long outlen = 64;
     const char *signData = [str cStringUsingEncoding:NSUTF8StringEncoding];
     const char *uidData = [uid cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *keyData =  [NSData ylz_dataFromHexadecimalString:key];
+    NSData *keyData =  [NSData hi_dataFromHexadecimalString:key];
     unsigned long uidLen = uidData?strlen(uidData):0;
     
     int ret = GM_SM2Sign((unsigned char *)result, &outlen, (unsigned char *)signData, strlen(signData), (unsigned char *)uidData, uidLen, (unsigned char *)keyData.bytes, keyData.length);
@@ -747,7 +746,7 @@ decrypt_file_end:
     //多一位\x04 需要去掉
     NSData *data = [NSData dataWithBytes:result length:outlen];
     //注：目前服务端使用的是base64字符串格式，目前没有要求两种都兼容，先写死base64
-    return [typeString isEqualToString:@"hex"] ? [[data ylz_hexadecimalString] uppercaseString] : [data base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
+    return [typeString isEqualToString:@"hex"] ? [[data hi_hexadecimalString] uppercaseString] : [data base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
 }
 
 - (BOOL)sm2_verifyWithPlainString:(NSString *)str withSigned:(NSString *)sign withUID:(NSString *)uid withPublicKey:(NSString *)key  withEncyptType:(NSString *)typeString {
@@ -761,10 +760,10 @@ decrypt_file_end:
     const char *srcData = [str cStringUsingEncoding:NSUTF8StringEncoding];
     //注：目前服务端使用的是base64字符串格式，目前没有要求两种都兼容，先写死base64
     
-    NSData *signData = [typeString isEqualToString:@"hex"] ? [NSData ylz_dataFromHexadecimalString:sign] : [[NSData alloc] initWithBase64EncodedString:sign options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    NSData *signData = [typeString isEqualToString:@"hex"] ? [NSData hi_dataFromHexadecimalString:sign] : [[NSData alloc] initWithBase64EncodedString:sign options:NSDataBase64DecodingIgnoreUnknownCharacters];
     
     const char *uidData = [uid cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *keyData =  [NSData ylz_dataFromHexadecimalString:key];
+    NSData *keyData =  [NSData hi_dataFromHexadecimalString:key];
     unsigned long uidLen = uidData?strlen(uidData):0;
     
     unsigned long keylen = 64;

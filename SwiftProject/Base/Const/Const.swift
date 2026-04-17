@@ -7,7 +7,7 @@
 
 import UIKit
 
-func YLZLog<T>(_ message: T, _ file: String = #file, _ line: Int = #line) {
+func HiLog<T>(_ message: T, _ file: String = #file, _ line: Int = #line) {
     #if DEBUG
         print("\((file as NSString).lastPathComponent.replacingOccurrences(of: ".swift", with: "")):\(line):\(message)")
     #endif
@@ -54,40 +54,40 @@ let Pos = ToastShowType.bottom
 let BASE_URL = "AAAA";
 
 //颜色：
-let YLZColorRed:UIColor = UIColor.red;
-let YLZColorWhite:UIColor = UIColor.white;
-let YLZColorYellow:UIColor = UIColor.yellow;
-let YLZColorBlack:UIColor = UIColor.black;
-let YLZColorGreen:UIColor = UIColor.green;
-let YLZColorBlue:UIColor = UIColor.blue;
+let HiColorRed:UIColor = UIColor.red;
+let HiColorWhite:UIColor = UIColor.white;
+let HiColorYellow:UIColor = UIColor.yellow;
+let HiColorBlack:UIColor = UIColor.black;
+let HiColorGreen:UIColor = UIColor.green;
+let HiColorBlue:UIColor = UIColor.blue;
 
 /// 背景色
-let YLZColorBackGround:UIColor = UIColor.color_HexStr("#F5F7FA");
+let HiColorBackGround:UIColor = UIColor.color_HexStr("#F5F7FA");
 /// 描边颜色/按钮置灰颜色
-let YLZColorLine:UIColor = UIColor.color_HexStr("#CECECE");
+let HiColorLine:UIColor = UIColor.color_HexStr("#CECECE");
 
 /// 红色
-let YLZColorRedView:UIColor = UIColor.color_HexStr("#F56C6C");
+let HiColorRedView:UIColor = UIColor.color_HexStr("#F56C6C");
 /// 蓝色
-let YLZColorBlueView:UIColor = UIColor.color_HexStr("#1B65B9");
+let HiColorBlueView:UIColor = UIColor.color_HexStr("#1B65B9");
 /// 淡蓝色
-let YLZColorLightBlueView:UIColor = UIColor.color_HexStr("#3B71E8");
+let HiColorLightBlueView:UIColor = UIColor.color_HexStr("#3B71E8");
 /// 闽政通淡蓝色
-let YLZColorMZTBlueView:UIColor = UIColor.color_HexStr("#2171f6");
+let HiColorMZTBlueView:UIColor = UIColor.color_HexStr("#2171f6");
 /// 金色
-let YLZColorGoldView:UIColor = UIColor.color_HexStr("#E6A23C");
+let HiColorGoldView:UIColor = UIColor.color_HexStr("#E6A23C");
 /// 橙色
-let YLZColorOrangeView:UIColor = UIColor.color_HexStr("#f1985c");
+let HiColorOrangeView:UIColor = UIColor.color_HexStr("#f1985c");
 
-let YLZColorView:UIColor = UIColor.color_HexStr("#f4f6f9");
+let HiColorView:UIColor = UIColor.color_HexStr("#f4f6f9");
 
-let YLZColorPlace:UIColor = UIColor.color_HexStr("#F7F9FD");
+let HiColorPlace:UIColor = UIColor.color_HexStr("#F7F9FD");
 
 /// 标题、正文、辅助文字颜色
-let YLZColorTitleOne:UIColor = UIColor.color_HexStr("#303133");
-let YLZColorTitleTwo:UIColor = UIColor.color_HexStr("#606266");
-let YLZColorTitleThree:UIColor = UIColor.color_HexStr("#909399");
-let YLZColorTitleFour:UIColor = UIColor.color_HexStr("#C0C4CC");
+let HiColorTitleOne:UIColor = UIColor.color_HexStr("#303133");
+let HiColorTitleTwo:UIColor = UIColor.color_HexStr("#606266");
+let HiColorTitleThree:UIColor = UIColor.color_HexStr("#909399");
+let HiColorTitleFour:UIColor = UIColor.color_HexStr("#C0C4CC");
 
 //背景色
 let colorBg:UIColor = UIColor.color_HexStr("#F5F7FA");
@@ -131,22 +131,22 @@ let colorTransparent:UIColor = UIColor.init(red:1.0, green:1.0, blue:1.0, alpha:
 let colorClear:UIColor = UIColor.clear;
 
 /// 灰色模式下背景色
-let YLZColorDarkBackGround:UIColor = UIColor.color_HexStr("#1a1b1c");
+let HiColorDarkBackGround:UIColor = UIColor.color_HexStr("#1a1b1c");
 
 /// 灰色模式下Cell背景色
-let YLZColorDarkCellBackGround:UIColor = UIColor.color_HexStr("#272829");
+let HiColorDarkCellBackGround:UIColor = UIColor.color_HexStr("#272829");
 
 /// 灰色模式下Cell背景色
-let YLZColorSeparator:UIColor = UIColor.color_HexStr("#f0f1f5");
+let HiColorSeparator:UIColor = UIColor.color_HexStr("#f0f1f5");
 
 /// Cell的背景色
-let YLZColorCellBackGround:UIColor = UIColor.color_HexStr("#fafafc");
+let HiColorCellBackGround:UIColor = UIColor.color_HexStr("#fafafc");
 
 /// 福建健康码背景
-let YLZColorRouteCode:UIColor = UIColor.color_HexStr("#e8eaf0");
-let YLZColorAllInsertCode:UIColor = UIColor.color_HexStr("#f3fcf5");
-let YLZColorCodeBlue:UIColor = UIColor.color_HexStr("#3a5ddd");
-let YLZColorCodeButtonbgColor:UIColor = UIColor.color_HexStr("#eceffb");
+let HiColorRouteCode:UIColor = UIColor.color_HexStr("#e8eaf0");
+let HiColorAllInsertCode:UIColor = UIColor.color_HexStr("#f3fcf5");
+let HiColorCodeBlue:UIColor = UIColor.color_HexStr("#3a5ddd");
+let HiColorCodeButtonbgColor:UIColor = UIColor.color_HexStr("#eceffb");
 
 func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
     return UIColor (red: r, green: g, blue: b, alpha: a)

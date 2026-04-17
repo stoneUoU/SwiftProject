@@ -1,5 +1,5 @@
 //
-//  YLZMSTabBar.swift
+//  HiMSTabBar.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/5/26.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-typealias YLZMSDidTabBarMiddleBtn = () -> Void
+typealias HiMSDidTabBarMiddleBtn = () -> Void
 
-class YLZMSTabBar: UITabBar {
+class HiMSTabBar: UITabBar {
     
-    var didTabBarMiddleBtn: YLZMSDidTabBarMiddleBtn?
+    var didTabBarMiddleBtn: HiMSDidTabBarMiddleBtn?
     
     var tabbarBtnNum:Int = 0;
     

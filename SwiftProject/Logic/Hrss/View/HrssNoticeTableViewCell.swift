@@ -12,7 +12,7 @@ class HrssNoticeTableViewCell: UITableViewCell {
     var loopModels:[HrssModel] = [HrssModel.init(json:JSON(["iconUrl":"ic_notice_service_in","title":"新版上线！"])),HrssModel.init(json:JSON(["iconUrl":"ic_info_service_in","title":"百日千万网络招聘行动！"])),HrssModel.init(json:JSON(["iconUrl":"ic_notice_service_in","title":"众志成城  共同战役！"]))];
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorBackGround;
+        self.contentView.backgroundColor = HiColorBackGround;
         self.setUI();
     }
     
@@ -53,7 +53,7 @@ class HrssNoticeTableViewCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 10.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;

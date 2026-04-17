@@ -1,5 +1,5 @@
 //
-//  YLZString.swift
+//  HiString.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/9/27.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class YLZString {
+class HiString {
     
     class func randomString(length: Int) -> String {
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"

@@ -1,28 +1,27 @@
 //
-//  YLZMSEncryptionConfig.h
-//  YLZ-NetEncryption-iOS
+//  HiMSEncryptionConfig.h
+//  Hi-SwiftUI
 //
-//  Created by stone on 2021/5/20.
-//
+//  Created by stone on 2025/5/20.
 
-#import "YLZMSEncryptionConfig.h"
-#import "YLZRequestEncryptConfigKeys.h"
+#import "HiMSEncryptionConfig.h"
+#import "HiRequestEncryptConfigKeys.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class YLZNetEncryptionConfig;
+@class HiNetEncryptionConfig;
 
-@interface YLZMSEncryptionConfig : NSObject
+@interface HiMSEncryptionConfig : NSObject
 
 + (instancetype)shareConfig;
 
 + (void)initRequestConfigWithSecret:(NSString *)secretString;
 
-@property (nonatomic, strong) YLZNetEncryptionConfig *encryptConfig;
+@property (nonatomic, strong) HiNetEncryptionConfig *encryptConfig;
 
 @end
 
-@interface YLZNetEncryptionConfig : NSObject
+@interface HiNetEncryptionConfig : NSObject
 
 @property (nonatomic, copy) NSString *aesIv;
 

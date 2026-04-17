@@ -25,7 +25,7 @@ class HrssViewController:UIViewController,UIGestureRecognizerDelegate {
     // 当加载视图结束时调用该方法
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = YLZColorWhite;
+        self.view.backgroundColor = HiColorWhite;
         let GesTar = self.navigationController?.interactivePopGestureRecognizer!.delegate
         let Ges = UIPanGestureRecognizer(target:GesTar,
                                          action:Selector(("handleNavigationTransition:")))
@@ -126,15 +126,15 @@ class HrssViewController:UIViewController,UIGestureRecognizerDelegate {
         let titleLabel = UILabel(frame:.zero)
         titleLabel.text = "厦门市";
         titleLabel.textAlignment = .center
-        titleLabel.textColor = YLZColorWhite;
-        titleLabel.font = YLZFont.medium(size: 16);
+        titleLabel.textColor = HiColorWhite;
+        titleLabel.font = HiFont.medium(size: 16);
         return titleLabel
     }()
     lazy var searchView: UIView = {[weak self] in
         let searchView = UIView(frame:.zero)
         searchView.layer.cornerRadius = 14.0
         searchView.layer.masksToBounds = true
-        searchView.backgroundColor = YLZColorWhite;
+        searchView.backgroundColor = HiColorWhite;
         return searchView
     }()
     fileprivate lazy var marqueeView: HiMarqueeView = {
@@ -149,7 +149,7 @@ class HrssViewController:UIViewController,UIGestureRecognizerDelegate {
         let msgButton = UIButton(type: .custom)
         msgButton.tag = 0
         msgButton.setImage(UIImage(named: "ic_home_header_message"), for: .normal)
-        msgButton.setTitleColor(YLZColorTitleTwo, for: .normal)
+        msgButton.setTitleColor(HiColorTitleTwo, for: .normal)
         msgButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         return msgButton
     }()
@@ -158,7 +158,7 @@ class HrssViewController:UIViewController,UIGestureRecognizerDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none;
-        tableView.backgroundColor = YLZColorBackGround;
+        tableView.backgroundColor = HiColorBackGround;
         tableView.tableHeaderView = self.tableHeaderView;
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never;

@@ -18,7 +18,7 @@ class YLZRouteCodeCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorRouteCode;
+        self.contentView.backgroundColor = HiColorRouteCode;
         self.setUI();
         self.codeView.clickNum = 0;
     }
@@ -42,7 +42,7 @@ class YLZRouteCodeCell: UITableViewCell {
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
         bgView.frame = CGRect.init(x: 24, y: 0, width: HiSCREENWIDTH - 48, height: 556)
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 12.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;

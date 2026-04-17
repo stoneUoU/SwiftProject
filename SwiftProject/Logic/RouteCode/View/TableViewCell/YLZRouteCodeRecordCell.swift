@@ -10,7 +10,7 @@ import UIKit
 class YLZRouteCodeRecordCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorRouteCode;
+        self.contentView.backgroundColor = HiColorRouteCode;
         self.setUI();
     }
     
@@ -84,7 +84,7 @@ class YLZRouteCodeRecordCell: UITableViewCell {
     
     lazy var leftView:UIView = {[weak self] in
         let leftView = UIView()
-        leftView.backgroundColor = YLZColorWhite;
+        leftView.backgroundColor = HiColorWhite;
         leftView.layer.cornerRadius = 12.0;
         leftView.layer.masksToBounds = true;
         return leftView
@@ -98,30 +98,30 @@ class YLZRouteCodeRecordCell: UITableViewCell {
     
     lazy var titleLeftLabel:UILabel = {[weak self] in
         var titleLeftLabel = UILabel()
-        titleLeftLabel.font = YLZFont.medium(size: 20)
-        titleLeftLabel.textColor = YLZColorTitleOne
+        titleLeftLabel.font = HiFont.medium(size: 20)
+        titleLeftLabel.textColor = HiColorTitleOne
         titleLeftLabel.text = "无14天内记录";
         return titleLeftLabel
     }()
     
     lazy var subTitleLeftLabel:UILabel = {[weak self] in
         var subTitleLeftLabel = UILabel()
-        subTitleLeftLabel.font = YLZFont.medium(size: 16)
-        subTitleLeftLabel.textColor = YLZColorTitleOne
+        subTitleLeftLabel.font = HiFont.medium(size: 16)
+        subTitleLeftLabel.textColor = HiColorTitleOne
         subTitleLeftLabel.text = "核酸检测";
         return subTitleLeftLabel
     }()
     
     lazy var leftSeparatorView:UIView = {[weak self] in
         var leftSeparatorView = UIView()
-        leftSeparatorView.backgroundColor = YLZColorLine;
+        leftSeparatorView.backgroundColor = HiColorLine;
         return leftSeparatorView
     }()
     
     
     lazy var rightView:UIView = {[weak self] in
         let rightView = UIView()
-        rightView.backgroundColor = YLZColorAllInsertCode;
+        rightView.backgroundColor = HiColorAllInsertCode;
         rightView.layer.cornerRadius = 12.0;
         rightView.layer.masksToBounds = true;
         return rightView
@@ -135,23 +135,23 @@ class YLZRouteCodeRecordCell: UITableViewCell {
     
     lazy var titleRightLabel:UILabel = {[weak self] in
         var titleRightLabel = UILabel()
-        titleRightLabel.font = YLZFont.medium(size: 20)
-        titleRightLabel.textColor = YLZColorTitleOne
+        titleRightLabel.font = HiFont.medium(size: 20)
+        titleRightLabel.textColor = HiColorTitleOne
         titleRightLabel.text = "已全程接种";
         return titleRightLabel
     }()
     
     lazy var subTitleRightLabel:UILabel = {[weak self] in
         var subTitleRightLabel = UILabel()
-        subTitleRightLabel.font = YLZFont.medium(size: 16)
-        subTitleRightLabel.textColor = YLZColorTitleOne
+        subTitleRightLabel.font = HiFont.medium(size: 16)
+        subTitleRightLabel.textColor = HiColorTitleOne
         subTitleRightLabel.text = "疫苗接种";
         return subTitleRightLabel
     }()
     
     lazy var rightSeparatorView:UIView = {[weak self] in
         var rightSeparatorView = UIView()
-        rightSeparatorView.backgroundColor = YLZColorLine;
+        rightSeparatorView.backgroundColor = HiColorLine;
         return rightSeparatorView
     }()
     

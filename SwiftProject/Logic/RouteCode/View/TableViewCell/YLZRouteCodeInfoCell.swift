@@ -30,7 +30,7 @@ class YLZRouteCodeInfoCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorRouteCode;
+        self.contentView.backgroundColor = HiColorRouteCode;
         self.setUI();
     }
     
@@ -67,7 +67,7 @@ class YLZRouteCodeInfoCell: UITableViewCell {
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
         bgView.frame = CGRect.init(x: 24, y: 0, width: HiSCREENWIDTH - 48, height: 64)
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
 //        bgView.layer.masksToBounds = true;
 //        bgView.layer.cornerRadius = 10.0;
 //        bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
@@ -84,15 +84,15 @@ class YLZRouteCodeInfoCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.bold(size: 22)
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.bold(size: 22)
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "";
         return titleLabel
     }()
     
     lazy var separatorView:UIView = {[weak self] in
         var separatorView = UIView()
-        separatorView.backgroundColor = YLZColorLine;
+        separatorView.backgroundColor = HiColorLine;
         return separatorView
     }()
     

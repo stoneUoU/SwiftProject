@@ -64,7 +64,7 @@ class YLZRouteCodeCellInfoView: UIView {
             make.bottom.equalTo(self.snp.bottom).offset(-8);
             make.left.equalTo(self.snp.left).offset(16);
         }
-        YLZView.drawLine(imageView: self.dashImageView, withDashColor: YLZColorTitleThree);
+        HiView.drawLine(imageView: self.dashImageView, withDashColor: HiColorTitleThree);
     }
     lazy var eyeButton: UIButton = {[weak self] in
         let eyeButton = UIButton(type: .custom)
@@ -75,22 +75,22 @@ class YLZRouteCodeCellInfoView: UIView {
     }()
     lazy var nameLabel:UILabel = {[weak self] in
         var nameLabel = UILabel()
-        nameLabel.font = YLZFont.medium(size: 20)
-        nameLabel.textColor = YLZColorTitleOne
+        nameLabel.font = HiFont.medium(size: 20)
+        nameLabel.textColor = HiColorTitleOne
         nameLabel.text = self?.nameDesensitizationString;
         return nameLabel
     }()
     lazy var certLabel:UILabel = {[weak self] in
         var certLabel = UILabel()
-        certLabel.font = YLZFont.medium(size: 18);
-        certLabel.textColor = YLZColorTitleTwo
+        certLabel.font = HiFont.medium(size: 18);
+        certLabel.textColor = HiColorTitleTwo
         certLabel.text = self?.certDesensitizationString;
         return certLabel
     }()
     lazy var familyCodeLabel:UILabel = {[weak self] in
         var familyCodeLabel = UILabel()
-        familyCodeLabel.font = YLZFont.bold(size: 16);
-        familyCodeLabel.textColor = YLZColorCodeBlue
+        familyCodeLabel.font = HiFont.bold(size: 16);
+        familyCodeLabel.textColor = HiColorCodeBlue
         familyCodeLabel.text = "亲友亮码";
         familyCodeLabel.isUserInteractionEnabled = true;
         let recognizer:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self?.toRecognizer(_:)));

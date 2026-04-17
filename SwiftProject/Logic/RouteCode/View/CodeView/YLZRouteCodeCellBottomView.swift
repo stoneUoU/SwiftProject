@@ -54,7 +54,7 @@ class YLZRouteCodeCellBottomView: UIView {
         self.processImageView.snp.makeConstraints{ (make) in
             make.bottom.right.equalTo(self);
         }
-        YLZView.drawLine(imageView: self.dashImageView, withDashColor: YLZColorTitleThree);
+        HiView.drawLine(imageView: self.dashImageView, withDashColor: HiColorTitleThree);
     }
     lazy var leftIconImageView:UIImageView = {[weak self] in
         var familyIconImageView = UIImageView()
@@ -74,15 +74,15 @@ class YLZRouteCodeCellBottomView: UIView {
     }()
     lazy var searchLabel:UILabel = {[weak self] in
         var searchLabel = UILabel()
-        searchLabel.font = YLZFont.bold(size: 18);
-        searchLabel.textColor = YLZColorTitleOne
+        searchLabel.font = HiFont.bold(size: 18);
+        searchLabel.textColor = HiColorTitleOne
         searchLabel.text = "点击查询行程卡";
         return searchLabel
     }()
     lazy var infoLabel:UILabel = {[weak self] in
         var infoLabel = UILabel()
-        infoLabel.font = YLZFont.regular(size: 14.0);
-        infoLabel.textColor = YLZColorTitleThree
+        infoLabel.font = HiFont.regular(size: 14.0);
+        infoLabel.textColor = HiColorTitleThree
         infoLabel.text = "查询14天内是否到访过中高风险地区";
         return infoLabel
     }()

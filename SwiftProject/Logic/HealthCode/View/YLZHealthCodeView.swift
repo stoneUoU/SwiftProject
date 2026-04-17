@@ -38,7 +38,7 @@ class YLZHealthCodeView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none;
-        tableView.backgroundColor = YLZColorMZTBlueView;
+        tableView.backgroundColor = HiColorMZTBlueView;
         tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude));
         tableView.register(YLZHealthCodeInfoTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(YLZHealthCodeInfoTableViewCell.self))
         tableView.register(YLZHealthCodeTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(YLZHealthCodeTableViewCell.self))

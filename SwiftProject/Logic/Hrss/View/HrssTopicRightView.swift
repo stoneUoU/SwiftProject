@@ -31,15 +31,15 @@ class HrssTopicRightView: UIView {
     
     lazy var titleLabel:UILabel = {
         let titleLabel =  UILabel()
-        titleLabel.font = YLZFont.medium(size: 16);
-        titleLabel.textColor = YLZColorTitleOne;
+        titleLabel.font = HiFont.medium(size: 16);
+        titleLabel.textColor = HiColorTitleOne;
         return titleLabel
     }()
     
     lazy var underTitleLabel:UILabel = {
         let underTitleLabel =  UILabel()
-        underTitleLabel.font = YLZFont.regular(size: 12.0);
-        underTitleLabel.textColor = YLZColorTitleThree;
+        underTitleLabel.font = HiFont.regular(size: 12.0);
+        underTitleLabel.textColor = HiColorTitleThree;
         return underTitleLabel
     }()
 }

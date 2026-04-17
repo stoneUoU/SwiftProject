@@ -11,7 +11,7 @@ class HrssAllDoTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorBackGround;
+        self.contentView.backgroundColor = HiColorBackGround;
         self.setUI();
     }
     
@@ -54,7 +54,7 @@ class HrssAllDoTableViewCell: UITableViewCell {
     
     lazy var bgView:UIView = {[weak self] in
         let bgView = UIView()
-        bgView.backgroundColor = YLZColorWhite;
+        bgView.backgroundColor = HiColorWhite;
         bgView.layer.masksToBounds = true;
         bgView.layer.cornerRadius = 10.0;
         bgView.layer.shadowColor = UIColor.init(56/255.0, 136/255.0, 221/255.0, 0.1).cgColor;
@@ -66,15 +66,15 @@ class HrssAllDoTableViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.bold(size:18)
-        titleLabel.textColor = YLZColorMZTBlueView
+        titleLabel.font = HiFont.bold(size:18)
+        titleLabel.textColor = HiColorMZTBlueView
         titleLabel.text = "大家都在办";
         return titleLabel
     }()
     fileprivate lazy var switchBtn: UIButton = {
         let switchBtn = UIButton()
-        switchBtn.titleLabel?.font = YLZFont.regular(size:15)
-        switchBtn.setTitleColor(YLZColorMZTBlueView, for: .normal)
+        switchBtn.titleLabel?.font = HiFont.regular(size:15)
+        switchBtn.setTitleColor(HiColorMZTBlueView, for: .normal)
         switchBtn.setImageAndTitle(imageName:"ic_online_switch", title: "换一换", type: .Positionleft, Space: 6)
         switchBtn.addTarget(self, action: #selector(toOperate(_:)), for: .touchUpInside);
         return switchBtn
@@ -87,7 +87,7 @@ class HrssAllDoTableViewCell: UITableViewCell {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = YLZColorWhite;
+        tableView.backgroundColor = HiColorWhite;
         tableView.tableHeaderView = UIView.init();
         tableView.isScrollEnabled = false;
         tableView.separatorStyle = .none;

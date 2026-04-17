@@ -27,7 +27,7 @@ class YLZRouteCodeViewController:UIViewController,UIGestureRecognizerDelegate {
     // 当加载视图结束时调用该方法
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = YLZColorWhite;
+        self.view.backgroundColor = HiColorWhite;
         self.setUI()
         let GesTar = self.navigationController?.interactivePopGestureRecognizer!.delegate
         let Ges = UIPanGestureRecognizer(target:GesTar,
@@ -39,7 +39,7 @@ class YLZRouteCodeViewController:UIViewController,UIGestureRecognizerDelegate {
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         //纯文本模式
         hud.mode = .indeterminate;
-//        hud.bezelView.backgroundColor = YLZColorTitleTwo;
+//        hud.bezelView.backgroundColor = HiColorTitleTwo;
         //设置提示标题
         hud.label.text = "加载中..."
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -130,20 +130,20 @@ class YLZRouteCodeViewController:UIViewController,UIGestureRecognizerDelegate {
     //MARK: lazy load
     lazy var statusView: UIView = {[weak self] in
         let statusView = UIView(frame:.zero)
-        statusView.backgroundColor = YLZColorWhite;
+        statusView.backgroundColor = HiColorWhite;
         return statusView
     }()
     lazy var navigationView: UIView = {[weak self] in
         let navigationView = UIView(frame:.zero)
-        navigationView.backgroundColor = YLZColorWhite;
+        navigationView.backgroundColor = HiColorWhite;
         return navigationView
     }()
     lazy var titleLabel: UILabel = {[weak self] in
         let titleLabel = UILabel(frame:.zero)
         titleLabel.text = "福建健康码";
         titleLabel.textAlignment = .center
-        titleLabel.textColor = YLZColorTitleOne;
-        titleLabel.font = YLZFont.regular(size: 18);
+        titleLabel.textColor = HiColorTitleOne;
+        titleLabel.font = HiFont.regular(size: 18);
         return titleLabel
     }()
     lazy var operateView: UIView = {[weak self] in
@@ -151,27 +151,27 @@ class YLZRouteCodeViewController:UIViewController,UIGestureRecognizerDelegate {
         operateView.layer.cornerRadius = 15.0
         operateView.layer.masksToBounds = true
         operateView.layer.borderWidth = 0.5
-        operateView.layer.borderColor = YLZColorTitleThree.cgColor
+        operateView.layer.borderColor = HiColorTitleThree.cgColor
         return operateView
     }()
     lazy var moreButton: UIButton = {[weak self] in
         let moreButton = UIButton(type: .custom)
         moreButton.tag = 0
         moreButton.setImage(UIImage(named: "ylz_mirco_more"), for: .normal)
-        moreButton.setTitleColor(YLZColorTitleTwo, for: .normal)
+        moreButton.setTitleColor(HiColorTitleTwo, for: .normal)
         moreButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         return moreButton
     }()
     lazy var separatorView: UIView = {[weak self] in
         let separatorView = UIView(frame:.zero)
-        separatorView.backgroundColor = YLZColorTitleThree;
+        separatorView.backgroundColor = HiColorTitleThree;
         return separatorView
     }()
     lazy var shutButton: UIButton = {[weak self] in
         let shutButton = UIButton(type: .custom)
         shutButton.tag = 0
         shutButton.setImage(UIImage(named: "ylz_mirco_shut"), for: .normal)
-        shutButton.setTitleColor(YLZColorTitleTwo, for: .normal)
+        shutButton.setTitleColor(HiColorTitleTwo, for: .normal)
         shutButton.addTarget(self, action: #selector(self?.toOperate(sender:)), for: .touchUpInside)
         return shutButton
     }()

@@ -1,19 +1,10 @@
 //
-//  NSData+YLZBase64.m
-//  Base64
+//  NSData+HiBase64.m
+//  Hi-SwiftUI
 //
-//  Created by Henry Yu on 2009/06/03.
-//  Copyright 2010 Sevensoft Technology Co., Ltd. (http://www.sevenuc.com)
-//  All rights reserved.
-//
-//  Permission is given to use this source code file, free of charge, in any
-//  project, commercial or otherwise, entirely at your risk, with the condition
-//  that any redistribution (in part or whole) of source code must retain
-//  this copyright and permission notice. Attribution in compiled projects is
-//  appreciated but not required.
-//
+//  Created by stone on 2025/5/20.
 
-#import "NSData+YLZBase64.h"
+#import "NSData+HiBase64.h"
 
 //
 // Mapping from 6 bit pattern to ASCII character.
@@ -56,7 +47,7 @@ static unsigned char base64DecodeLookup[256] =
 #define BASE64_UNIT_SIZE 4
 
 //
-// YLZ_NewBase64Decode
+// Hi_NewBase64Decode
 //
 // Decodes the base64 ASCII string in the inputBuffer to a newly malloced
 // output buffer.
@@ -68,7 +59,7 @@ static unsigned char base64DecodeLookup[256] =
 // returns the decoded buffer. Must be free'd by caller. Length is given by
 //	outputLength.
 //
-void *YLZ_NewBase64Decode(
+void *Hi_NewBase64Decode(
 	const char *inputBuffer,
 	size_t length,
 	size_t *outputLength)
@@ -122,7 +113,7 @@ void *YLZ_NewBase64Decode(
 }
 
 //
-// YLZ_NewBase64Decode
+// Hi_NewBase64Decode
 //
 // Encodes the arbitrary data in the inputBuffer as base64 into a newly malloced
 // output buffer.
@@ -137,7 +128,7 @@ void *YLZ_NewBase64Decode(
 // returns the encoded buffer. Must be free'd by caller. Length is given by
 //	outputLength.
 //
-char *YLZ_NewBase64Encode(
+char *Hi_NewBase64Encode(
 	const void *buffer,
 	size_t length,
 	bool separateLines,
@@ -251,7 +242,7 @@ char *YLZ_NewBase64Encode(
 @implementation NSData (Base64)
 
 //
-// ylz_dataFromBase64String:
+// hi_dataFromBase64String:
 //
 // Creates an NSData object containing the base64 decoded representation of
 // the base64 string 'aString'
@@ -261,18 +252,18 @@ char *YLZ_NewBase64Encode(
 //
 // returns the autoreleased NSData representation of the base64 string
 //
-+ (NSData *)ylz_dataFromBase64String:(NSString *)aString
++ (NSData *)hi_dataFromBase64String:(NSString *)aString
 {
 	NSData *data = [aString dataUsingEncoding:NSUTF8StringEncoding];
 	size_t outputLength;
-	void *outputBuffer = YLZ_NewBase64Decode([data bytes], [data length], &outputLength);
+	void *outputBuffer = Hi_NewBase64Decode([data bytes], [data length], &outputLength);
 	NSData *result = [NSData dataWithBytes:outputBuffer length:outputLength];
 	free(outputBuffer);
 	return result;
 }
 
 //
-//  ylz_base64EncodedString
+//  hi_base64EncodedString
 //
 // Creates an NSString object that contains the base 64 encoding of the
 // receiver's data. Lines are broken at 64 characters long.
@@ -280,11 +271,11 @@ char *YLZ_NewBase64Encode(
 // returns an autoreleased NSString being the base 64 representation of the
 //	receiver.
 //
-- (NSString *)ylz_base64EncodedString
+- (NSString *)hi_base64EncodedString
 {
 	size_t outputLength;
 	char *outputBuffer =
-    YLZ_NewBase64Encode([self bytes], [self length], true, &outputLength);
+    Hi_NewBase64Encode([self bytes], [self length], true, &outputLength);
 	
 	NSString *result =
 		[[NSString alloc] initWithBytes:outputBuffer

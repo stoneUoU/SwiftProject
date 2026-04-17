@@ -1,5 +1,5 @@
 //
-//  YLZView.swift
+//  HiView.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/9/27.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YLZView: NSObject {
+class HiView: NSObject {
     
     //MARK:- 绘制虚线
     /**

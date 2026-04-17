@@ -1,15 +1,14 @@
 //
-//  YLZSMEncryption.h
-//  YLZ-NetEncryption-iOS
+//  HiSMEncryption.h
+//  Hi-SwiftUI
 //
-//  Created by cy on 2018/12/7.
-//
+//  Created by stone on 2025/5/20.
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLZSMEncryption : NSObject
+@interface HiSMEncryption : NSObject
 
 
 /**

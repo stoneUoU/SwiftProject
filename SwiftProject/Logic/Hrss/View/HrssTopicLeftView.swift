@@ -24,29 +24,29 @@ class HrssTopicLeftView: UIView {
     
     lazy var titleLabel:UILabel = {
         let titleLabel =  UILabel()
-        titleLabel.font = YLZFont.medium(size: 16);
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.medium(size: 16);
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "就业创业";
         return titleLabel
     }()
     
     lazy var underTitleLabel:UILabel = {
         let underTitleLabel =  UILabel()
-        underTitleLabel.font = YLZFont.regular(size: 12.0);
-        underTitleLabel.textColor = YLZColorTitleThree
+        underTitleLabel.font = HiFont.regular(size: 12.0);
+        underTitleLabel.textColor = HiColorTitleThree
         underTitleLabel.text = "国家平台 一站就业";
         return underTitleLabel
     }()
     
     fileprivate lazy var seeLabel: UIButton = {
         let seeLabel = UIButton()
-        seeLabel.titleLabel?.font = YLZFont.medium(size:11)
-        seeLabel.setTitleColor(YLZColorMZTBlueView, for: .normal)
+        seeLabel.titleLabel?.font = HiFont.medium(size:11)
+        seeLabel.setTitleColor(HiColorMZTBlueView, for: .normal)
         seeLabel.setImageAndTitle(imageName:"ic_easy_go", title: "去看看 ", type: .PositionRight, Space: 16)
         seeLabel.layer.cornerRadius = 10;
         seeLabel.layer.masksToBounds = true;
         seeLabel.layer.borderWidth = 0.5;
-        seeLabel.layer.borderColor = YLZColorMZTBlueView.cgColor;
+        seeLabel.layer.borderColor = HiColorMZTBlueView.cgColor;
         return seeLabel
     }()
 }

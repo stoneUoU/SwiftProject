@@ -33,7 +33,7 @@ class YLZRouteCodeView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none;
-        tableView.backgroundColor = YLZColorRouteCode;
+        tableView.backgroundColor = HiColorRouteCode;
         tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude));
         tableView.register(YLZRouteCodeCell.self, forCellReuseIdentifier: NSStringFromClass(YLZRouteCodeCell.self))
         tableView.register(YLZRouteCodeLoadingCell.self, forCellReuseIdentifier: NSStringFromClass(YLZRouteCodeLoadingCell.self))

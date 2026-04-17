@@ -76,7 +76,7 @@ extension UIImage {
         return theImage ?? UIImage();
     }
     
-    class func ylzQRCodeImage(content: String,
+    class func hiQRCodeImage(content: String,
                              logo: UIImage? = nil,
                              logoFrame: CGRect = CGRect.zero,
                              size: CGFloat = -1,

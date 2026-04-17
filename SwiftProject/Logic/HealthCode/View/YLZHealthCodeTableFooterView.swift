@@ -23,19 +23,19 @@ class YLZHealthCodeTableFooterView: UIView {
     //MARK: lazy load
     lazy var telLabel: UILabel = {[weak self] in
         let telLabel = UILabel()
-        telLabel.font = YLZFont.regular(size: 12)
+        telLabel.font = HiFont.regular(size: 12)
         telLabel.textAlignment = .center
         telLabel.numberOfLines = 0
-        telLabel.textColor = YLZColorWhite
+        telLabel.textColor = HiColorWhite
         telLabel.text = "客服电话：12320 0591-62623959 8:00-12:00 14:00-18:00"
         return telLabel
     }()
     lazy var copyRightLabel: UILabel = {[weak self] in
         let copyRightLabel = UILabel()
-        copyRightLabel.font = YLZFont.regular(size:12)
+        copyRightLabel.font = HiFont.regular(size:12)
         copyRightLabel.textAlignment = .center
         copyRightLabel.numberOfLines = 0
-        copyRightLabel.textColor = YLZColorWhite
+        copyRightLabel.textColor = HiColorWhite
         copyRightLabel.text = "本应用由福建省数字办 卫健委 医保局主办 福建省经济信息中心承办"
         return copyRightLabel
     }()

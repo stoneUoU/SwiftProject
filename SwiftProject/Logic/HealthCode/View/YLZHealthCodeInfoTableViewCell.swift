@@ -23,7 +23,7 @@ class YLZHealthCodeInfoTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super .init(style: style, reuseIdentifier: reuseIdentifier)
-        self.contentView.backgroundColor = YLZColorMZTBlueView;
+        self.contentView.backgroundColor = HiColorMZTBlueView;
         self.setUI();
     }
     
@@ -88,8 +88,8 @@ class YLZHealthCodeInfoTableViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {[weak self] in
         var titleLabel = UILabel()
-        titleLabel.font = YLZFont.medium(size:18)
-        titleLabel.textColor = YLZColorWhite
+        titleLabel.font = HiFont.medium(size:18)
+        titleLabel.textColor = HiColorWhite
         titleLabel.text = "福建八闽健康码"
         return titleLabel
     }()
@@ -98,34 +98,34 @@ class YLZHealthCodeInfoTableViewCell: UITableViewCell {
         var senderButton = UIButton(type: .custom)
         senderButton.tag = 0
         senderButton.setImage(UIImage(named: "ylz_eye_hide"), for: .normal)
-        senderButton.setTitleColor(YLZColorTitleTwo, for: .normal)
+        senderButton.setTitleColor(HiColorTitleTwo, for: .normal)
         senderButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         return senderButton
     }()
     
     lazy var nameLabel:UILabel = {[weak self] in
         var nameLabel = UILabel()
-        nameLabel.font = YLZFont.regular(size:16)
-        nameLabel.textColor = YLZColorWhite
+        nameLabel.font = HiFont.regular(size:16)
+        nameLabel.textColor = HiColorWhite
         nameLabel.text = "姓名： 彭*晏"
         return nameLabel
     }()
     
     lazy var certNoLabel:UILabel = {[weak self] in
         var certNoLabel = UILabel()
-        certNoLabel.font = YLZFont.regular(size:16)
-        certNoLabel.textColor = YLZColorWhite
+        certNoLabel.font = HiFont.regular(size:16)
+        certNoLabel.textColor = HiColorWhite
         certNoLabel.text = "身份证号： 362324********5186"
         return certNoLabel
     }()
     
     lazy var excuteButton:UIButton = {[weak self] in
         var excuteButton = UIButton(type: .custom)
-        excuteButton.titleLabel?.font = YLZFont.regular(size:14)
+        excuteButton.titleLabel?.font = HiFont.regular(size:14)
         excuteButton.layer.cornerRadius = 18
         excuteButton.layer.masksToBounds = true
-        excuteButton.backgroundColor = YLZColorWhite
-        excuteButton.setTitleColor(YLZColorMZTBlueView, for: .normal)
+        excuteButton.backgroundColor = HiColorWhite
+        excuteButton.setTitleColor(HiColorMZTBlueView, for: .normal)
         excuteButton.tag = 1
         excuteButton.setTitle("改变颜色", for: .normal)
         excuteButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)

@@ -1,5 +1,5 @@
 //
-//  YLZFont.swift
+//  HiFont.swift
 //  SwiftProject
 //
 //  Created by stone on 2021/9/26.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YLZFont: NSObject {
+class HiFont: NSObject {
     
     static func regular(size:Float) -> UIFont {
         let font = UIFont(name: "PingFangSC-Regular", size: CGFloat(size))

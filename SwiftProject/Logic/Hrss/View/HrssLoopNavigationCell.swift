@@ -46,9 +46,9 @@ class HrssLoopNavigationCell:HiMarqueeViewCell {
     
     fileprivate lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.font = YLZFont.regular(size: 12);
+        titleLabel.font = HiFont.regular(size: 12);
         titleLabel.textAlignment = .center
-        titleLabel.textColor = YLZColorTitleOne;
+        titleLabel.textColor = HiColorTitleOne;
         titleLabel.numberOfLines = 0;
         return titleLabel
     }()

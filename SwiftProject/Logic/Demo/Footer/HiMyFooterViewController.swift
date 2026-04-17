@@ -23,21 +23,21 @@ class HiMyFooterViewController: HiBaseViewController {
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = false
-        scrollView.backgroundColor = YLZColorBackGround
+        scrollView.backgroundColor = HiColorBackGround
         return scrollView
     }()
 
     lazy var contentView: UIView = {
         let view = UIView()
-        view.backgroundColor = YLZColorBackGround
+        view.backgroundColor = HiColorBackGround
         return view
     }()
 
     lazy var footprintTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "足迹"
-        label.textColor = YLZColorTitleOne
-        label.font = YLZFont.medium(size: 16)
+        label.textColor = HiColorTitleOne
+        label.font = HiFont.medium(size: 16)
         return label
     }()
 
@@ -52,7 +52,7 @@ class HiMyFooterViewController: HiBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = YLZColorBackGround
+        view.backgroundColor = HiColorBackGround
         setStatusAndNavigationUI(centerLabelTitle: "我的足迹",
                                  rightButtonTitle: "",
                                  ifWhiteIMV: true,
@@ -150,7 +150,7 @@ class HiMyFooterViewController: HiBaseViewController {
         dateLabel.text = dateText
         dateLabel.textAlignment = .center
         dateLabel.textColor = .white
-        dateLabel.font = YLZFont.medium(size: 12)
+        dateLabel.font = HiFont.medium(size: 12)
         dateLabel.backgroundColor = UIColor.color_HexStr("#4077F4")
         dateLabel.layer.cornerRadius = 14
         dateLabel.layer.masksToBounds = true
@@ -185,8 +185,8 @@ class HiMyFooterViewController: HiBaseViewController {
 
             let titleLabel = UILabel()
             titleLabel.text = item.title
-            titleLabel.textColor = YLZColorTitleOne
-            titleLabel.font = YLZFont.regular(size: 14)
+            titleLabel.textColor = HiColorTitleOne
+            titleLabel.font = HiFont.regular(size: 14)
 
             container.addSubview(cardView)
             cardView.addSubview(iconContainerView)

@@ -13,13 +13,13 @@ class YLZRouteCodeCellView: UIView {
         didSet {
             if (clickNum == 0) {
                 self.format(textString:"绿码：健康状态为低风险", location: 0, fontColor: UIColor.color_HexStr("6ab069"))
-                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
+                self.qrCodeImageView.image = UIImage.hiQRCodeImage(content: HiString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
             } else if (clickNum == 1) {
                 self.format(textString:"黄码：健康状态为中风险", location: 0, fontColor: UIColor.color_HexStr("F7ce44"))
-                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#F7ce44"))
+                self.qrCodeImageView.image = UIImage.hiQRCodeImage(content: HiString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#F7ce44"))
             } else {
                 self.format(textString:"红码：健康状态为高风险", location: 0, fontColor: UIColor.color_HexStr("eb3223"))
-                self.qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#eb3223"))
+                self.qrCodeImageView.image = UIImage.hiQRCodeImage(content: HiString.randomString(length: 100), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#eb3223"))
             }
         }
     }
@@ -37,8 +37,8 @@ class YLZRouteCodeCellView: UIView {
     //MARK: lazy load
     lazy var timeLabel:UILabel = {[weak self] in
         var timeLabel = UILabel()
-        timeLabel.font = YLZFont.bold(size:24)
-        timeLabel.textColor = YLZColorTitleOne
+        timeLabel.font = HiFont.bold(size:24)
+        timeLabel.textColor = HiColorTitleOne
         timeLabel.text = "\(self!.formatDate())"
         return timeLabel
     }()
@@ -52,7 +52,7 @@ class YLZRouteCodeCellView: UIView {
         var qrCodeImageView = UIImageView()
         qrCodeImageView.layer.cornerRadius = 12.0;
         qrCodeImageView.layer.masksToBounds = true;
-        qrCodeImageView.image = UIImage.ylzQRCodeImage(content: YLZString.randomString(length: 18), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
+        qrCodeImageView.image = UIImage.hiQRCodeImage(content: HiString.randomString(length: 18), logo: nil, logoFrame: CGRect.zero, size: 240, highCorrection: true, tintColor: UIColor.color_HexStr("#6ab069"))
         return qrCodeImageView
     }()
     lazy var logoView:UIView = {[weak self] in
@@ -77,7 +77,7 @@ class YLZRouteCodeCellView: UIView {
         var operateView = UIView()
         operateView.layer.cornerRadius = 8.0;
         operateView.layer.masksToBounds = true;
-        operateView.layer.borderColor = YLZColorLine.cgColor;
+        operateView.layer.borderColor = HiColorLine.cgColor;
         operateView.layer.borderWidth = 0.5;
         operateView.clipsToBounds = true;
         return operateView
@@ -98,20 +98,20 @@ class YLZRouteCodeCellView: UIView {
     }()
     lazy var brightLabel:UILabel = {[weak self] in
         var brightLabel = UILabel()
-        brightLabel.font = YLZFont.regular(size: 12)
-        brightLabel.textColor = YLZColorCodeBlue
+        brightLabel.font = HiFont.regular(size: 12)
+        brightLabel.textColor = HiColorCodeBlue
         brightLabel.text = "亮码"
         return brightLabel
     }()
     lazy var separatorView:UIView = {[weak self] in
         var separatorView = UIView()
-        separatorView.backgroundColor = YLZColorLine;
+        separatorView.backgroundColor = HiColorLine;
         return separatorView
     }()
     lazy var avaterView:UIView = {[weak self] in
         var avaterView = UIView()
         avaterView.tag = 1;
-        avaterView.backgroundColor = YLZColorCodeButtonbgColor;
+        avaterView.backgroundColor = HiColorCodeButtonbgColor;
         avaterView.isUserInteractionEnabled = true;
         let recognizer:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self?.toRecognizer(_:)));
         avaterView.addGestureRecognizer(recognizer);
@@ -124,20 +124,20 @@ class YLZRouteCodeCellView: UIView {
     }()
     lazy var avaterLabel:UILabel = {[weak self] in
         var avaterLabel = UILabel()
-        avaterLabel.font = YLZFont.regular(size: 12)
-        avaterLabel.textColor = YLZColorTitleOne
+        avaterLabel.font = HiFont.regular(size: 12)
+        avaterLabel.textColor = HiColorTitleOne
         avaterLabel.text = "人像"
         return avaterLabel
     }()
     lazy var avaterPicView:UIImageView = {[weak self] in
         var avaterPicView = UIImageView()
-        avaterPicView.backgroundColor = YLZColorCodeButtonbgColor;
+        avaterPicView.backgroundColor = HiColorCodeButtonbgColor;
         avaterPicView.isHidden = true;
         avaterPicView.layer.cornerRadius = 8.0;
         avaterPicView.layer.masksToBounds = true;
         avaterPicView.image = UIImage.init(named: "ylz_mine_avater");
         avaterPicView.contentMode = .scaleAspectFill;
-        avaterPicView.layer.shadowColor = YLZColorCodeBlue.cgColor;
+        avaterPicView.layer.shadowColor = HiColorCodeBlue.cgColor;
         avaterPicView.layer.shadowOffset = CGSize.init(width: 0, height: 6);
         avaterPicView.layer.shadowOpacity = 1;
         avaterPicView.layer.shadowRadius = 12;
@@ -145,14 +145,14 @@ class YLZRouteCodeCellView: UIView {
     }()
     lazy var scanButton:UIButton = {[weak self] in
         var scanButton = UIButton(type: .custom)
-        scanButton.titleLabel?.font = YLZFont.regular(size:18)
-        scanButton.backgroundColor = YLZColorCodeBlue;
-        scanButton.setTitleColor(YLZColorWhite, for: .normal)
+        scanButton.titleLabel?.font = HiFont.regular(size:18)
+        scanButton.backgroundColor = HiColorCodeBlue;
+        scanButton.setTitleColor(HiColorWhite, for: .normal)
         scanButton.tag = 1
         scanButton.setTitle("扫一扫", for: .normal)
         scanButton.addTarget(self, action:#selector(self?.toOperate(sender:)), for: .touchUpInside)
         scanButton.layer.cornerRadius = 22;
-        scanButton.layer.shadowColor = YLZColorCodeBlue.cgColor;
+        scanButton.layer.shadowColor = HiColorCodeBlue.cgColor;
         scanButton.layer.shadowOffset = CGSize.init(width: 0, height: 6);
         scanButton.layer.shadowOpacity = 1;
         scanButton.layer.shadowRadius = 12;
@@ -270,29 +270,29 @@ extension YLZRouteCodeCellView {
         let view:UIView = sender.view!;
         if (view.tag == 0) {
             self.brightImageView.image = UIImage.init(named: "ylz_qrcode_bright");
-            self.brightLabel.textColor = YLZColorCodeBlue;
+            self.brightLabel.textColor = HiColorCodeBlue;
             
             self.avaterImageView.image = UIImage.init(named: "ylz_personal_info_bright");
-            self.avaterLabel.textColor = YLZColorTitleTwo;
+            self.avaterLabel.textColor = HiColorTitleTwo;
             
             self.avaterPicView.isHidden = true;
             self.codeGradientView.isHidden = false;
             
-            self.brightCodeView.backgroundColor = YLZColorWhite;
-            self.avaterView.backgroundColor = YLZColorCodeButtonbgColor;
+            self.brightCodeView.backgroundColor = HiColorWhite;
+            self.avaterView.backgroundColor = HiColorCodeButtonbgColor;
             
         } else {
             self.brightImageView.image = UIImage.init(named: "ylz_qrcode_bleak");
-            self.brightLabel.textColor = YLZColorTitleTwo;
+            self.brightLabel.textColor = HiColorTitleTwo;
             
             self.avaterImageView.image = UIImage.init(named: "ylz_personal_info_bleak");
-            self.avaterLabel.textColor = YLZColorCodeBlue;
+            self.avaterLabel.textColor = HiColorCodeBlue;
             
             self.avaterPicView.isHidden = false;
             self.codeGradientView.isHidden = true;
             
-            self.brightCodeView.backgroundColor = YLZColorCodeButtonbgColor;
-            self.avaterView.backgroundColor = YLZColorWhite;
+            self.brightCodeView.backgroundColor = HiColorCodeButtonbgColor;
+            self.avaterView.backgroundColor = HiColorWhite;
         }
     }
     
@@ -333,10 +333,10 @@ extension YLZRouteCodeCellView {
         ]
         // 配置富文本
         let attributeStr = NSMutableAttributedString(string: textString, attributes: dic)
-        attributeStr.addAttribute(.foregroundColor, value: YLZColorTitleOne, range: NSRange(location: 0, length: location))
-        attributeStr.addAttribute(.font, value: YLZFont.regular(size:18), range: NSRange(location: 0, length: location))
+        attributeStr.addAttribute(.foregroundColor, value: HiColorTitleOne, range: NSRange(location: 0, length: location))
+        attributeStr.addAttribute(.font, value: HiFont.regular(size:18), range: NSRange(location: 0, length: location))
         attributeStr.addAttribute(.foregroundColor, value: fontColor, range: NSRange(location: location, length: textString.count - location))
-        attributeStr.addAttribute(.font, value: YLZFont.bold(size:20), range: NSRange(location: location, length: textString.count - location))
+        attributeStr.addAttribute(.font, value: HiFont.bold(size:20), range: NSRange(location: location, length: textString.count - location))
         self.stateLabel.attributedText = attributeStr
     }
 }

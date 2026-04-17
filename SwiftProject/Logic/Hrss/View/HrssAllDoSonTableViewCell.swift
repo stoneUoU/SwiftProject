@@ -48,14 +48,14 @@ class HrssAllDoSonTableViewCell: UITableViewCell {
     
     lazy var separatorView:UIView = {
         let separatorView =  UIView()
-        separatorView.backgroundColor = YLZColorBackGround;
+        separatorView.backgroundColor = HiColorBackGround;
         return separatorView
     }()
     
     lazy var titleLabel:UILabel = {
         let titleLabel =  UILabel()
-        titleLabel.font = YLZFont.medium(size: 14.0);
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.font = HiFont.medium(size: 14.0);
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "失业登记审核结果查询";
         return titleLabel
     }()

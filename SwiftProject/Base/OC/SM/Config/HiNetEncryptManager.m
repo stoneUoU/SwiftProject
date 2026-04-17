@@ -1,40 +1,39 @@
 //
-//  YLZNetEncryptManager.m
-//  YLZ-NetEncryption-iOS
+//  HiNetEncryptManager.m
+//  Hi-SwiftUI
 //
-//  Created by cy on 2018/12/7.
-//
+//  Created by stone on 2025/5/20.
 
-#import "YLZNetEncryptManager.h"
-#import "YLZSMEncryption.h"
-#import "YLZSecKeyWrapper.h"
-#import "NSData+YLZBase64.h"
-#import "NSData+YLZHexadecimal.h"
-#import "NSDictionary+YLZSign.h"
+#import "HiNetEncryptManager.h"
+#import "HiSMEncryption.h"
+#import "HiSecKeyWrapper.h"
+#import "NSData+HiBase64.h"
+#import "NSData+HiHexadecimal.h"
+#import "NSDictionary+HiSign.h"
 #import <CommonCrypto/CommonDigest.h>
-#import "YLZMSEncryptionConfig.h"
+#import "HiMSEncryptionConfig.h"
 
-#define YLZ_SMDefault_iv @"0102030405060708"
+#define Hi_SMDefault_iv @"0102030405060708"
 #define HSA_SM2Default_iv @"1234567812345678"
 
-@implementation YLZNetEncryptManager
+@implementation HiNetEncryptManager
 
-+ (YLZRequestEncryptConfigKeys *)finalKeyConfigWithConfig:(YLZRequestEncryptConfigKeys *)config {
-    YLZRequestEncryptConfigKeys *finalConfig = [[YLZRequestEncryptConfigKeys alloc] init];
++ (HiRequestEncryptConfigKeys *)finalKeyConfigWithConfig:(HiRequestEncryptConfigKeys *)config {
+    HiRequestEncryptConfigKeys *finalConfig = [[HiRequestEncryptConfigKeys alloc] init];
     
-    finalConfig.appIdKey  = config.appIdKey ?: ylz_defaultEncryptConfigKeys().appIdKey;
-    finalConfig.appSecretKey = config.appSecretKey ?: ylz_defaultEncryptConfigKeys().appSecretKey;
-    finalConfig.signTypeKey = config.signTypeKey ?: ylz_defaultEncryptConfigKeys().signTypeKey;
-    finalConfig.encryptTypeKey = config.encryptTypeKey ?: ylz_defaultEncryptConfigKeys().encryptTypeKey;
-    finalConfig.encodeTypeKey = config.encodeTypeKey ?: ylz_defaultEncryptConfigKeys().encodeTypeKey;
-    finalConfig.signKey = config.signKey ?: ylz_defaultEncryptConfigKeys().signKey;
-    finalConfig.verifySignKey = config.verifySignKey ?: ylz_defaultEncryptConfigKeys().verifySignKey;
-    finalConfig.signBlackListKey = config.signBlackListKey ?: ylz_defaultEncryptConfigKeys().signBlackListKey;
-    finalConfig.decryptKey = config.decryptKey ?: ylz_defaultEncryptConfigKeys().decryptKey;
-    finalConfig.encryptKey = config.encryptKey ?: ylz_defaultEncryptConfigKeys().encryptKey;
-    finalConfig.asymEncryptPublickeyKey = config.asymEncryptPublickeyKey ?: ylz_defaultEncryptConfigKeys().asymEncryptPublickeyKey;
-    finalConfig.asymEncryptPrivatekeyKey = config.asymEncryptPrivatekeyKey ?: ylz_defaultEncryptConfigKeys().asymEncryptPrivatekeyKey;
-    finalConfig.encryptMapKey = config.encryptMapKey ?: ylz_defaultEncryptConfigKeys().encryptMapKey;
+    finalConfig.appIdKey  = config.appIdKey ?: hi_defaultEncryptConfigKeys().appIdKey;
+    finalConfig.appSecretKey = config.appSecretKey ?: hi_defaultEncryptConfigKeys().appSecretKey;
+    finalConfig.signTypeKey = config.signTypeKey ?: hi_defaultEncryptConfigKeys().signTypeKey;
+    finalConfig.encryptTypeKey = config.encryptTypeKey ?: hi_defaultEncryptConfigKeys().encryptTypeKey;
+    finalConfig.encodeTypeKey = config.encodeTypeKey ?: hi_defaultEncryptConfigKeys().encodeTypeKey;
+    finalConfig.signKey = config.signKey ?: hi_defaultEncryptConfigKeys().signKey;
+    finalConfig.verifySignKey = config.verifySignKey ?: hi_defaultEncryptConfigKeys().verifySignKey;
+    finalConfig.signBlackListKey = config.signBlackListKey ?: hi_defaultEncryptConfigKeys().signBlackListKey;
+    finalConfig.decryptKey = config.decryptKey ?: hi_defaultEncryptConfigKeys().decryptKey;
+    finalConfig.encryptKey = config.encryptKey ?: hi_defaultEncryptConfigKeys().encryptKey;
+    finalConfig.asymEncryptPublickeyKey = config.asymEncryptPublickeyKey ?: hi_defaultEncryptConfigKeys().asymEncryptPublickeyKey;
+    finalConfig.asymEncryptPrivatekeyKey = config.asymEncryptPrivatekeyKey ?: hi_defaultEncryptConfigKeys().asymEncryptPrivatekeyKey;
+    finalConfig.encryptMapKey = config.encryptMapKey ?: hi_defaultEncryptConfigKeys().encryptMapKey;
     
     return finalConfig;
 }
@@ -48,7 +47,7 @@
 
 +(NSMutableDictionary *)encryptNetData:(NSDictionary *)param extra:(NSDictionary *)extra
 {
-    return [self encryptNetData:param withConfigKeys:ylz_defaultEncryptConfigKeys() extra:extra];
+    return [self encryptNetData:param withConfigKeys:hi_defaultEncryptConfigKeys() extra:extra];
 }
 
 /**
@@ -57,14 +56,14 @@
  @Discussion  根据请求数据中对应的参数，加密相关数据并签名
  
  @param param 请求数据
- @param ylz_configKeys key说明
+ @param hi_configKeys key说明
  @param extra 不包含在请求数据中的加密签名相关参数
  @return 加密后的数据
  */
-+(NSMutableDictionary *)encryptNetData:(NSDictionary *)param withConfigKeys:(YLZRequestEncryptConfigKeys *)ylz_configKeys extra:(NSDictionary *)extra
++(NSMutableDictionary *)encryptNetData:(NSDictionary *)param withConfigKeys:(HiRequestEncryptConfigKeys *)hi_configKeys extra:(NSDictionary *)extra
 {
     if (!param) {return nil;}
-    YLZRequestEncryptConfigKeys *configKeys = [self finalKeyConfigWithConfig:ylz_configKeys];
+    HiRequestEncryptConfigKeys *configKeys = [self finalKeyConfigWithConfig:hi_configKeys];
     NSMutableDictionary *encryptParam = [NSMutableDictionary dictionaryWithDictionary:param];
     [encryptParam addEntriesFromDictionary:extra];
     NSString *appId = [encryptParam objectForKey:configKeys.appIdKey];
@@ -80,7 +79,7 @@
     }
     NSMutableDictionary *reqParam = [NSMutableDictionary dictionaryWithDictionary:param];
     //签名
-    NSString *sign = [YLZNetEncryptManager signNetData:param withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPrivatekey:privatekey];
+    NSString *sign = [HiNetEncryptManager signNetData:param withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPrivatekey:privatekey];
     if (sign.length) {
         [reqParam setObject:sign forKey:configKeys.signKey];
     }
@@ -106,7 +105,7 @@
 }
 
 + (NSMutableDictionary *)decryptNetData:(id)data extra:(NSDictionary * _Nullable)extra {
-    return [self decryptNetData:data withConfigKeys:ylz_defaultEncryptConfigKeys() extra:extra];
+    return [self decryptNetData:data withConfigKeys:hi_defaultEncryptConfigKeys() extra:extra];
 }
 
 /**
@@ -115,11 +114,11 @@
  @Discussion 解密数据，根据解密验签相关参数key说明，从数据中获取具体方式进行解密验签
  
  @param encData 数据，Json字符串或字典
- @param ylz_configKeys key说明
+ @param hi_configKeys key说明
  @param extra 不包含在数据data中的解密验签相关参数
  @return 加密后的数据
  */
-+ (NSMutableDictionary *)decryptNetData:(id)encData withConfigKeys:(YLZRequestEncryptConfigKeys *)ylz_configKeys extra:(NSDictionary *)extra {
++ (NSMutableDictionary *)decryptNetData:(id)encData withConfigKeys:(HiRequestEncryptConfigKeys *)hi_configKeys extra:(NSDictionary *)extra {
     
     NSMutableDictionary *encDic;
     
@@ -137,7 +136,7 @@
     
     if (!encDic) {return nil;}
     
-    YLZRequestEncryptConfigKeys *configKeys = [self finalKeyConfigWithConfig:ylz_configKeys];
+    HiRequestEncryptConfigKeys *configKeys = [self finalKeyConfigWithConfig:hi_configKeys];
     
     NSMutableDictionary *encryptParam = [NSMutableDictionary dictionaryWithDictionary:encDic];
     [encryptParam addEntriesFromDictionary:extra];
@@ -182,7 +181,7 @@
      */
     NSString *responseSign = [encDic objectForKey:configKeys.signKey];
     
-    BOOL isCorrectSign = [YLZNetEncryptManager verifySign:responseSign withNetData:encDic withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPublickey:publickey];
+    BOOL isCorrectSign = [HiNetEncryptManager verifySign:responseSign withNetData:encDic withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPublickey:publickey];
     [encDic setObject:@(isCorrectSign) forKey:configKeys.verifySignKey];
     
     return encDic;
@@ -192,7 +191,7 @@
     if (!param) {return nil;}
     NSMutableDictionary *reqParam = [NSMutableDictionary dictionaryWithDictionary:param];
     //签名
-    NSString *sign = [YLZNetEncryptManager signNetData:param withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPrivatekey:[YLZMSEncryptionConfig shareConfig].encryptConfig.sm2PrivateKey];
+    NSString *sign = [HiNetEncryptManager signNetData:param withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPrivatekey:[HiMSEncryptionConfig shareConfig].encryptConfig.sm2PrivateKey];
     if (sign.length) {
         [reqParam setObject:sign forKey:signKey];
     }
@@ -200,7 +199,7 @@
     for (NSString *oriKey in encryptPropertyMapper) {
         NSString *mapKey = encryptPropertyMapper[oriKey];
         id paramObj = [reqParam objectForKey:oriKey];
-        NSString *encodeType = [YLZMSEncryptionConfig shareConfig].encryptConfig.encodeType;
+        NSString *encodeType = [HiMSEncryptionConfig shareConfig].encryptConfig.encodeType;
         NSString * encryptDataStr = [self encryptData:paramObj appId:appId appSecret:appSecret encryptType:encryptType encodeType:encodeType];
         if (encryptDataStr && encryptDataStr.length > 0) {
             [reqParam removeObjectForKey:oriKey];
@@ -213,15 +212,15 @@
 + (NSString *)encryptData:(id)data appId:(NSString *)appId appSecret:(NSString *)appSecret encryptType:(NSString *)encryptType encodeType:(NSString *)encodeType {
     NSString * paramJsonString = nil;
     if ([data isKindOfClass:[NSDictionary class]]) {
-        paramJsonString = [(NSDictionary *)data ylz_sortJsonString];
+        paramJsonString = [(NSDictionary *)data hi_sortJsonString];
     } else if([data isKindOfClass:[NSString class]]) {
         paramJsonString = (NSString *)data;
     }
     if (!paramJsonString) {return nil;}
     //---加密操作---//
     if ([@"AES" isEqualToString:encryptType]) {
-        NSString * aesKey = [YLZSecKeyWrapper encryptUseAES:appSecret withKey:appId withIv:[YLZMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
-        NSString * encryptDataStr = [YLZSecKeyWrapper encryptUseAES:paramJsonString withKey:aesKey withIv:[YLZMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
+        NSString * aesKey = [HiSecKeyWrapper encryptUseAES:appSecret withKey:appId withIv:[HiMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
+        NSString * encryptDataStr = [HiSecKeyWrapper encryptUseAES:paramJsonString withKey:aesKey withIv:[HiMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
         return encryptDataStr;
     } else if ([@"SM4" isEqualToString:encryptType]) {
         NSString *sm4Key = [self sm4Content:appSecret key:appId encodeType:encodeType];
@@ -240,9 +239,9 @@
 {
     NSData *appSecretData = [content dataUsingEncoding:NSUTF8StringEncoding];
     if ([encodeType isEqualToString:@"base64"]) {
-        return  [[[YLZSMEncryption shared] sm4_encryptData:appSecretData withCipherKey:key] ylz_base64EncodedString];
+        return  [[[HiSMEncryption shared] sm4_encryptData:appSecretData withCipherKey:key] hi_base64EncodedString];
     } else if ([encodeType isEqualToString:@"hex"]) {
-        return  [[[[YLZSMEncryption shared] sm4_encryptData:appSecretData withCipherKey:key] ylz_hexadecimalString] uppercaseString];
+        return  [[[[HiSMEncryption shared] sm4_encryptData:appSecretData withCipherKey:key] hi_hexadecimalString] uppercaseString];
     }
     return nil;
 }
@@ -280,7 +279,7 @@
             }
             continue;
         }
-        NSString *encodeType = [YLZMSEncryptionConfig shareConfig].encryptConfig.encodeType;
+        NSString *encodeType = [HiMSEncryptionConfig shareConfig].encryptConfig.encodeType;
         id decryptParam = [self decryptData:encryptData appId:appId appSecret:appSecret encryptType:encryptType encodeType:encodeType];
         if (decryptParam != nil) {
             //解密成功
@@ -293,9 +292,9 @@
     /**
      验证签名
      */
-    YLZRequestEncryptConfigKeys *configKeys = ylz_defaultEncryptConfigKeys();
+     HiRequestEncryptConfigKeys *configKeys = hi_defaultEncryptConfigKeys();
     NSString *responseSign = [responseDic objectForKey:signKey];
-    BOOL isCorrectSign = [YLZNetEncryptManager verifySign:responseSign withNetData:responseDic withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPublickey:[YLZMSEncryptionConfig shareConfig].encryptConfig.sm2PublicKey];
+    BOOL isCorrectSign = [HiNetEncryptManager verifySign:responseSign withNetData:responseDic withSecret:appSecret signType:signType blackList:signBlackList asymEncryptPublickey:[HiMSEncryptionConfig shareConfig].encryptConfig.sm2PublicKey];
     [responseDic setObject:@(isCorrectSign) forKey:configKeys.verifySignKey];
     return responseDic;
 }
@@ -309,8 +308,8 @@
         if ([@"AES" isEqualToString:encryptType]){
             //AES解密
     
-            NSString * aesKey = [YLZSecKeyWrapper encryptUseAES:appSecret withKey:appId withIv:[YLZMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
-            decryptDataString = [YLZSecKeyWrapper decryptAESWrap:encryptData withKey:aesKey withIv:[YLZMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
+            NSString * aesKey = [HiSecKeyWrapper encryptUseAES:appSecret withKey:appId withIv:[HiMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
+            decryptDataString = [HiSecKeyWrapper decryptAESWrap:encryptData withKey:aesKey withIv:[HiMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:encodeType];
 
             param = [NSJSONSerialization JSONObjectWithData:[decryptDataString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
             
@@ -319,13 +318,13 @@
             NSData *responseObjData = nil;
 
             if ([encodeType isEqualToString:@"base64"]) {
-                responseObjData = [NSData ylz_dataFromHexadecimalString:encryptData];
+                responseObjData = [NSData hi_dataFromHexadecimalString:encryptData];
             } else if ([encodeType isEqualToString:@"hex"]) {
-                responseObjData = [NSData ylz_dataFromHexadecimalString:encryptData];
+                responseObjData = [NSData hi_dataFromHexadecimalString:encryptData];
             }
             
             NSString *sm4Key = [self sm4Content:appSecret key:appId encodeType:encodeType];
-            NSData *decryptedData = [[YLZSMEncryption shared] sm4_decryptData:responseObjData withCipherKey:sm4Key];
+            NSData *decryptedData = [[HiSMEncryption shared] sm4_decryptData:responseObjData withCipherKey:sm4Key];
             decryptDataString = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
             
             param = [NSJSONSerialization JSONObjectWithData:[decryptDataString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
@@ -373,7 +372,7 @@
     
     NSString *sign = nil;
     
-    NSString * sortString = [NSString stringWithFormat:@"%@&key=%@",[param ylz_signSortStringWithBlackList:blackList],secret];
+    NSString * sortString = [NSString stringWithFormat:@"%@&key=%@",[param hi_signSortStringWithBlackList:blackList],secret];
     
     if ([@"SM3" isEqualToString:signType]) {
         
@@ -381,22 +380,22 @@
 
     }else if ([@"MD5" isEqualToString:signType]){
         
-        sign = [[YLZSecKeyWrapper md5:sortString] uppercaseString];
+        sign = [[HiSecKeyWrapper md5:sortString] uppercaseString];
         
     }else if ([@"SM2" isEqualToString:signType]) {
         
-//        sign = [[YLZSMEncryption shared] sm2_signPlainString:sortString withUID:[YLZMSEncryptionConfig shareConfig].encryptConfig.sm2Iv withPrivateKey:privatekey withEncyptType:[YLZMSEncryptionConfig shareConfig].encryptConfig.signEncodeType];
-        sign = [[YLZSMEncryption shared] sm2_signPlainString:sortString withUID:HSA_SM2Default_iv withPrivateKey:privatekey withEncyptType:encodeType];
+//        sign = [[HiSMEncryption shared] sm2_signPlainString:sortString withUID:[HiMSEncryptionConfig shareConfig].encryptConfig.sm2Iv withPrivateKey:privatekey withEncyptType:[HiMSEncryptionConfig shareConfig].encryptConfig.signEncodeType];
+        sign = [[HiSMEncryption shared] sm2_signPlainString:sortString withUID:HSA_SM2Default_iv withPrivateKey:privatekey withEncyptType:encodeType];
         
     }else if ([@"SHA256" isEqualToString:signType]){
         
-        sign = [[[YLZSecKeyWrapper sha256:sortString] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
+        sign = [[[HiSecKeyWrapper sha256:sortString] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
         
     }
 // #ifdef DEBUG
-//    YLZLog(@"参数：%@",[param ylz_sortJsonString]);
-//    YLZLog(@"签名字符串：%@",sortString);
-//    YLZLog(@"%@签名值：%@",signType,sign?:@"签名方式不支持!");
+//    HiLog(@"参数：%@",[param Hi_sortJsonString]);
+//    HiLog(@"签名字符串：%@",sortString);
+//    HiLog(@"%@签名值：%@",signType,sign?:@"签名方式不支持!");
 // #endif
     return sign;
 };
@@ -407,7 +406,7 @@
     
     NSString *sign = nil;
     
-    NSString * sortString = [NSString stringWithFormat:@"%@&key=%@",[param ylz_signSortStringWithBlackList:blackList],secret];
+    NSString * sortString = [NSString stringWithFormat:@"%@&key=%@",[param hi_signSortStringWithBlackList:blackList],secret];
     
     if ([@"SM3" isEqualToString:signType]) {
         
@@ -415,22 +414,22 @@
 
     }else if ([@"MD5" isEqualToString:signType]){
         
-        sign = [[YLZSecKeyWrapper md5:sortString] uppercaseString];
+        sign = [[HiSecKeyWrapper md5:sortString] uppercaseString];
         
     }else if ([@"SM2" isEqualToString:signType]) {
         
-//        sign = [[YLZSMEncryption shared] sm2_signPlainString:sortString withUID:[YLZMSEncryptionConfig shareConfig].encryptConfig.sm2Iv withPrivateKey:privatekey withEncyptType:[YLZMSEncryptionConfig shareConfig].encryptConfig.signEncodeType];
-        sign = [[YLZSMEncryption shared] sm2_signPlainString:sortString withUID:HSA_SM2Default_iv withPrivateKey:privatekey withEncyptType:@"hex"];
+//        sign = [[HiSMEncryption shared] sm2_signPlainString:sortString withUID:[HiMSEncryptionConfig shareConfig].encryptConfig.sm2Iv withPrivateKey:privatekey withEncyptType:[HiMSEncryptionConfig shareConfig].encryptConfig.signEncodeType];
+        sign = [[HiSMEncryption shared] sm2_signPlainString:sortString withUID:HSA_SM2Default_iv withPrivateKey:privatekey withEncyptType:@"hex"];
         
     }else if ([@"SHA256" isEqualToString:signType]){
         
-        sign = [[[YLZSecKeyWrapper sha256:sortString] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
+        sign = [[[HiSecKeyWrapper sha256:sortString] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
         
     }
 // #ifdef DEBUG
-//    YLZLog(@"参数：%@",[param ylz_sortJsonString]);
-//    YLZLog(@"签名字符串：%@",sortString);
-//    YLZLog(@"%@签名值：%@",signType,sign?:@"签名方式不支持!");
+//    HiLog(@"参数：%@",[param hi_sortJsonString]);
+//    HiLog(@"签名字符串：%@",sortString);
+//    HiLog(@"%@签名值：%@",signType,sign?:@"签名方式不支持!");
 // #endif
     return sign;
 }
@@ -438,14 +437,14 @@
 /**验证签名*/
 +(BOOL)verifySign:(NSString *)sign withNetData:(NSDictionary *)data withSecret:(NSString *)secret signType:(NSString *)signType blackList:(NSArray<NSString *> *)blackList asymEncryptPublickey:(NSString *)publickey
 {
-    NSString * sortString = [NSString stringWithFormat:@"%@&key=%@",[data ylz_signSortStringWithBlackList:blackList],secret];
+    NSString * sortString = [NSString stringWithFormat:@"%@&key=%@",[data hi_signSortStringWithBlackList:blackList],secret];
 
 // #ifdef DEBUG
-//    YLZLog(@"待验证签名字符串：%s\n",[sortString UTF8String]);
+//    HiLog(@"待验证签名字符串：%s\n",[sortString UTF8String]);
 // #endif
     if ([@"SM2" isEqualToString:signType]){
         
-        BOOL isPass = [[YLZSMEncryption shared] sm2_verifyWithPlainString:sortString withSigned:sign withUID:[YLZMSEncryptionConfig shareConfig].encryptConfig.sm2Iv withPublicKey:publickey withEncyptType:[YLZMSEncryptionConfig shareConfig].encryptConfig.signEncodeType];
+        BOOL isPass = [[HiSMEncryption shared] sm2_verifyWithPlainString:sortString withSigned:sign withUID:[HiMSEncryptionConfig shareConfig].encryptConfig.sm2Iv withPublicKey:publickey withEncyptType:[HiMSEncryptionConfig shareConfig].encryptConfig.signEncodeType];
         
         return isPass;
         
@@ -457,18 +456,18 @@
 
     }else if ([@"MD5" isEqualToString:signType]){
         
-        NSString * sign_new = [[YLZSecKeyWrapper md5:sortString] uppercaseString];
+        NSString * sign_new = [[HiSecKeyWrapper md5:sortString] uppercaseString];
         
         return [sign isEqualToString:sign_new];
         
     }else if ([@"SHA256" isEqualToString:signType]){
         
-        NSString * sign_new = [[[YLZSecKeyWrapper sha256:sortString] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
+        NSString * sign_new = [[[HiSecKeyWrapper sha256:sortString] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedStringWithOptions:0];
         
         return [sign isEqualToString:sign_new];
         
     } else {
-        // YLZLog(@"----签名方式[%@]不支持!----",signType);
+        // HiLog(@"----签名方式[%@]不支持!----",signType);
     }
     return YES;
 }
@@ -481,7 +480,7 @@
 
 +(BOOL)verifySMAuthFilePath:(NSString *)filePath appId:(nullable NSString *)appId appSecret:(nullable NSString *)appSecret
 {
-    return [self verifySMAuthFilePath:filePath appId:appId appSecret:appSecret smKey:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"] iv:YLZ_SMDefault_iv];
+    return [self verifySMAuthFilePath:filePath appId:appId appSecret:appSecret smKey:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"] iv:Hi_SMDefault_iv];
 }
 
 
@@ -511,7 +510,7 @@
 
 +(BOOL)verifySMAuthFileData:(NSData *)data appId:(nullable NSString *)appId appSecret:(nullable NSString *)appSecret
 {
-    return [self verifySMAuthFileData:data appId:appId appSecret:appSecret smKey:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"] iv:YLZ_SMDefault_iv];
+    return [self verifySMAuthFileData:data appId:appId appSecret:appSecret smKey:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"] iv:Hi_SMDefault_iv];
 }
 
 +(BOOL)verifySMAuthFileData:(NSData *)data smKey:(NSString *)smKey iv:(NSString *)iv
@@ -529,29 +528,29 @@
     if (!data || data.length <= 0) {return NO;}
     
     //sm4解密授权文件
-    // YLZLog(@"开始校验授权文件");
+    // HiLog(@"开始校验授权文件");
     NSString *dataStr = [self removeSpaceAndNewline:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
-    NSData *authFileSM4Data = [NSData ylz_dataFromHexadecimalString:dataStr];
-    // YLZLog(@"授权文件内容: %@", dataStr);
+    NSData *authFileSM4Data = [NSData hi_dataFromHexadecimalString:dataStr];
+    // HiLog(@"授权文件内容: %@", dataStr);
     NSData *keyData = [smKey dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *keyHexStr = [[keyData ylz_hexadecimalString] uppercaseString];
-    // YLZLog(@"授权文件解码");
-    NSData *authFileData = [[YLZSMEncryption shared] sm4_decryptData:authFileSM4Data withCipherKey:keyHexStr];
-    NSDictionary *authFileDic = (NSDictionary *)[self _ylz_dictionaryWithJSON:authFileData];
-    // YLZLog(@"授权文件SM4解密后内容: %@", authFileDic);
+    NSString *keyHexStr = [[keyData hi_hexadecimalString] uppercaseString];
+    // HiLog(@"授权文件解码");
+    NSData *authFileData = [[HiSMEncryption shared] sm4_decryptData:authFileSM4Data withCipherKey:keyHexStr];
+    NSDictionary *authFileDic = (NSDictionary *)[self _hi_dictionaryWithJSON:authFileData];
+    // HiLog(@"授权文件SM4解密后内容: %@", authFileDic);
     
     if (!authFileDic || authFileDic.count <= 0) {
-        // YLZLog(@"授权文件校验错误: 授权文件为空");
+        // HiLog(@"授权文件校验错误: 授权文件为空");
         return NO;
     }
     
     if (authFileDic[@"app_id"] && appId && ![appId isEqualToString:authFileDic[@"app_id"]]) {
-        // YLZLog(@"授权文件校验错误： app_id不匹配");
+        // HiLog(@"授权文件校验错误： app_id不匹配");
         return NO;
     }
     
     if (authFileDic[@"app_secret"] && appSecret && ![appSecret isEqualToString:authFileDic[@"app_secret"]]) {
-        // YLZLog(@"授权文件校验错误：app_secret不匹配");
+        // HiLog(@"授权文件校验错误：app_secret不匹配");
         return NO;
     }
     
@@ -566,12 +565,12 @@
     
     NSString *authCode = [NSString stringWithFormat:@"%@%@%@%@%@", app_id, app_name, app_bundle_id, app_version, app_secret];
 
-    // YLZLog(@"授权码内容 SM3签名前: %@", authCode);
+    // HiLog(@"授权码内容 SM3签名前: %@", authCode);
     
     NSString *authCodesm3DataHexStr = [[self sm3Hex:authCode] lowercaseString];
-    // YLZLog(@"授权码SM3签名内容: %@", authCodesm3DataHexStr);
+    // HiLog(@"授权码SM3签名内容: %@", authCodesm3DataHexStr);
     
-    // YLZLog(@"签名校验结果: %d", [[auth_file_code lowercaseString] isEqualToString:authCodesm3DataHexStr]);
+    // HiLog(@"签名校验结果: %d", [[auth_file_code lowercaseString] isEqualToString:authCodesm3DataHexStr]);
     return [[auth_file_code lowercaseString] isEqualToString:authCodesm3DataHexStr];
 }
 
@@ -583,7 +582,7 @@
     return text;
 }
 
-+ (NSDictionary *)_ylz_dictionaryWithJSON:(id)json {
++ (NSDictionary *)_hi_dictionaryWithJSON:(id)json {
     if (!json || json == (id)kCFNull) return nil;
     NSDictionary *dic = nil;
     NSData *jsonData = nil;
@@ -619,8 +618,8 @@
 +(NSString *)sm3Hex:(NSString *)dataString
 {
     NSData *data = [dataString dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *sm3Data = [[YLZSMEncryption shared] sm3_hashWithPainData:data];
-    NSString *sm3HexString = [sm3Data ylz_hexadecimalString];
+    NSData *sm3Data = [[HiSMEncryption shared] sm3_hashWithPainData:data];
+    NSString *sm3HexString = [sm3Data hi_hexadecimalString];
     return sm3HexString;
 }
 
@@ -631,7 +630,7 @@
  */
 + (NSString *)encryptUseAES:(NSString *)content
 {
-    NSString *secret = [YLZSecKeyWrapper encryptUseAES:content withKey:[[NSBundle mainBundle] bundleIdentifier] withIv:[YLZMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:[YLZMSEncryptionConfig shareConfig].encryptConfig.encodeType];
+    NSString *secret = [HiSecKeyWrapper encryptUseAES:content withKey:[[NSBundle mainBundle] bundleIdentifier] withIv:[HiMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:[HiMSEncryptionConfig shareConfig].encryptConfig.encodeType];
     return secret;
 }
 
@@ -642,7 +641,7 @@
  */
 + (NSString *)decryptUseAES:(NSString *)content
 {
-    NSString *secret = [YLZSecKeyWrapper decryptAESWrap:content withKey:[[NSBundle mainBundle] bundleIdentifier] withIv:[YLZMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:[YLZMSEncryptionConfig shareConfig].encryptConfig.encodeType];
+    NSString *secret = [HiSecKeyWrapper decryptAESWrap:content withKey:[[NSBundle mainBundle] bundleIdentifier] withIv:[HiMSEncryptionConfig shareConfig].encryptConfig.aesIv withEncodeType:[HiMSEncryptionConfig shareConfig].encryptConfig.encodeType];
     return secret;
 }
 

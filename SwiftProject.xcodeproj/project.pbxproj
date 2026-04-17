@@ -54,7 +54,7 @@
 		8E6CBBC92F91CB2C00754045 /* bn_mp_is_square.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5A2F91CB2C00754045 /* bn_mp_is_square.c */; };
 		8E6CBBCA2F91CB2C00754045 /* bn_mp_dr_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB472F91CB2C00754045 /* bn_mp_dr_setup.c */; };
 		8E6CBBCB2F91CB2C00754045 /* bn_mp_lcm.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5E2F91CB2C00754045 /* bn_mp_lcm.c */; };
-		8E6CBBCC2F91CB2C00754045 /* YLZSMEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */; };
+		8E6CBBCC2F91CB2C00754045 /* HiSMEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBBE2F91CB2C00754045 /* HiSMEncryption.m */; };
 		8E6CBBCD2F91CB2C00754045 /* bn_mp_mod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB602F91CB2C00754045 /* bn_mp_mod.c */; };
 		8E6CBBCE2F91CB2C00754045 /* bn_mp_signed_bin_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB872F91CB2C00754045 /* bn_mp_signed_bin_size.c */; };
 		8E6CBBCF2F91CB2C00754045 /* bn_fast_mp_invmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2C2F91CB2C00754045 /* bn_fast_mp_invmod.c */; };
@@ -62,7 +62,7 @@
 		8E6CBBD12F91CB2C00754045 /* bncore.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBA12F91CB2C00754045 /* bncore.c */; };
 		8E6CBBD22F91CB2C00754045 /* sm4test.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBB72F91CB2C00754045 /* sm4test.c */; };
 		8E6CBBD32F91CB2C00754045 /* bn_mp_invmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB582F91CB2C00754045 /* bn_mp_invmod.c */; };
-		8E6CBBD42F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB262F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m */; };
+		8E6CBBD42F91CB2C00754045 /* HiRequestEncryptConfigKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB262F91CB2C00754045 /* HiRequestEncryptConfigKeys.m */; };
 		8E6CBBD52F91CB2C00754045 /* bn_mp_fread.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4D2F91CB2C00754045 /* bn_mp_fread.c */; };
 		8E6CBBD62F91CB2C00754045 /* bn_mp_expt_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB492F91CB2C00754045 /* bn_mp_expt_d.c */; };
 		8E6CBBD72F91CB2C00754045 /* bn_mp_count_bits.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3F2F91CB2C00754045 /* bn_mp_count_bits.c */; };
@@ -88,9 +88,9 @@
 		8E6CBBEB2F91CB2C00754045 /* bn_mp_mul_2d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB682F91CB2C00754045 /* bn_mp_mul_2d.c */; };
 		8E6CBBEC2F91CB2C00754045 /* bn_mp_toom_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB932F91CB2C00754045 /* bn_mp_toom_sqr.c */; };
 		8E6CBBED2F91CB2C00754045 /* bn_mp_gcd.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4F2F91CB2C00754045 /* bn_mp_gcd.c */; };
-		8E6CBBEE2F91CB2C00754045 /* YLZMSEncryptionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB222F91CB2C00754045 /* YLZMSEncryptionConfig.m */; };
+		8E6CBBEE2F91CB2C00754045 /* HiMSEncryptionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB222F91CB2C00754045 /* HiMSEncryptionConfig.m */; };
 		8E6CBBEF2F91CB2C00754045 /* bn_s_mp_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9F2F91CB2C00754045 /* bn_s_mp_sqr.c */; };
-		8E6CBBF02F91CB2C00754045 /* NSDictionary+YLZSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1E2F91CB2C00754045 /* NSDictionary+YLZSign.m */; };
+		8E6CBBF02F91CB2C00754045 /* NSDictionary+HiSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1E2F91CB2C00754045 /* NSDictionary+HiSign.m */; };
 		8E6CBBF12F91CB2C00754045 /* bn_mp_reduce_2k_l.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB7D2F91CB2C00754045 /* bn_mp_reduce_2k_l.c */; };
 		8E6CBBF22F91CB2C00754045 /* bn_mp_submod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8D2F91CB2C00754045 /* bn_mp_submod.c */; };
 		8E6CBBF32F91CB2C00754045 /* bn_mp_dr_is_modulus.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB452F91CB2C00754045 /* bn_mp_dr_is_modulus.c */; };
@@ -115,12 +115,12 @@
 		8E6CBC062F91CB2C00754045 /* bn_mp_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB522F91CB2C00754045 /* bn_mp_init.c */; };
 		8E6CBC072F91CB2C00754045 /* bn_s_mp_mul_digs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB9D2F91CB2C00754045 /* bn_s_mp_mul_digs.c */; };
 		8E6CBC082F91CB2C00754045 /* bn_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2B2F91CB2C00754045 /* bn_error.c */; };
-		8E6CBC092F91CB2C00754045 /* YLZRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB292F91CB2C00754045 /* YLZRSA.m */; };
+		8E6CBC092F91CB2C00754045 /* HiRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB292F91CB2C00754045 /* HiRSA.m */; };
 		8E6CBC0A2F91CB2C00754045 /* bn_mp_prime_is_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB702F91CB2C00754045 /* bn_mp_prime_is_prime.c */; };
 		8E6CBC0B2F91CB2C00754045 /* bn_mp_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8B2F91CB2C00754045 /* bn_mp_sub.c */; };
 		8E6CBC0C2F91CB2C00754045 /* bn_mp_sqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB8A2F91CB2C00754045 /* bn_mp_sqrt.c */; };
 		8E6CBC0D2F91CB2C00754045 /* bn_mp_invmod_slow.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB592F91CB2C00754045 /* bn_mp_invmod_slow.c */; };
-		8E6CBC0E2F91CB2C00754045 /* YLZSecKeyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBBC2F91CB2C00754045 /* YLZSecKeyWrapper.m */; };
+		8E6CBC0E2F91CB2C00754045 /* HiSecKeyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBBC2F91CB2C00754045 /* HiSecKeyWrapper.m */; };
 		8E6CBC0F2F91CB2C00754045 /* sm2_Intrfs_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBBAA2F91CB2C00754045 /* sm2_Intrfs_test.cpp */; };
 		8E6CBC102F91CB2C00754045 /* bn_mp_prime_random_ex.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB742F91CB2C00754045 /* bn_mp_prime_random_ex.c */; };
 		8E6CBC112F91CB2C00754045 /* bn_mp_cnt_lsb.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB3D2F91CB2C00754045 /* bn_mp_cnt_lsb.c */; };
@@ -149,7 +149,7 @@
 		8E6CBC282F91CB2C00754045 /* bn_mp_radix_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB752F91CB2C00754045 /* bn_mp_radix_size.c */; };
 		8E6CBC292F91CB2C00754045 /* bn_mp_n_root.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6B2F91CB2C00754045 /* bn_mp_n_root.c */; };
 		8E6CBC2A2F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB912F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c */; };
-		8E6CBC2B2F91CB2C00754045 /* YLZNetEncryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB242F91CB2C00754045 /* YLZNetEncryptManager.m */; };
+		8E6CBC2B2F91CB2C00754045 /* HiNetEncryptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB242F91CB2C00754045 /* HiNetEncryptManager.m */; };
 		8E6CBC2C2F91CB2C00754045 /* bn_mp_prime_fermat.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB6E2F91CB2C00754045 /* bn_mp_prime_fermat.c */; };
 		8E6CBC2D2F91CB2C00754045 /* bn_mp_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB842F91CB2C00754045 /* bn_mp_set.c */; };
 		8E6CBC2E2F91CB2C00754045 /* bn_mp_radix_smap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB762F91CB2C00754045 /* bn_mp_radix_smap.c */; };
@@ -170,10 +170,10 @@
 		8E6CBC3D2F91CB2C00754045 /* bn_mp_karatsuba_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB5C2F91CB2C00754045 /* bn_mp_karatsuba_mul.c */; };
 		8E6CBC3E2F91CB2C00754045 /* bn_mp_toom_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB922F91CB2C00754045 /* bn_mp_toom_mul.c */; };
 		8E6CBC3F2F91CB2C00754045 /* bn_mp_mul_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB692F91CB2C00754045 /* bn_mp_mul_d.c */; };
-		8E6CBC402F91CB2C00754045 /* NSData+YLZHexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1C2F91CB2C00754045 /* NSData+YLZHexadecimal.m */; };
+		8E6CBC402F91CB2C00754045 /* NSData+HiHexadecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1C2F91CB2C00754045 /* NSData+HiHexadecimal.m */; };
 		8E6CBC412F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB2F2F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c */; };
 		8E6CBC422F91CB2C00754045 /* bn_mp_clear_multi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB392F91CB2C00754045 /* bn_mp_clear_multi.c */; };
-		8E6CBC432F91CB2C00754045 /* NSData+YLZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1A2F91CB2C00754045 /* NSData+YLZBase64.m */; };
+		8E6CBC432F91CB2C00754045 /* NSData+HiBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB1A2F91CB2C00754045 /* NSData+HiBase64.m */; };
 		8E6CBC442F91CB2C00754045 /* bn_mp_prime_next_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB722F91CB2C00754045 /* bn_mp_prime_next_prime.c */; };
 		8E6CBC452F91CB2C00754045 /* bn_mp_exptmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB4A2F91CB2C00754045 /* bn_mp_exptmod.c */; };
 		8E6CBC462F91CB2C00754045 /* bn_mp_clear.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CBB382F91CB2C00754045 /* bn_mp_clear.c */; };
@@ -209,8 +209,8 @@
 		8EA21EA927002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EA827002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift */; };
 		8EA21EAB27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAA27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift */; };
 		8EA21EAD27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */; };
-		8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAF2700344F00A9039B /* YLZFont.swift */; };
-		8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */; };
+		8EA21EB02700344F00A9039B /* HiFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EAF2700344F00A9039B /* HiFont.swift */; };
+		8EA21EB22700596400A9039B /* HiPaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA21EB12700596400A9039B /* HiPaddingLabel.swift */; };
 		8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF367C2DF95F1300645B1E /* HrssViewController.swift */; };
 		8EAF36802DF9630900645B1E /* HrssTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */; };
 		8EAF36822DF9639D00645B1E /* HrssNoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */; };
@@ -221,7 +221,7 @@
 		8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36922DF986DD00645B1E /* HrssModel.swift */; };
 		8EAF36AE2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36AD2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift */; };
 		8EAF36B02DFAA9FA00645B1E /* HrssAllDoSonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF36AF2DFAA9F300645B1E /* HrssAllDoSonTableViewCell.swift */; };
-		8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */; };
+		8EBD6DF1265E1C3500DD856A /* HiMSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBD6DF0265E1C3500DD856A /* HiMSTabBar.swift */; };
 		8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */; };
 		8EC07F3D2B247D7600F7EBF5 /* EventChannelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */; };
 		8ED5D4182EA7165A00AED7FC /* HiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4152EA7165A00AED7FC /* HiTabBar.swift */; };
@@ -252,9 +252,9 @@
 		8ED5D4AE2EA7570300AED7FC /* HiUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */; };
 		8ED5D4B02EA7676700AED7FC /* HiSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5D4AF2EA7675200AED7FC /* HiSettingViewController.swift */; };
 		8EDB71A42F02691400538F53 /* HiMyFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB71A32F02691400538F53 /* HiMyFooterViewController.swift */; };
-		8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* YLZView.swift */; };
+		8EE07B3A27016A66005B0B40 /* HiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3927016A66005B0B40 /* HiView.swift */; };
 		8EE07B3E27016EB3005B0B40 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */; };
-		8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* YLZString.swift */; };
+		8EE07B4027017D78005B0B40 /* HiString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE07B3F27017D78005B0B40 /* HiString.swift */; };
 		8EFB12DA265BB46C007D9FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */; };
 		8EFB12DE265BB46C007D9FE1 /* HiHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12DD265BB46C007D9FE1 /* HiHomeViewController.swift */; };
 		8EFB12E3265BB46D007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12E2265BB46D007D9FE1 /* Assets.xcassets */; };
@@ -326,21 +326,21 @@
 		8E6CBB102F90E11300754045 /* YYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		8E6CBB132F90E11300754045 /* OCProject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProject.h; sourceTree = "<group>"; };
 		8E6CBB142F90E11300754045 /* OCProject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCProject.m; sourceTree = "<group>"; };
-		8E6CBB192F91CB2C00754045 /* NSData+YLZBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+YLZBase64.h"; sourceTree = "<group>"; };
-		8E6CBB1A2F91CB2C00754045 /* NSData+YLZBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+YLZBase64.m"; sourceTree = "<group>"; };
-		8E6CBB1B2F91CB2C00754045 /* NSData+YLZHexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+YLZHexadecimal.h"; sourceTree = "<group>"; };
-		8E6CBB1C2F91CB2C00754045 /* NSData+YLZHexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+YLZHexadecimal.m"; sourceTree = "<group>"; };
-		8E6CBB1D2F91CB2C00754045 /* NSDictionary+YLZSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YLZSign.h"; sourceTree = "<group>"; };
-		8E6CBB1E2F91CB2C00754045 /* NSDictionary+YLZSign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YLZSign.m"; sourceTree = "<group>"; };
-		8E6CBB202F91CB2C00754045 /* YLZ-NetEncryption-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLZ-NetEncryption-iOS.h"; sourceTree = "<group>"; };
-		8E6CBB212F91CB2C00754045 /* YLZMSEncryptionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSEncryptionConfig.h; sourceTree = "<group>"; };
-		8E6CBB222F91CB2C00754045 /* YLZMSEncryptionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMSEncryptionConfig.m; sourceTree = "<group>"; };
-		8E6CBB232F91CB2C00754045 /* YLZNetEncryptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetEncryptManager.h; sourceTree = "<group>"; };
-		8E6CBB242F91CB2C00754045 /* YLZNetEncryptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetEncryptManager.m; sourceTree = "<group>"; };
-		8E6CBB252F91CB2C00754045 /* YLZRequestEncryptConfigKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRequestEncryptConfigKeys.h; sourceTree = "<group>"; };
-		8E6CBB262F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRequestEncryptConfigKeys.m; sourceTree = "<group>"; };
-		8E6CBB282F91CB2C00754045 /* YLZRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRSA.h; sourceTree = "<group>"; };
-		8E6CBB292F91CB2C00754045 /* YLZRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRSA.m; sourceTree = "<group>"; };
+		8E6CBB192F91CB2C00754045 /* NSData+HiBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HiBase64.h"; sourceTree = "<group>"; };
+		8E6CBB1A2F91CB2C00754045 /* NSData+HiBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HiBase64.m"; sourceTree = "<group>"; };
+		8E6CBB1B2F91CB2C00754045 /* NSData+HiHexadecimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HiHexadecimal.h"; sourceTree = "<group>"; };
+		8E6CBB1C2F91CB2C00754045 /* NSData+HiHexadecimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HiHexadecimal.m"; sourceTree = "<group>"; };
+		8E6CBB1D2F91CB2C00754045 /* NSDictionary+HiSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HiSign.h"; sourceTree = "<group>"; };
+		8E6CBB1E2F91CB2C00754045 /* NSDictionary+HiSign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HiSign.m"; sourceTree = "<group>"; };
+		8E6CBB202F91CB2C00754045 /* Hi-NetEncryption-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hi-NetEncryption-iOS.h"; sourceTree = "<group>"; };
+		8E6CBB212F91CB2C00754045 /* HiMSEncryptionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiMSEncryptionConfig.h; sourceTree = "<group>"; };
+		8E6CBB222F91CB2C00754045 /* HiMSEncryptionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiMSEncryptionConfig.m; sourceTree = "<group>"; };
+		8E6CBB232F91CB2C00754045 /* HiNetEncryptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiNetEncryptManager.h; sourceTree = "<group>"; };
+		8E6CBB242F91CB2C00754045 /* HiNetEncryptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiNetEncryptManager.m; sourceTree = "<group>"; };
+		8E6CBB252F91CB2C00754045 /* HiRequestEncryptConfigKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiRequestEncryptConfigKeys.h; sourceTree = "<group>"; };
+		8E6CBB262F91CB2C00754045 /* HiRequestEncryptConfigKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiRequestEncryptConfigKeys.m; sourceTree = "<group>"; };
+		8E6CBB282F91CB2C00754045 /* HiRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiRSA.h; sourceTree = "<group>"; };
+		8E6CBB292F91CB2C00754045 /* HiRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiRSA.m; sourceTree = "<group>"; };
 		8E6CBB2B2F91CB2C00754045 /* bn_error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_error.c; sourceTree = "<group>"; };
 		8E6CBB2C2F91CB2C00754045 /* bn_fast_mp_invmod.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_mp_invmod.c; sourceTree = "<group>"; };
 		8E6CBB2D2F91CB2C00754045 /* bn_fast_mp_montgomery_reduce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_fast_mp_montgomery_reduce.c; sourceTree = "<group>"; };
@@ -480,10 +480,10 @@
 		8E6CBBB72F91CB2C00754045 /* sm4test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sm4test.c; sourceTree = "<group>"; };
 		8E6CBBB82F91CB2C00754045 /* sms4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sms4.h; sourceTree = "<group>"; };
 		8E6CBBB92F91CB2C00754045 /* sms4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sms4.c; sourceTree = "<group>"; };
-		8E6CBBBB2F91CB2C00754045 /* YLZSecKeyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSecKeyWrapper.h; sourceTree = "<group>"; };
-		8E6CBBBC2F91CB2C00754045 /* YLZSecKeyWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSecKeyWrapper.m; sourceTree = "<group>"; };
-		8E6CBBBD2F91CB2C00754045 /* YLZSMEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSMEncryption.h; sourceTree = "<group>"; };
-		8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSMEncryption.m; sourceTree = "<group>"; };
+		8E6CBBBB2F91CB2C00754045 /* HiSecKeyWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiSecKeyWrapper.h; sourceTree = "<group>"; };
+		8E6CBBBC2F91CB2C00754045 /* HiSecKeyWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiSecKeyWrapper.m; sourceTree = "<group>"; };
+		8E6CBBBD2F91CB2C00754045 /* HiSMEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiSMEncryption.h; sourceTree = "<group>"; };
+		8E6CBBBE2F91CB2C00754045 /* HiSMEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiSMEncryption.m; sourceTree = "<group>"; };
 		8E6CBC4C2F91CEDB00754045 /* HiInitLoginRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiInitLoginRespModel.swift; sourceTree = "<group>"; };
 		8E6CBC4E2F9208C300754045 /* HiMenuListRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMenuListRespModel.swift; sourceTree = "<group>"; };
 		8E78C8112814F3CA00D6C59F /* YLZRouteCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZRouteCodeViewController.swift; sourceTree = "<group>"; };
@@ -511,8 +511,8 @@
 		8EA21EA827002E9A00A9039B /* YLZHealthCodeServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeServiceTableViewCell.swift; sourceTree = "<group>"; };
 		8EA21EAA27002EAA00A9039B /* YLZHealthCodeSourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeSourceTableViewCell.swift; sourceTree = "<group>"; };
 		8EA21EAC27002EC300A9039B /* YLZHealthCodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZHealthCodeCollectionViewCell.swift; sourceTree = "<group>"; };
-		8EA21EAF2700344F00A9039B /* YLZFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZFont.swift; sourceTree = "<group>"; };
-		8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZPaddingLabel.swift; sourceTree = "<group>"; };
+		8EA21EAF2700344F00A9039B /* HiFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiFont.swift; sourceTree = "<group>"; };
+		8EA21EB12700596400A9039B /* HiPaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiPaddingLabel.swift; sourceTree = "<group>"; };
 		8EAF367C2DF95F1300645B1E /* HrssViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssViewController.swift; sourceTree = "<group>"; };
 		8EAF367F2DF9630900645B1E /* HrssTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssTableHeaderView.swift; sourceTree = "<group>"; };
 		8EAF36812DF9639D00645B1E /* HrssNoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssNoticeTableViewCell.swift; sourceTree = "<group>"; };
@@ -523,7 +523,7 @@
 		8EAF36922DF986DD00645B1E /* HrssModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssModel.swift; sourceTree = "<group>"; };
 		8EAF36AD2DFAA57B00645B1E /* HrssEasyManCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssEasyManCollectionViewCell.swift; sourceTree = "<group>"; };
 		8EAF36AF2DFAA9F300645B1E /* HrssAllDoSonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HrssAllDoSonTableViewCell.swift; sourceTree = "<group>"; };
-		8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZMSTabBar.swift; sourceTree = "<group>"; };
+		8EBD6DF0265E1C3500DD856A /* HiMSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMSTabBar.swift; sourceTree = "<group>"; };
 		8EC07F3A2B240A1700F7EBF5 /* HiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiModel.swift; sourceTree = "<group>"; };
 		8EC07F3C2B247D7600F7EBF5 /* EventChannelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannelManager.swift; sourceTree = "<group>"; };
 		8ECA6FD62D8412CC00EBA4D3 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
@@ -629,9 +629,9 @@
 		8ED5D4AD2EA756FA00AED7FC /* HiUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiUserDefault.swift; sourceTree = "<group>"; };
 		8ED5D4AF2EA7675200AED7FC /* HiSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiSettingViewController.swift; sourceTree = "<group>"; };
 		8EDB71A32F02691400538F53 /* HiMyFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiMyFooterViewController.swift; sourceTree = "<group>"; };
-		8EE07B3927016A66005B0B40 /* YLZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZView.swift; sourceTree = "<group>"; };
+		8EE07B3927016A66005B0B40 /* HiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiView.swift; sourceTree = "<group>"; };
 		8EE07B3D27016EB3005B0B40 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		8EE07B3F27017D78005B0B40 /* YLZString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLZString.swift; sourceTree = "<group>"; };
+		8EE07B3F27017D78005B0B40 /* HiString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiString.swift; sourceTree = "<group>"; };
 		8EFB12D6265BB46C007D9FE1 /* SwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12D9265BB46C007D9FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EFB12DD265BB46C007D9FE1 /* HiHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiHomeViewController.swift; sourceTree = "<group>"; };
@@ -755,8 +755,8 @@
 				8E29D6162DFBC5B400B3E0A9 /* Marquee */,
 				8EFFDA0F2828B595000EA7D6 /* HiCarouselView.swift */,
 				8EFFDA102828B596000EA7D6 /* HiOccupationView.swift */,
-				8EBD6DF0265E1C3500DD856A /* YLZMSTabBar.swift */,
-				8EA21EB12700596400A9039B /* YLZPaddingLabel.swift */,
+				8EBD6DF0265E1C3500DD856A /* HiMSTabBar.swift */,
+				8EA21EB12700596400A9039B /* HiPaddingLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -868,12 +868,12 @@
 		8E6CBB1F2F91CB2C00754045 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				8E6CBB192F91CB2C00754045 /* NSData+YLZBase64.h */,
-				8E6CBB1A2F91CB2C00754045 /* NSData+YLZBase64.m */,
-				8E6CBB1B2F91CB2C00754045 /* NSData+YLZHexadecimal.h */,
-				8E6CBB1C2F91CB2C00754045 /* NSData+YLZHexadecimal.m */,
-				8E6CBB1D2F91CB2C00754045 /* NSDictionary+YLZSign.h */,
-				8E6CBB1E2F91CB2C00754045 /* NSDictionary+YLZSign.m */,
+				8E6CBB192F91CB2C00754045 /* NSData+HiBase64.h */,
+				8E6CBB1A2F91CB2C00754045 /* NSData+HiBase64.m */,
+				8E6CBB1B2F91CB2C00754045 /* NSData+HiHexadecimal.h */,
+				8E6CBB1C2F91CB2C00754045 /* NSData+HiHexadecimal.m */,
+				8E6CBB1D2F91CB2C00754045 /* NSDictionary+HiSign.h */,
+				8E6CBB1E2F91CB2C00754045 /* NSDictionary+HiSign.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -881,13 +881,13 @@
 		8E6CBB272F91CB2C00754045 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				8E6CBB202F91CB2C00754045 /* YLZ-NetEncryption-iOS.h */,
-				8E6CBB212F91CB2C00754045 /* YLZMSEncryptionConfig.h */,
-				8E6CBB222F91CB2C00754045 /* YLZMSEncryptionConfig.m */,
-				8E6CBB232F91CB2C00754045 /* YLZNetEncryptManager.h */,
-				8E6CBB242F91CB2C00754045 /* YLZNetEncryptManager.m */,
-				8E6CBB252F91CB2C00754045 /* YLZRequestEncryptConfigKeys.h */,
-				8E6CBB262F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m */,
+				8E6CBB202F91CB2C00754045 /* Hi-NetEncryption-iOS.h */,
+				8E6CBB212F91CB2C00754045 /* HiMSEncryptionConfig.h */,
+				8E6CBB222F91CB2C00754045 /* HiMSEncryptionConfig.m */,
+				8E6CBB232F91CB2C00754045 /* HiNetEncryptManager.h */,
+				8E6CBB242F91CB2C00754045 /* HiNetEncryptManager.m */,
+				8E6CBB252F91CB2C00754045 /* HiRequestEncryptConfigKeys.h */,
+				8E6CBB262F91CB2C00754045 /* HiRequestEncryptConfigKeys.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -895,8 +895,8 @@
 		8E6CBB2A2F91CB2C00754045 /* RSA */ = {
 			isa = PBXGroup;
 			children = (
-				8E6CBB282F91CB2C00754045 /* YLZRSA.h */,
-				8E6CBB292F91CB2C00754045 /* YLZRSA.m */,
+				8E6CBB282F91CB2C00754045 /* HiRSA.h */,
+				8E6CBB292F91CB2C00754045 /* HiRSA.m */,
 			);
 			path = RSA;
 			sourceTree = "<group>";
@@ -1084,10 +1084,10 @@
 				8E6CBBAF2F91CB2C00754045 /* SM2 */,
 				8E6CBBB32F91CB2C00754045 /* SM3 */,
 				8E6CBBBA2F91CB2C00754045 /* SM4 */,
-				8E6CBBBB2F91CB2C00754045 /* YLZSecKeyWrapper.h */,
-				8E6CBBBC2F91CB2C00754045 /* YLZSecKeyWrapper.m */,
-				8E6CBBBD2F91CB2C00754045 /* YLZSMEncryption.h */,
-				8E6CBBBE2F91CB2C00754045 /* YLZSMEncryption.m */,
+				8E6CBBBB2F91CB2C00754045 /* HiSecKeyWrapper.h */,
+				8E6CBBBC2F91CB2C00754045 /* HiSecKeyWrapper.m */,
+				8E6CBBBD2F91CB2C00754045 /* HiSMEncryption.h */,
+				8E6CBBBE2F91CB2C00754045 /* HiSMEncryption.m */,
 			);
 			path = Wrapper;
 			sourceTree = "<group>";
@@ -1251,9 +1251,9 @@
 		8EA21EAE2700343900A9039B /* Kit */ = {
 			isa = PBXGroup;
 			children = (
-				8EA21EAF2700344F00A9039B /* YLZFont.swift */,
-				8EE07B3927016A66005B0B40 /* YLZView.swift */,
-				8EE07B3F27017D78005B0B40 /* YLZString.swift */,
+				8EA21EAF2700344F00A9039B /* HiFont.swift */,
+				8EE07B3927016A66005B0B40 /* HiView.swift */,
+				8EE07B3F27017D78005B0B40 /* HiString.swift */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -1949,7 +1949,7 @@
 				8E6CBBC92F91CB2C00754045 /* bn_mp_is_square.c in Sources */,
 				8E6CBBCA2F91CB2C00754045 /* bn_mp_dr_setup.c in Sources */,
 				8E6CBBCB2F91CB2C00754045 /* bn_mp_lcm.c in Sources */,
-				8E6CBBCC2F91CB2C00754045 /* YLZSMEncryption.m in Sources */,
+				8E6CBBCC2F91CB2C00754045 /* HiSMEncryption.m in Sources */,
 				8E6CBBCD2F91CB2C00754045 /* bn_mp_mod.c in Sources */,
 				8E6CBBCE2F91CB2C00754045 /* bn_mp_signed_bin_size.c in Sources */,
 				8E6CBBCF2F91CB2C00754045 /* bn_fast_mp_invmod.c in Sources */,
@@ -1957,7 +1957,7 @@
 				8E6CBBD12F91CB2C00754045 /* bncore.c in Sources */,
 				8E6CBBD22F91CB2C00754045 /* sm4test.c in Sources */,
 				8E6CBBD32F91CB2C00754045 /* bn_mp_invmod.c in Sources */,
-				8E6CBBD42F91CB2C00754045 /* YLZRequestEncryptConfigKeys.m in Sources */,
+				8E6CBBD42F91CB2C00754045 /* HiRequestEncryptConfigKeys.m in Sources */,
 				8E6CBBD52F91CB2C00754045 /* bn_mp_fread.c in Sources */,
 				8E6CBBD62F91CB2C00754045 /* bn_mp_expt_d.c in Sources */,
 				8E6CBBD72F91CB2C00754045 /* bn_mp_count_bits.c in Sources */,
@@ -1983,9 +1983,9 @@
 				8E6CBBEB2F91CB2C00754045 /* bn_mp_mul_2d.c in Sources */,
 				8E6CBBEC2F91CB2C00754045 /* bn_mp_toom_sqr.c in Sources */,
 				8E6CBBED2F91CB2C00754045 /* bn_mp_gcd.c in Sources */,
-				8E6CBBEE2F91CB2C00754045 /* YLZMSEncryptionConfig.m in Sources */,
+				8E6CBBEE2F91CB2C00754045 /* HiMSEncryptionConfig.m in Sources */,
 				8E6CBBEF2F91CB2C00754045 /* bn_s_mp_sqr.c in Sources */,
-				8E6CBBF02F91CB2C00754045 /* NSDictionary+YLZSign.m in Sources */,
+				8E6CBBF02F91CB2C00754045 /* NSDictionary+HiSign.m in Sources */,
 				8E6CBBF12F91CB2C00754045 /* bn_mp_reduce_2k_l.c in Sources */,
 				8E6CBBF22F91CB2C00754045 /* bn_mp_submod.c in Sources */,
 				8E6CBBF32F91CB2C00754045 /* bn_mp_dr_is_modulus.c in Sources */,
@@ -2010,12 +2010,12 @@
 				8E6CBC062F91CB2C00754045 /* bn_mp_init.c in Sources */,
 				8E6CBC072F91CB2C00754045 /* bn_s_mp_mul_digs.c in Sources */,
 				8E6CBC082F91CB2C00754045 /* bn_error.c in Sources */,
-				8E6CBC092F91CB2C00754045 /* YLZRSA.m in Sources */,
+				8E6CBC092F91CB2C00754045 /* HiRSA.m in Sources */,
 				8E6CBC0A2F91CB2C00754045 /* bn_mp_prime_is_prime.c in Sources */,
 				8E6CBC0B2F91CB2C00754045 /* bn_mp_sub.c in Sources */,
 				8E6CBC0C2F91CB2C00754045 /* bn_mp_sqrt.c in Sources */,
 				8E6CBC0D2F91CB2C00754045 /* bn_mp_invmod_slow.c in Sources */,
-				8E6CBC0E2F91CB2C00754045 /* YLZSecKeyWrapper.m in Sources */,
+				8E6CBC0E2F91CB2C00754045 /* HiSecKeyWrapper.m in Sources */,
 				8E6CBC0F2F91CB2C00754045 /* sm2_Intrfs_test.cpp in Sources */,
 				8E6CBC102F91CB2C00754045 /* bn_mp_prime_random_ex.c in Sources */,
 				8E6CBC112F91CB2C00754045 /* bn_mp_cnt_lsb.c in Sources */,
@@ -2044,7 +2044,7 @@
 				8E6CBC282F91CB2C00754045 /* bn_mp_radix_size.c in Sources */,
 				8E6CBC292F91CB2C00754045 /* bn_mp_n_root.c in Sources */,
 				8E6CBC2A2F91CB2C00754045 /* bn_mp_to_unsigned_bin_n.c in Sources */,
-				8E6CBC2B2F91CB2C00754045 /* YLZNetEncryptManager.m in Sources */,
+				8E6CBC2B2F91CB2C00754045 /* HiNetEncryptManager.m in Sources */,
 				8E6CBC2C2F91CB2C00754045 /* bn_mp_prime_fermat.c in Sources */,
 				8E6CBC2D2F91CB2C00754045 /* bn_mp_set.c in Sources */,
 				8E6CBC2E2F91CB2C00754045 /* bn_mp_radix_smap.c in Sources */,
@@ -2065,10 +2065,10 @@
 				8E6CBC3D2F91CB2C00754045 /* bn_mp_karatsuba_mul.c in Sources */,
 				8E6CBC3E2F91CB2C00754045 /* bn_mp_toom_mul.c in Sources */,
 				8E6CBC3F2F91CB2C00754045 /* bn_mp_mul_d.c in Sources */,
-				8E6CBC402F91CB2C00754045 /* NSData+YLZHexadecimal.m in Sources */,
+				8E6CBC402F91CB2C00754045 /* NSData+HiHexadecimal.m in Sources */,
 				8E6CBC412F91CB2C00754045 /* bn_fast_s_mp_mul_high_digs.c in Sources */,
 				8E6CBC422F91CB2C00754045 /* bn_mp_clear_multi.c in Sources */,
-				8E6CBC432F91CB2C00754045 /* NSData+YLZBase64.m in Sources */,
+				8E6CBC432F91CB2C00754045 /* NSData+HiBase64.m in Sources */,
 				8E6CBC442F91CB2C00754045 /* bn_mp_prime_next_prime.c in Sources */,
 				8E6CBC452F91CB2C00754045 /* bn_mp_exptmod.c in Sources */,
 				8E6CBC462F91CB2C00754045 /* bn_mp_clear.c in Sources */,
@@ -2080,7 +2080,7 @@
 				8E344A70265BD115008AF1BA /* HiWebViewController.swift in Sources */,
 				8EA21EA527002E7400A9039B /* YLZHealthCodeTableViewCell.swift in Sources */,
 				8E344A83265BD437008AF1BA /* UIButton+Extension.swift in Sources */,
-				8EE07B4027017D78005B0B40 /* YLZString.swift in Sources */,
+				8EE07B4027017D78005B0B40 /* HiString.swift in Sources */,
 				8E344A3C265BCA87008AF1BA /* HiBaseNavigationController.swift in Sources */,
 				8EFFDA2A2828B61F000EA7D6 /* HiPageHelper.swift in Sources */,
 				8EC07F3B2B240A1800F7EBF5 /* HiModel.swift in Sources */,
@@ -2124,7 +2124,7 @@
 				8E344A87265BD437008AF1BA /* UIBarButtonItem+Extension.swift in Sources */,
 				8E85E0CF2F7CF64E00736EFD /* HiLinkViewController.swift in Sources */,
 				8E85E0C42F7CEAC800736EFD /* HiMeiTuanSlideView.swift in Sources */,
-				8EA21EB02700344F00A9039B /* YLZFont.swift in Sources */,
+				8EA21EB02700344F00A9039B /* HiFont.swift in Sources */,
 				8EAF367D2DF95F1D00645B1E /* HrssViewController.swift in Sources */,
 				8E6CBC4D2F91CEDD00754045 /* HiInitLoginRespModel.swift in Sources */,
 				8E344A3D265BCA87008AF1BA /* HiBaseViewController.swift in Sources */,
@@ -2146,7 +2146,7 @@
 				8E85E0D72F7CF66300736EFD /* HiLinkTableViewHeaderView.swift in Sources */,
 				8E85E0D82F7CF66300736EFD /* HiLinkLeftTableViewCell.swift in Sources */,
 				8EFFDA2E2828B61F000EA7D6 /* HiJsonLoadHelper.swift in Sources */,
-				8EBD6DF1265E1C3500DD856A /* YLZMSTabBar.swift in Sources */,
+				8EBD6DF1265E1C3500DD856A /* HiMSTabBar.swift in Sources */,
 				8ED5D4B02EA7676700AED7FC /* HiSettingViewController.swift in Sources */,
 				8EFFDA122828B596000EA7D6 /* HiMarqueeView.swift in Sources */,
 				8E85E0C72F7CEB3100736EFD /* HiMeiTuanHorizontalLayout.swift in Sources */,
@@ -2155,7 +2155,7 @@
 				8E6AD17028163D0000BD50F6 /* YLZRouteCodeCellView.swift in Sources */,
 				8E6AD16E2816387D00BD50F6 /* YLZRouteCodeView.swift in Sources */,
 				8E6AD16C281548AB00BD50F6 /* YLZRouteCodeCell.swift in Sources */,
-				8EA21EB22700596400A9039B /* YLZPaddingLabel.swift in Sources */,
+				8EA21EB22700596400A9039B /* HiPaddingLabel.swift in Sources */,
 				8E78C81A2814FAEC00D6C59F /* YLZRouteCodeTableHeaderView.swift in Sources */,
 				8E29D6112DFBB82D00B3E0A9 /* HrssTopicLeftView.swift in Sources */,
 				8E85E0C92F7CEBCC00736EFD /* HiMeiTuanSlideCell.swift in Sources */,
@@ -2164,7 +2164,7 @@
 				8EAF36932DF986DE00645B1E /* HrssModel.swift in Sources */,
 				8E344A7F265BD437008AF1BA /* Array+NSLayoutConstraint.swift in Sources */,
 				8E6AD17228164BE800BD50F6 /* YLZRouteCodeCellInfoView.swift in Sources */,
-				8EE07B3A27016A66005B0B40 /* YLZView.swift in Sources */,
+				8EE07B3A27016A66005B0B40 /* HiView.swift in Sources */,
 				8E29D6132DFBB83C00B3E0A9 /* HrssTopicRightView.swift in Sources */,
 				8E6CBB162F90E11300754045 /* NSObject+YYModel.m in Sources */,
 				8E6CBB172F90E11300754045 /* OCProject.m in Sources */,

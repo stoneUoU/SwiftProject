@@ -21,60 +21,60 @@ class YLZRouteCodeTableFooterView: UIView {
     //MARK: lazy load
     lazy var titleLabel: UILabel = {[weak self] in
         let titleLabel = UILabel()
-        titleLabel.font = YLZFont.regular(size: 18)
+        titleLabel.font = HiFont.regular(size: 18)
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
-        titleLabel.textColor = YLZColorTitleOne
+        titleLabel.textColor = HiColorTitleOne
         titleLabel.text = "信息说明"
         return titleLabel
     }()
     lazy var sourceLeftLabel: UILabel = {[weak self] in
         let sourceLeftLabel = UILabel()
-        sourceLeftLabel.font = YLZFont.regular(size: 14)
+        sourceLeftLabel.font = HiFont.regular(size: 14)
         sourceLeftLabel.numberOfLines = 0
-        sourceLeftLabel.textColor = YLZColorTitleTwo
+        sourceLeftLabel.textColor = HiColorTitleTwo
         sourceLeftLabel.text = "数据来源："
         return sourceLeftLabel
     }()
     lazy var sourceRightLabel: UILabel = {[weak self] in
         let sourceRightLabel = UILabel()
-        sourceRightLabel.font = YLZFont.regular(size: 14)
+        sourceRightLabel.font = HiFont.regular(size: 14)
         sourceRightLabel.numberOfLines = 0
-        sourceRightLabel.textColor = YLZColorTitleTwo
+        sourceRightLabel.textColor = HiColorTitleTwo
         sourceRightLabel.textAlignment = .left;
         sourceRightLabel.text = "国家政务服务平台和福建省相关部门";
         return sourceRightLabel
     }()
     lazy var mindLeftLabel: UILabel = {[weak self] in
         let mindLeftLabel = UILabel()
-        mindLeftLabel.font = YLZFont.regular(size: 14)
+        mindLeftLabel.font = HiFont.regular(size: 14)
         mindLeftLabel.numberOfLines = 0
-        mindLeftLabel.textColor = YLZColorTitleTwo
+        mindLeftLabel.textColor = HiColorTitleTwo
         mindLeftLabel.text = "注意事项："
         return mindLeftLabel
     }()
     lazy var mindRightLabel: UILabel = {[weak self] in
         let mindRightLabel = UILabel()
-        mindRightLabel.font = YLZFont.regular(size: 14)
+        mindRightLabel.font = HiFont.regular(size: 14)
         mindRightLabel.numberOfLines = 0
-        mindRightLabel.textColor = YLZColorTitleTwo
+        mindRightLabel.textColor = HiColorTitleTwo
         mindRightLabel.textAlignment = .left;
         mindRightLabel.text = "使用健康码时不要离开本页面且需本人操作确认";
         return mindRightLabel
     }()
     lazy var rangeLeftLabel: UILabel = {[weak self] in
         let rangeLeftLabel = UILabel()
-        rangeLeftLabel.font = YLZFont.regular(size: 14)
+        rangeLeftLabel.font = HiFont.regular(size: 14)
         rangeLeftLabel.numberOfLines = 0
-        rangeLeftLabel.textColor = YLZColorTitleTwo
+        rangeLeftLabel.textColor = HiColorTitleTwo
         rangeLeftLabel.text = "使用范围："
         return rangeLeftLabel
     }()
     lazy var rangeRightLabel: UILabel = {[weak self] in
         let rangeRightLabel = UILabel()
-        rangeRightLabel.font = YLZFont.regular(size: 14)
+        rangeRightLabel.font = HiFont.regular(size: 14)
         rangeRightLabel.numberOfLines = 0
-        rangeRightLabel.textColor = YLZColorTitleTwo
+        rangeRightLabel.textColor = HiColorTitleTwo
         rangeRightLabel.textAlignment = .left;
         rangeRightLabel.text = "依托国家政务服务平台，实现跨省（区、市）数据共享和互通互认";
         return rangeRightLabel
@@ -82,51 +82,51 @@ class YLZRouteCodeTableFooterView: UIView {
     
     lazy var telLeftLabel: UILabel = {[weak self] in
         let telLeftLabel = UILabel()
-        telLeftLabel.font = YLZFont.regular(size: 14)
+        telLeftLabel.font = HiFont.regular(size: 14)
         telLeftLabel.numberOfLines = 0
-        telLeftLabel.textColor = YLZColorTitleTwo
+        telLeftLabel.textColor = HiColorTitleTwo
         telLeftLabel.text = "客服电话："
         return telLeftLabel
     }()
     lazy var telRightLabel: UILabel = {[weak self] in
         let telRightLabel = UILabel()
-        telRightLabel.font = YLZFont.regular(size: 14)
+        telRightLabel.font = HiFont.regular(size: 14)
         telRightLabel.numberOfLines = 0
-        telRightLabel.textColor = YLZColorTitleTwo
+        telRightLabel.textColor = HiColorTitleTwo
         telRightLabel.textAlignment = .left;
         telRightLabel.text = "400-666-1331 （7*24小时）";
         return telRightLabel
     }()
     lazy var mainOrgLeftLabel: UILabel = {[weak self] in
         let mainOrgLeftLabel = UILabel()
-        mainOrgLeftLabel.font = YLZFont.regular(size: 14)
+        mainOrgLeftLabel.font = HiFont.regular(size: 14)
         mainOrgLeftLabel.numberOfLines = 0
-        mainOrgLeftLabel.textColor = YLZColorTitleTwo
+        mainOrgLeftLabel.textColor = HiColorTitleTwo
         mainOrgLeftLabel.text = "主办机构："
         return mainOrgLeftLabel
     }()
     lazy var mainOrgRightLabel: UILabel = {[weak self] in
         let mainOrgRightLabel = UILabel()
-        mainOrgRightLabel.font = YLZFont.regular(size: 14)
+        mainOrgRightLabel.font = HiFont.regular(size: 14)
         mainOrgRightLabel.numberOfLines = 0
-        mainOrgRightLabel.textColor = YLZColorTitleTwo
+        mainOrgRightLabel.textColor = HiColorTitleTwo
         mainOrgRightLabel.textAlignment = .left;
         mainOrgRightLabel.text = "福建省数字办 卫健委 医保局";
         return mainOrgRightLabel
     }()
     lazy var subOrgLeftLabel: UILabel = {[weak self] in
         let subOrgLeftLabel = UILabel()
-        subOrgLeftLabel.font = YLZFont.regular(size: 14)
+        subOrgLeftLabel.font = HiFont.regular(size: 14)
         subOrgLeftLabel.numberOfLines = 0
-        subOrgLeftLabel.textColor = YLZColorTitleTwo
+        subOrgLeftLabel.textColor = HiColorTitleTwo
         subOrgLeftLabel.text = "承办机构："
         return subOrgLeftLabel
     }()
     lazy var subOrgRightLabel: UILabel = {[weak self] in
         let subOrgRightLabel = UILabel()
-        subOrgRightLabel.font = YLZFont.regular(size: 14)
+        subOrgRightLabel.font = HiFont.regular(size: 14)
         subOrgRightLabel.numberOfLines = 0
-        subOrgRightLabel.textColor = YLZColorTitleTwo
+        subOrgRightLabel.textColor = HiColorTitleTwo
         subOrgRightLabel.textAlignment = .left;
         subOrgRightLabel.text = "福建省大数据有限公司";
         return subOrgRightLabel
